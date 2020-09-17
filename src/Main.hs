@@ -19,15 +19,24 @@ defaultCharName = "characters/Sharwyn_06"
 getCharName :: IO String
 getCharName = do
   xs <- getArgs
-  return $ if length xs == 0 then defaultCharName else head xs
+  return $ if null xs then defaultCharName else head xs
 
 data Images = Images 
-  { page1 :: JpegFile
-  , page2 :: JpegFile
-  , spells :: JpegFile
-  , bags :: JpegFile
-  , boh :: JpegFile
-  , hole :: JpegFile
+  { imgPage1 :: JpegFile
+  , imgPage2 :: JpegFile
+  , imgSpells :: JpegFile
+  , imgBags :: JpegFile
+  , imgBoh :: JpegFile
+  , imgHole :: JpegFile
+  }
+
+data Pages = Pages
+  { page1 :: Character -> JpegFile -> PDF()
+  , page2 :: Character -> JpegFile -> PDF()
+  , pageSpells :: JpegFile -> Spellcasting -> PDF()
+  , pageBags :: JpegFile -> Character -> Backpack -> PDF()
+  , pageBoh :: JpegFile -> Character -> BagOfHolding -> PDF()
+  , pageHole :: JpegFile -> Character -> PortableHole -> PDF() 
   }
 
 main :: IO ()
@@ -44,12 +53,20 @@ main = do
   mbgPH      <- readJpegFile "images/portable-hole.jpg"
   let [bg1, bg2, bgSpells, bgBags, bgBOH, bgPH, ice1, ice2, iceSpells] = rights [mbg1, mbg2, mbgSpells, mbgBags, mbgBOH, mbgPH, mice1, mice2, miceSpells]
   let images = Images 
-        { page1 = bg1
-        , page2 = bg2
-        , spells = bgSpells
-        , bags = bgBags
-        , boh = bgBOH
-        , hole = bgPH
+        { imgPage1 = bg1
+        , imgPage2 = bg2
+        , imgSpells = bgSpells
+        , imgBags = bgBags
+        , imgBoh = bgBOH
+        , imgHole = bgPH
+        }
+  let pages = Pages
+        { page1 = drawPage1
+        , page2 = drawPage2
+        , pageSpells = drawSpellPage
+        , pageBags = drawBackpackPage
+        , pageBoh = drawBagOfHolding
+        , pageHole = drawPortableHole
         }
   let charFile = charname ++ ".json"
   chardata <- B.readFile charFile
@@ -57,17 +74,14 @@ main = do
     Left err -> do
       putStrLn "Error parsing JSON:"
       die err
-    Right ch ->  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images)
+    Right ch ->  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages)
 
-
-doc :: Character -> Images -> PDF()
-doc c images = do
-  drawPage1 c (page1 images)
-  drawPage2 c (page2 images)
-  mapM_ (drawSpellPage $ spells images) (spellcasting c)
-  mapM_ (drawBackpackPage (bags images) c) (backpacks c)
-  mapM_ (drawBagOfHolding (boh images) c) (bagsOfHolding c)
-  mapM_ (drawPortableHole (hole images) c) (portableHoles c)
+doc :: Character -> Images -> Pages -> PDF()
+doc c images pages = do
+  page1 pages c (imgPage1 images)
+  page2 pages c (imgPage2 images)
+  mapM_ (pageSpells pages $ imgSpells images) (spellcasting c)
+  mapM_ (pageBags pages (imgBags images) c) (backpacks c)
+  mapM_ (pageBoh pages (imgBoh images) c) (bagsOfHolding c)
+  mapM_ (pageHole pages (imgHole images) c) (portableHoles c)
   drawAbilities c (abilities c)
-
-
