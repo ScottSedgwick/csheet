@@ -1,0 +1,517 @@
+{
+    "characterName": "Othys Raveneye (Tim)",
+    "className": "Cleric",
+    "subclass": "Trickery",
+    "level": 6,
+    "background": "Charlatan",
+    "playerName": "Scott",
+    "race": "Human",
+    "alignment": "CG",
+    "experience": 14000,
+    
+    "age": 23,
+    "height": "6' 4\"",
+    "weight": "90kg (195 lbs)",
+    "eyeColour": "Golden",
+    "skinColour": "Pale",
+    "hairColour": "Black",
+
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+
+    "acBase": 10,
+    "acBonus": 14,
+    "initiative": 0,
+    "speed": 45,
+    "hitPoints": 368,
+    "hitDice": 8,
+
+    "strength": 20,
+    "dexterity": 24,
+    "constitution": 20,
+    "intelligence": 24,
+    "wisdom": 24,
+    "charisma": 24,
+
+    "strengthBonus": 1,
+    "dexterityBonus": 1,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 1,
+    "wisdomBonus": 1,
+    "charismaBonus": 1,
+
+    "skillAcrobatics": 1,
+    "skillAnimalHandling": 0,
+    "skillArcana": 1,
+    "skillAthletics": 1,
+    "skillDeception": 1,
+    "skillHistory": 1,
+    "skillInsight": 1,
+    "skillIntimidation": 1,
+    "skillInvestigation": 1,
+    "skillMedicine": 1,
+    "skillNature": 0,
+    "skillPerception": 2,
+    "skillPerformance": 1,
+    "skillPersuasion": 2,
+    "skillReligion": 1,
+    "skillSleightOfHand": 1,
+    "skillStealth": 2,
+    "skillSurvival": 0,
+
+    "proficiencies": [
+        "Light, Medium and Heavy Armour, Shields",
+        "Simple Weapons, Hand Crossbow,",
+        "Longswords, Rapiers, Shortswords",
+        "Harp, Mandolin, Pipes",
+        "Smith's tools, Thieves tools",
+        "Bullywug, Celestial, Common, Draconic,",
+        "Dwarvish, Elvish, Giant, Gnomish, Goblin,",
+        "Infernal, Orcish, Sylvan, Thieves Cant,",
+        "Undercommon, Abyssal"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Vorpal LSword",
+            "damage": "1d8+13 [S]",
+            "bonus": "13"
+        },
+        {
+            "weapon": "Unarmed",
+            "damage": "1d6+10 [B]",
+            "bonus": "10"
+        },
+        {
+            "weapon": "Dagger",
+            "damage": "1d4+11 [S]",
+            "bonus": "11"
+        },
+        {
+            "weapon": "Longbow",
+            "damage": "1d6+10 [P]",
+            "bonus": "10"
+        }
+    ],
+
+    "personalityTraits": [ 
+        "Despite my noblie birth, I do not place",
+        "myself above other folk. We all have the",
+        "same blood.",
+        "If you do me an injury, I will crush you, ruin",
+        "your name, and salt your fields."
+    ],
+    "ideals": [
+        "Independence: I must prove that I can",
+        "handle myself without the coddling of",
+        "my family."
+    ],
+    "bonds": [ 
+        "My houses allegience to Lastai must be",
+        "maintained at all costs."
+    ],
+    "flaws": [ 
+        "I hide a truly scandalous secret that could",
+        "ruin my family forever."
+    ],
+    "features": [
+        "Attack twice per turn (sword+unarmed)",
+        "Flurry (1) sword+2 unarmed+improved",
+        "Advantage on attack if surprise or ally in 5'R",
+        "All attacks with advantage are criticals",
+        "+4d6 damage if ally in 5'R",
+        "Improved critical (19 or 20)",
+        "Evasion - save for half or none",
+        "Immune to flanking, critical hits, Lightning,",
+        "  Poison, Exhaustion, Grappled, Paralyzed",
+        "  Poisoned, Prone, Restrained, Unconscious",
+        "Resistant to Fire, Acid, Cold, Necrotic, Thunder,",
+        "  non-magic weapons",
+        "Wizard (School of Divination) 6",
+        "  Arcane Recovery: Lvl/2 slots from short rest",
+        "  Divination Savant",
+        "  Portent (2 x d20 rolls per long rest)",
+        "  Expert Divination: regain 1 slot on casting Div spell",
+        "Cleric (Life Domain) 5",
+        "  Channel Divinity (2/rest)",
+        "    Turn Undead (Wis save, destroy CR1/2)",
+        "    Preserve Life: Lvl*5 HP, 30'",
+        "  Disciple of Life: +2+Spell Lvl healing",
+        "Monk (Way of the Open Hand) 6",
+        "  Unarmoured Defence (AC: 10+Dex+Wis)",
+        "  Move + 15'",
+        "  Deflect Missiles:",
+        "    Missile damage -1d10+Dex+Lvl",
+        "    If 0, 1 Ki to throw back (20/60')",
+        "  Slow fall: -Lvl*5 damage from falling",
+        "  Extra attack (attack twice per turn)",
+        "  Martial Arts:",
+        "    Dex bonus to hit and damage",
+        "    Unarmed damage d6",
+        "    Can make unarmed attack as bonus after attack",
+        "  Ki: 6pts, recharge after short rest",
+        "    1: Flurry of blows (2 unarmed attacks)",
+        "    1: Patient defence (Dodge as bonus action)",
+        "    1: Step of the Wind: (Disengage/Dash as bonus)",
+        "    1: Stunning Strike: Con save or stunned 1 turn",
+        "  Ki empowered strikes (attacks are magical)",
+        "  Enhanced Flurry of Blows. Choose one of:",
+        "    Save vs Dex or knocked prone",
+        "    Save vs Str or pushed back up to 15'",
+        "    Cannot take reactions until end of my next turn",
+        "  Wholeness of Body (Regain 3*Lvl HP, Long rest)",
+        "Bard (College of Glamour) 6",
+        "  Bardic Inspiration: d8, Cha bonus times, short rest", 
+        "  Jack of all Trades: 1/2 Prof to non-prof skills",
+        "  Song of Rest: +1d6HP to all from short rest",
+        "  Expertise: Perception, Stealth",
+        "  Countercharm: adv vs mind-influencing effects",
+        "  Mantle of Inspiration: 1 BI, +8HP to Cha allies",
+        "  Enthralling Performance: Charm Cha people for 1 hr",
+        "  Mantle of Majesty: Command 1/rnd, long rest",
+        "Assassin: Advantage on attack rolls 1st turn with init",
+        "  Any hit is critical on advantage attacks, Evasion,",
+        "  +4d6 when attack with adv or ally in 5'",
+        "Cambion: Darkvision 60', Cha to AC, Res to Fire",
+        "Doppelganger: Shapechange, +3d6 damage with",
+        "  surprise, Ambush (adv w surprise), Read Thoughts",
+        "Dragonclaw: Advantage on attack roll if ally in 5'",
+        "Dralmorrer: Advantage vs Charmed & Frightened,",
+        "  Cannot be put to sleep, Weapon Bond",
+        "Enveloper: Blindsight 120', Absorb powers,",
+        "  1d3HP / HD, Immune to flanking and critical hits", 
+        "Jamna: Advantage on Int/Wis/Cha saves vs magic",
+        "  Bonus action to Dodge/Disengage/Hide",
+        "Langdedrosa: Improved Critical (19 or 20)",
+        "Noble: Parry (+2 AC vs one melee attack)",
+        "Pharblex: Amphibious, Swim 40'",
+        "Troll: Regnerate 10hp per turn",
+        "Will-o-Wisp: Darkvision 120', Incorporeal,",
+        "  Fly 50' (Hover), Immune to Lightning, Poison,",
+        "  Exhaustion, Grappled, Paralyzed, Poisoned,",
+        "  Prone, Restrained, Unconscious. Resistant to",
+        "  Acid, Cold, Necrotic, Thunder, non-magic weapons"
+    ],
+
+    "backstory": [
+        "My ancestor was 2nd in line to my house, and",
+        "became and adventurer. In his travels he acquired",
+        "a Deck of Many Things, and foolishly drew from it.",
+        "One card he drew was Flames, and the emnity of",
+        "the Pit Fiend was terrible and drawn out.",
+        "The Fiend crafted a Succubus, crafted for the sole",
+        "purpose of corrupting my ancestor, by being perfect",
+        "for him; such that even if he could resist her magic",
+        "he would fall in love with her anyway.",
+        "It worked, and would have ended my family but for",
+        "one thing - he allowed his love to draw from the",
+        "Deck. She drew Balance.",
+        "Now Chaotic Good, and hopelessly in love with my",
+        "ancestor, they banded together against the Fiend.",
+        "My ancestors older sibling, and the Fiend, perished",
+        "in the ensuing War.",
+        "Every member of my family since has been a",
+        "Chaotic Good Cambion. Most are Warlocks, bound",
+        "to Lastai, a nearly forgotten Goddess of Love, who",
+        "was entranced by my ancestor's star-crossed story.",
+        "She has aided them to hide their true nature from",
+        "all but their true loves. Our family allegience",
+        "to Lastai supercedes everything, even our loyalty",
+        "to the crown.",
+        "I am the first in generations to forge my own path,",
+        "and my greatest responsibility and fear is that",
+        "no-one ever learn my family's secret.",
+        "I am not a Warlock bound to Lastai, and this has",
+        "caused some friction - but I am a Cleric in her",
+        "service, and completely loyal to her."
+    ],
+
+    "moneyPouch": {
+        "copper": 10,
+        "silver": 10,
+        "electrum": 0,
+        "gold": 10,
+        "platinum": 10,
+        "gems": []
+    },
+
+    "allies": [
+        "12 4th level Knights",
+        "12 keeps",
+        "Familiar (Owl)"
+    ],
+
+    "equipment": [
+        "Robe of Stars", 
+        "  +1 to saves",
+        "  Magic Missile (5th lvl, 6/day)",
+        "  Enter Astral plane at will",
+        "Winged Boots",
+        "  Fly at walk speed 4hrs/day",
+        "Vorpal Sword (weapon bond)",
+        "  +3, ignore resistances,",
+        "  Behead or +6d8 on critical",
+        "Dagger of Venom in sheath",
+        "  +1, on action coat in poison",
+        "  DC15 Con save or 2d10 poison",
+        "  damage and poisoned 1 minute",
+        "Heward's Handy Haversack",
+        "Portable Hole"
+    ],
+
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": [
+                "400,000gp worth of gems"
+            ]
+            },
+            "bagPocket1": [
+                "(20 lbs)",
+                "2x Arrow +3, 18 Arrows in quiver",
+                "Mace of Smiting +1/+3",
+                "Oathbow"
+            ],
+            "bagPocket2": [
+                "(20 lbs)",
+                "Spell Book, Deck of Many Things",
+                "Harp, Mandolin, Pipes"
+            ],
+            "bagPocket3": [
+                "Portable Hole"
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+            ],
+            "bagMiddlePouch": [
+            ],
+            "bagMainPouch": [
+                "(80 lbs)"
+            ],
+            "bagTreasure": [
+            ],
+            "bagBedroll": "",
+            "bagRope": "Rope of Climbing",
+            "bagAmmo": "",
+            "bagTorches": ""
+        }
+    ],      
+    "bagsOfHolding": [], 
+    "portableHoles": [
+        {
+            "phItems": [ 
+                "Clone in sepulchre",
+                "Dancing Sword (A)",
+                "Frost Brand, +1d6 cold damage (A)",
+                "Hammer of Thunderbolts, +1 Maul (C)",
+                "Holy Avenger, +3",
+                "Luck Blade +1, luck 1/day",
+                "Mace of Disruption",
+                "Sun Blade +2, radiant, +1d8 vs undead (T)",
+                "Sword of Answering (Replier) +3",
+                "Trident of Fish Command",
+                "Vicious Weapon, +7 damage on critical (A)"
+            ]
+        }
+    ],
+
+    "treasure": [
+        "9 wishes",
+        "10 reverse Fates"
+    ],
+
+    "spellcasting": [
+        {
+            "spellcastingClass": "Wizard",
+            "spellcastingAbility": "Intelligence",
+            "spellSaveDC": 18,
+            "spellAttackBonus": 7,
+            "spellsCantrips": [
+                "Blade Ward",
+                "Fire Bolt",
+                "Message",
+                "Prestidigitation"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Alarm",
+                "Chromatic Orb",
+                "Expeditious Retreat",
+                "Feather Fall",
+                "Find Familiar",
+                "Grease",
+                "Identify",
+                "Longstrider",
+                "Magic Missile",
+                "Shield",
+                "Sleep",
+                "Thunderwave",
+                "Witch Bolt"
+            ],
+            "slotsLevel2": 3,
+            "spellsLevel2": [
+                "Misty Step",
+                "Invisibility",
+                "See Invisibility",
+                "Knock"
+            ],
+            "slotsLevel3": 3,
+            "spellsLevel3": [
+                "Blink",
+                "Nondetection",
+                "Fireball",
+                "Counterspell"
+            ],
+            "slotsLevel4": 0,
+            "spellsLevel4": [
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [
+            ],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [
+            ],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+            ]
+        },
+        {
+            "spellcastingClass": "Cleric",
+            "spellcastingAbility": "Wisdom",
+            "spellSaveDC": 18,
+            "spellAttackBonus": 7,
+            "spellsCantrips": [
+                "Light",
+                "Mending",
+                "Sacred Flame", 
+                "Spare the Dying"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Command",
+                "Create or Destroy Water",
+                "Cure Wounds",
+                "Detect Evil and Good",
+                "Detect Magic",
+                "Detect Poison and Disease",
+                "Guiding Bolt",
+                "Healing Word",
+                "Inflict Wounds",
+                "Protection from Evil and Good",
+                "Purify Food and Drink",
+                "Sanctuary",
+                "Shield of Faith"
+            ],
+            "slotsLevel2": 3,
+            "spellsLevel2": [
+                "Aid",
+                "Blindness/Deafness",
+                "Calm Emotions",
+                "Continual Flame",
+                "Enhance Ability",
+                "Find Traps",
+                "Gentle Repose",
+                "Hold Person",
+                "Lesser Restoration",
+                "Prayer of Healing",
+                "Protection from Poison",
+                "Silence",
+                "Spiritual Weapon"
+            ],
+            "slotsLevel3": 2,
+            "spellsLevel3": [
+                "Beacon of Hope",
+                "Clairvoyance",
+                "Create Food and Water",
+                "Daylight",
+                "Dispel Magic",
+                "Glyph of Warding",
+                "Mass Healing Word",
+                "Meld into Stone",
+                "Protection from Energy",
+                "Remove Curse",
+                "Revivify",
+                "Sending",
+                "Speak with Dead"
+            ],
+            "slotsLevel4": 0,
+            "spellsLevel4": [
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [
+            ],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [
+            ],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+            ]
+        },
+        {
+            "spellcastingClass": "Bard",
+            "spellcastingAbility": "Charisma",
+            "spellSaveDC": 18,
+            "spellAttackBonus": 7,
+            "spellsCantrips": [
+                "Mage Hand",
+                "Minor Illusion",
+                "True Strike",
+                "Vicious Mockery"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Dissonant Whispers",
+                "Heroism",
+                "Speak with Animals"
+            ],
+            "slotsLevel2": 3,
+            "spellsLevel2": [
+                "Enhance Ability",
+                "Suggestion"
+            ],
+            "slotsLevel3": 3,
+            "spellsLevel3": [
+                "Hypnotic Pattern",
+                "Leomunds Tiny Hut",
+                "Major Image",
+                "Speak with Plants"
+            ],
+            "slotsLevel4": 0,
+            "spellsLevel4": [
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [
+            ],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [
+            ],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+            ]
+        }
+    ]
+}

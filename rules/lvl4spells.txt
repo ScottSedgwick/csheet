@@ -1,0 +1,33 @@
+4th level Spells
+
+    Wizard / Arcane Trickster               Cleric                          Bard                            Sorceror
+    ==============================          ====================            ======================          =======================
+    Arcane Eye
+*   Banishment                              Banishment                                                      Banishment
+    Blight                                                                                                  Blight
+*                                                                           Compulsion
+*   Confusion                                                               Confusion                       Confusion
+    Conjure Minor Elementals
+*   Control Water                           Control Water
+*                                           Death Ward
+*   Dimension Door                                                          Dimension Door                  Dimension Door
+*                                           Divination
+                                                                                                            Dominate Beast
+    Evard's Black Tentacles
+*   Fabricate
+*                                           Freedom of Movement             Freedom of Movement
+    Fire Shield
+*   Greater invisibility                                                    Greater Invisibility            Greater Invisibility
+*                                           Guardian of Faith
+*   Hallucinatory Terrain                                                   Hallucinatory Terrain
+*   Ice Storm                                                                                               Ice Storm
+    Leomund's Secret Chest
+*   Locate Creature                         Locate Creature                 Locate Creature
+*   Mordenkainen's Faithful Hound
+    Mordenkainen's Private Sanctum
+    Otiluke's Resilient Sphere
+    Phantasmal Killer
+*   Polymorph                                                               Polymorph                       Polymorph
+*   Stone Shape                             Stone Shape
+    Stoneskin                                                                                               Stoneskin
+    Wall Of Fire                                                                                            Wall of Fire

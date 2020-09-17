@@ -1,0 +1,382 @@
+{
+    "characterName": "Othys Raveneye (Tim)",
+    "className": "Cleric",
+    "subclass": "Trickery",
+    "level": 7,
+    "background": "Charlatan",
+    "playerName": "Scott",
+    "race": "Human",
+    "alignment": "CG",
+    "experience": 23000,
+    
+    "age": 23,
+    "height": "6' 4\"",
+    "weight": "90kg (195 lbs)",
+    "eyeColour": "Golden",
+    "skinColour": "Pale",
+    "hairColour": "Black",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 16,
+    "acBonus": 10,
+    "initiative": 0,
+    "speed": 30,
+    "hitPoints": 1117,
+    "hitDice": 8,
+
+    "strength": 47,
+    "dexterity": 206,
+    "constitution": 118,
+    "intelligence": 34,
+    "wisdom": 55,
+    "charisma": 65,
+
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 1,
+    "charismaBonus": 1,
+
+    "skillAcrobatics": 1,
+    "skillAnimalHandling": 1,
+    "skillArcana": 1,
+    "skillAthletics": 1,
+    "skillDeception": 1,
+    "skillHistory": 1,
+    "skillInsight": 1,
+    "skillIntimidation": 1,
+    "skillInvestigation": 1,
+    "skillMedicine": 1,
+    "skillNature": 1,
+    "skillPerception": 1,
+    "skillPerformance": 1,
+    "skillPersuasion": 1,
+    "skillReligion": 1,
+    "skillSleightOfHand": 1,
+    "skillStealth": 1,
+    "skillSurvival": 1,
+
+    "proficiencies": [
+        "Light, medium & heavy armour",
+        "Shields",
+        "All simple weapons",
+        "Rapier, Shortsword, Scimitar, Halberd",
+        "Great Sword, Longsword",
+        "Longbow, Heavy Crossbow",
+        "Common, Draconic, Infernal, Goblin,",
+        "Gnomish, Sylvan, Thieves Cant, Giant,",
+        "Abyssal, Primordial, Thayan, Bullywug,",
+        "Elvish, Netherese, Terran"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Rapier",
+            "damage": "1d8 [Pierce]",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Longbow",
+            "damage": "1d8 [P] (150/600)",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Crossbow",
+            "damage": "1d8 [P] (80/320)",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Thrown Dagger",
+            "damage": "1d4 [P] (20/60)",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Great Sword",
+            "damage": "2d6 [Slash]",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Dagger",
+            "damage": "1d4 [Pierce]",
+            "bonus": "+13"
+        },
+        {
+            "weapon": "Slam",
+            "damage": "1d8 [Bludgeon]",
+            "bonus": "+13"
+        }
+    ],
+    
+    "personalityTraits": [
+        "Wants the best for everyone.",
+        "Suspicious of power."
+    ],
+    "ideals": [
+        "Anyone and everyone can be better."
+    ],
+    "bonds": [
+        "I will become greater than my patron."
+    ],
+    "flaws": [
+        "Insecure - always tempted by power."
+    ],
+    "features": [
+        "Multi-attack - 3 attacks per round",
+        "Action surge (+1 action/round, rest to recharge)",
+        "Ambusher - adv on attack rolls w/ surprise",
+        "Dark advantage ([2+3] +5d6 on melee atks with adv)",
+        "Surprise attack - +3d6 dmg w/ surprise",
+        "Sneak Attack (+4d6 damage)",
+        "Assassinate (adv going first in 1st rnd, all hits crits)",
+        "Improved critical (on a 19 or 20)",
+        "2 Legendary actions per round",
+    
+        "Natural AC 16",
+        "Draconic Majesty (Cha bonus to AC if no armour)",
+        "Damage Immunities: Lightning, Acid, Poison",
+        "    Critical Hits, Force, Necrotic",
+        "Condition Immunities: Exhaustion, Grappled,",
+        "    Paralyzed, Prone, Restrained, Unconscious,",
+        "    Blinded, Deafened, Charmed, Frightened,",
+        "    Petrified, Flanking, Poisoned, Stunned",
+        "Damage Resistances: Cold, Fire, Thunder;",
+        "    Bludgeoning, Piercing and Slashing from",
+        "    non-magic weapons",
+        "Magic Resistance (adv vs Spells & Magic Effects)",
+        "Lightning Absorbtion (heals instead of harms)",
+        "Legendary Resistance 1/day",
+        "Immune to Fireball, Cone of Cold, Ice Storm",
+    
+        "Regeneration 10 HP/turn",
+        "Invisibility at will",
+    
+        "Lightning breath (5'x30', 4d10, 1/2 on Dex save)",
+        "Acid Breath (5'x30', 5d8, Dex DC14 for 1/2, rchg 5-6)",
+        "Web attack (Dex atk, Escape DC11 Str, recharge 5-6)",
+        "Shock (2d8 lightning damage) melee attack",
+        "Claw attack 2d6 Str",
+        "Consume Life",
+    
+        "Evasion (save for 1/2 or none, not full or 1/2)",
+        "Martial advantage (+3d6 if ally within 5')",
+        "War magic (bonus action weapon atk after cantrip)",
+    
+        "Consume - digest dead creature, 1 round",
+        "Absorb - gain abilities 3 rnd after consume",
+        "Shapechanger (any Humanoid & Snake)",
+        "Darkvision 120 feet",
+        "Blindsight 30 feet",
+        "Read thoughts",
+        "Advantage while reading thoughts to",
+        "  Wisdom (Insight) and Charisma",
+        "  (Deception, Intimidation and Persuasion)",
+        "Trickery Domain",
+        "Blessing of the Trickster (adv to Stealth 1 hr)",
+        "Channel Divinity 2/day:",
+        "  Turn Undead, Destroy CR <= 1/2",
+        "  Invoke Duplicity (1 minute)",
+        "  Cloak of Shadows (Invisible 1 turn)",
+        "Keen eyesight, hearing, smell - adv on Perception",
+        "Leadership (+1d4 to 1 allies attack or save,",
+        "  rest to recharge)",
+        "Cunning action (use bonus action to Dash,",
+        "  Disengage or Hide)",
+        "Gnome Cunning (advantage to Int, Wis & Cha",
+        "  saves vs magic)",
+        "Spider Climb, Web Sense, Web Walker",
+    
+        "Animal Friendship (snakes) at will",
+        "Suggestion 3/day",
+        "Potent Cantrips (Evocation)",
+        "Sculpt Spells (Evocation)",
+        "Amphibious",
+        "Poison Strike 3/day (+2d8 poison) on melee attack",
+        "Standing long jump 20', high jump 10'",
+        "Weapon bond",
+        "False appearance (statue or wet stone)",
+        "Fly 60'",
+        "Amorphous",
+        "Corrode metal"
+    ],
+
+    "backstory": [
+        "Cleric of Tymora (Forgotten Realms Goddess of",
+        "Luck). Member of the Fellows of Free Fate,",
+        "dedicated to thwarting worshippers of Beshaba,",
+        "especially her assassins, the Black Fingers.",
+        "Was the subject of a magical experiment as a child,",
+        "which resulted in several unusual traits.",
+        "",
+        "Enveloper, Self x5, Doppelganger, Acolyte x2,",
+        "Guard x8, Cultist, Dragonclaw x2,",
+        "Frulum Mondath, Langdedrosa Cyanwrath",
+        "Assassin x4, Doppelganger x2, Hobgoblin Captain,",
+        "Jamna Gleamsilver"
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 35,
+        "gems": []
+    },
+
+    "allies": [],
+
+    "equipment": [
+        "Rapier and scabbard",
+        "Bandolier and 6 Daggers",
+        "Light Crossbow, 20 Bolts, Quiver",
+        "Leather Armour, Shield (+2 AC)",
+        "Holy Symbol, 10 foot pole",
+        "Pack, Bedroll, 5 Sacks",
+        "Lantern, bullseye",
+        "Spare clothes",
+        "Grappling hook, collapsible", 
+        "200 feet rope, 10 Pitons",
+        "Hammer, 10 Iron Spikes",
+        "Mace, 2 Handaxes",
+        "Waterskin, Rations (10 days)",
+        "Great Sword"
+    ],
+
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+            ],
+            "bagPocket2": [
+            ],
+            "bagPocket3": [
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+            ],
+            "bagMiddlePouch": [
+            ],
+            "bagMainPouch": [
+            ],
+            "bagTreasure": [
+            ],
+            "bagBedroll": "1",
+            "bagRope": "150'",
+            "bagAmmo": "40 Arrows, 4 Daggers",
+            "bagTorches": "3"
+        }
+    ],
+
+    "bagsOfHolding": [],
+    "portableHoles": [],
+
+    "treasure": [
+        "Love",
+        "Innocence"
+    ],
+
+    "spellcasting": [
+        {
+            "spellcastingClass": "Cleric",
+            "spellcastingAbility": "Wisdom",
+            "spellSaveDC": 21,
+            "spellAttackBonus": 13,
+            "spellsCantrips": [
+                "Guidance",
+                "Light",
+                "Mending",
+                "Resistance",
+                "Sacred Flame",
+                "Spare the Dying",
+                "Thaumaturgy"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Create or Destroy Water",
+                "Detect Evil and Good",
+                "Detect Poison and Disease",
+                "Protection from Evil and Good",
+                "Purify Food and Drink",
+                "Bane                           Bless",
+                "Command                   Cure Wounds",
+                "Detect Magic               Guiding Bolt",
+                "Healing Word              Inflict Wounds",
+                "Sanctuary                    Shield of Faith",
+                "",
+                "Charm Person             Disguise Self"
+            ],
+            "slotsLevel2": 3,
+            "spellsLevel2": [
+                "Aid                              Lesser Restoration",
+                "Augury                        Locate Object",
+                "Blindness/Deafness    Prayer of Healing",
+                "Calm Emotions           Protection from Poison",
+                "Continual Flame         Silence",
+                "Enhance Ability          Spiritual Weapon",
+                "Find Traps                  Warding Bond",
+                "Gentle Repose           Zone of Truth",
+                "Hold Person"
+            ],
+            "slotsLevel3": 3,
+            "spellsLevel3": [
+                "Animate Dead        Meld into Stone",
+                "Beacon of Hope     Protection from Energy",
+                "Bestow Curse        Remove Curse",
+                "Clairvoyance          Revivify",
+                "Daylight                  Sending",
+                "Dispel Magic          Speak with Dead",
+                "Feign Death           Spirit Guardians",
+                "Glyph of Warding   Tongues",
+                "Magic Circle           Water Walk",
+                "Create Food and Water  ",
+                "Mass Healing Word",
+                "",
+                "Mirror Image          Pass without Trace"
+            ],
+            "slotsLevel4": 1,
+            "spellsLevel4": [
+                "Banishment",
+                "Control Water",
+                "Death Ward",
+                "Divination",
+                "Freedom of Movement",
+                "Guardian of Faith",
+                "Locate Creature",
+                "Stone Shape"
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+                "",
+                "Blink",
+                "Dispel Magic"
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+                "",
+                "Dimension Door",
+                "Polymorph"
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+                "",
+                "Dominate Person",
+                "Modify Memory"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+  "characterName": "Ros",
+  "className": "Monk",
+  "subclass": "",
+  "level": 2,
+  "background": "",
+  "playerName": "Kirsty",
+  "race": "Hill Dwarf",
+  "alignment": "None",
+  "experience": 600,
+
+  "age": 0,
+  "height": "",
+  "weight": "",
+  "eyeColour": "",
+  "skinColour": "",
+  "hairColour": "",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 12,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 35,
+  "hitPoints": 19,
+  "hitDice": 8,
+
+  "strength": 10,
+  "dexterity": 15,
+  "constitution": 14,
+  "intelligence": 8,
+  "wisdom": 14,
+  "charisma": 14,
+
+  "strengthBonus": 1,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 0,
+
+  "skillAcrobatics": 1,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 1,
+  "skillHistory": 0,
+  "skillInsight": 0,
+  "skillIntimidation": 1,
+  "skillInvestigation": 0,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 0,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 1,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+      "Battleaxe",
+      "Shortsword",
+      "Simple Weapons",
+      "Warhammer",
+      "",
+      "Common, Dwarvish",
+      "",
+      "Playing card set",
+      "Smiths tools",
+      "Thieves tools",
+      "Tinker's Tools"
+  ],
+
+  "attacks": [],
+  
+  "personalityTraits": [],
+  "ideals": [],
+  "bonds": [],
+  "flaws": [],
+  "features": [
+      "Hill Dwarf:",
+      "Darkvision, 60 feet",
+      "Adv vs Poison",
+      "",
+      "Monk:",
+      "Unarmoured Movement",
+      "Unarmoured Defense",
+      "Martial Arts",
+      "Ki: Flurry of Blows",
+      "Ki: Patient Defense", 
+      "Ki: Step of the Wind"
+  ],
+  
+  "backstory": [
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [],
+  
+  "backpacks": [], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": []
+}

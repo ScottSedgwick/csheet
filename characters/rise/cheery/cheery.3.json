@@ -1,0 +1,192 @@
+{
+  "characterName": "Cheery Littlebottom",
+  "className": "Rogue",
+  "subclass": "A. Trickster",
+  "level": 3,
+  "background": "Guild Artisan",
+  "playerName": "Meagen",
+  "race": "Mountain Dwarf",
+  "alignment": "LG",
+  "experience": 900,
+
+  "strength": 18,
+  "dexterity": 18,
+  "constitution": 14,
+  "intelligence": 17,
+  "wisdom": 16,
+  "charisma": 17,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 1,
+  "wisdomBonus": 0,
+  "charismaBonus": 0,
+
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 1,
+  "skillHistory": 0,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 2,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 2,
+  "skillPerformance": 0,
+  "skillPersuasion": 1,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 1,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Weapons: Battleaxe, Handaxe,",
+    "  Throwing Hammer, Warhammer,",
+    "  Simple weapons, Hand crossbows",
+    "  Longswords, Rapiers, Short Swords",
+    "Apothecary's tools, Thieves Tools",
+    "Stonecutting (x2 proficiency to stone related",
+    "  history)",
+    "Light and medium armour",
+    "Speak Dwarven, Thieves Cant and Common",
+    "Deception, Investigation, Perception", 
+    "Stealth, Insight, Persuasion",
+    "Boost Perception & Investigation"
+  ],
+
+  "acBase": 12,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 25,
+  "hitPoints": 28,
+  "hitDice": 8,
+
+  "attacks": [
+    {
+      "weapon": "Battleaxe",
+      "damage": "1d8 slash",
+      "bonus": "6"
+    },
+    {
+      "weapon": "Handaxe",
+      "damage": "1d6 slash",
+      "bonus": "6"
+    },
+    {
+      "weapon": "Warhammer",
+      "damage": "1d8 bludgeon",
+      "bonus": "6"
+    },
+    {
+      "weapon": "Throwing Hammer",
+      "damage": "1d4 bludgeon",
+      "bonus": "6"
+    }
+  ],
+
+  "coinsCopper": 0,
+  "coinsSilver": 0,
+  "coinsElectrum": 0,
+  "coinsGold": 5,
+  "coinsPlatinum": 32,
+
+  "equipment": [
+    "Battleaxe",
+    "2 Handaxes",
+    "Short sword",
+    "20 bolts",
+    "Hand crossbow",
+    "2 daggers",
+    "Leather armour",
+    "Pack",
+    "Apothecaries tools"
+  ],
+
+  "personalityTraits": [
+    "I believe that anything worth doing is",
+    "worth doing right. I can't help it, I'm",
+    "a perfectionist.",
+    "I always want to know how things work",
+    "and what makes people tick."
+  ],
+  "ideals": [
+    "Community. It is the duty of all civilised",
+    "people to strengthen the bonds of",
+    "community and the security of",
+    "civilisation."
+  ],
+  "bonds": [
+    "I owe my guild a gret debt for forging me",
+    "into the person I am today."
+  ],
+  "flaws": [
+    "I am paranoid about shape-shifters, and",
+    "quick to be suspiscious that someone is",
+    "not what they seem."
+  ],
+  "features": [
+    "Darkvision 60 feet",
+    "Advantage on saving throws vs poison",
+    "Resistance to poison damage (1/2)",
+    "Sneak attack: +2d6 damage",
+    "Cunning Action: get one bonus action",
+    "  per round to Dash, Disengage or Hide.",
+    "Mage Hand Legerdemain:",
+    "  Your Mage Hand is invisible",
+    "  You can pick locks/disarm traps at a distance",
+    "  Make a Dex vs Wis check to place or take",
+    "  an object from another creature"
+  ],
+
+  "age": 53,
+  "height": "4' 4\"",
+  "weight": "136 lbs",
+  "eyeColour": "Green",
+  "skinColour": "Pale & Clear",
+  "hairColour": "Red",
+
+  "backstory": [
+    "Member of the Apothecaries Guild"
+  ],
+
+  "treasure": [
+  ],
+
+  "spellcastingClass": "Arcane Trickster",
+  "spellcastingAbility": "Intelligence",
+  "spellSaveDC": 13,
+  "spellAttackBonus": 3,
+  "spellsCantrips": [
+    "Fire Bolt",
+    "Mage Hand",
+    "Prestidigitation"
+  ],
+  "slotsLevel1": 2,
+  "spellsLevel1": [
+    "Color Spray",
+    "Magic Missile",
+    "Sleep"
+  ],
+  "slotsLevel2": 0,
+  "spellsLevel2": [],
+  "slotsLevel3": 0,
+  "spellsLevel3": [],
+  "slotsLevel4": 0,
+  "spellsLevel4": [],
+  "slotsLevel5": 0,
+  "spellsLevel5": [],
+  "slotsLevel6": 0,
+  "spellsLevel6": [],
+  "slotsLevel7": 0,
+  "spellsLevel7": [],
+  "slotsLevel8": 0,
+  "spellsLevel8": [],
+  "slotsLevel9": 0,
+  "spellsLevel9": []
+}

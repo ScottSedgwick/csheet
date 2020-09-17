@@ -1,0 +1,270 @@
+{
+  "characterName": "Jet d'Walker",
+  "className": "Monk",
+  "subclass": "",
+  "level": 3,
+  "background": "Bounty Hunter",
+  "playerName": "",
+  "race": "Human",
+  "alignment": "LN",
+  "experience": 0,
+
+  "age": 22,
+  "height": "6'1\"",
+  "weight": "88kg",
+  "eyeColour": "Green",
+  "skinColour": "Tanned",
+  "hairColour": "Black",
+  
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+  
+  "acBase": 10,
+  "acBonus": 2,
+  "initiative": 0,
+  "speed": 40,
+  "hitPoints": 29,
+  "hitDice": 8,
+
+  "strength": 13,
+  "dexterity": 17,
+  "constitution": 14,
+  "intelligence": 11,
+  "wisdom": 15,
+  "charisma": 9,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 1,
+  "charismaBonus": 0,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 1,
+  "skillDeception": 0,
+  "skillHistory": 0,
+  "skillInsight": 0,
+  "skillIntimidation": 0,
+  "skillInvestigation": 1,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 1,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Languages: Common, Giant, Goblin, Orcish",
+    "Land Mounts"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Unarmed 1",
+          "damage": "1d6+3",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Unarmed 2",
+          "damage": "1d6",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Lt Xbow (80/320)",
+          "damage": "1d8+3",
+          "bonus": "+4"
+      }
+  ],
+  
+  "personalityTraits": [
+    "I've lost too many friends, and I'm slow to",
+    "make new ones.",
+    "I face problems head-on. A simple, direct",
+    "solution is the best path to success."
+  ],
+  "ideals": [
+    "Responsibility. I do what I must and obey",
+    "just authority."
+  ],
+  "bonds": [
+    "My honor is my life."
+  ],
+  "flaws": [
+    "I obey the law, even if the law causes",
+    "misery."
+  ],
+  "features": [
+    "Unarmoured Defence: AC = 10 + Wis + Dex bonus",
+    "Unarmed Strike: As a result of your training with",
+    "martial arts, your unarmed strike is considered to be",
+    "a finesse weapon that deals 1d6 bludgeoning dmg",
+    "on a hit. Your unarmed strikes are considered to be",
+    "magical for overcoming resistance and immunities.",
+    "",
+    "Ki (3 points): Your training allows you to channel",
+    "energy, called ki, to create supernatural effects,",
+    "including dazzlingly fast attacks and blinding speed.",
+    "Your access to this magical energy is represented by",
+    "a number of ki points. When you spend a ki point, it",
+    "becomes unavailable until you complete a short rest",
+    "or a long rest.",
+    "",
+    "Flurry of Blows. When you attack with your",
+    "unarmed strike on your turn, you can spend 1 ki",
+    "point to make an additional unarmed attack as a part",
+    "of the same action. You can decide to spend this",
+    "point after seeing the result of the previous attack.",
+    "Patient Defense: You can spend 1 ki point to take the",
+    "Dodge action as a bonus action on your turn.",
+    "Step of the Wind: You can spend 1 ki point to take",
+    "the Disengage or Dash action as a bonus action on",
+    "your turn, and your jump distance is doubled for the",
+    "turn.",
+    "Deflect Missiles: Reduce damage from missile attacks",
+    "by 1d10+Dex bonus(3)+level(3). If damage is reduced to",
+    "0, you can expend 1 ki point and throw the missile",
+    "back. You do your monk damage.",
+    "Monastic Tradition. Way of the Shadow.",
+    "Gain the Minor Illusion cantrip.",
+    "Expend 2 ki points to cast: Dakness, Darkvision,",
+    "Pass Without Trace, or Silence. You need no",
+    "material components"
+  ],
+  
+  "backstory": [
+    "Bounty Hunter. You track down and capture fugitives",
+    "for the bounty placed on their heads.",
+    "Bounty Board. When you are in an area of",
+    "civilization, yu can find information about",
+    "fugitives and the bounties placed on their heads,",
+    "and you can secure the legal authority to hunt",
+    "down and capture or kill thse fugitives. Sometimes",
+    "the authorities will come to you, as an established",
+    "bounty hunter, with specific requests. Your",
+    "reputation and knowledge make it easy for you to",
+    "esatablish useful contacts in the town watch or",
+    "guard.",
+    "When you attempt to locate a fugitive, if you fail to",
+    "locate that quarry yourself, you often know where to",
+    "go and from whom to obtain information on that",
+    "quarry's whereabouts. Usually this comes in the",
+    "form of contacts you have cultivated on past hunts.",
+    "Your DM might rule that this information is",
+    "unavailable - some creatures have ways of hiding",
+    "themselves that are vey difficult to uncover."
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 5,
+      "electrum": 0,
+      "gold": 35,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "Light Crossbow",
+    "Crossbow Bolts (20)",
+    "Potion of Healing",
+    "Healer's kit",
+    "Backpack",
+    "Bedroll",
+    "Belt Pouch",
+    "Clothes",
+    "Collection of 'Wanted' broadsheets",
+    "Lock of hair from previous bounty",
+    "Silk Rope (50 feet)",
+    "2 sets of manacles"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+          ],
+          "bagMainPouch": [
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "",
+          "bagRope": "",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Monk",
+          "spellcastingAbility": "Wisdom",
+          "spellSaveDC": 12,
+          "spellAttackBonus": 4,
+          "spellsCantrips": [
+            "Minor Illusion"
+          ],
+          "slotsLevel1":0,
+          "spellsLevel1": [
+            "",
+            "Darkness: 15'R, 10 min",
+            "Darkvision: 60' Darkvision, 8 hrs",
+            "Pass without trace: 30'R, +10 to stealth",
+            "  to all allies in range, cannot be",
+            "  tracked by any means, 1 hour",
+            "Silence: 20'R, 10 min"
+          ],
+          "slotsLevel2": 0,
+          "spellsLevel2": [
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

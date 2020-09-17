@@ -1,0 +1,887 @@
+{
+    "characterName": "Othys Raveneye (Tim)",
+    "className": "Cleric",
+    "subclass": "Trickery",
+    "level": 8,
+    "background": "Charlatan",
+    "playerName": "Scott",
+    "race": "Human",
+    "alignment": "CG",
+    "experience": 34000,
+    
+    "age": 23,
+    "height": "6' 4\"",
+    "weight": "90kg (195 lbs)",
+    "eyeColour": "Golden",
+    "skinColour": "Pale",
+    "hairColour": "Black",
+
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+
+    "acBase": 10,
+    "acBonus": 15,
+    "initiative": 5,
+    "speed": 55,
+    "hitPoints": 650, 
+    "hitDice": 8,
+
+    "strength": 30,
+    "dexterity": 30,
+    "constitution": 30,
+    "intelligence": 24,
+    "wisdom": 24,
+    "charisma": 24,
+
+    "strengthBonus": 1,
+    "dexterityBonus": 1,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 1,
+    "wisdomBonus": 1,
+    "charismaBonus": 1,
+
+    "skillAcrobatics": 1,
+    "skillAnimalHandling": 0,
+    "skillArcana": 1,
+    "skillAthletics": 1,
+    "skillDeception": 1,
+    "skillHistory": 1,
+    "skillInsight": 1,
+    "skillIntimidation": 1,
+    "skillInvestigation": 1,
+    "skillMedicine": 1,
+    "skillNature": 0,
+    "skillPerception": 2,
+    "skillPerformance": 1,
+    "skillPersuasion": 2,
+    "skillReligion": 1,
+    "skillSleightOfHand": 1,
+    "skillStealth": 2,
+    "skillSurvival": 0,
+
+    "proficiencies": [
+        "Light, Medium and Heavy Armour, Shields",
+        "Simple Weapons, Hand Crossbow,",
+        "Longswords, Rapiers, Shortswords",
+        "Harp, Mandolin, Pipes",
+        "Smith's tools, Thieves tools",
+        "",
+        "Abyssal, Auran, Bullywug, Celestial, Common, ",
+        "Deep Speech, Draconic, Dwarvish, Elvish, ",
+        "Giant, Gnomish, Goblin, Infernal, Primordial, ",
+        "Orcish, Sylvan, Telepathy 120', Terran, ",
+        "Thayan, Thieves Cant, Undercommon,",
+        "Advanced Telepathy 60'"
+    ],
+
+    "features": [
+        "Attack twice per turn (2 weapons + 2 unarmed)",
+        "Flurry (1) (2 weapons + 4 unarmed)",
+        "Advantage on attack if surprise or ally in 5'R",
+        "All attacks with advantage are criticals",
+        "+4d6 damage if ally in 5'R",
+        "Improved critical (19 or 20 without ally)",
+        "War Magic - Cantrip + attack in one turn",
+        "Evasion - save for half or none (Dex)",
+        "Immune to Cold, Fire, Lightning, Poison, ",
+        "  Anti-Magic Fields, Disintegrate, Wall of Force,",
+        "  Blinded, Critical Hits, Exhaustion, Flanking, ",
+        "  Grappled, Paralyzed, Poisoned, Prone, Restrained, ",
+        "  Unconscious, Emotion or thought sensing,",
+        "  Divination spells",
+        "Resistant to Acid, Necrotic, Thunder, Non-Magic ",
+        "  Weapons",
+        "Magic Resistance: Adv on saves vs spells, illusions",
+        "  and magical effects",
+        "Invisible at will, attacking does not make me visible",
+        "Legendary Resistance 3/day",
+        "Legendary Actions (3/turn): Detect, Unarmed strike,",
+        "  Move without provoking opportunity attacks",
+        "Move: Run 55', Fly 90' (Hover 60'), Swim 50', ",
+        "  Burrow 40', Earth Glide 20', Spider/Ice climb, ",
+        "  Web Walker",
+        "Senses: Blindsight 120', Darkvision 120',",
+        "  Life Sense 5 miles, Treasure Sense 300',",
+        "  Tremorsense 60', Telepathic Sense 60' ",
+        "  Sentience Sense 300'"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Vorpal LSword",
+            "damage": "1d8+16 [S]",
+            "bonus": "16"
+        },
+        {
+            "weapon": "Luck Blade",
+            "damage": "1d8+14 [S]",
+            "bonus": "14"
+        },
+        {
+            "weapon": "Unarmed",
+            "damage": "1d6+13 [B]",
+            "bonus": "13"
+        },
+        {
+            "weapon": "Touch",
+            "damage": "+3d6+2 necrotic",
+            "bonus": ""
+        },
+        {
+            "weapon": "Dagger",
+            "damage": "1d4+14 [S]",
+            "bonus": "14"
+        },
+        {
+            "weapon": "Longbow",
+            "damage": "1d6+13 [P]",
+            "bonus": "13"
+        },
+        {
+            "weapon": "With Ally",
+            "damage": "+4d6",
+            "bonus": ""
+        }
+    ],
+
+    "moneyPouch": {
+        "copper": 10,
+        "silver": 10,
+        "electrum": 0,
+        "gold": 10,
+        "platinum": 10,
+        "gems": []
+    },
+
+    "allies": [
+        "Familiar (Baby Snowy Owl named 'Poof')",
+        "5 Flumphs that live in my portable hole,",
+        "  come out invisible occasionally, and",
+        "  feed off my psionic energy"
+    ],
+
+    "equipment": [
+        "Robe of Stars", 
+        "  +1 to saves",
+        "  Magic Missile (5th lvl, 6/day)",
+        "  Enter Astral plane at will",
+        "Vorpal Sword (weapon bond)",
+        "  +3, ignore resistances,",
+        "  Behead or +6d8 on critical",
+        "Luck Blade + 1",
+        "  +1 to saving throws",
+        "  Re-roll one roll per day",
+        "Dagger of Venom in sheath",
+        "  +1, on action coat in poison",
+        "  DC15 Con save or 2d10 poison",
+        "  damage and poisoned 1 minute",
+        "Heward's Handy Haversack",
+        "Portable Hole",
+        "Cube of Force"
+    ],
+
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": [
+                "650,000gp worth of gems"
+            ]
+            },
+            "bagPocket1": [
+                "(20 lbs)",
+                "2x Arrow +3, 18 Arrows in quiver",
+                "Mace of Smiting +1/+3",
+                "Oathbow"
+            ],
+            "bagPocket2": [
+                "(20 lbs)",
+                "Spell Book, Deck of Many Things",
+                "Harp, Mandolin, Pipes"
+            ],
+            "bagPocket3": [
+                "Portable Hole"
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+            ],
+            "bagMiddlePouch": [
+            ],
+            "bagMainPouch": [
+                "(80 lbs)"
+            ],
+            "bagTreasure": [
+            ],
+            "bagBedroll": "",
+            "bagRope": "Rope of Climbing",
+            "bagAmmo": "",
+            "bagTorches": ""
+        }
+    ],      
+    "bagsOfHolding": [], 
+    "portableHoles": [
+        {
+            "phItems": [ 
+                "Clone in sepulchre",
+                "Dancing Sword (A)",
+                "Frost Brand, +1d6 cold damage (A)",
+                "Hammer of Thunderbolts, +1 Maul (C)",
+                "Holy Avenger, +3",
+                "Luck Blade +1, luck 1/day (O)",
+                "Mace of Disruption",
+                "Sun Blade +2, radiant, +1d8 vs undead (T)",
+                "Sword of Answering (Replier) +3",
+                "Trident of Fish Command",
+                "Vicious Weapon, +7 damage on critical (A)",
+                "Vorpal Sword (O)",
+                "",
+                "+1 Scale Mail",
+                "Wand of Winter. 7 charges, regain 1d6+1",
+                "  at dawn. Ray of Frost (0 ch), Sleet",
+                "  Storm (3 ch), Ice Storm (4 ch)"
+            ]
+        }
+    ],
+
+    "treasure": [
+    ],
+
+    "spellcasting": [],
+
+    "abilities": [
+        [
+            {
+                "groupName": "Spellcasting",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Spell Save DC: 18 (Int, Wis & Cha).  Max spell level: 4th.",
+                    "Slots: 1st (4)   2nd (4)   3rd(4)   4th(4)   5th(4)   6th(3)   7th(3)   8th(3)   9th(3)"
+                ]
+            },
+            {
+                "groupName": "Wizard (School of Divination) 8th level",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Cantrips known: 4.  Spells known: 8x1st, 4x2nd, 4x3rd, 4x4th (plus those found)",
+                    "",
+                    "Arcane Recovery: Once per day, when I finish a short rest, I can recover my Wizard level / 2 (rounded up) spell slot levels.",
+                    "",
+                    "Divination Savant: The gold and time required to copy a divination spell into my spell book is halved.",
+                    "",
+                    "Portent: Glimpses of the future press in on my awareness. After each long rest, roll two d20s and record the numbers rolled. I can replace any",
+                    "attack roll, saving throw or ability check made by me or a creature I can see with one of these foretelling rolls.",
+                    "",
+                    "Expert Divination: casting divination spells is so easy it expends only a fraction of normal efforts. When I cast a divination spell of 2nd level or",
+                    "higher, I regain one expended spell slot. The regained slot must be of a lower level than the spell cast and can't be over 5th level.",
+                    "",
+                    "Lucky. Get 3 luck points. Each can be used to affect a roll by 1d20."
+                ]
+            },
+            {
+                "groupName": "Sorceror (Celestial) 8th level",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Cantrips known: 5.  Spells known: 9",
+                    "Sorcery Points: 8.  Regain after long rest.",
+                    "Flexible Casting: Transform unexpended sorcery points into spell slots as a bonus action on my turn. (1st: 2, 2nd: 3, 3rd: 5, 4th: 6, 5th: 7)",
+                    "Flexible Casting: Transform spell slots to sorcery points: 1 gain sorcery points per level of the slot expended.",
+                    "Metamagic: Quickened Spell. When casting a spell that has a casting time of 1 action, spend 2 sorcery points to cast it as a bonus action.",
+                    "Metamagic: Subtle Spell. When I cast a spell, I can spend 1 sorcery point to cast it without any somatic or verbal components.",
+                    "Favored Soul: Can learn Cleric spells as Sorceror spells.",
+                    "Favored Soul: Supernatural Resilience. Plus 1 HP per level.",
+                    "Favored Soul: Favoured by the Gods. Add 2d4 to a failed saving throw or attack roll. Recharge on short rest.",
+                    "Favored Soul: Blessed Countenance. Physical transformation: otherworldy beauty. Double Charisma bonus to Charisma checks."
+                ]
+            },
+            {
+                "groupName": "Bard (College of Glamour) 8th level",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Cantrips known: 3.  Spells known: 11.",
+                    "",
+                    "Bardic Inspiration: Use a bonus action, and one creature I can see gains a Bardic Inspiration die (d8), which they can use one time in the next",
+                    "10 minutes. To use it, roll the dice and add the result to the roll for any one abilitiy check, attack roll or saving throw. The creature can",
+                    "choose to use the die after it rolls, but must make the choice before the DM decides if the roll succeeds or fails. I can give bardic inspiration",
+                    "a number of time equal to my Charisma bonus times, and they are renewed on a long or short rest.",
+                    "",
+                    "Jack of all Trades: I can add half my proficiency bonus, rounded down, to any ability check that doesn't already include my proficiency bonus.",
+                    "",
+                    "Song of Rest: I can sing during a short rest, and any friendly creatures who hear me gain an additional 1d6 HP.",
+                    "",
+                    "Expertise: Perception, Stealth",
+                    "",
+                    "Countercharm: as an action, I can start a performance that lasts until the end of my next turn. During that time, I and any friendly creatures within",
+                    "30' have advantage on saving throws against being frightened or charmed.",
+                    "",
+                    "Mantle of Inspiration: As a bonus action I can expend the use of one Bardic Inspiration to give myselg a wondrous, otherworldy appearance.",
+                    "When I do so, I choose a number of allies within 60', up to a number equal to my Charisma modifier. Each target gains 2d8 temporary hit points.",
+                    "When they gains those hit points, they can use their reaction to move up to their speed towards me, without provoking opportunity attacks.",
+                    "",
+                    "Enthralling Performance: If I perform for at least 10 minutes, I can attempt to inspire wonder in my audience. At the end of the performance, I",
+                    "choose a number of humanoids within 60' who watched and listened to all of it, up to a number equal to my Charisma modifier. Each target must",
+                    "succeed on a Wisdom saving throw against my spell save DC or be charmed. This effect ends after 1 hour, if they take any damage, if I attack it,",
+                    "or if it witnesses me attacking or damaging any of its allies.",
+                    "",
+                    "Mantle of Majesty: As a bonus action, I can take on the appearance of uneartly beauty for 1 minute. During this time, I can cast Command as a bonus",
+                    "action on each of my turns, without using a spell slot. Any creature charmed by me automatically fails its saving throw against this spell. Once used,",
+                    "this feature can't be used again until I finish a long rest.",
+                    "",
+                    "Alert: + 5 to initiative, I cannot be surprised while conscious, other creatures don't gain advantage on attack rolls on me because they are unseen."
+                ]
+            }
+        ],[
+            {
+                "groupName": "Cleric (Life Domain) 8th level",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Cantrips known: 4",
+                    "Domain spells: ",
+                    "  1st: bless, cure wounds",
+                    "  3rd: lesser restoration, spiritual weapon",
+                    "  5th: beacon of hope, revivify",
+                    "  7th: death ward, guardian of faith",
+                    "  9th: mass cure wounds, raise dead",
+                    "Prepare (Cleric level + Wisdom bonus) spells. Domain spells are always prepared and do not count agains this total.",
+                    "",
+                    "Channel Divinity (2/rest)",
+                    " - Turn Undead: as an action, turn undead. Each undead that can see me within 30' must make a Wisdom saving throw. On failure, it is turned for",
+                    "     1 minute or until it takes damage.",
+                    "     A turned creature must spend its turns trying to get as far from me as possible, and cannot take reactions.",
+                    " - Destroy Undead (CR 1): when an undead fails it's Turn Undead save and is equal to or less than the specified challenge rating, it is instantly",
+                    "     destroyed.",
+                    " - Preserve Life: as an action, present my holy symbol and evoke kealing energy that can restore hit points equal to five times my cleric level.",
+                    "     Divide the HP between creatures within 30'. It cannot heal anyone to more than half their HP maximum.",
+                    "Disciple of Life: my healing spells are more effecive. Whenever I use a spell of 1st level or higher to restore hit points to a creature, it regains",
+                    "  additional hit points equal to 2 + the spell's level.",
+                    "Blessed Healer: Healing spells I cast on others heal me as well. I regain HP equal to 2 + the spells level.",
+                    "Divine Strike: Infuse my weapon strikes with divine energy. Once per turn, when I hit with a weapon attack, I can cause the attack to deal an",
+                    "  additional 1d8 radiant damage.",
+                    "",
+                    "Dual Wielder: +1 to AC while wielding 2 weapons."
+                ]
+            },
+            {
+                "groupName": "Monk (Way of the Open Hand) 8",
+                "groupHitDice": 0,
+                "groupCount": 0,
+                "groupAbilities": [
+                    "Unarmoured Defence: While wearing no armour and not using a shield, AC = 10 + Dexterity + Wisdom modifier.",
+                    "Unarmoured movement: +15'",
+                    "Martial Arts:",
+                    " - I can used Dexterity instead of Strength for the attack and damage rolls of unarmed strikes and Monk weapons.",
+                    " - Unarmed damage d6",
+                    " - When I use the Attack action with an unarmed strike or a Monk weapon, I can make one unarmed strike as a bonus action.",
+                    "Ki Points: 8. Recharge after a short rest.",
+                    " (1) Flurry of blows: immediately after taking the attack action, spend 1 ki point to make 2 unarmed attacks as a bonus action.",
+                    " (1) Patient defence: spend 1 ki point to take Dodge as bonus action.",
+                    " (1) Step of the Wind: spend 1 ki point to use Disengage or Dash as a bonus action, and my jump distance is doubled for that turn.",
+                    " (1) Stunning Strike: when I hit another creature, expend 1 ki point. They must succeed on a Constitution save or be stunned until the next turn.",
+                    "Enhanced Flurry of Blows: whenever I hit with an attack granted by Flurry of Blows, I can impose one of the following effects on the target:",
+                    " - It must succeed on a Dexterity saving throw or be knocked prone",
+                    " - It must make a Strength saving throw, or be pushed up to 15' away from me",
+                    " - I can't take reactions until the end of my next turn",
+                    "Deflect Missiles: use reaction to deflect or catch the missile when I am hit by a missile attack. The damage from the attack is reduced by 10 + my",
+                    "  Dexterity bonus + my Monk level. If the damage is reduced to 0, I can catch the missile if it is small enough to hold in one hand.",
+                    "  If I catch a missile in this way, I can expend 1 ki point to throw it back as part of the same reaction. The attack is made with proficiency and",
+                    "  counts as a Monk weapon, with range 20/60.",
+                    "",
+                    "Slow fall: use my raction whn I fall to reduce any falling damage by an amount equal to 5 times my Monk level.",
+                    "",
+                    "Extra attack: I can attack twice, instead of once, whenever I take the Attack action.",
+                    "",
+                    "Ki empowered strikes (attacks are magical)",
+                    "",
+                    "Evasion: when I am subjected to a spell or effect that allows me to make a Dexterity saving throw to take only half damage, I instead take no damage",
+                    "  if I succeed and only half damage if I fail.",
+                    "",
+                    "Stillness of Mind: I can use my action to end one effect on myself that is causing me to be charmed or frightened.",
+                    "",
+                    "Wholeness of Body: As an action, I can regain hit points equal to three times my Monk level. I must finish a long rest before using this feature again.",
+                    "",
+                    "Mobile: Speed increases by 10'. When I dash, difficult terrain doesn't cost extra. When I make a melee attack on a creature it doesn't get",
+                    "opportunity attack on me for the rest of my turn.",
+                    "",
+                    "(Upcoming: 10 Purity of Body, 11 Tranquility, 13 Tongue of the Sun and Moon, 14 Diamond Soul, 15 Timeless Body, 17 Quivering Palm, 18 Empty Body,",
+                    "  20 Perfect Self)"
+                ]
+            }
+        ],[
+            {
+                "groupName": "Assassin",
+                "groupHitDice": 12,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Acrobatics, Deception, Perception, Stealth",
+                    "Saving Throws: Dex, Int",
+                    "Languages: Thieves' cant",
+                    "Assassinate: During my first turn, I have advantage on attack rolls against any creature that hasn't taken a turn. Any hit I score against a surprised",
+                    "creature is a critical hit.",
+                    "Evasion: If I am subjected to an effect that allows me to make a Dexterity saving throw to take only half damage, I instead take no damage if I succeed",
+                    "on the saving throw, or half damage if I fail.",
+                    "Sneak Attack (1/turn): I deal an extra 4d6 damage when I hit a target with a weapon attack and have advantage on the attack roll, or when the target is",
+                    "within 5 feet of an ally of mine that isn't incapacitated, and I don't have disadvantage on the roll."
+                ]
+            },
+            {
+                "groupName": "Azbara Jos (Red Wizard)",
+                "groupHitDice": 6,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Arcana, Deception, Insight, Stealth",
+                    "Saving Throws: Int, Wis",
+                    "Languages: Common, Draconic, Infernal, Primordial, Thayan",
+                    "Potent Cantrips: when I cast an Evocation cantrip and miss, or the target succeeds on its saving throw, the target still takes half the cantrip's",
+                    "damage but takes no other effect",
+                    "Sculpt spells: When I cast an evocation spell that affects other creatures that I can see, I can choose a number of them equal to 1 + the spell's",
+                    "level to succeed on their saving throws against the spell. Those creatures take no damage f they would normally take half damage from the spell.",
+                    "Cantrips: Mage Hand, Prestidigitation, Ray of Frost, Shocking Grasp",
+                    "1st level: Fog Cloud, Magic Missile, Shield, Thunderwave",
+                    "2nd level: Invisibility, Misty Step, Scorching Ray",
+                    "3rd level: Counterspell, Dispel Magic, Fireball" 
+                ]
+            },
+            {
+                "groupName": "Banshee",
+                "groupHitDice": 13,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Speed: 40' Fly (hover)",
+                    "Saving Throws: Wis, Cha",
+                    "Languages: Common, Elvish",
+                    "Resistant to: Acid, Fire, Lightning, Thunder, non-magic weapons",
+                    "Immune to: Cold, Necrotic, Poison, Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained",
+                    "Detect Life: I can magically sense the presence of living creatures up to 5 miles away, by general direction but not exact position.",
+                    "Incorporeal Movement: Can move through other creatures and objects as if they are difficult terrain. I take 1d10 force damage if I end my movement",
+                    "inside them.",
+                    "Corrupting Touch: 3d6+2 necrotic damage",
+                    "Wail (1/day): I release a mournful wail, provided it isn't sunlight. It has no effect on constructs or undead. All other creatures within 30' must make",
+                    "a Constitution saving throw. On a failure, they drop to 0 hit points. On success, they take 3d6 psychic damage."
+                ]
+            },
+            {
+                "groupName": "Cambion",
+                "groupHitDice": 0,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Resistant to Cold, Fire, Lightning, Poison; bludgeoning, piercing and slashing from non-magic weapons",
+                    "Senses: Darkvision to 60'",
+                    "Fiendish Blessing: Add my Charisma bonus to AC"
+                ]
+            },
+            {
+                "groupName": "Doppelganger",
+                "groupHitDice": 8,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Deception, Insight",
+                    "Languages: Common",
+                    "Shapechanger: I can use my action to polymorph into a Small or Medium humanoid I have seen, or back into my true form. My statistics, other than",
+                    "my size, are the same in each form. Any equipment I am wearing or carrying isn't transformed. I revert to my true form if I die.",
+                    "Ambusher: I have advantage on attack rolls agains any creature I have surprised.",
+                    "Surprise attack: If I surprise a creature and hit it with an attack during the first round of combat, the target takes an extra 3d6 damage from",
+                    "the attack.",
+                    "Read thoughts: I magically read the surface thoughts of one creature within 60 feet. The effect can penetrate barriers, but 3 feet of wood or",
+                    "dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, I can continue reading its thoughts,",
+                    "as long as my concentration isn't broken (as if concentrating on a spell). While reading the target's mind, I have advantage on Wisdom (Insight)",
+                    "and Charisma (Deception, Intimidation and Persuasion) checks against the target."
+                ]
+            },
+            {
+                "groupName": "Dragonclaw",
+                "groupHitDice": 3,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Advantage on attack rolls if there is an ally within 5'"
+                ]
+            }
+        ],[
+            {
+                "groupName": "Dralomorrer Borngray (High Elf)",
+                "groupHitDice": 7,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Arcana, Deception, Insight, Perception, Religion",
+                    "Saving Throws: Str, Con",
+                    "Languages: Common, Bullywug, Draconic, Elvish, Goblin, Sylvan",
+                    "Fey ancestry: I have advantage on saving throws against being charmed, and magic can't put me to sleep.",
+                    "War magic: when I use my action to cast a cantrip, I can also take a bonus action to make one weapon attack.",
+                    "Weapon bond: provided my weapon is on the same plane, I can take a bonus action to teleport it to my hand.",
+                    "Cantrips: Fire Bolt, Prestidiitation, Shocking Grasp",
+                    "1st level: Longstrider, Magic Missile, Shield, Thunderwave",
+                    "2nd level: Magic Weapon, Misty Step"
+                ]
+            },
+            {
+                "groupName": "Drider",
+                "groupHitDice": 13,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Spider Climb: I can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check",
+                    "Web Walker: I ignore movement restrictions cauled by webbing"
+                ]
+            },
+            {
+                "groupName": "Duergar",
+                "groupHitDice": 4,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Duergar Resilience: Advantage on saving throws against poison, spells and illusions, as well as to resist being charmed or paralyzed",
+                    "Enlarge (recharge after long or short rest): For 1 minute, I magically increase in size, along with anything I am wearing or carrying. While enlarged,",
+                    "I am Large, I double my dice damage on Strength-based attacks, and make Strength checks and Strength saving throws with advantage.",
+                    "Invisibility (rechage after long or short rest): As the spell."
+                ]
+            },
+            {
+                "groupName": "Enveloper",
+                "groupHitDice": 0,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Blindsight 120'",
+                    "Absorb powers",
+                    "+1d3HP per HD absorbed",
+                    "Immune to flanking and critical hits"
+                ]
+            },
+            {
+                "groupName": "Flumph",
+                "groupHitDice": 2,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Arcana, History, Religion",
+                    "Languages: Undercommon, Telepathy 60'",
+                    "Advanced Telepathy: I can perceive the content of any telepathic communication used within 60', and cannot be surprised by creatures with any form",
+                    "of telepathy",
+                    "Telepathic Shroud: Immune to any effect that would sense my emotions or read my thoughts, as well as all divination spells"
+                ]
+            },
+            {
+                "groupName": "Frulum Mondath (Human)",
+                "groupHitDice": 8,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Deception, History, Religion",
+                    "Saving Throws: Wis, Cha",
+                    "Languages: Common, Draconic, Infernal",
+                    "Cantrips: Light, Sacred Flame, Thaumaturgy",
+                    "1st level: Command, Cure Wounds, Healing Word, Sanctuary",
+                    "2nd level: Calm Emotions, Hold Person, Spiritual Weapon",
+                    "3rd level: Mass Healing Word, Spirit Guardians"
+                ]
+            },
+            {
+                "groupName": "Glazhael Cloudchaser (Adult White Dragon)",
+                "groupHitDice": 16,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Fly 80', Burrow 30', Swim 40'",
+                    "Skills: Perception, Stealth",
+                    "Languages: Common, Draconic",
+                    "Ice Walk: I can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow",
+                    "doesn't cost extra movement.",
+                    "Legendary Resistance (3/day): If I fail a save, I can choose to succeed instead",
+                    "Frightful Presence: Each creature of my choice within 120 feet must succeed on a DC14 Wisdom saving throw or become frigtened for 1 minute. A",
+                    "creature can repeat the saving throw at the end of each of it's turns, ending the effect onitself with a success. If a creature's saving throw",
+                    "is successful or the effect ends for it, the creature is immune tomy Frightful Presence for the next 24 hours.",
+                    "Cold breath (Recharge 5-6): I exhale an icy blast in a 60 foot cone. Each creature in that area mus make a DC19 Constitution saving throw, taking",
+                    "12d8 cold damage on a failed save, or half as much damage on a successful one.",
+                    "Legendary action (3/rnd at end of anothers turn): Detect (Perception roll)"
+                ]
+            }
+        ],[
+            {
+                "groupName": "Helmed Horror",
+                "groupHitDice": 8,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Perception",
+                    "Magic resistance: I have advantage on saving throws against spells and other magical effects",
+                    "Spell Immunity: I am immune to Anti-Magic Field, Wall of Force, Disintegrate?."
+                ]
+            },
+            {
+                "groupName": "Intellect Devourer",
+                "groupHitDice": 6,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Immune to: Blinded",
+                    "Languages: Deep Speech, Telepathy",
+                    "Detect Sentience: I can sense the presence and location of any creature within 300' that has an Intelligence of 3 or higher, regardless of interposing",
+                    "barriers, unless that creature is protected by a Mind Blank spell",
+                    "Devour Intellect: Target 1 creature within 10' which has a brain. The target must make an Int saving throw or take 2d10 psychic damage. Also on a",
+                    "failure, roll 3d6. Ifit exceeds the targets Intelligence score, that score drops to 0 and they are stunned until they regain at least 1 point of Intelligence.",
+                    "Body Thief: I initiate an Intelligence contest with an incapacitated humanoid within 5 feet. If I win the contest, I magically consume the target's brain,",
+                    "teleport into the target's skull, and take control of the target's body."
+                ]
+            },
+            {
+                "groupName": "Invisible Stalker",
+                "groupHitDice": 16,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Languages: Auran",
+                    "Invisibility: Can be naturally invisible. I do not turn visible on attacking.",
+                    "Faultless Tracker: When tracking a known target I know the direction and distance to the quarry as long as we are on the same plane of existence."
+                ]
+            },
+            {
+                "groupName": "Jamna",
+                "groupHitDice": 4,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Acrobatics, Deception, Insight, Perception, Persuasion, Stealth",
+                    "Saving Throws: Dex, Int",
+                    "Gnome Cunning: Advantage on Int/Wis/Cha saves vs magic",
+                    "Cunning Action: Bonus action to Dodge/Disengage/Hide",
+                    "Cantrips: Mage Hand, Minor Illusion, Prestidigitation, Ray of Frost",
+                    "1st level: Charm Person, Color Spray, Disguise Self, Longstrider"
+                ]
+            },
+            {
+                "groupName": "Langdedrosa Cyanwrath (Blue Half-Dragon)",
+                "groupHitDice": 6,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Athletics, Intimidation, Perception",
+                    "Saving Throws: Str, Con",
+                    "Languages: Common, Draconic",
+                    "Damage Resistance: Lightning",
+                    "Action Surge (recharge after short or long rest): On my turn, I can take one additional action.",
+                    "Improved Critical: My weapn attacks score a critical hit with a roll of 19 or 20.",
+                    "Lightning Breath (recharge 5-6): breathe lightning in a line that is 30 feet long, 5 feet wide. Each creature in that line must make a DC13 Dexterity",
+                    "saving throw, taking 4d10 lightning damage on a failed save, or half as much damage on a successful one."
+                ]
+            },
+            {
+                "groupName": "Mind Flayer",
+                "groupHitDice": 13,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Arcana, Deception, Insight, Perception, Persuasion, Stealth",
+                    "Darkvision 120'",
+                    "Deep Speech, Undercommon, Telepathy 120'",
+                    "Magic Resistance: I have advantage on saving throws against spells and other magic effects",
+                    "Innate spellcasting: At will [Detect Thoughts, Levitate], 1/day [Dominate Monster, Plane Shift]",
+                    "Mind Blast (Recharge 5-6): I emit psychic energy in a 60' cone. Each creature must succeed on an Intelligence saving throw or take 4d8+4 psychic",
+                    "damage and be stunned for 1 minute. A creature can repeat it's saving throw at the end of each of it's turns, ending the effect on itself on a success."
+                ]
+            },
+            {
+                "groupName": "Noble",
+                "groupHitDice": 2, 
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Deception, Insight, Persuasion",
+                    "Parry (Reaction): I add 2 to my AC against one melee attack that would hit me. To do so, I must see the attacker and be wieding a melee weapon."
+                ]
+            },
+            {
+                "groupName": "Pharblex Spattergoo (Bullywug)",
+                "groupHitDice": 7,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Perception, Religion, Stealth",
+                    "Languages: Common, Bullywug",
+                    "Swim 40'",
+                    "Amphibious: I can brathe air or water",
+                    "Poison strike (3/day): Once per turn, when I hit with a melee attack, I can expend a use of this trait to deal an extra 2d8 poison damage.",
+                    "Standing Leap: As part of my movement, and without a running start, I can long jump 20' and high jump 10'.",
+                    "Swamp Camouflage: I have advantage on Dexterity (Stealth) checks made to hide in swampy terrain.",
+                    "Cantrips: Druidcraft, Guidance, Poison Cloud",
+                    "1st level: Cure Wounds, Entangle, Healing Word, Thunderwave",
+                    "2nd level: Barkskin, Beast Sense, Spike Growth",
+                    "3rd level: Plant Growth, Water Walk"
+                ]
+            }
+        ],[
+            {
+                "groupName": "Rath Modar (Red Wizard)",
+                "groupHitDice": 11,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Arcana, Deception, Insight, Stealth",
+                    "Languages: Common, Draconic, Infernal, Primordial, Thayan",
+                    "Illusory Self (recharges on a short or long rest): When a creature I can see makes an attack roll against me, I can interpose an illusory duplicate",
+                    "between the attacker and myself. The attack automatically misses, then the illusion dissapates.",
+                    "Cantrips: Fire Bolt, Minor Illusion, Prestidigitation, Shocking Grasp",
+                    "1st level: Chromatic Orb, Color Spray, Mage Armour, Magic Missile",
+                    "2nd level: Detect Thoughts, Mirror Image, Phantasmal Force",
+                    "3rd level: Counterspell, Fireball, Major Image",
+                    "4th level: Confusion, Greater Invisibility",
+                    "5th level: Mislead, Seeming",
+                    "6th level: Globe of Invulnerability"
+                ]
+            },
+            {
+                "groupName": "Remorhaz",
+                "groupHitDice": 17,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Immune to: Cold, Fire",
+                    "Senses: Darkvision 60', Tremorsense 60'",
+                    "Heated Body: Anyone striking me takes 3d6 fire damage"
+                ]
+            },
+            {
+                "groupName": "Sandesyl Morgia (Vampire Moon Elf)",
+                "groupHitDice": 17,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Perception, Stealth",
+                    "Damage Resistances: Necrotic; Bludgeoning, piercing and slashing from non-magical weapons.",
+                    "Shapechanger: Polymorph into a Tiny bat or a Medium cloud of mist, or back to my true form.",
+                    "Legendary Resistance (3/day): If I fail a saving throw, I can choose to succeed instead.",
+                    "Misty escape: When I drop to 0 HP, I transform into a cloud of mist instead of falling unconscious.", 
+                    "Regeneration: I regain 20 HP at the start of my turn. If I take radiant damage, this trait doesn't function until the start of my next turn.",
+                    "Spider climb: I can climb difficult surfaces, including upside down on ceilings, without needing an ability check.",
+                    "Charm: I target one humanoid I can see within 30'. If the target can see me, it must succeed on a DC17 Wisdom saving throw or be charmed.",
+                    "Children of the Night (1/day): I can summon 2d4 swarms of bats or rats, provided the sun isn't up. Outdoors I can call 3d6 wolves instead. The",
+                    "creatures arrive in 1d4 rounds. They remain for 1 hour.",
+                    "Legendary Actions (3 per turn, at the end of another's turn): Move up to my speed without provoking opportunity attacks; Unarmed strike."
+                ]
+            },
+            {
+                "groupName": "Succubus",
+                "groupHitDice": 12,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Deception, Insight, Perception, Persuasion, Stealth",
+                    "Damage Resistances: Cold, Fire, Lightning, Poison; Bludgeoning, piercing and slashing from non-magical weapons.",
+                    "Languages: Abyssal, Common, Infernal, Telepathy 60'",
+                    "Telepathic Bond: I ignore range restrictions on telepathy when communicating with a creature I have charmed. It doesn't even need to be on the same",
+                    "  plane of existence.",
+                    "Shapechanger: Polymorph into a small or medium humanoid, or back to it's Succubus form.",
+                    "Charm: One humanoid I can see within 30' must succeed on a Wisdom saving throw or be charmed for 1 day. The target obeys my verbal or telepathic",
+                    "  commands. If the target receives any harm or suicidal command, it can repeat the saving throw. If they save, they are immune to my charm for",
+                    "  24 hours. I can only have one target charmed at a time.",
+                    "Draining Kiss: I kiss a charmed or willing creature. They must make a Constitution saving throw, taking 5d10+5 psychic damage on failure, or half as",
+                    "  much on success. The targets HP maximum is reduced by an amount equal to the damage taken, which lasts until a long rest.",
+                    "Etherealness: I can magically enter the Ethereal Plane from the Material Plane, or vice versa."
+                ]
+            },
+            {
+                "groupName": "Talis the White",
+                "groupHitDice": 9,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Deception, Insight, Perception, Persuasion",
+                    "Languages: Draconic, Elvish, Infernal",
+                    "Fey Ancestry: I have advantage on saving throws against being charmed, and magic can't put me to sleep.",
+                    "Winter Strike (3/Day): Once per turn, when I hit with a melee attack, I can expend a use of this trait to deal an extra 2d8 cold damage.",
+                    "Cantrips: Guidance, Resistance, Thaumaturgy",
+                    "1st level: Command, Cure Wounds, Healing Word, Inflict Wounds",
+                    "2nd level: Blindness/Deafness, Lesser Restoration, Spiritual Weapon",
+                    "3rd level: Dispel Magic, Mass Healing Word, Sending",
+                    "4th level: Death Ward, Freedom of Movement",
+                    "5th level: Insect Plague"
+                ]
+            },
+            {
+                "groupName": "Troll",
+                "groupHitDice": 8,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Skills: Perception",
+                    "Languages: Giant",
+                    "Keen Smell: I have advantage on Wisdom (Perception) checks that rely on smell.",
+                    "Regeneration: I regain 10HP at the start of my turn. If I take acid or fire damage, this trait doesn't function until the start of my next turn. I die only if",
+                    "I start my turn with 0 hit points and don't regenerate."
+                ]
+            }
+        ],[
+            {
+                "groupName": "Will-o-Wisp",
+                "groupHitDice": 9,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Damage Immunities: Lightning, Poison",
+                    "Damage Resistances: Acid, Cold, Fire, Necrotic, Thunder",
+                    "Condition Immunities: Exhaustion, Grappled, Paralyzed, Poisoned, Prone, Restrained, Unconscious",
+                    "Darkvision 120'",
+                    "Fly 50' (hover)",
+                    "Consume Life: As a bonus action, I can target one creature I can see within 5' that has 0 hits points and is still alive. They must succeed on a",
+                    "  Constitution saving throw against this magic or die. If the target dies, I regain 3d6 hit points.",
+                    "Incorporeal Movement: I can move through other creatures and objects as if they were difficult terrain. I take 1d10 force damage if I end my turn",
+                    "  inside an object.",
+                    "Variable Illumination: I can shed bright light in a 5-20' radius, and dim light for double that. I can alter the radius as a bonus action.",
+                    "Shock: 5' reach, one creature. 2d8 lightning damage",
+                    "Invisibility: I can magically become invisible until I attack, or my concentration ends."
+                ]
+            },
+            {
+                "groupName": "Xorn",
+                "groupHitDice": 7,
+                "groupCount": 1,
+                "groupAbilities": [
+                    "Senses: Darkvision 60', Tremorsense 60'",
+                    "Languages: Terran",
+                    "Earth Glide: Can burrow through nonmagical unworked earth and stone without leaving a trace.",
+                    "Treasure sense: Pinpoint by scent the location of precious metals and stones within 60'"
+                ]
+            }
+        ]
+    ],
+
+    "personalityTraits": [ 
+        "Despite my noble birth, I do not place",
+        "myself above other folk. We all have the",
+        "same blood.",
+        "If you do me an injury, I will crush you, ruin",
+        "your name, and salt your fields."
+    ],
+    "ideals": [
+        "Independence: I must prove that I can",
+        "handle myself without the coddling of",
+        "my family."
+    ],
+    "bonds": [ 
+        "My houses allegience to Lastai must be",
+        "maintained at all costs."
+    ],
+    "flaws": [ 
+        "I hide a truly scandalous secret that could",
+        "ruin my family forever."
+    ],
+
+    "backstory": [
+        "My ancestor was 2nd in line to my house, and",
+        "became and adventurer. In his travels he acquired",
+        "a Deck of Many Things, and foolishly drew from it.",
+        "One card he drew was Flames, and the emnity of",
+        "the Pit Fiend was terrible and drawn out.",
+        "The Fiend created a Succubus, crafted for the sole",
+        "purpose of corrupting my ancestor, by being perfect",
+        "for him; such that even if he could resist her magic",
+        "he would fall in love with her anyway.",
+        "It worked, and would have ended my family but for",
+        "one thing - he allowed his love to draw from the",
+        "Deck. She drew Balance.",
+        "Now Neutral Good, and hopelessly in love with my",
+        "ancestor, they banded together against the Fiend.",
+        "My ancestors older sibling, and the Fiend, perished",
+        "in the ensuing War.",
+        "Every descendant of that union has been a",
+        "Chaotic Good Cambion. Most are Warlocks, bound",
+        "to Lastai, a nearly forgotten Goddess of Love;",
+        "she was entranced by my ancestor's star-crossed story,",
+        "and has aided them to hide their true nature from",
+        "all but their loved ones. Our family allegience",
+        "to Lastai supercedes everything, even our loyalty",
+        "to the crown.",
+        "I am the first in generations to forge my own path,",
+        "and my greatest responsibility and fear is that",
+        "no-one ever learns my family's secret.",
+        "I am not a Warlock bound to Lastai, and this has",
+        "caused some friction - but I am a Cleric in her",
+        "service, and completely loyal to her."
+    ]
+}

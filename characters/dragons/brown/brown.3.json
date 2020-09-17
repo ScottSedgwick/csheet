@@ -1,0 +1,283 @@
+{
+  "characterName": "Father Brown",
+  "className": "Cleric",
+  "subclass": "Life Domain",
+  "level": 3,
+  "background": "Hermit - Cloistered",
+  "playerName": "Zoe Butof",
+  "race": "Human",
+  "alignment": "NG",
+  "experience": 0,
+
+  "age": 21,
+  "height": "5' 10\"",
+  "weight": "75kg",
+  "eyeColour": "Brown",
+  "skinColour": "Fair",
+  "hairColour": "Brown",
+  
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+  
+  "acBase": 16,
+  "acBonus": 2,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 28,
+  "hitDice": 8,
+
+  "strength": 8,
+  "dexterity": 12,
+  "constitution": 14,
+  "intelligence": 14,
+  "wisdom": 17,
+  "charisma": 8,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 1,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 0,
+  "skillHistory": 1,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 1,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 1,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Languages: Common, Celestial & Sylvan"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Mace",
+          "damage": "1d6-1",
+          "bonus": "+1"
+      },
+      {
+          "weapon": "S.Flame",
+          "damage": "1d8",
+          "bonus": "Dex Sv"
+      }
+  ],
+  
+  "personalityTraits": [
+    "I was partaking of communal living within",
+    "a religious order.",
+    "My teacher had something wise to say on",
+    "every topic, I am eager to share that",
+    "wisdom."
+  ],
+  "ideals": [
+    "Greater Good. My gifts are meant to be",
+    "shared with all, not used for my own",
+    "benefit. "
+  ],
+  "bonds": [
+    "Nothing is more important than the other",
+    "members of my hermitage, order, or",
+    "association."
+  ],
+  "flaws": [
+    "Now that I've returned to the world, I",
+    "enjoy its delights a little too much."
+  ],
+  "features": [
+    "--==Racial==--",
+    "***Race - Human***",
+    "*Ability Score - Wisdom +2",
+    "*Size - Medium",
+    "*Skill - Perception(Wis)",
+    "*Feat - Healer. Healer's Kits give 1 Hit Point to",
+    "creatures you stabilize and as an Action you may",
+    "use a Healer's Kit to restore 1d6+4 Hit Points to",
+    "a creature plus additional Hit Points equal to",
+    "their maximum Hit Dice number; once a creature",
+    "receives restoration by this method they may not",
+    "do so again until after a Short Rest.",
+    "*Languages - Common and Celestial",
+    "",
+    "--==Class==--",
+    "***Class - Cleric***",
+    "*Hit Dice - 1d8",
+    "*Armor - Light, Medium and Shields",
+    "*Weapons - Simple",
+    "*Saving Throws - Wisdom and Charisma",
+    "*Skills - Insight(Wis) and History(Int)",
+    "*Starting Wealth - 200GP(5d4x10)",
+    "*Prepared Spells(4)",
+    "*Ritual Casting - you may cast any Prepared Spell",
+    "with the 'Ritual' tag as a Ritual without expending",
+    "a Spell Slot, an additional 10 minutes are required",
+    "to do so.",
+    "Channel Divinity: 2/day",
+    "  Turn Undead",
+    "  Heal 15hp 30'R",
+    "",
+    "--==Archetype==--",
+    "***Archetype - Life Domain***",
+    "*Deity - Ilmater",
+    "*Armor - Heavy",
+    "*Disciple of Life - whenever you cast a Healing spell",
+    "of 1st level or higher, targets gain additional Hit",
+    "Points equal to 2 plus the spells level."
+  ],
+  
+  "backstory": [
+    "***Hermit***",
+    "*Skills - Medicine(Wis) and Religion(Int)",
+    "*Tools - Herbalism Kit",
+    "*Language - Sylvan"
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 71,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "Chainmail armour",
+    "  (disadv vs stealth)",
+    "Shield (+2AC, Holy Symbol)",
+    "Mace",
+    "Healers Kit"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+          ],
+          "bagMainPouch": [
+            "A scroll case stuffed full of notes from your studies or prayers",
+            "A winter blanket",
+            "A set of common clothes",
+            "A herbalism kit",
+            "Chainmail",
+            "Shield",
+            "Mace",
+            "Holy Symbol(painted on shield)",
+            "Priests Pack",
+            "10 candles",
+            "Tinderbox",
+            "Alms Box",
+            "2 blocks incense",
+            "Censer",
+            "Vestments",
+            "2 days rations",
+            "Waterskin",
+            "2xHealer's Kits"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "1",
+          "bagRope": "50 feet",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Cleric",
+          "spellcastingAbility": "Wisdom",
+          "spellSaveDC": 13,
+          "spellAttackBonus": 5,
+          "spellsCantrips": [
+            "Light: 20+20'R, 1 hour",
+            "Sacred Flame: 1d8, Dex save",
+            "Spare the Dying: Stabilize"
+          ],
+          "slotsLevel1": 4,
+          "spellsLevel1": [
+            "",
+            "Bane: -1d4 to next roll, 3 creatures, Cha save",
+            "Bless: +1d4 to next roll, 3 creatures",
+            "Cure Wounds: heal 1d8+Wis bonus",
+            "Detect Evil and Good: 30'R, 10 min",
+            "Detect Magic: 30'R, 10 min",
+            "Detect Poison and Disease: 30'R, 10 min",
+            "Guiding Bolt: 4d6, adv on next attack",
+            "Healing Word: Bonus, 1d4+Wis bonus",
+            "Inflict Wounds: 3d10 necrotic",
+            "Sanctuary: Wis save to attack"
+          ],
+          "slotsLevel2": 2,
+          "spellsLevel2": [
+            "Lesser Restoration: cure one disease",
+            "  or condition",
+            "Spiritual Weapon: Floating sword, 1 min",
+            "Aid: +5HP to 3 people, 8 hours",
+            "Gentle Repose: 10 days",
+            "Hold Person: Wis save, 1 min",
+            "Prayer of Healing: 30'R, 6 creatures,",
+            "  heals 2d8+Wis HP",
+            "Silence: 20'R",
+            "Warding Bond: +1 to AC * saves, resistance",
+            "  to all dmg, you take same dmg, 1 hour."
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

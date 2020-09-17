@@ -1,0 +1,159 @@
+{
+  "characterName": "Tuilio",
+  "className": "Bard",
+  "subclass": "",
+  "level": 2,
+  "background": "",
+  "playerName": "Ethan",
+  "race": "Half-Elf",
+  "alignment": "None",
+  "experience": 600,
+
+  "age": 0,
+  "height": "",
+  "weight": "",
+  "eyeColour": "",
+  "skinColour": "",
+  "hairColour": "",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 11,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 15,
+  "hitDice": 8,
+
+  "strength": 9,
+  "dexterity": 14,
+  "constitution": 12,
+  "intelligence": 14,
+  "wisdom": 10,
+  "charisma": 17,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 1,
+  "skillAnimalHandling": 1,
+  "skillArcana": 1,
+  "skillAthletics": 0,
+  "skillDeception": 0,
+  "skillHistory": 0,
+  "skillInsight": 0,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 1,
+  "skillNature": 1,
+  "skillPerception": 0,
+  "skillPerformance": 1,
+  "skillPersuasion": 0,
+  "skillReligion": 1,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+      "Light Armour",
+      "Crossbow",
+      "Hand",
+      "Longsword",
+      "Rapier",
+      "Shortsword",
+      "Simple Weapons",
+      "",
+      "Common, Elvish, Sylvan",
+      "",
+      "Bagpipes Flute, Horn, Lute",
+      "Disguise Kit"
+  ],
+
+  "attacks": [],
+  
+  "personalityTraits": [],
+  "ideals": [],
+  "bonds": [],
+  "flaws": [],
+  "features": [
+      "Half-Elf:",
+      "Darkvision, 60 feet",
+      "Fey ancestry: adv vs charm, cannot be sleeped",
+      "",
+      "Bard:",
+      "Bardic Inspiration",
+      "Jack of all Trades",
+      "Song of Rest"
+  ],
+  
+  "backstory": [],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [],
+  
+  "backpacks": [], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Bard",
+          "spellcastingAbility": "Charisma",
+          "spellSaveDC": 13,
+          "spellAttackBonus": 5,
+          "spellsCantrips": [
+            "Minor Illusion",
+            "Vicious Mockery"
+          ],
+          "slotsLevel1":3,
+          "spellsLevel1": [
+              "Dissonant Whispers",
+              "Earth Tremor",
+              "Healing Word",
+              "Sleep",
+              "Tasha's Hideous Laughter"
+          ],
+          "slotsLevel2": 0,
+          "spellsLevel2": [
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "characterName": "Newton d'Force",
+  "className": "Warlock",
+  "subclass": "Hexblade",
+  "level": 2,
+  "background": "Faction Agent *",
+  "playerName": "Zoe",
+  "race": "Human (M)",
+  "alignment": "N",
+  "experience": 0,
+
+  "age": 19,
+  "height": "Tall",
+  "weight": "Slender",
+  "eyeColour": "Green",
+  "skinColour": "Dark Tan",
+  "hairColour": "Blonde",
+  
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+  
+  "acBase": 13,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 18,
+  "hitDice": 8,
+
+  "strength": 8,
+  "dexterity": 14,
+  "constitution": 14,
+  "intelligence": 10,
+  "wisdom": 12,
+  "charisma": 16,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 1,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 1,
+  "skillHistory": 0,
+  "skillInsight": 0,
+  "skillIntimidation": 1,
+  "skillInvestigation": 1,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 1,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Light and Medium Armour, Shields",
+    "Simple and Martial weapons",
+    "Thieves Tools",
+    "Deception, Stealth, Intimidation, Investigation,",
+    "Perception"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Pistol Xbow (Cha)",
+          "damage": "1d6+3",
+          "bonus": "+5"
+      },
+      {
+          "weapon": "Pistol Xbow (Dex)",
+          "damage": "1d6+2",
+          "bonus": "+4"
+      }
+  ],
+  
+  "personalityTraits": [
+    "The first thing I do in a new place is note",
+    "the locations of everything valuable - or",
+    "where such things could be hidden.",
+    "I am always calm, no matter what the",
+    "situation. I never raise my voice or let my",
+    "emotions control me."
+  ],
+  "ideals": [
+    "I am loyal to my friends, not to any ideals,",
+    "and everyone else can take a trip down the",
+    "Styx for all I care."
+  ],
+  "bonds": [
+    "I am guilty of a terrible crime. I hope I can",
+    "redeem myself for it."
+  ],
+  "flaws": [
+    "The world really does revolve around me."
+  ],
+  "features": [
+    "Human variant: +1 to 2 stats (Cha & Con)",
+    "One feat  - Crossbow Expert",
+    "One skill - Perception",
+    "Languages - Common + Thieves Cant",
+    "",
+    "Feat: Crossbow Expert. Ignore loading penalties.",
+    "  No disadvantage if foe within 5 feet",
+    "  Use bonus action for pistol crossbow attack",
+    "",
+    "Warlock: Pact Magic",
+    "2 skills: Intimidation, Investigation",
+    "",
+    "Patron: Raven Queen of Shadowfell",
+    "",
+    "Hexblade's Curse: 1 per short or long rest, as a",
+    "bonus action, choose one creature you can see",
+    "within 30'. They are cursed for 1 minute. You gain",
+    "proficiency bonus to damage rolls against them, a",
+    "roll of 19 or 20 is a critical, and if they die,",
+    "you regain HP equal to Warlock Level + Cha bonus.",
+    "",
+    "Hex Warrior: 1 per long rest, touch a weapon that is",
+    "not 2 handed and you can use your Cha bonus for",
+    "attack and damage rolls. This applies to all Pact",
+    "Weapons (if you have them).",
+    "",
+    "Eldritch Invocations:",
+    "Grasp of Hadar (Eldritch Blast pull people 10')",
+    "Agonising Blast (Cha bonus to Eldritch Blast)"
+  ],
+  
+  "backstory": [
+    "Background:",
+    "Spy for Force Grey on the Zhentarim",
+    "Actual alignment: Lawful Neutral",
+    "Proficiency with Thieves Tools, Deception, Stealth",
+    "A crowbar, dark clothes with hood, 15gp"
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 75,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "Dark clothes (with hood)",
+    "2 pistol crossbows",
+    "40 bolts",
+    "An arcane focus",
+    "Burglars pack",
+    "Chain shirt",
+    "2 daggers",
+    "Rapier"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+            "1000 ball bearings"
+          ],
+          "bagPocket2": [
+            "10 feet string",
+            "A bell",
+            "5 candles"
+          ],
+          "bagPocket3": [
+            "A tinderbox"
+          ],
+          "bagPocket4": [
+            "2 flasks of oil"
+          ],
+          "bagFlapPouch": [
+            "A hooded lantern"
+          ],
+          "bagMiddlePouch": [
+            "A crowbar",
+            "A hammer",
+            "10 pitons"
+          ],
+          "bagMainPouch": [
+            "5 days rations",
+            "Waterskin"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "1",
+          "bagRope": "50 feet",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Warlock",
+          "spellcastingAbility": "Charisma",
+          "spellSaveDC": 13,
+          "spellAttackBonus": 5,
+          "spellsCantrips": [
+            "Eldritch Blast (120', ranged spell attack,",
+            "1d10 damage)",
+            "True Strike (30', advantage on next attack",
+            "versus target, 1 round)"
+          ],
+          "slotsLevel1": 2,
+          "spellsLevel1": [
+            "",
+            "Hellish Rebuke (Reaction to damage,",
+            "2d10 Fire)",
+            "Expeditious Retreat (Bonus action,",
+            "Dash as bonus action for 10 mins)"
+          ],
+          "slotsLevel2": 0,
+          "spellsLevel2": [
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

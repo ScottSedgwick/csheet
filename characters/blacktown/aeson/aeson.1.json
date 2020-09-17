@@ -1,0 +1,272 @@
+{
+    "characterName": "Aeson gios Cretheus",
+    "className": "Sorceror",
+    "subclass": "D. Soul",
+    "level": 1,
+    "background": "Noble",
+    "playerName": "Scott S",
+    "race": "Aasimar (Protector)",
+    "alignment": "NG",
+    "experience": 0,
+    "pointBuy": "http://chicken-dinner.com/5e/5e-point-buy.html?fbclid=IwAR1Wi823vkr5wvVv_iipdPNF-gYQEkhG3i-43Zfhb7fAlvHZVL8-4PuUDHg#aasimar&protectoraasimar&9&14&12&10&12&15&0&0&27&15&8&19&15&12&9&7&5&4&3&2&1&0&1&2&4&6&9&4&4&4&4&4&4",
+  
+    "age": 17,
+    "height": "6'0\" (183 cm) (+16)",
+    "weight": "190 lb (86 kg)",
+    "eyeColour": "Golden Brown",
+    "skinColour": "Light Tan",
+    "hairColour": "Blonde",
+    
+    "inspiration": 0,
+    "proficiencyBonus": 0,
+    
+    "acBase": 10,
+    "acBonus": 0,
+    "initiative": 0,
+    "speed": 30,
+    "hitPoints": 7,
+    "hitDice": 6,
+  
+    "strength": 9,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 12,
+    "charisma": 15,
+  
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 0,
+    "charismaBonus": 1,
+  
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 0,
+    "skillDeception": 1,
+    "skillHistory": 1,
+    "skillInsight": 0,
+    "skillIntimidation": 0,
+    "skillInvestigation": 0,
+    "skillMedicine": 0,
+    "skillNature": 0,
+    "skillPerception": 0,
+    "skillPerformance": 0,
+    "skillPersuasion": 1,
+    "skillReligion": 0,
+    "skillSleightOfHand": 1,
+    "skillStealth": 0,
+    "skillSurvival": 0,
+  
+    "proficiencies": [
+        "Daggers",
+        "Darts",
+        "Slings",
+        "Quarterstaffs",
+        "Light Crossbows",
+        "",
+        "Common, Undercommon, Celestial"
+    ],
+  
+    "attacks": [
+        {
+            "weapon": "Dagger",
+            "damage": "1d4 P",
+            "bonus": "+4"
+        },
+        {
+            "weapon": "Light Crossbow",
+            "damage": "1d8 P",
+            "bonus": "+4"
+        }
+    ],
+    
+    "personalityTraits": [
+        "The common folk love me for my kindness",
+        "and generosity.",
+        "My favour, once lost, is lost forever."
+    ],
+    "ideals": [
+        "It is my duty to protect and care for the",
+        "people beneath me."
+    ],
+    "bonds": [
+        "I am in love Alcimede, the heir of a rival",
+        "trading family that my family despises."
+    ],
+    "flaws": [
+        "I hide a truly scandalous secret that could",
+        "ruin my family forever (I am a sorceror,",
+        "not a cleric, and Tashalar hates arcane",
+        "magic)."
+    ],
+    "features": [
+        "Aasimar (Protector):",
+        "Darkvision, 60 feet",
+        "Resistance to necrotic and radiant damage",
+        "Healing Hands (Lvl) HP, 1/long rest",
+        "Light Bearer (know the Light cantrip)",
+        "Languages: Common, Celestial",
+        "(3rd level - Radiant Soul)",
+        "",
+        "Sorceror (Divine Soul):",
+        "Divine Magic (Good) - Cure Wounds",
+        "Favoured by Gods: +2d4 to save or attack, 1/short",
+        "Persuasion, Deception",
+        "(2nd) Font of Magic, 2pts (1 more 1st level slot)",
+        "",
+        "Noble:",
+        "History, Sleight of Hand",
+        "Lanceboard Set (Chess)",
+        "Language: Undercommon",
+        "Position of Privilege"
+    ],
+    
+    "backstory": [
+        "Background: Noble",
+        "I was born to a humble family of merchants in",
+        "Tashalar, but in that country the heads of the",
+        "ruling families traditionally sponsor any",
+        "Aasimar born in their consortia, as they are",
+        "seen as an omen of the favour of the gods.",
+        "As such, I was afforded the best education",
+        "and upbringing and warded by the ruling",
+        "family - I was de facto an adopted member",
+        "of that family.",
+        "I grew up in luxury, but never forgot my roots.",
+        "When my Aasimar heritage blossomed into Sorcery,",
+        "my Guide admitted that he was a distant ancestor",
+        "of mine.  Since that time I have refused to use",
+        "her actual name (Agathangelos) and only ever",
+        "refer to her as 'Grandma'. It has greatly",
+        "affected our relationship - I am ever mocking,",
+        "but in a good natured way. She takes it well.",
+        "At this time, she advised me to take a temporary",
+        "leave from my homeland and travel the the world",
+        "to learn my art. This was wise advice,",
+        "considering Tashalar's attitudes to arcane",
+        "magic. So far, I have hidden my magic's nature",
+        "from my family and people. Everyone at home",
+        "thinks I am a Cleric.",
+        "I will return to Tashalar one day, ready to",
+        "lead my family into the future - and reform",
+        "Tashalar's predjudice against Sorcery."
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 100,
+        "platinum": 0,
+        "gems": []
+    },
+  
+    "allies": [],
+  
+    "equipment": [
+        "Sorceror:",
+        "Light Crossbow",
+        "20 bolts",
+        "Arcane Focus",
+        "2 Daggers",
+        "Dungeoneers pack",
+        "75gp",
+        "",
+        "Noble:",
+        "Set of fine clothes",
+        "Signet Ring",
+        "Scroll of Pedigree",
+        "25gp"
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+                "Crowbar"
+            ],
+            "bagPocket2": [
+                "Hammer",
+                "10 Pitons"
+            ],
+            "bagPocket3": [
+                "Tinderbox"
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+                "Waterskin"
+            ],
+            "bagMiddlePouch": [
+                "10 days rations"
+            ],
+            "bagMainPouch": [
+            ],
+            "bagTreasure": [],
+            "bagBedroll": "",
+            "bagRope": "50 feet hempen",
+            "bagAmmo": "",
+            "bagTorches": "10"
+        }
+    ], 
+    "bagsOfHolding": [],
+    "portableHoles": [],
+  
+    "treasure": [],
+  
+    "spellcasting": [
+        {
+            "spellcastingClass": "Sorceror (Divine Soul)",
+            "spellcastingAbility": "Charisma",
+            "spellSaveDC": 12,
+            "spellAttackBonus": 4,
+            "spellsCantrips": [
+                "Light",
+                "Spare the Dying",
+                "Prestidigitation",
+                "Fire Bolt",
+                "Mage Hand"
+            ],
+            "slotsLevel1":4,
+            "spellsLevel1": [
+                "Mage Armour",
+                "Bless",
+                "Cure Wounds"
+            ],
+            "slotsLevel2": 0,
+            "spellsLevel2": [
+            ],
+            "slotsLevel3": 0,
+            "spellsLevel3": [
+            ],
+            "slotsLevel4": 0,
+            "spellsLevel4": [
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [
+            ],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [
+            ],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+            ]
+        }
+    ]
+  }

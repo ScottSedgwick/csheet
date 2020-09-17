@@ -1,0 +1,298 @@
+{
+    "characterName": "Agnar the Fluffy",
+    "className": "Barbarian",
+    "subclass": "Beserker",
+    "level": 9,
+    "background": "Outlander",
+    "playerName": "Phoebe",
+    "race": "Dragonborn (Gold)",
+    "alignment": "CG",
+    "experience": 48000,
+
+    "age": 15,
+    "height": "6' 10\"",
+    "weight": "91kg (197 lbs)",
+    "eyeColour": "Black",
+    "skinColour": "Golden",
+    "hairColour": "None",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 14,
+    "acBonus": 5,
+    "initiative": 0,
+    "speed": 40,
+    "hitPoints": 122,
+    "hitDice": 12,
+
+    "strength": 20,
+    "dexterity": 17,
+    "constitution": 17,
+    "intelligence": 13,
+    "wisdom": 16,
+    "charisma": 17,
+
+    "strengthBonus": 1,
+    "dexterityBonus": 0,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 0,
+    "charismaBonus": 0,
+
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 1,
+    "skillDeception": 0,
+    "skillHistory": 0,
+    "skillInsight": 0,
+    "skillIntimidation": 1,
+    "skillInvestigation": 0,
+    "skillMedicine": 0,
+    "skillNature": 1,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 0,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 0,
+    "skillSurvival": 1,
+
+    "proficiencies": [
+        "Light & medium armour",
+        "Simple & martial weapons",
+        "Shields",
+        "Perception",
+        "Intimidation",
+        "Athletics",
+        "Survival",
+        "Nature",
+        "Bagpipes",
+        "Wanderer",
+        "Draconic",
+        "Wolf",
+        "Common"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Hazirawn",
+            "damage": "2d6+2 s + 2d6 nec",
+            "bonus": "11"
+        },
+        {
+            "weapon": "Frost Brand",
+            "damage": "2d6 s + 1d6 c",
+            "bonus": "9"
+        },
+        {
+            "weapon": "Great Sword",
+            "damage": "2d6 slash",
+            "bonus": "9"
+        },
+        {
+            "weapon": "Long Sword",
+            "damage": "1d8 slash",
+            "bonus": "9"
+        },
+        {
+            "weapon": "Greataxe",
+            "damage": "1d12 slash",
+            "bonus": "9"
+        },
+        {
+            "weapon": "Great Sword",
+            "damage": "2d6 slash",
+            "bonus": "9"
+        },
+        {
+            "weapon": "Long Bow +1",
+            "damage": "1d8 pierce",
+            "bonus": "8"
+        },
+        {
+            "weapon": "Javelin",
+            "damage": "1d6 pierce",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Daggers",
+            "damage": "1d4 pierce",
+            "bonus": "7"
+        }
+    ],
+    
+    "personalityTraits": [
+        "I once ran 25 miles non-stop to warn my",
+        "pack of an attacking Orc horde, and",
+        "would do it again.",
+        "I was, in fact, raised by wolves."
+    ],
+    "ideals": [
+        "Change. Life is like the seasons, in",
+        "constant change, and we must change",
+        "with it."
+    ],
+    "bonds": [
+        "I am the last of my tribe, and it is up to me",
+        "to ensure thier names enter legend."
+    ],
+    "flaws": [
+        "Violence is my answer to almost any",
+        "challenge."
+    ],
+    "features": [
+        "Fire breath weapon: (1/short rest)",
+        "  15' cone, DC 8+Con+Prf (13)",
+        "  3d6 damage, half on save",
+        "Damage resistance to fire (1/2 damage)",
+        "Rage (4): Cannot wear heavy armour",
+        "  Advantage on Str checks and saves",
+        "  +3 to damage",
+        "  Resistance to pierce, bludgeon and slash",
+        "  Lasts 1 minute.",
+        "Unarmoured defence:",
+        "  AC 10+Dex+Con (16)",
+        "  Can use shield.",
+        "Reckless Attack:",
+        "  Advantage on Strength attacks for 1 turn",
+        "  Foes also have advantage against you",
+        "Danger Sense:",
+        "  Advantage on Dex saves vs effects that you",
+        "  can see, as long as not blinded, deafened",
+        "  or incapacitated.",
+        "Frenzy (optional while raging):",
+        "  Can make melee attack on bonus action",
+        "  Suffer one level exhaustion when rage ends",
+        "Dual Wielder:",
+        "  +1 to AC when fighting with 2 weapons",
+        "  You can use heavy one-handed weapons for",
+        "    2 weapon fighting",
+        "  You can stow or draw 2 weapons in the same",
+        "    time as it takes for 1",
+        "Fast action: Increase speed by 10' per round",
+        "Extra attack: You can attack twice, instead",
+        "  of once, whenever you take an Attack action",
+        "  on your turn",
+        "Mindless Rage: You cannot be charmed or",
+        "  frightened while raging. If you are charned",
+        "  or frightened when you enter your rage, the",
+        "  effect is suspended for the duration of rage.",
+        "Feral Instinct:",
+        "  Your instincts are so honed you have advantage",
+        "  on initiative rolls.",
+        "  Additionally, if you are surprised at the",
+        "  beginning of combat and aren't incapacitated,",
+        "  you can act normally on your first turn, but",
+        "  only if you enter your rage before doing",
+        "  anything else that turn.",
+        "Charger:",
+        "  When you use your action to Dash, you can use",
+        "  a bonus action to make one melee attack or to",
+        "  shove a creature.",
+        "  If you move at least 10' in a straight line",
+        "  immediately before taking this bonus action,",
+        "  you either gain a +5 bonus to the attack's",
+        "  damage roll, or push the target up to 10 feet",
+        "  away from you.",
+        "Brutal Critical:",
+        "  Roll an additional damage dice when",
+        "  determining the extra damage for a critical hit",
+        "  with a melee attack."
+    ],
+    
+    "backstory": [],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 23,
+        "gems": []
+    },
+
+    "allies": [],
+
+    "equipment": [
+        "Greataxe",
+        "2 Great Swords",
+        "2 Handaxes",
+        "4 Javelins",
+        "Long bow +1",
+        "Staff",
+        "Pack",
+        "Shield (+2 AC)",
+        "Breast plate armour",
+        "Long Sword",
+        "Longbow",
+        "Winged Boots"
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 704,
+            "silver": 152,
+            "electrum": 0,
+            "gold": 38,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+            ],
+            "bagPocket2": [
+            ],
+            "bagPocket3": [
+                "Lamp",
+                "Tinder box"
+            ],
+            "bagPocket4": [
+                "Climbers kit"
+            ],
+            "bagFlapPouch": [
+                "Waterskin",
+                "Rations (3 days)"
+            ],
+            "bagMiddlePouch": [
+                "Hunting Trap"
+            ],
+            "bagMainPouch": [
+                "Clothes", 
+                "Bagpipes",
+                "4 artistic talismans (50, 60, 70, 100gp)",
+                "Tent"
+            ],
+            "bagTreasure": [],
+            "bagBedroll": "1",
+            "bagRope": "150'",
+            "bagAmmo": "40 Arrows, 4 Daggers",
+            "bagTorches": "3"
+        }
+    ], 
+    "bagsOfHolding": [],
+    "portableHoles": [],
+
+    "treasure": [
+        "Dancing Greatsword", 
+        "Frost Brand Greatsword, +1d6 cold damage",
+        "Vicious Greatsword. +7 damage on a critical.",
+        "Boots of Flying",
+        "Hazirawn: A sentient (NE) greatsword. Speaks",
+        "  Common and Netherese. If not attuned, is +1",
+        "  to hit and damage and does an extra +1d6",
+        "  necrotic damage on a hit.",
+        "  If attuned, is +2 to hit and damage and does",
+        "  +2d6 necrotic damage, and has the wounding",
+        "  property - any creature you hit can't regain",
+        "  hit points for 1 minute (DC 15 Con save).",
+        "  Also can cast spells.  4 charges, regains 1d4",
+        "  charges at midnight.",
+        "  1 charge: Detect Magic, Detect Evil and Good.",
+        "  2 charges: Detect Thoughts.",
+        "Ring of Protection (+1 to AC and saves)"
+    ],
+
+    "spellcasting": []
+}

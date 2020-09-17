@@ -1,0 +1,263 @@
+{
+    "characterName": "Cheery Littlebottom",
+    "className": "Rogue",
+    "subclass": "A. Trickster",
+    "level": 6,
+    "background": "Guild Artisan",
+    "playerName": "Meagen",
+    "race": "Mountain Dwarf",
+    "alignment": "LG",
+    "experience": 14000,
+    
+    "age": 53,
+    "height": "4' 4\"",
+    "weight": "136 lbs",
+    "eyeColour": "Green",
+    "skinColour": "Pale & Clear",
+    "hairColour": "Red",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 12,
+    "acBonus": 0,
+    "initiative": 0,
+    "speed": 25,
+    "hitPoints": 67,
+    "hitDice": 8,
+
+    "strength": 18,
+    "dexterity": 18,
+    "constitution": 14,
+    "intelligence": 17,
+    "wisdom": 16,
+    "charisma": 17,
+
+    "strengthBonus": 0,
+    "dexterityBonus": 1,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 1,
+    "wisdomBonus": 0,
+    "charismaBonus": 0,
+
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 0,
+    "skillDeception": 1,
+    "skillHistory": 0,
+    "skillInsight": 2,
+    "skillIntimidation": 0,
+    "skillInvestigation": 2,
+    "skillMedicine": 0,
+    "skillNature": 0,
+    "skillPerception": 2,
+    "skillPerformance": 0,
+    "skillPersuasion": 1,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 2,
+    "skillSurvival": 0,
+
+    "proficiencies": [
+        "Weapons: Battleaxe, Handaxe,",
+        "  Throwing Hammer, Warhammer,",
+        "  Simple weapons, Hand crossbows",
+        "  Longswords, Rapiers, Short Swords",
+        "Apothecary's tools, Thieves Tools",
+        "Stonecutting (x2 proficiency to stone related",
+        "  history)",
+        "Light and medium armour",
+        "Speak Dwarven, Thieves Cant and Common",
+        "Deception, Investigation, Perception", 
+        "Stealth, Insight, Persuasion",
+        "Boost Perception & Investigation"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Hammer OT +1",
+            "damage": "2d6+8 bludgeon",
+            "bonus": "8"
+        },
+        {
+            "weapon": "Battleaxe",
+            "damage": "1d8+7 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Handaxe",
+            "damage": "1d6+7 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Warhammer",
+            "damage": "1d8+7 bludgeon",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Throwing Hammer",
+            "damage": "1d4+7 bludgeon",
+            "bonus": "7"
+        }
+    ],
+    
+    "personalityTraits": [
+        "I believe that anything worth doing is",
+        "worth doing right. I can't help it, I'm",
+        "a perfectionist.",
+        "I always want to know how things work",
+        "and what makes people tick."
+    ],
+    "ideals": [
+        "Community. It is the duty of all civilised",
+        "people to strengthen the bonds of",
+        "community and the security of",
+        "civilisation."
+    ],
+    "bonds": [
+        "I owe my guild a gret debt for forging me",
+        "into the person I am today."
+    ],
+    "flaws": [
+        "I am paranoid about shape-shifters, and",
+        "quick to be suspiscious that someone is",
+        "not what they seem."
+    ],
+    "features": [
+        "Darkvision 60 feet",
+        "Advantage on saving throws vs poison",
+        "Resistance to poison damage (1/2)",
+        "Sneak attack: +4d6 damage",
+        "Cunning Action: get one bonus action",
+        "  per round to Dash, Disengage or Hide.",
+        "Mage Hand Legerdemain:",
+        "  Your Mage Hand is invisible",
+        "  You can pick locks/disarm traps at a distance",
+        "  Make a Dex vs Wis check to place or take",
+        "  an object from another creature",
+        "Alert:",
+        "  +5 bonus to initiative",
+        "  Cannot be surprised while conscious",
+        "  Others don't get advantage on attack rolls from",
+        "    being hidden",
+        "Uncanny Dodge:",
+        "  When an attacker you can see hits you, you can",
+        "  user your reaction to halve the damage",
+        "Expertise(1): Investigation, Perception",
+        "Expertise(2): Stealth, Insight",
+        "Evasion:",
+        "  You can nimbly dodge out of the way of certain",
+        "  effects, such as a red dragon's fiery breath or",
+        "  an Ice Storm spell. When you are subjected to",
+        "  an effect that allows you to make a Dexterity",
+        "  saving throw to take only half damage, you",
+        "  instead take no damage if you succeed on the",
+        "  saving throw, and only half damage if you fail."
+    ],
+
+    "backstory": [
+        "Member of the Apothecaries Guild"
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 5,
+        "platinum": 32,
+        "gems": []
+    },
+
+    "allies": [],
+
+    "equipment": [
+        "Battleaxe",
+        "2 Handaxes",
+        "Short sword",
+        "Hand crossbow",
+        "Leather armour",
+        "Pack"
+    ],
+
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+                "Apothecaries tools"
+            ],
+            "bagPocket2": [
+            ],
+            "bagPocket3": [
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+            ],
+            "bagMiddlePouch": [
+            ],
+            "bagMainPouch": [
+            ],
+            "bagTreasure": [
+            ],
+            "bagBedroll": "1",
+            "bagRope": "150'",
+            "bagAmmo": "20 Bolts, 2 Daggers",
+            "bagTorches": "3"
+        }
+    ],      
+    "bagsOfHolding": [],
+    "portableHoles": [],
+
+    "treasure": [
+        "Hammer of Thunderbolts",
+        "2 Potions of Healing"
+    ],
+
+    "spellcasting": [
+        {
+            "spellcastingClass": "Arcane Trickster",
+            "spellcastingAbility": "Intelligence",
+            "spellSaveDC": 13,
+            "spellAttackBonus": 3,
+            "spellsCantrips": [
+                "Fire Bolt",
+                "Mage Hand",
+                "Prestidigitation"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Color Spray",
+                "Magic Missile",
+                "Minor Illusion",
+                "Sleep"
+            ],
+            "slotsLevel2": 2,
+            "spellsLevel2": [
+                "Invisibility",
+                "Misty Step"
+            ],
+            "slotsLevel3": 0,
+            "spellsLevel3": [],
+            "slotsLevel4": 0,
+            "spellsLevel4": [],
+            "slotsLevel5": 0,
+            "spellsLevel5": [],
+            "slotsLevel6": 0,
+            "spellsLevel6": [],
+            "slotsLevel7": 0,
+            "spellsLevel7": [],
+            "slotsLevel8": 0,
+            "spellsLevel8": [],
+            "slotsLevel9": 0,
+            "spellsLevel9": []
+        }
+    ]
+}

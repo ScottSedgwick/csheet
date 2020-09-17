@@ -1,0 +1,254 @@
+{
+  "characterName": "Fae Spear",
+  "className": "Paladin",
+  "subclass": "",
+  "level": 1,
+  "background": "Minstrel",
+  "playerName": "",
+  "race": "Half-Elf",
+  "alignment": "LG",
+  "experience": 0,
+
+  "age": 0,
+  "height": "5'7\"",
+  "weight": "54kg",
+  "eyeColour": "Gold",
+  "skinColour": "Fair",
+  "hairColour": "Silver",
+  
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+  
+  "acBase": 16,
+  "acBonus": 3,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 12,
+  "hitDice": 10,
+
+  "strength": 17,
+  "dexterity": 8,
+  "constitution": 14,
+  "intelligence": 10,
+  "wisdom": 12,
+  "charisma": 14,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 1,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 1,
+  "skillDeception": 0,
+  "skillHistory": 1,
+  "skillInsight": 0,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 0,
+  "skillPerformance": 1,
+  "skillPersuasion": 1,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Languages: Common, Elvish, Infernal",
+    "Simple and Martial weapons",
+    "Mounts",
+    "All armour and shields",
+    "Disguise kit",
+    "Flutes"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Long Sword",
+          "damage": "1d8+3",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Javelin (30/120')",
+          "damage": "1d6+3",
+          "bonus": "+4"
+      }
+  ],
+  
+  "personalityTraits": [
+    "I love a good insult, even one directed at",
+    "me.",
+    "",
+    "I'll settle for nothing less than perfection."
+  ],
+  "ideals": [
+    "Beauty. When I perform, I make the world",
+    "better than it was."
+  ],
+  "bonds": [
+    "My instrument is my most reasured",
+    "possession, and it reminds me of someone",
+    "I love."
+  ],
+  "flaws": [
+    "I once satirized a noble who still wants my",
+    "head. It is a mistake I will likely repeat."
+  ],
+  "features": [
+    "Racial Traits:",
+    "  Fey Ancestry. You have advantage on saving",
+    "throws against being charmed, and magic cannot",
+    "put you to sleep.",
+    "  Keen Senses. You have advantage on Wisdom",
+    "(Perception) checks.",
+    "  Low-light vision. You can see in dim light as well as",
+    "you do in bright light.",
+    "",
+    "Class Features:",
+    "  Divine Sense. As an action, you open your",
+    "awareness to the divine. Until the end of your",
+    "next turn, you knw the location of any celestial,",
+    "fiend, or undead creature within 50 feet of you,",
+    "regardless of any intervening obstacles. Within the",
+    "same radius, you also detect the presence of any",
+    "place or object that consecrated or desecrated.",
+    "  Lay on Hands. You have a pool of healing power",
+    "that replenishes when yo take a long rest. With",
+    "that pool, you can restore a total number of hit",
+    "points equal to your paladin level times 5. As",
+    "an action, you can touch a creature and draw",
+    "from the pool to restore any number of hit points to",
+    "that creature, up to the maximum amount remaining",
+    "in your pool.",
+    "Alternatively, you can expend 5 hit points from your",
+    "pool of healing to cure the target of one disease or",
+    "neutralize one poison affecting it. You can cure",
+    "multiple diseases and neutralize multiple poisons",
+    "with a single use of Lay on Hands, expending hit",
+    "points separately for each one."
+  ],
+  
+  "backstory": [
+    "Minstrel. You wandered the land before your calling,",
+    "performing music, telling tales, and entertaining",
+    "audiences with your talents.",
+    "",
+    "Noted Performer. You can always find a place to",
+    "perform, usually in an inn or tavern. At such a",
+    "place, you receive free ldging and food as long",
+    "as you perform each night. In addition, your",
+    "performance makes you something of a local figure.",
+    "When strangers recognise you in a town where you",
+    "have performed, they typically take a liking to",
+    "you."
+  ],
+  
+  "moneyPouch": {
+      "copper": 8,
+      "silver": 9,
+      "electrum": 0,
+      "gold": 141,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "Chainmail",
+    "Shield",
+    "Long Sword",
+    "Javelins (4)",
+    "Potion of Healing",
+    "Healer's Kit",
+    "Backpack, Belt Pouch, Bedroll",
+    "Fine & Travellers Clothes",
+    "Flute",
+    "50' Hempen Rope",
+    "Holy Symbol",
+    "Ink, Paper (5 sheets)",
+    "Tome of Holy Teachings",
+    "Rations (4 days)",
+    "Waterskin"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+          ],
+          "bagMainPouch": [
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "",
+          "bagRope": "",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "",
+          "spellcastingAbility": "",
+          "spellSaveDC": 0,
+          "spellAttackBonus": 0,
+          "spellsCantrips": [
+          ],
+          "slotsLevel1":0,
+          "spellsLevel1": [
+          ],
+          "slotsLevel2": 0,
+          "spellsLevel2": [
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

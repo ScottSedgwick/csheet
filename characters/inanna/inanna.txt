@@ -1,0 +1,60 @@
+Inanna's parent's bond to Lastai hid her nature while she was still a child, but faded when she turned 18.  Inanna had left home long before that, travelled far away and taken on a completely new identity, while she figured out how to manage on her own. She convinced people that she was a Tiefling, and studied wizardry.
+Inanna followed the Divination school, and upon reaching 2nd level started to have 
+
+DOMT:
+2: 6 days: Knight, Throne, Sun, Key, Jester, Fates, Fates
+3: 6 days: Moon, Star, Star
+4: 63 days: Vizier x6, Sun x8, Moon x5, Star x7, Comet x6, Fates x8, Throne x5, Key x12, Knight x8, Gem x6, Jester
+5: 10 days: Vizier, Comet x2, Throne, Key x3, Knight, Gem
+6: 4 days: Knight x2, Gem
+7: 15 (Comet), 21 (Fates)
+   34 (Knight), 18 (Comet)
+   42, 61
+   49, 57
+
+Attunement: Max 3 items.
+Robe, Boots, Vorpal Sword.
+
+Items: 
+Deck of Many Things
+Heward's Handy Haversack. 2x20lb, 1x80lb Bag of Holding.
+Iron Bands of Bilarro
+Periapt of Wound Closure Automatically stabilize, Double HD to regain HP (requires attunement)
+Portable Hole 6'R, 10'deep.
+Robe of Stars +1 to saves, 6 x Magic Missile (5th level)/day, Enter Astral Plane at will. (requires attunement)
+Rope of Climbing, 60', 3000lb
+Universal Solvent, dissolve 1 square foot of any adhesive.
+Winged Boots. Flying speed equal to walking speed, 4 hours flying per day. (requires attunement)
+
+Weapons:
+2x Arrow +3
+Dagger of Venom +1, DC15 Con or 2d10 poison damage and poisoned for 1 minute.
+Dancing Sword, Bonus Action to launch, will fight within 30' with my attack rolls (requires attunement)
+Frost Brand, +1d6 cold damage, resistance to fire damage, 10'R bright light in freezing temperatures, extinguish all non-magic flames in 30'R (requires attunement)
+Hammer of Thunderbolts, +1, Giant's Bane with attunement (requires belt of giant strength and gauntlets of ogre power)
+Holy Avenger, +3, +2d6 radiant vs fiend or undead, 10'R aura of advantage to saves (attunement by Paladin)
+Luck Blade +1, Reroll one roll 1/day,3 wishes (requires attunement)
+Mace of Disruption. +2d6 radiant damage vs fiend or undead, if 25HP or less, DC15 Wis or be destroyed. Light 20'R (requires attunement)
+Mace of Smiting +1 (+3 vs construct). +7 (+14 vs construct) bludgeoning damage n a critical. Construct HP < 25 => destroyed.
+Oathbow, adv on attack rolls vs sworn enemy, no benefit from cover, no range disadvantage, +3d6 piercing damage.
+Sun Blade, Longsword with finesse (light sabre) (requires attunement)
+Sword of Answering (Replier) +3, melee attack as reaction to taking damage, with advantage and damage ignores immunities and resistance. (requires attunement)
+Trident of Fish Command. Dominate beast (that can swim) 3/day. (requires attunement)
+Vicious Weapon. +7 damage on a critical.
+Vorpal Sword +3, ignore resistance to slashing. On critical hit, cut off head (or do +6d8 damage) (requires attunement)
+
+Creatures:
+20 Acolyte 2d8 (10)
+20 Cultist 2d8 (10)
+ 6 Langdedrosa 6d12
+ 4 Jamna 4d6
+ 6 Hobgoblin Captain 6d8
+ 4 Noble 2d8 (2)
+ 8 Frulum 8d8
+16 Doppelganger 8d8 (2)
+ 8 Troll 8d10
+ 7 Dralmorrer 7d10
+ 9 Will-o-Wisp 9d4
+36 Assassin 12d8 (3) 
+========================
+144 => +288 HP

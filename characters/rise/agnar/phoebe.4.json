@@ -1,0 +1,222 @@
+{
+    "characterName": "Agnar the Fluffy",
+    "className": "Barbarian",
+    "subclass": "Beserker",
+    "level": 4,
+    "background": "Outlander",
+    "playerName": "Phoebe",
+    "race": "Dragonborn (Gold)",
+    "alignment": "CG",
+    "experience": 900,
+
+    "age": 15,
+    "height": "6' 10\"",
+    "weight": "91kg (197 lbs)",
+    "eyeColour": "Black",
+    "skinColour": "Golden",
+    "hairColour": "None",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 15,
+    "acBonus": 0,
+    "initiative": 0,
+    "speed": 30,
+    "hitPoints": 58,
+    "hitDice": 12,
+
+    "strength": 20,
+    "dexterity": 17,
+    "constitution": 17,
+    "intelligence": 13,
+    "wisdom": 16,
+    "charisma": 17,
+
+    "strengthBonus": 1,
+    "dexterityBonus": 0,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 0,
+    "charismaBonus": 0,
+
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 1,
+    "skillDeception": 0,
+    "skillHistory": 0,
+    "skillInsight": 0,
+    "skillIntimidation": 1,
+    "skillInvestigation": 0,
+    "skillMedicine": 0,
+    "skillNature": 1,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 0,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 0,
+    "skillSurvival": 1,
+
+    "proficiencies": [
+        "Light & medium armour",
+        "Simple & martial weapons",
+        "Shields",
+        "Perception",
+        "Intimidation",
+        "Athletics",
+        "Survival",
+        "Nature",
+        "Bagpipes",
+        "Wanderer"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Great Sword",
+            "damage": "2d6 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Long Sword",
+            "damage": "1d8 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Greataxe",
+            "damage": "1d12 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Handaxe",
+            "damage": "1d6 slash",
+            "bonus": "7"
+        },
+        {
+            "weapon": "Javelin",
+            "damage": "1d6 pierce",
+            "bonus": "5"
+        }
+    ],
+    
+    "personalityTraits": [
+        "I once ran 25 miles non-stop to warn my",
+        "pack of an attacking Orc horde, and",
+        "would do it again.",
+        "I was, in fact, raised by wolves."
+    ],
+    "ideals": [
+        "Change. Life is like the seasons, in",
+        "constant change, and we must change",
+        "with it."
+    ],
+    "bonds": [
+        "I am the last of my tribe, and it is up to me",
+        "to ensure thier names enter legend."
+    ],
+    "flaws": [
+        "Violence is my answer to almost any",
+        "challenge."
+    ],
+    "features": [
+        "Fire breath weapon:",
+        "  15' cone, DC 8+Con+Prf (13)",
+        "  2d6 damage, half on save",
+        "Damage resistance to fire (1/2 damage)",
+        "Rage (3): Cannot wear heavy armour",
+        "  Advantage on Str checks and saves",
+        "  +2 to damage",
+        "  Resistance to pierce, bludgeon and slash",
+        "  Lasts 1 minute.",
+        "Unarmoured defence:",
+        "  AC 10+Dex+Con (16)",
+        "  Can use shield.",
+        "Reckless Attack:",
+        "  Advantage on Strength attacks for 1 turn",
+        "  Foes also have advantage against you",
+        "Danger Sense:",
+        "  Advantage on Dex saves vs effects that you",
+        "  can see, as long as not blinded, deafened",
+        "  or incapacitated.",
+        "Frenzy (optional while raging):",
+        "  Can make melee attack on bonus action",
+        "  Suffer one level exhaustion when rage ends",
+        "Dual Wielder:",
+        "  +1 to AC when fighting with 2 weapons",
+        "  You can use heavy one-handed weapons for",
+        "    2 weapon fighting",
+        "  You can stow or draw 2 weapons in the same",
+        "    time as it takes for 1"
+    ],
+    
+    "backstory": [],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 23,
+        "gems": []
+    },
+
+    "allies": [],
+
+    "equipment": [
+        "Greataxe",
+        "Great Sword",
+        "2 Handaxes",
+        "4 Javelins",
+        "Staff",
+        "Pack",
+        "Shield (+2 AC)",
+        "Breast plate armour",
+        "Long Sword"
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+            ],
+            "bagPocket2": [
+            ],
+            "bagPocket3": [
+                "Lamp"
+            ],
+            "bagPocket4": [
+                "Climbers kit"
+            ],
+            "bagFlapPouch": [
+                "Waterskin",
+                "Rations (3 days)"
+            ],
+            "bagMiddlePouch": [
+                "Hunting Trap"
+            ],
+            "bagMainPouch": [
+                "Clothes", 
+                "Bagpipes"
+            ],
+            "bagTreasure": [],
+            "bagBedroll": "1",
+            "bagRope": "150'",
+            "bagAmmo": "40 Arrows, 4 Daggers",
+            "bagTorches": "3"
+        }
+    ], 
+    "bagsOfHolding": [],
+    "portableHoles": [],
+
+    "treasure": [],
+
+    "spellcasting": []
+}

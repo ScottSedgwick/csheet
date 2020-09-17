@@ -1,0 +1,301 @@
+{
+    "characterName": "Tamlin",
+    "className": "Sorceror",
+    "subclass": "Draconic",
+    "level": 5,
+    "background": "Soldier (Captain)",
+    "playerName": "Zoe",
+    "race": "Half-Elf",
+    "alignment": "NG",
+    "experience": 900,
+    
+    "age": 23,
+    "height": "5' 6\"",
+    "weight": "114 lbs",
+    "eyeColour": "Emerald",
+    "skinColour": "Golden",
+    "hairColour": "Gold/Red/Brown",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 13,
+    "acBonus": 0,
+    "initiative": 0,
+    "speed": 30,
+    "hitPoints": 50,
+    "hitDice": 6,
+
+    "strength": 17,
+    "dexterity": 19,
+    "constitution": 17,
+    "intelligence": 16,
+    "wisdom": 16,
+    "charisma": 20,
+
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 0,
+    "charismaBonus": 1,
+
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 0,
+    "skillDeception": 1,
+    "skillHistory": 1,
+    "skillInsight": 0,
+    "skillIntimidation": 0,
+    "skillInvestigation": 0,
+    "skillMedicine": 1,
+    "skillNature": 0,
+    "skillPerception": 0,
+    "skillPerformance": 0,
+    "skillPersuasion": 0,
+    "skillReligion": 0,
+    "skillSleightOfHand": 1,
+    "skillStealth": 0,
+    "skillSurvival": 0,
+
+    "proficiencies": [
+        "Light & medium armour",
+        "Shields",
+        "All simple weapons",
+        "History",
+        "Medicine",
+        "Deception",
+        "Sleight of Hand",
+        "Greatsword"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "Greatsword",
+            "damage": "2d6 slash",
+            "bonus": "5"
+        },
+        {
+            "weapon": "Dagger",
+            "damage": "1d4 pierce",
+            "bonus": "5"
+        },
+        {
+            "weapon": "Quarterstaff",
+            "damage": "1d6 bludgeon",
+            "bonus": "5"
+        },
+        {
+            "weapon": "Dart",
+            "damage": "1d4 [P] (20/60)",
+            "bonus": "6"
+        },
+        {
+            "weapon": "Sling",
+            "damage": "1d4 [B] (30/120)",
+            "bonus": "6"
+        },
+        {
+            "weapon": "Light crossbow",
+            "damage": "1d8 [P] (80/320)",
+            "bonus": "6"
+        }
+    ],
+    
+    "personalityTraits": [
+        "I can stare down a Hell Hound without",
+        "flinching.",
+        "I'm full of inspiring and cautionary tales",
+        "from my military experience relevant to",
+        "almost every combat situation."
+    ],
+    "ideals": [
+        "Live and let live. Ideals aren't worth killing",
+        "or going to war for."
+    ],
+    "bonds": [
+        "I fight for those who cannot protect",
+        "themselves."
+    ],
+    "flaws": [
+        "I'd rather eat my armour than admit when",
+        "I'm wrong."
+    ],
+    "features": [
+        "Darkvision 60 feet",
+        "Advantage vs Charm, cannot be put to sleep.",
+        "Charisma bonus doubled vs Dragons.",
+        "+1 HP per level.",
+        "Natural AC 13 + Dex mod (16)",
+        "Metamagic:",
+        "  Sorcery Points: 3",
+        "  Flexible Casting (extra slots)",
+        "    2 pts for Lvl 1 slot",
+        "    3 pts for Lvl 2 slot",
+        "  Empowered Spell",
+        "    1 pt to reroll up to Chr bonus damage dice",
+        "  Quickened Spell",
+        "    2 pts to cast 1 action spell as bonus action"
+    ],
+
+    "backstory": [],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 28,
+        "gems": []
+    },
+    
+    "allies": [],
+    
+    "equipment": [
+        "Light Crossbow",
+        "Greatsword",
+        "Shield (+2 AC)",
+        "Pack", 
+        "Saddle bags",
+        "Riding horse (60', 480lbs)",
+        "Amulet arcane focus", 
+        "Staff"
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 100,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+                "Captains Pips", 
+                "Ink", 
+                "Pen",
+                "Parchment",
+                "Apothecaries tools",
+                "Signet ring"
+            ],
+            "bagPocket2": [
+                "Sling"
+            ],
+            "bagPocket3": [
+                "Hempen Rope",
+                "Grappling Hook",
+                "Sack"
+            ],
+            "bagPocket4": [
+                "Waterskin", 
+                "Tinderbox"
+            ],
+            "bagFlapPouch": [
+                "Hooded Lantern",
+                "Flask"
+            ],
+            "bagMiddlePouch": [
+                "Spyglass", 
+                "Rations (1 day)"
+            ],
+            "bagMainPouch": [
+            ],
+            "bagTreasure": [
+            ],
+            "bagBedroll": "1",
+            "bagRope": "150'",
+            "bagAmmo": "20 Bolts, 2 Daggers, 20 bullets",
+            "bagTorches": "3"
+        }
+    ],      
+    "bagsOfHolding": [],
+    "portableHoles": [
+        {
+            "phItems": [ 
+                "10' Ladder",
+                "Soap x7",
+                "Tankard of Beer",
+                "Blanket", 
+                "Bucket", 
+                "Iron pot",
+                "Candles (4)", 
+                "Lock", 
+                "Chain", 
+                "Beer", 
+                "Oil", 
+                "Crowbar", 
+                "Steel mirror", 
+                "2P tent", 
+                "Umbrella", 
+                "Manacles",
+                "",
+                "Sneaky Map",
+                "Mondath's clothes",
+                "Sneaky evil note",
+                "Bad dragon poetry",
+                "Keys to drake pits",
+                "Cool hat to disguise myself",
+                "Assassin's clothes"
+            ]
+        }],
+
+    "treasure": [
+        "Trophy taken from a fallen enemy.",
+        "Set of bone dice."
+    ],
+    
+    "spellcasting": [
+        {
+            "spellcastingClass": "Sorceror",
+            "spellcastingAbility": "Charisma",
+            "spellSaveDC": 15,
+            "spellAttackBonus": 7,
+            "spellsCantrips": [ 
+                "Acid Splash",
+                "Blade Ward",
+                "Chill Touch",
+                "Firebolt",
+                "Light",
+                "Message",
+                "Ray of Frost",
+                "Shocking Grasp",
+                "True Strike"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Chromatic Orb",
+                "Mage Armour",
+                "Magic Missile",
+                "Shield",
+                "Witch Bolt"
+            ],
+            "slotsLevel2": 3,
+            "spellsLevel2": [
+                "Alter Self",
+                "Cloud of Daggers",
+                "Enlarge/Reduce",
+                "Misty Step",
+                "Scorching Ray"
+            ],
+            "slotsLevel3": 2,
+            "spellsLevel3": [
+                "Fireball"
+            ],
+            "slotsLevel4": 0,
+            "spellsLevel4": [],
+            "slotsLevel5": 0,
+            "spellsLevel5": [],
+            "slotsLevel6": 0,
+            "spellsLevel6": [],
+            "slotsLevel7": 0,
+            "spellsLevel7": [],
+            "slotsLevel8": 0,
+            "spellsLevel8": [],
+            "slotsLevel9": 0,
+            "spellsLevel9": []
+        }
+    ]
+}

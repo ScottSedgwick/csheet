@@ -1,0 +1,226 @@
+{
+    "characterName": "Tidal Bringer (Tide)",
+    "className": "Cleric",
+    "subclass": "Grave",
+    "level": 3,
+    "background": "Sailor",
+    "playerName": "Phoebe",
+    "race": "Genasi (Water)",
+    "alignment": "CN",
+    "experience": 1000,
+
+    "age": 21,
+    "height": "5' 10\"",
+    "weight": "77kg (170 lbs)",
+    "eyeColour": "Indigo",
+    "skinColour": "Aqua",
+    "hairColour": "Blue",
+    
+    "inspiration": 1,
+    "proficiencyBonus": 0,
+    
+    "acBase": 14,
+    "acBonus": 0,
+    "initiative": 0,
+    "speed": 30,
+    "hitPoints": 35,
+    "hitDice": 8,
+
+    "strength": 17,
+    "dexterity": 16,
+    "constitution": 18,
+    "intelligence": 13,
+    "wisdom": 19,
+    "charisma": 15,
+
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 1,
+    "charismaBonus": 1,
+
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 1,
+    "skillDeception": 0,
+    "skillHistory": 0,
+    "skillInsight": 1,
+    "skillIntimidation": 0,
+    "skillInvestigation": 0,
+    "skillMedicine": 0,
+    "skillNature": 0,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 1,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 0,
+    "skillSurvival": 0,
+
+    "proficiencies": [
+        "Light & medium armour",
+        "Simple & martial weapons",
+        "Common & Primordial",
+        "Navigators tools",
+        "Vehicles (water)"
+    ],
+
+    "attacks": [
+        {
+            "weapon": "War Hammer (V)",
+            "damage": "1d8/1d10 +3 B",
+            "bonus": "5"
+        },
+        {
+            "weapon": "Crossbow",
+            "damage": "1d8 +3 P",
+            "bonus": "5"
+        }
+    ],
+    
+    "personalityTraits": [
+        "I stretch the truth for the sake",
+        "of a good story",
+        "I like a job well done - especially",
+        "if I can get someone else to do it."
+    ],
+    "ideals": [
+        "Freedom. The sea is freedom - the",
+        "freedom to go anywhere and do",
+        "anything."
+    ],
+    "bonds": [
+        "I was cheated out of my fair share",
+        "of the profits and I want to get",
+        "my due."
+    ],
+    "flaws": [
+        "I can't help but pocket loose",
+        "coins and trinkets that I come",
+        "across"
+    ],
+    "features": [
+        "HP Rolls: 8,7,8",
+        "Disadv. on Stealth (Scale Mail)",
+        "",
+        "Acid Resistance",
+        "Amphibious",
+        "Swim - 30'",
+        "Call to the Wave: You know the Shape Water cantrip",
+        "You can cast Create or Destroy Water once between",
+        "long rests",
+        "",
+        "Channel Divinity (1/long rest):",
+        " - Turn Undead 30'R",
+        " - Path to the Grave. Curse one creature within", 
+        "   30', it is vulnerable to the next attack it", 
+        "   is hit by within 1 turn",
+        "Circle of Mortality: Healing spells you cast on", 
+        "  creatures on 0 HP do maximum healing",
+        "Eyes of the Grave: 1/long rest, detect undead",
+        "  within 60'"
+    ],
+    
+    "backstory": [],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 10,
+        "platinum": 0,
+        "gems": []
+    },
+
+    "allies": [],
+
+    "equipment": [
+        "War Hammer",
+        "Scale Mail",
+        "Crossbow",
+        "20 Bolts",
+        "Healers Kit",
+        "Belaying Pin",
+        "50' Silk rope",
+        "Lucky Charm",
+        "Common Clothes"
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+            ],
+            "bagPocket2": [
+            ],
+            "bagPocket3": [
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+            ],
+            "bagMiddlePouch": [
+            ],
+            "bagMainPouch": [
+            ],
+            "bagTreasure": [],
+            "bagBedroll": "1",
+            "bagRope": "",
+            "bagAmmo": "",
+            "bagTorches": ""
+        }
+    ], 
+    "bagsOfHolding": [],
+    "portableHoles": [],
+
+    "treasure": [],
+
+    "spellcasting": [
+        {
+            "spellcastingClass": "Cleric",
+            "spellcastingAbility": "Wisdom",
+            "spellSaveDC": 14,
+            "spellAttackBonus": 6,
+            "spellsCantrips": [
+                "Shape Water",
+                "+3 more"
+            ],
+            "slotsLevel1": 4,
+            "spellsLevel1": [
+                "Prepare 7 spells of 1st & 2nd level"
+            ],
+            "slotsLevel2": 2,
+            "spellsLevel2": [
+            ],
+            "slotsLevel3": 0,
+            "spellsLevel3": [],
+            "slotsLevel4": 0,
+            "spellsLevel4": [
+            ],
+            "slotsLevel5": 0,
+            "spellsLevel5": [
+            ],
+            "slotsLevel6": 0,
+            "spellsLevel6": [
+            ],
+            "slotsLevel7": 0,
+            "spellsLevel7": [
+            ],
+            "slotsLevel8": 0,
+            "spellsLevel8": [
+            ],
+            "slotsLevel9": 0,
+            "spellsLevel9": [
+            ]
+        }
+    ]
+}
