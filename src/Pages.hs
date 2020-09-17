@@ -19,7 +19,7 @@ import DataTypes (Character, Spellcasting, Backpack, BagOfHolding, PortableHole,
 import Fonts(fntLarge, fntSmall, fntTiny, fntTeeny)
 import Utilities(drawMyText, drawCircle, drawMyStrings, drawMyAttacks, drawMyItems, drawHLine, showClass, statBonus, profBonus, saveBonus, skillBonus)
 
-import Graphics.PDF(Draw, JpegFile, PDF, PDFFloat, addPage, createPDFJpeg, drawWithPage, withNewContext, applyMatrix, translate, Complex(..), scale, drawXObject)
+import Graphics.PDF(Draw, JpegFile, PDF, PDFFloat, PDFJpeg, PDFReference, addPage, createPDFJpeg, drawWithPage, withNewContext, applyMatrix, translate, Complex(..), scale, drawXObject)
 
 show0 :: Integer -> String
 show0 0 = ""
@@ -33,15 +33,19 @@ show5 :: Integer -> String
 show5 (-5) = ""
 show5 i = show i
 
+drawBackgroundImage :: PDFReference PDFJpeg -> Draw ()
+drawBackgroundImage jpg = 
+  withNewContext $ do
+    applyMatrix $ translate (0 :+ 0)
+    applyMatrix $ scale 0.47 0.505
+    drawXObject jpg
+
 drawPage1 :: Character -> JpegFile -> PDF()
 drawPage1 c bg = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
+    drawBackgroundImage jpg
     drawMyText fntLarge  55 753 (characterName c) 
     drawMyText fntSmall 265 770 (showClass c)
     drawMyText fntSmall 265 741 (race c)
@@ -65,7 +69,7 @@ drawPage1 c bg = do
     drawMyText fntLarge 102 642 (show1 $ profBonus c)
     drawMyText fntLarge 234.5 667 (show5 $ acBase c + statBonus (dexterity c) + acBonus c)
     drawMyText fntLarge 293 667 (show5 $ statBonus (dexterity c) + initiative c + profBonus c)
-    drawMyText fntLarge 346 667 (if speed c == 0 then "" else (show $ speed c) ++ "'")
+    drawMyText fntLarge 346 667 (if speed c == 0 then "" else show (speed c) ++ "'")
     drawMyText fntTiny  290 618 (show0 $ hitPoints c)
     drawMyText fntTiny  112 610 (show5 $ saveBonus (strength c) (strengthBonus c) (profBonus c))
     drawCircle 102 611 3 (strengthBonus c)
@@ -116,8 +120,8 @@ drawPage1 c bg = do
     drawMyText fntTiny  112 246 (show5 $ skillBonus (wisdom c) (wisdomBonus c) (skillSurvival c) (profBonus c))
     drawCircle 102 248 3 (skillSurvival c)
     drawMyText fntTiny  250 490 (show0 $ level c)
-    drawMyText fntSmall  250 468 (if hitDice c == 0 then "" else "d" ++ (show $ hitDice c))
-    drawMyText fntLarge  34 198 (if wisdom c == 0 then "" else (show $ 10 + statBonus (wisdom c)))
+    drawMyText fntSmall  250 468 (if hitDice c == 0 then "" else "d" ++ show (hitDice c))
+    drawMyText fntLarge  34 198 (if wisdom c == 0 then "" else show (10 + statBonus (wisdom c)))
     drawMyText fntSmall 225 190 (show0 $ copper (moneyPouch c))
     drawMyText fntSmall 225 163 (show0 $ silver (moneyPouch c))
     drawMyText fntSmall 225 136 (show0 $ electrum (moneyPouch c))
@@ -137,10 +141,7 @@ drawPage2 c bg = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
+    drawBackgroundImage jpg
     drawMyText fntLarge  55 751 (characterName c) 
     drawMyText fntSmall 265 767 (show0 $ age c)
     drawMyText fntSmall 265 738 (eyeColour c)
@@ -160,10 +161,7 @@ drawSpellPage bg c = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
+    drawBackgroundImage jpg
     drawMyText fntLarge  70 753 (spellcastingClass c) 
     drawMyText fntLarge 278 757 (spellcastingAbility c) 
     drawMyText fntLarge 400 757 (show0 $ spellSaveDC c) 
@@ -203,11 +201,8 @@ drawBackpackPage bg c b = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
-    drawMyText fntLarge  55 751 (characterName c) 
+    drawBackgroundImage jpg
+    drawMyText    fntLarge 55 751      (characterName c)
     drawMyStrings fntTiny 235 685 12.5 (bagPocket1 b)
     drawMyStrings fntTiny 235 611 12.5 (bagPocket2 b)
     drawMyStrings fntTiny 235 555.5 12.5 (bagPocket3 b)
@@ -235,10 +230,7 @@ drawBagOfHolding bg c b = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
+    drawBackgroundImage jpg
     drawMyText fntLarge  55 765 (characterName c)
     drawMyItems fntTiny  35 130 150 500 rowHeight (bohPGs b)
     drawMyItems fntTiny 190 338 358 674.5 rowHeight (take 48 $ bohItems b)
@@ -249,10 +241,7 @@ drawPortableHole bg c b = do
   page <- addPage Nothing
   jpg <- createPDFJpeg bg
   drawWithPage page $ do
-    withNewContext $ do
-      applyMatrix $ translate (0 :+ 0)
-      applyMatrix $ scale 0.47 0.505
-      drawXObject jpg
+    drawBackgroundImage jpg
     drawMyText fntLarge  55 750 (characterName c) 
     drawMyStrings fntTiny  45 694 11.5 (take 50 $ phItems b)
     drawMyStrings fntTiny 230 508 11.5 (take 34 $ drop 50 $ phItems b)
@@ -277,13 +266,13 @@ drawAbilityGroups i (a:as) = do
     i' <- drawAbilityGroup i a
     drawAbilityGroups i' as
 
-drawAbilityGroup :: PDFFloat -> AbilityGroup -> Draw(PDFFloat)
+drawAbilityGroup :: PDFFloat -> AbilityGroup -> Draw PDFFloat
 drawAbilityGroup i a = do
     -- draw a horizontal line
     drawHLine (i + 12)
     drawMyText fntSmall 40 i $ groupName a
-    drawMyText fntSmall 360 i $ "HD: " ++ (show $ groupHitDice a)
-    drawMyText fntSmall 440 i $ "Count: " ++ (show $ groupCount a)
+    drawMyText fntSmall 360 i $ "HD: " ++ show (groupHitDice a)
+    drawMyText fntSmall 440 i $ "Count: " ++ show (groupCount a)
     drawMyStrings fntTiny 45 (i - 11.5) 11.5 (groupAbilities a)
     let h = 11.5 * fromIntegral (length (groupAbilities a)) :: PDFFloat
     return (i - h - 20)
