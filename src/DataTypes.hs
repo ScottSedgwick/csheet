@@ -100,7 +100,7 @@ data BagOfHolding = BagOfHolding {
 instance FromJSON BagOfHolding
 instance ToJSON BagOfHolding
 
-data PortableHole = PortableHole {
+newtype PortableHole = PortableHole {
   phItems :: [String]
 } deriving (Eq, Show, Generic)
 instance FromJSON PortableHole
@@ -115,8 +115,15 @@ data AbilityGroup = AbilityGroup {
 instance FromJSON AbilityGroup
 instance ToJSON AbilityGroup
 
+data SheetType = SheetTypeStandard
+               | SheetTypeIcewindDale
+               deriving (Eq, Show, Generic)
+instance FromJSON SheetType
+instance ToJSON SheetType
+
 data Character = Character
   { characterName :: String
+  , sheetType :: SheetType
   , className :: String
   , subclass :: String
   , level :: Integer

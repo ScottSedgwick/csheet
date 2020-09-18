@@ -1,10 +1,20 @@
 module Utilities where
 
 import DataTypes
-import Graphics.PDF(PDFFont, PDFFloat, Draw, Complex(..), Circle(..), drawText, text, toPDFString, moveto, lineto, strokePath, setWidth, fill)
+import Graphics.PDF(PDFFont, PDFFloat, Draw, Complex(..), Circle(..), drawText, text, textWidth, toPDFString, moveto, lineto, strokePath, setWidth, fill)
 
 drawMyText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
 drawMyText fnt x y s = drawText $ text fnt x y (toPDFString s)
+
+drawRaText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
+drawRaText fnt x y s = drawText $ text fnt x' y (toPDFString s)
+  where
+    x' = x - textWidth fnt (toPDFString s)
+
+drawCntText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
+drawCntText fnt x y s = drawText $ text fnt x' y (toPDFString s)
+  where
+    x' = x - (textWidth fnt (toPDFString s) / 2)
 
 drawMyStrings :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [String] -> Draw()
 drawMyStrings _   _ _ _  []     = return ()

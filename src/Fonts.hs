@@ -5,6 +5,9 @@ import Graphics.PDF(PDFFont(..), FontName(..))
 fntLarge :: PDFFont
 fntLarge = PDFFont Helvetica_Bold 14
 
+fntNormal :: PDFFont
+fntNormal = PDFFont Helvetica 12
+
 fntSmall :: PDFFont
 fntSmall = PDFFont Helvetica 10
 

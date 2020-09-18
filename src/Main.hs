@@ -41,18 +41,29 @@ data Pages = Pages
 
 main :: IO ()
 main = do
-  charname   <- getCharName
-  mbg1       <- readJpegFile "images/page1.jpg"
-  mice1      <- readJpegFile "images/icewinddalePage1.jpg"
-  mbg2       <- readJpegFile "images/page2.jpg"
-  mice2      <- readJpegFile "images/icewinddalePage2.jpg"
-  mbgSpells  <- readJpegFile "images/pageSpells.jpg"
-  miceSpells <- readJpegFile "images/icewinddaleSpells.jpg"
-  mbgBags    <- readJpegFile "images/pageBag.jpg"
-  mbgBOH     <- readJpegFile "images/bag-of-holding.jpg"
-  mbgPH      <- readJpegFile "images/portable-hole.jpg"
-  let [bg1, bg2, bgSpells, bgBags, bgBOH, bgPH, ice1, ice2, iceSpells] = rights [mbg1, mbg2, mbgSpells, mbgBags, mbgBOH, mbgPH, mice1, mice2, miceSpells]
-  let images = Images 
+  charname <- getCharName
+  chardata <- B.readFile (charname ++ ".json")
+  case parseCharacter chardata of
+    Left err -> putStrLn "Error parsing JSON:" >> die err
+    Right ch -> buildSheet charname ch
+
+standardImageFilenames :: [FilePath]
+standardImageFilenames = ["images/page1.jpg", "images/page2.jpg", "images/pageSpells.jpg", "images/pageBag.jpg", "images/bag-of-holding.jpg", "images/portable-hole.jpg"]
+
+icewindDaleImageFilenames :: [FilePath]
+icewindDaleImageFilenames = ["images/icewinddalePage1.jpg", "images/icewinddalePage2.jpg", "images/icewinddaleSpells.jpg", "images/pageBag.jpg", "images/bag-of-holding.jpg", "images/portable-hole.jpg"]
+
+loadImages :: Character -> IO Images
+loadImages ch = 
+  case sheetType ch of
+    SheetTypeStandard -> loadImageFiles standardImageFilenames
+    SheetTypeIcewindDale -> loadImageFiles icewindDaleImageFilenames
+
+loadImageFiles :: [FilePath] -> IO Images
+loadImageFiles filenames = do
+  efs <- mapM readJpegFile filenames
+  let [bg1, bg2, bgSpells, bgBags, bgBOH, bgPH] = rights efs
+  return Images 
         { imgPage1 = bg1
         , imgPage2 = bg2
         , imgSpells = bgSpells
@@ -60,21 +71,40 @@ main = do
         , imgBoh = bgBOH
         , imgHole = bgPH
         }
-  let pages = Pages
-        { page1 = drawPage1
-        , page2 = drawPage2
-        , pageSpells = drawSpellPage
-        , pageBags = drawBackpackPage
-        , pageBoh = drawBagOfHolding
-        , pageHole = drawPortableHole
-        }
-  let charFile = charname ++ ".json"
-  chardata <- B.readFile charFile
-  case parseCharacter chardata of
-    Left err -> do
-      putStrLn "Error parsing JSON:"
-      die err
-    Right ch ->  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages)
+
+loadPages :: Character -> Pages
+loadPages ch =
+  case sheetType ch of
+    SheetTypeStandard -> loadStandardPages
+    SheetTypeIcewindDale -> loadIcewindDalePages
+
+loadStandardPages :: Pages
+loadStandardPages = 
+  Pages
+    { page1 = drawPage1
+    , page2 = drawPage2
+    , pageSpells = drawSpellPage
+    , pageBags = drawBackpackPage
+    , pageBoh = drawBagOfHolding
+    , pageHole = drawPortableHole
+    }
+
+loadIcewindDalePages :: Pages
+loadIcewindDalePages = 
+  Pages
+    { page1 = drawIcePage1
+    , page2 = drawIcePage2
+    , pageSpells = drawIceSpellPage
+    , pageBags = drawBackpackPage
+    , pageBoh = drawBagOfHolding
+    , pageHole = drawPortableHole
+    }
+
+buildSheet :: String -> Character -> IO()
+buildSheet charname ch = do
+  images <- loadImages ch
+  let pages = loadPages ch
+  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages)
 
 doc :: Character -> Images -> Pages -> PDF()
 doc c images pages = do
