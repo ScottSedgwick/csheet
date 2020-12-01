@@ -1,20 +1,21 @@
 module Utilities where
 
 import DataTypes
-import Graphics.PDF(PDFFont, PDFFloat, Draw, Complex(..), Circle(..), drawText, text, textWidth, toPDFString, moveto, lineto, strokePath, setWidth, fill)
+import Data.Text    (pack)
+import Graphics.PDF (PDFFont, PDFFloat, Draw, Complex(..), Circle(..), drawText, text, textWidth, moveto, lineto, strokePath, setWidth, fill)
 
 drawMyText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
-drawMyText fnt x y s = drawText $ text fnt x y (toPDFString s)
+drawMyText fnt x y s = drawText $ text fnt x y (pack s)
 
 drawRaText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
-drawRaText fnt x y s = drawText $ text fnt x' y (toPDFString s)
+drawRaText fnt x y s = drawText $ text fnt x' y (pack s)
   where
-    x' = x - textWidth fnt (toPDFString s)
+    x' = x - textWidth fnt (pack s)
 
 drawCntText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
-drawCntText fnt x y s = drawText $ text fnt x' y (toPDFString s)
+drawCntText fnt x y s = drawText $ text fnt x' y (pack s)
   where
-    x' = x - (textWidth fnt (toPDFString s) / 2)
+    x' = x - (textWidth fnt (pack s) / 2)
 
 drawMyStrings :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [String] -> Draw()
 drawMyStrings _   _ _ _  []     = return ()
@@ -63,11 +64,14 @@ drawHLine y = do
 intToPDFFloat :: Integer -> PDFFloat
 intToPDFFloat = fromIntegral
 
-drawCircle :: PDFFloat -> PDFFloat -> PDFFloat -> Integer -> Draw()
+drawCircle :: PDFFloat -> PDFFloat -> PDFFloat -> Double -> Draw()
 drawCircle _ _ _ 0 = return ()
-drawCircle x y r m = do
-  setWidth 3
-  fill (Circle x y (r - 2 + (intToPDFFloat m * 2)))
+drawCircle x y r m =
+  if m < 1
+    then return ()
+    else do
+      setWidth 3
+      fill (Circle x y (r - 2 + (m * 2)))
 
 
 statBonus :: Integer -> Integer
@@ -81,8 +85,8 @@ saveBonus stat saveB prof = statBonus stat + saveB * prof
 profBonus :: Character -> Integer
 profBonus c = (level c - 1) `div` 4 + 2 + proficiencyBonus c
 
-skillBonus :: Integer -> Integer -> Integer -> Integer -> Integer
-skillBonus stat saveB prof profB = (statBonus stat) + (prof * profB) -- + (profB * saveB)
+skillBonus :: Integer -> Integer -> Double -> Integer -> Integer
+skillBonus stat saveB prof profB = round ((fromIntegral $ statBonus stat) + (prof * fromIntegral profB)) -- + (profB * saveB)
 
 showClass :: Character -> String
 showClass c = if lc == 0 then "" else cc ++ ssc ++ slc

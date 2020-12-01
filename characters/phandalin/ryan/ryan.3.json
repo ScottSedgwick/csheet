@@ -1,0 +1,256 @@
+{
+  "characterName": "Ryan",
+  "sheetType": "SheetTypeIcewindDale",
+  "className": "Bard",
+  "subclass": "College of Swords",
+  "level": 3,
+  "background": "Pirate",
+  "playerName": "Scott",
+  "race": "Human",
+  "alignment": "None",
+  "experience": "(Milestone)",
+
+  "age": 19,
+  "height": "6'4\" (193cm)",
+  "weight": "198lbs (90kg)",
+  "eyeColour": "Blue",
+  "skinColour": "Light Tan",
+  "hairColour": "Blond",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 11,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 24,
+  "hitDice": 8,
+
+  "strength": 13,
+  "dexterity": 15,
+  "constitution": 14,
+  "intelligence": 9,
+  "wisdom": 10,
+  "charisma": 16,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0.5,
+  "skillAnimalHandling": 0.5,
+  "skillArcana": 0.5,
+  "skillAthletics": 1,
+  "skillDeception": 0.5,
+  "skillHistory": 0.5,
+  "skillInsight": 0.5,
+  "skillIntimidation": 0.5,
+  "skillInvestigation": 0.5,
+  "skillMedicine": 0.5,
+  "skillNature": 0.5,
+  "skillPerception": 1,
+  "skillPerformance": 1,
+  "skillPersuasion": 2,
+  "skillReligion": 0.5,
+  "skillSleightOfHand": 0.5,
+  "skillStealth": 2,
+  "skillSurvival": 0.5,
+
+  "proficiencies": [
+    "Pirate: Athletics, Perception, Navigator's",
+    " tools, vehicles (water)",
+    "Bard: light armour, simple weapons, rapiers,",
+    " hand crossbows, longswords, short swords",
+    " 3 musical instruments (Lute, Flute, Viol)",
+    " 3 skills (Performance, Persuasion, Stealth)",
+    "College of Swords: medium armour, scimitar"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Rapier",
+          "damage": "1d8+4 (P)",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Scimitar",
+          "damage": "1d6+4/2 (S)",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Dagger",
+          "damage": "1d4+2 (P)",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Unarmed",
+          "damage": "2",
+          "bonus": "+3"
+      },
+      {
+          "weapon": "Hand Crossbow",
+          "damage": "1d6+2 (30/120)",
+          "bonus": "+4"
+      }
+  ],
+  
+  "personalityTraits": [
+  ],
+  "ideals": [
+  ],
+  "bonds": [
+  ],
+  "flaws": [
+  ],
+  "features": [
+    "Spellcasting, Ritual Casting",
+    "Bardic Inspiration (3 x d6) (LR), 60', to ability check,",
+    " attack roll or saving throw.",
+    "Jack of All Trades (half prof to all skills)",
+    "Song of Rest (+1d6/HD on short rest)",
+    "College of Swords",
+    " 2 Weapon Fighting (add mod to dmg on 2nd attack)",
+    " Blade flourish: +10' to speed when I attack",
+    "  Defensive: 1BI to dmg and AC for this turn",
+    "  Slashing: 1BI to dmg and to any creatures in 5'R",
+    "  Mobile: 1BI to dmg and push target 5', can use",
+    "   reaction to move up to them",
+    "Expertise (2 skills): Persuasion, Stealth"
+  ],
+  
+  "backstory": [
+    "Bad Reputation (Roberts). If I identify myself,",
+    "people are afraid of me due to my reputation.",
+    "I can get away with minor criminal offenses",
+    "(e.g. refusing to pay for food, or breaking down",
+    "doors in a shop) since most people will not want",
+    "to report my activity to any authorities.",
+    "This reputation is well deserved, but deliberately",
+    "crafted. Roberts is fully cogniscent of the use of",
+    "a terrifying reputation for a pirate, and goes out",
+    "of his way to cultivate it when he is acting in that",
+    "role.",
+    "At other times, he is easy going and pleasant.",
+    "Ryan left home as a young man to earn his",
+    "fortune, but his ship was captured by pirates.",
+    "The pirate captain took Ryan on as a valet for 3",
+    "years. It was a fine time for Ryan, learning to",
+    "fence, fight, anything they would teach him. The",
+    "captain and he eventually became friends.",
+    "And then it happened."
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 85,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+            "2 Scimitars (-50gp)"
+          ],
+          "bagMainPouch": [
+            "Pirate: 10gp",
+            " Belaying Pin, 50' silk rope,",
+            " Lucky charm: Engraving of a young woman",
+            " Set of common clothes",
+            "Bard: 125gp",
+            " Rapier",
+            " Entertainer pack",
+            "  Backpack, Bedroll, 2 costumes, 5 candles",
+            "  5 days rations, waterskin, disguise kit",
+            " Musical instrument (Lute)",
+            " Leather armour",
+            " Dagger",
+            "Black face covering mask"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "",
+          "bagRope": "",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Bard",
+          "spellcastingAbility": "Cha",
+          "spellSaveDC": 13,
+          "spellAttackBonus": 5,
+          "spellsCantrips": [
+            "Light",
+            "Vicious Mockery"
+          ],
+          "slotsLevel1":4,
+          "spellsLevel1": [
+            "Dissonant Whispers",
+            "Healing Word",
+            "Heroism",
+            "Sleep"
+          ],
+          "slotsLevel2": 2,
+          "spellsLevel2": [
+            "Blindness/Deafness",
+            "Mirror Image"
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}

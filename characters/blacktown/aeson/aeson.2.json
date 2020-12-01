@@ -61,13 +61,13 @@
     "skillSurvival": 0,
   
     "proficiencies": [
-        "Daggers",
-        "Darts",
-        "Slings",
-        "Quarterstaffs",
-        "Light Crossbows",
+        "Daggers, Quarterstaffs",
+        "Darts, Slings, Light Crossbows",
         "",
-        "Common, Undercommon, Celestial"
+        "Common, Undercommon, Celestial",
+        "",
+        "Noble: Lanceboard Set (Chess)",
+        "Position of Privilege"
     ],
   
     "attacks": [
@@ -116,11 +116,7 @@
         "Persuasion, Deception",
         "(2nd) Font of Magic, 2pts (1 more 1st level slot)",
         "",
-        "Noble:",
-        "History, Sleight of Hand",
-        "Lanceboard Set (Chess)",
-        "Language: Undercommon",
-        "Position of Privilege"
+        "Noble: History, Sleight of Hand"
     ],
     
     "backstory": [
@@ -171,13 +167,7 @@
         "20 bolts in Quiver",
         "Arcane Focus",
         "2 Daggers",
-        "Dungeoneers pack",
-        "",
-        "Noble:",
-        "Set of fine clothes",
-        "Signet Ring",
-        "Scroll of Pedigree",
-        "25gp - 11gp,6sp,2cp"
+        "Dungeoneers pack"
     ],
     
     "backpacks": [

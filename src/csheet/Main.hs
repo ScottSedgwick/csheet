@@ -1,6 +1,7 @@
 module Main where
 
 import DataTypes
+import Fonts (Fonts, loadFonts)
 import Pages
 
 import Data.Aeson(eitherDecode)
@@ -31,12 +32,12 @@ data Images = Images
   }
 
 data Pages = Pages
-  { page1 :: Character -> JpegFile -> PDF()
-  , page2 :: Character -> JpegFile -> PDF()
-  , pageSpells :: JpegFile -> Spellcasting -> PDF()
-  , pageBags :: JpegFile -> Character -> Backpack -> PDF()
-  , pageBoh :: JpegFile -> Character -> BagOfHolding -> PDF()
-  , pageHole :: JpegFile -> Character -> PortableHole -> PDF() 
+  { page1 :: Character -> JpegFile -> Fonts -> PDF()
+  , page2 :: Character -> JpegFile -> Fonts -> PDF()
+  , pageSpells :: JpegFile -> Fonts -> Spellcasting -> PDF()
+  , pageBags :: JpegFile -> Character -> Fonts -> Backpack -> PDF()
+  , pageBoh :: JpegFile -> Character -> Fonts -> BagOfHolding -> PDF()
+  , pageHole :: JpegFile -> Character -> Fonts -> PortableHole -> PDF() 
   }
 
 main :: IO ()
@@ -104,14 +105,15 @@ buildSheet :: String -> Character -> IO()
 buildSheet charname ch = do
   images <- loadImages ch
   let pages = loadPages ch
-  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages)
+  fonts <- loadFonts
+  B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages fonts)
 
-doc :: Character -> Images -> Pages -> PDF()
-doc c images pages = do
-  page1 pages c (imgPage1 images)
-  page2 pages c (imgPage2 images)
-  mapM_ (pageSpells pages $ imgSpells images) (spellcasting c)
-  mapM_ (pageBags pages (imgBags images) c) (backpacks c)
-  mapM_ (pageBoh pages (imgBoh images) c) (bagsOfHolding c)
-  mapM_ (pageHole pages (imgHole images) c) (portableHoles c)
-  drawAbilities c (abilities c)
+doc :: Character -> Images -> Pages -> Fonts -> PDF()
+doc c images pages fonts = do
+  page1 pages c (imgPage1 images) fonts
+  page2 pages c (imgPage2 images) fonts
+  mapM_ (pageSpells pages (imgSpells images) fonts) (spellcasting c)
+  mapM_ (pageBags pages (imgBags images) c fonts) (backpacks c)
+  mapM_ (pageBoh pages (imgBoh images) c fonts) (bagsOfHolding c)
+  mapM_ (pageHole pages (imgHole images) c fonts) (portableHoles c)
+  -- drawAbilities c (abilities c) fonts

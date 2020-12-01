@@ -1,0 +1,324 @@
+{
+  "characterName": "Thomas Scrollseeker",
+  "sheetType": "SheetTypeIcewindDale",
+  "className": "Wizard",
+  "subclass": "War Mage",
+  "level": 2,
+  "background": "Faction Agent (Lords Alliance)",
+  "playerName": "Scott S",
+  "race": "Rock Gnome",
+  "alignment": "None",
+  "experience": 0,
+
+  "age": 50,
+  "height": "4' 8\"",
+  "weight": "44 lbs",
+  "eyeColour": "Green",
+  "skinColour": "Pale",
+  "hairColour": "Brown",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 10,
+  "acBonus": 0,
+  "initiative": 3,
+  "speed": 25,
+  "hitPoints": 14,
+  "hitDice": 6,
+
+  "strength": 8,
+  "dexterity": 14,
+  "constitution": 14,
+  "intelligence": 17,
+  "wisdom": 12,
+  "charisma": 10,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 1,
+  "wisdomBonus": 1,
+  "charismaBonus": 0,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 1,
+  "skillAthletics": 0,
+  "skillDeception": 0,
+  "skillHistory": 1,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 0,
+
+  "proficiencies": [
+    "Artisans Tools",
+    "Common, Gnomish"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Dagger",
+          "damage": "1d4+2 P",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Quarterstaff",
+          "damage": "1d6-1 B",
+          "bonus": "+1"
+      },
+      {
+          "weapon": "Dart",
+          "damage": "1d4+2 P",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Sling",
+          "damage": "1d4+2 B",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Lt Crossbow",
+          "damage": "1d8+2 P",
+          "bonus": "+4"
+      },
+      {
+          "weapon": "Unarmed",
+          "damage": "0",
+          "bonus": "-1"
+      }
+  ],
+  
+  "personalityTraits": [
+    "Perfectionist",
+    "Machines are more to my liking than",
+    "people. They're understandable."
+  ],
+  "ideals": [
+    "Community is a machine made of people,",
+    "and like any machine, must be",
+    "maintained - and also improved."
+  ],
+  "bonds": [
+    "He often feels stuck with his Aunt Jenny,",
+    "but in the end will always stand by her",
+    "before all else."
+  ],
+  "flaws": [
+    "He is innately good, but if anything can",
+    "tempt him, it is knowledge. He very nearly",
+    "named himself 'Scrollstealer', and it would",
+    "have been apt."
+  ],
+  "features": [
+    "Arcane Recovery: 1/day recover Wiz Lvl/2",
+    "rounded up spell slots after short rest.",
+    "Ritual Casting.",
+    "Arcane Deflection: when hit by attack or fail save,",
+    "use reaction to gain +2 AC against that attack, or",
+    "+4 bonus to that save. When I use this ability I",
+    "can't cast spells other than cantrips until the end",
+    "of my next turn.",
+    "Tactical wit: Add Intelligence bonus to initiative",
+    "modifier.",
+    "",
+    "Gnome Cunning: Adv on all Wis, Int & Cha saves vs",
+    "magic.",
+    "Darkvision, 60 feet",
+    "Artificer's Lore: x2 Proficiency on Int",
+    "(History) checks wrt magic items, alchemical objects,",
+    "or technological devices",
+    "Tinker: Can create Clockwork Toy, Fire Starter, or",
+    "Music Box. (3 at a time)."
+  ],
+  
+  "backstory": [
+    "Thomas has been driven - some say obsessed -",
+    "with figuring out the world since he was a young",
+    "child. Not in the way most people do, to gain power,",
+    "or wealth, or manipulate other people. Thomas",
+    "wants to know how everything works right down to",
+    "the level of fundamental particles (probably thaums,",
+    "but he isn't certain of that). He believes everything",
+    "is understandable, and ignorance is no shame, but",
+    "a sign to investigate more deeply.",
+    "As a result, he has little patience with people who",
+    "engage in what he calls 'woo-woo thinking'.",
+    "Warlocks and clerics, who gain power by sucking up",
+    "to higher beings, are, in his opinion, taking",
+    "unacceptable shortcuts which will come back to",
+    "haunt them. Perversely, he doesn't extend this",
+    "prejudice to people who don't practice magic at all -",
+    "not being interested is fine by him, he's only irritated",
+    "by people who do profess deeper knowledge, and",
+    "then start spouting inane homilies masquerading as",
+    "wisdom.",
+    "This prejudice colours his relationship with his great",
+    "aunt, Jenny Greentooth, who he loves, but regularly",
+    "refers to as a blissed-out hippie tree-hugger.",
+    "Thomas' secret desire is to know everything, and to",
+    "that end, the one place he most wants to visit is the",
+    "Library of All Knowledge. He has been a casual",
+    "follower of Deneir ever since learning of its",
+    "existence, and even changed his name to Thomas",
+    "Scrollseeker in honour of the Libraries caretaker,"
+  ],
+
+  "treasure": [
+    "Thomas Bookbinder. That was the last straw for his",
+    "family - who think he is still going through a teenage",
+    "rebellious phase - and they sent him off to assist his",
+    "Aunt Jenny, in the hope she could install good",
+    "Gnomish values in him.  It hasn't worked.",
+    "In his first real outing as an adventurer, Thomas",
+    "allowed his excitement to get the better of him and it",
+    "almost killed the entire party. He doesn't talk about it,",
+    "but he is APPALLED that he let his emotions master",
+    "his reason, and he is determined it will never happen",
+    "again."
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 8,
+      "electrum": 0,
+      "gold": 49,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [
+    "Lord's Alliance", 
+    "Familiar: Nyctimene the Owl.",
+    "  AC: 11.  HP: 1.  Spd: 5'/60' fly.",
+    "  Perception + 3, Stealth +3", 
+    "  Darkvision 120', Passive Perception 13",
+    "  Flyby. Nyctimene doesn't provoke opportunity attacks",
+    "  when she flies out of an enemy's reach.",
+    "  Keen Hearing and Sight. Nyctimene has advantage",
+    "  on Wisdom (Perception) checks that rely on hearing",
+    "  or sight.",
+    "Thomas is supposed to be assisting Larno Albrek in",
+    "Phandalin"
+  ],
+
+  "equipment": [
+    "Lords Alliance Badge",
+    "Lords Alliance Regulations",
+    "Set of common clothes",
+    "Pouch",
+    "2 Daggers",
+    "Arcane Focus",
+    "Scholars pack",
+    "Spellbook"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+            "Book of Lore",
+            "10 sheets of parchment"
+          ],
+          "bagPocket2": [
+            "Bottle of Ink",
+            "Ink Pen",
+            "Little bag of sand"
+          ],
+          "bagPocket3": [
+            "Small Knife"
+          ],
+          "bagPocket4": [
+            "Waterskin"
+          ],
+          "bagFlapPouch": [
+            "Small Owl Clockwork Toy",
+            "Firestarter designed for Owls",
+            "Music box",
+            "Artisans Tools"
+          ],
+          "bagMiddlePouch": [
+            "Mess kit",
+            "10 days Rations"
+          ],
+          "bagMainPouch": [
+            "Dart filled with green liquid",
+            "Vial filled with gray ooze",
+            "2 empty vials (I owe Jenny 3)",
+            "2 short swords"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "Bedroll",
+          "bagRope": "50 feet",
+          "bagAmmo": "10 Darts",
+          "bagTorches": "10"
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Wizard",
+          "spellcastingAbility": "Int",
+          "spellSaveDC": 13,
+          "spellAttackBonus": 5,
+          "spellsCantrips": [
+            "Fire Bolt",
+            "Mage Hand",
+            "Toll the Dead"
+          ],
+          "slotsLevel1":3,
+          "spellsLevel1": [
+            "Chromatic Orb",
+            "Feather Fall",
+            "Find Familiar (ritual)",
+            "Identify (ritual)",
+            "Mage Armour",
+            "Magic Missile",
+            "Shield",
+            "Sleep"
+          ],
+          "slotsLevel2": 0,
+          "spellsLevel2": [
+          ],
+          "slotsLevel3": 0,
+          "spellsLevel3": [
+          ],
+          "slotsLevel4": 0,
+          "spellsLevel4": [
+          ],
+          "slotsLevel5": 0,
+          "spellsLevel5": [
+          ],
+          "slotsLevel6": 0,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}
