@@ -9,6 +9,7 @@
   "race": "Human",
   "alignment": "None",
   "experience": "(Milestone)",
+  "appearance": "ryan_portrait.jpg",
 
   "age": 19,
   "height": "6'4\" (193cm)",
@@ -31,7 +32,7 @@
   "dexterity": 15,
   "constitution": 14,
   "intelligence": 9,
-  "wisdom": 10,
+  "wisdom": 11,
   "charisma": 16,
 
   "strengthBonus": 0,
@@ -83,7 +84,7 @@
       },
       {
           "weapon": "Dagger",
-          "damage": "1d4+2 (P)",
+          "damage": "1d4+2 (P,20/60)",
           "bonus": "+4"
       },
       {
@@ -93,18 +94,28 @@
       },
       {
           "weapon": "Hand Crossbow",
-          "damage": "1d6+2 (30/120)",
+          "damage": "1d6+2 (P,30/120)",
           "bonus": "+4"
       }
   ],
   
   "personalityTraits": [
+    "I work hard so I can play when the work is",
+    "done.",
+    "I enjoy sailing into new ports and making",
+    "new friends over a flagon of ale."
   ],
   "ideals": [
+    "People. I'm committed to my crewmates,",
+    "not to ideals."
   ],
   "bonds": [
+    "In my home town, I have a paramour",
+    "whose eyes nearly stole me from the sea."
   ],
   "flaws": [
+    "My pride will probably lead to my",
+    "destruction."
   ],
   "features": [
     "Spellcasting, Ritual Casting",
@@ -153,7 +164,8 @@
       "gems": []
   },
 
-  "allies": [],
+  "allies": [
+  ],
 
   "equipment": [
   ],
@@ -162,9 +174,9 @@
       { 
           "bagCash" : {
           "copper": 0,
-          "silver": 0,
+          "silver": 4,
           "electrum": 0,
-          "gold": 85,
+          "gold": 75,
           "platinum": 0,
           "gems": []
           },
@@ -177,24 +189,40 @@
           "bagPocket4": [
           ],
           "bagFlapPouch": [
+            "Breastplate",
+            "2 hand crossbows",
+            "Bandolier with 30 quarrels",
+            "2 cases crossbow bolts"
           ],
           "bagMiddlePouch": [
-            "2 Scimitars (-50gp)"
+            "2 Scimitars (-50gp)",
+            "4 Daggers (-8gp)",
+            "Dagger bandolier",
+            "Tinderbox (-5sp)",
+            "10 torches (-1sp)",
+            "Flute (-2gp)"
           ],
           "bagMainPouch": [
             "Pirate: 10gp",
-            " Belaying Pin, 50' silk rope,",
+            " Belaying Pin,",
+            " 50' silk rope,",
             " Lucky charm: Engraving of a young woman",
             " Set of common clothes",
             "Bard: 125gp",
             " Rapier",
             " Entertainer pack",
-            "  Backpack, Bedroll, 2 costumes, 5 candles",
-            "  5 days rations, waterskin, disguise kit",
+            "  Backpack,",
+            "  Bedroll,",
+            "  2 costumes,",
+            "  5 candles",
+            "  5 days rations,",
+            "  Waterskin,",
+            "  Disguise kit",
             " Musical instrument (Lute)",
             " Leather armour",
             " Dagger",
-            "Black face covering mask"
+            "Black face covering mask",
+            "Empty poison flask"
           ],
           "bagTreasure": [],
           "bagBedroll": "",

@@ -1,7 +1,7 @@
 module Fonts where
 
 import Data.Maybe (fromJust)
-import Graphics.PDF (PDFFont(..), FontName(..), FontSize, mkStdFont)
+import Graphics.PDF (AnyFont, PDFFont(..), FontName(..), FontSize, mkStdFont)
 
 data Fonts = Fonts
   { fontLarge :: PDFFont 
@@ -9,6 +9,7 @@ data Fonts = Fonts
   , fontSmall :: PDFFont
   , fontTiny :: PDFFont
   , fontTeeny :: PDFFont
+  , helvetica :: AnyFont
   }
 
 loadFonts :: IO Fonts
@@ -18,12 +19,14 @@ loadFonts = do
   fSmall <- fntSmall
   fTiny <- fntTiny
   fTeeny <- fntTeeny
+  fHelvetica <- mkStdFont Helvetica
   return Fonts
            { fontLarge = fromJust fLarge
            , fontNormal = fromJust fNormal
            , fontSmall = fromJust fSmall
            , fontTiny = fromJust fTiny
            , fontTeeny = fromJust fTeeny
+           , helvetica = fromJust fHelvetica
            }
 
 mkFont :: FontName -> FontSize -> IO (Maybe PDFFont)

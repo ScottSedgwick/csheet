@@ -4,7 +4,7 @@
 module DataTypes where
 
 import Data.Aeson (FromJSON(..), ToJSON)
-import Data.Aeson.BetterErrors (Parse, asIntegral, asRealFloat, asString, eachInArray, fromAesonParser, key, keyOrDefault, toAesonParser')
+import Data.Aeson.BetterErrors (Parse, asIntegral, asRealFloat, asString, eachInArray, fromAesonParser, key, keyOrDefault, keyMay, toAesonParser')
 import GHC.Generics(Generic)
 
 data Alignment = CG | NG | LG | CN | N | LN | CE | NE | LE | None deriving (Eq, Generic)
@@ -172,6 +172,7 @@ data Character = Character
   , race :: String
   , alignment :: Alignment
   , experience :: String
+  , appearance :: Maybe String
 
   , strength :: Integer
   , dexterity :: Integer
@@ -257,6 +258,7 @@ asCharacter = Character
          <*> key "race" asString
          <*> key "alignment" asAlignment
          <*> key "experience" asString
+         <*> keyMay "appearance" asString
 
          <*> key "strength" asIntegral
          <*> key "dexterity" asIntegral

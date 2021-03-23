@@ -1,7 +1,7 @@
 module Pages where
 
 import DataTypes (Character, Spellcasting, Backpack, BagOfHolding, PortableHole, 
-    characterName, race, background, alignment, playerName, experience, 
+    characterName, race, background, alignment, playerName, experience, appearance,
     strength, dexterity, constitution, intelligence, wisdom, charisma,
     inspiration, acBase, acBonus, initiative, speed, hitPoints, 
     strengthBonus, dexterityBonus, constitutionBonus, intelligenceBonus, wisdomBonus, charismaBonus,
@@ -16,10 +16,10 @@ import DataTypes (Character, Spellcasting, Backpack, BagOfHolding, PortableHole,
     bagPocket1, bagPocket2, bagPocket3, bagPocket4, bagFlapPouch, bagMiddlePouch, bagMainPouch, bagCash, bagBedroll, bagRope, bagAmmo, bagTorches, bagTreasure,
     bohPGs, bohItems, phItems)
 import Fonts(Fonts(..))
-import Utilities(drawCntText, drawMyText, drawCircle, drawMyStrings, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, statBonus, profBonus, saveBonus, skillBonus)
+import Utilities(drawCntText, drawTxtBox, drawMyText, drawCircle, drawMyStrings, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, statBonus, profBonus, saveBonus, skillBonus)
 
 import Control.Monad (forM_)
-import Graphics.PDF(Draw, JpegFile, PDF, PDFFloat, PDFJpeg, PDFReference, addPage, createPDFJpeg, drawWithPage, withNewContext, applyMatrix, translate, Complex(..), scale, drawXObject)
+import Graphics.PDF
 
 show0 :: Integer -> String
 show0 0 = ""
@@ -31,11 +31,17 @@ show1 i = show i
 
 show4 :: Integer -> String
 show4 (-4) = ""
+show4 (-5) = ""
 show4 i = show i
 
 show5 :: Integer -> String
 show5 (-5) = ""
+show5 (-3) = ""
 show5 i = show i
+
+show6 :: Integer -> String 
+show6 6 = ""
+show6 x = show x
 
 setupPage :: JpegFile -> Draw() -> PDF()
 setupPage bg p = do
@@ -51,6 +57,18 @@ drawBackgroundImage jpg =
     applyMatrix $ translate (0 :+ 0)
     applyMatrix $ scale 0.47 0.505
     drawXObject jpg
+
+drawImage :: PDFFloat -> PDFFloat -> Maybe (PDFReference PDFJpeg) -> Draw()
+drawImage x y mjpg =
+  case mjpg of
+    Nothing -> pure ()
+    (Just jpg) -> do
+      withNewContext $ do
+        applyMatrix $ translate (x :+ y)
+        drawXObject jpg
+
+mkImage :: Maybe JpegFile -> PDF (Maybe (PDFReference PDFJpeg))
+mkImage mjpg = maybe (pure Nothing) (\jpg -> createPDFJpeg jpg >>= \ref -> pure (Just ref)) mjpg
 
 drawPage1 :: Character -> JpegFile -> Fonts -> PDF()
 drawPage1 c bg fs = setupPage bg $ do
@@ -148,7 +166,7 @@ calculatedInitiative :: Character -> String
 calculatedInitiative c = show4 $ statBonus (dexterity c) + initiative c
 
 calculatedArmourClass :: Character -> String
-calculatedArmourClass c = show5 $ acBase c + statBonus (dexterity c) + acBonus c
+calculatedArmourClass c = show6 $ acBase c + statBonus (dexterity c) + acBonus c
 
 calculatedSpeed :: Character -> String
 calculatedSpeed c = if speed c == 0 then "" else show (speed c) ++ "'"
@@ -227,38 +245,45 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawMyAttacks (fontTiny fs) 222 395 21 (take 3 $ attacks c)
   drawMyAttacks (fontTiny fs) 222 330 13 (drop 3 $ attacks c)
 
-drawPage2 :: Character -> JpegFile -> Fonts -> PDF()
-drawPage2 c bg fs = setupPage bg $ do
-  drawMyText (fontLarge fs)  55 751 (characterName c) 
-  drawMyText (fontSmall fs) 265 767 (show0 $ age c)
-  drawMyText (fontSmall fs) 265 738 (eyeColour c)
-  drawMyText (fontSmall fs) 370 767 (height c)
-  drawMyText (fontSmall fs) 370 738 (skinColour c)
-  drawMyText (fontSmall fs) 465 767 (weight c)
-  drawMyText (fontSmall fs) 465 738 (hairColour c)
-  drawMyStrings (fontTeeny fs)  35 423 11.5 (backstory c)
-  drawMyStrings (fontTeeny fs) 225 687 11.5 (allies c)
-  drawMyStrings (fontTeeny fs) 225 433 11.5 (take 19 (drop 38 (features c)))
-  drawMyStrings (fontTeeny fs) 405 433 11.5 (drop 57 (features c))
-  drawMyStrings (fontTeeny fs) 225 190 11.5 (take 14 (treasure c))
-  drawMyStrings (fontTeeny fs) 405 190 11.5 (drop 14 (treasure c))
+drawPage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
+drawPage2 c bg mapp fs = do
+  app <- mkImage mapp
+  setupPage bg $ do
+    drawMyText (fontLarge fs)  55 751 (characterName c) 
+    drawMyText (fontSmall fs) 265 767 (show0 $ age c)
+    drawMyText (fontSmall fs) 265 738 (eyeColour c)
+    drawMyText (fontSmall fs) 370 767 (height c)
+    drawMyText (fontSmall fs) 370 738 (skinColour c)
+    drawMyText (fontSmall fs) 465 767 (weight c)
+    drawMyText (fontSmall fs) 465 738 (hairColour c)
+    drawImage 35 490 app
+    drawMyStrings (fontTeeny fs)  35 423 11.5 (backstory c)
+    drawMyStrings (fontTeeny fs) 225 687 11.5 (allies c)
+    drawMyStrings (fontTeeny fs) 225 433 11.5 (take 19 (drop 38 (features c)))
+    drawMyStrings (fontTeeny fs) 405 433 11.5 (drop 57 (features c))
+    drawMyStrings (fontTeeny fs) 225 190 11.5 (take 14 (treasure c))
+    drawMyStrings (fontTeeny fs) 405 190 11.5 (drop 14 (treasure c))
 
-drawIcePage2 :: Character -> JpegFile -> Fonts -> PDF()
-drawIcePage2 c bg fs = setupPage bg $ do
-  drawCntText (fontLarge fs) 180 760 (characterName c) 
-  drawMyText  (fontSmall fs) 312 775 (show0 $ age c)
-  drawMyText  (fontSmall fs) 312 741 (eyeColour c)
-  drawMyText  (fontSmall fs) 406 775 (height c)
-  drawMyText  (fontSmall fs) 406 741 (skinColour c)
-  drawMyText  (fontSmall fs) 500 775 (weight c)
-  drawMyText  (fontSmall fs) 500 741 (hairColour c)
-  drawMyStrings (fontTeeny fs)  37 417 13.2 (backstory c)
-  drawMyStrings (fontTeeny fs) 225 690 13.2 (take 18 (allies c))
-  drawMyStrings (fontTeeny fs) 405 518 13.2 (drop 18 (allies c))
-  drawMyStrings (fontTeeny fs) 225 425 13.2 (take 15 (drop 29 (features c)))
-  drawMyStrings (fontTeeny fs) 405 425 13.2 (drop 44 (features c))
-  drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (treasure c))
-  drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 12 (treasure c))
+drawIcePage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
+drawIcePage2 c bg mapp fs = do
+  app <- mkImage mapp
+  setupPage bg $ do
+    drawCntText (fontLarge fs) 180 760 (characterName c) 
+    drawMyText  (fontSmall fs) 312 775 (show0 $ age c)
+    drawMyText  (fontSmall fs) 312 741 (eyeColour c)
+    drawMyText  (fontSmall fs) 406 775 (height c)
+    drawMyText  (fontSmall fs) 406 741 (skinColour c)
+    drawMyText  (fontSmall fs) 500 775 (weight c)
+    drawMyText  (fontSmall fs) 500 741 (hairColour c)
+    drawImage 35 490 app
+    -- drawMyStrings (fontTeeny fs)  37 417 13.2 (backstory c)
+    drawTxtBox (helvetica fs) 35 30 162 395 (unlines $ backstory c)
+    drawMyStrings (fontTeeny fs) 225 690 13.2 (take 18 (allies c))
+    drawMyStrings (fontTeeny fs) 405 518 13.2 (drop 18 (allies c))
+    drawMyStrings (fontTeeny fs) 225 425 13.2 (take 15 (drop 29 (features c)))
+    drawMyStrings (fontTeeny fs) 405 425 13.2 (drop 44 (features c))
+    drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (treasure c))
+    drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 12 (treasure c))
 
 drawSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawSpellPage bg fs c = setupPage bg $ do
@@ -305,7 +330,7 @@ drawIceSpellPage bg fs c = setupPage bg $ do
   drawCntText (fontLarge fs)  43 488 "1"
   drawMyStrings (fontTiny fs)   50 643 14.7 (take 8 $ spellsCantrips c)
   drawMyStrings (fontTiny fs)  140 643 14.7 (drop 8 $ spellsCantrips c)
-  drawMyStrings (fontTiny fs)   50 446 14.7 (take 13 $ spellsLevel1 c)
+  drawMyStrings (fontTiny fs)   50 461 14.7 (take 13 $ spellsLevel1 c)
   drawMyStrings (fontTiny fs)  140 446 14.7 (drop 13 $ spellsLevel1 c)
   drawMyStrings (fontTiny fs)   50 224 14.7 (take 13 $ spellsLevel2 c)
   drawMyStrings (fontTiny fs)  140 224 14.7 (drop 13 $ spellsLevel2 c)

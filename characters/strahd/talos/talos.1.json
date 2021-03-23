@@ -1,0 +1,253 @@
+{
+  "characterName": "Talos",
+  "sheetType": "SheetTypeIcewindDale",
+  "className": "Fighter",
+  "subclass": "",
+  "level": 1,
+  "background": "Haunted One",
+  "playerName": "Scott",
+  "race": "Warforged",
+  "alignment": "LG",
+  "experience": "0",
+
+  "age": 2,
+  "height": "6'7\" (201cm)",
+  "weight": "295 lbs (134kg)",
+  "eyeColour": "Blue",
+  "skinColour": "Silver Metal",
+  "hairColour": "None",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 10,
+  "acBonus": 1,
+  "initiative": 0,
+  "speed": 30,
+  "hitPoints": 0,
+  "hitDice": 10,
+
+  "strength": 0,
+  "dexterity": 0,
+  "constitution": 0,
+  "intelligence": 0,
+  "wisdom": 0,
+  "charisma": 0,
+
+  "strengthBonus": 1,
+  "dexterityBonus": 0,
+  "constitutionBonus": 1,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 0,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 1,
+  "skillHistory": 0,
+  "skillInsight": 0,
+  "skillIntimidation": 1,
+  "skillInvestigation": 1,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 1,
+
+  "proficiencies": [
+      "All armour, shields and weapons",
+      "Intimidation, Perception, Deception,",
+      "Investigation, Survival",
+      "Smith's Tools",
+      "Common, Draconic, Celestial, Infernal"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Rapier",
+          "damage": "1d8+Dex pierce",
+          "bonus": ""
+      },
+      {
+          "weapon": "Longbow",
+          "damage": "1d8+Dex pierce",
+          "bonus": ""
+      },
+      {
+          "weapon": "Light Crossbow",
+          "damage": "1d8+Dex pierce",
+          "bonus": ""
+      },
+      {
+          "weapon": "Hand Crossbow",
+          "damage": "1d6+Dex pierce",
+          "bonus": ""
+      },
+      {
+          "weapon": "Unarmed",
+          "damage": "1+Str bludgeon",
+          "bonus": ""
+      }
+  ],
+  
+  "personalityTraits": [
+      "I don't run from evil. Evil runs from me.",
+      "I don't talk about the thing that torments",
+      "me. I'd rather not burden others with my",
+      "curse."
+  ],
+  "ideals": [
+      "I kill monsters to make the world a safer",
+      "place, and to exorcise my own demons."
+  ],
+  "bonds": [
+      "There’s evil in me, I can feel it. It must",
+      "never be set free."
+  ],
+  "flaws": [
+    "The killers took away the only person that",
+    "loved me. I desperately search for others",
+    "who can aceept me."
+  ],
+  "features": [
+      " ============ FIGHTER ============ ",
+      "Proficiencies: All Armour & Shields",
+      "Weapons: Simple Weapons, Martial Weapons",
+      "Saving Throws: Str, Con",
+      "Skills: Intimidation, Perception",
+      "Chain mail", 
+      "A Longbow and 20 arrows",
+      "A Rapier and a shield",
+      "A light crossbow and 20 bolts",
+      "Fighting Style: Archery, +2 to hit with ranged",
+      "Second Wind: Bonus, +1d10+lvl HP, 1/short rest",
+      " ========== CROSSBOW EXPERT ========== ",
+      "You ignore the loading quality of crossbows",
+      "Being within 5' doesn’t impose disadvantage",
+      "When you attack with a one handed weapon, you can",
+      " use a bonus action to attack with a hand crossbow",
+      " ============ WARFORGED ============ ",
+      "Constructed Resilience:",
+      "  You have advantage on saving throws against",
+      "    being poisoned, and you have resistance to",
+      "    poison damage.",
+      "  You don’t need to eat, drink, or breathe.",
+      "  You are immune to disease.",
+      "  You don't need to sleep, and magic can't put you to",
+      "    sleep.",
+      "Sentry's Rest. When you take a long rest, you must",
+      "  spend at least six hours in an inactive, motionless",
+      "  state, rather than sleeping. In this state, you appear",
+      "  inert, but it doesn’t render you unconscious, and",
+      "  you can see and hear as normal.",
+      "Integrated Protection: +1 bonus to Armor Class.",
+      "Specialized Design: Deception, Smith's Tools",
+      "Languages: Common, Draconic",
+      " ============ HAUNTED ONE ============ ",
+      "Skill Proficiencies: Investigation, Survival",
+      "Languages: Celestial, Infernal",
+      "Equipment:  A monster hunter’s pack", 
+      "  A music box that plays whenever its holder dances",
+      "  A set of common clothes",
+      "  1 sp."
+  ],
+  
+  "backstory": [
+      "I was made by a lone genius, who I knew only as 'Doc'.  Doc had almost finished me - he had only a a small amount of tinkering left to do. I was getting my",
+      "last update when mercenaries broke into the workshop, killed my creator. They stole all his notes and materials. They also",
+      "picked up the last part of me that he was working on, which woke me up.",
+      "The mercenaries fled when I arose from the workbench, taking everything with them.  I tracked them down one by one, torturing",
+      "them for information before killing them and moving on to the next one. Eventually I found the one that had stolen",
+      "my missing piece.  After killing him, I installed the last part - a conscience.",
+      "I was immediately crushed with guilt and remorse for my evil deeds, and they haunt me to this day. I wander the land,",
+      "seeking redemption for my actions, and looking for someone who will accept me the way Doc did."
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 1,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "A Longbow and 20 arrows",
+    "A Rapier and a shield",
+    "A light crossbow and 20 bolts"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 1,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+              "A sign that says 'World's largest dancing",
+              "  automaton' on one side, and 'Largest,'",
+              "  not best' on the other.",
+              "A loop of string, attached to the sign",
+              "A hat"
+          ],
+          "bagMainPouch": [
+              "Monster Hunters Pack:",
+              "A chest", 
+              "A crowbar", 
+              "A hammer", 
+              "3 wooden stakes", 
+              "A holy symbol", 
+              "A flask of holy water", 
+              "A set of manacles", 
+              "A steel mirror", 
+              "A flask of oil", 
+              "A tinderbox",
+              "",
+              "Dungeoneers Pack:",
+              "a Backpack",
+              "a Crowbar",
+              "a Hammer",
+              "10 pitons",
+              "10 torches",
+              "a Tinderbox",
+              "10 days of Rations",
+              "a Waterskin",
+              "50 feet of Hempen rope"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "",
+          "bagRope": "50'",
+          "bagAmmo": "20 arrows, 20 bolts",
+          "bagTorches": "13"
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": []
+}

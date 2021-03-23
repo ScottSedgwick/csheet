@@ -25,6 +25,7 @@ executable csheet
                      , aeson
                      , aeson-better-errors
                      , bytestring
+                     , filepath
                      , HPDF
                      , text
 

@@ -131,6 +131,18 @@ spells =
     , spDescription = ""
     }
   , Spell
+    { spName = "Eldritch Blast"
+    , spLevel = 0
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "120 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spDescription = "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.\\\\The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
+    , spHigher = Nothing
+    }
+  , Spell
     { spName = "Fire Bolt"
     , spLevel = 0
     , spType = Evocation
@@ -333,6 +345,18 @@ spells =
     , spDuration = "Instantaneous"
     , spHigher = Nothing
     , spDescription = "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.\\\\The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8) and 17th level (4d8)."
+    }
+  , Spell 
+    { spName = "Sacred Flame"
+    , spLevel = 0
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "60 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spHigher = Nothing
+    , spDescription = "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\\\\The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     }
   , Spell 
     { spName = "Shape Water"
@@ -540,6 +564,18 @@ spells =
     , spHigher = Nothing
     }
   , Spell
+    { spName = "Cure Wounds"
+    , spLevel = 1
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spDescription = "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+    , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+    }
+  , Spell
     { spName = "Detect Magic"
     , spLevel = 1
     , spType = Divination
@@ -684,6 +720,18 @@ spells =
     , spDuration = "Concentration, up to 1 minute"
     , spDescription = "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temprary hit points equal to your spellcasting modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each spell slot above first."
+    }
+  , Spell
+    { spName = "Hex"
+    , spLevel = 1
+    , spType = Enchantment
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (the petrified eye of a newt)"
+    , spDuration = "Concentration, up to 1 hour"
+    , spDescription = "You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.\\\\If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.\\\\A Remove Curse cast on the target ends this spell early."
+    , spHigher = Just "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
     }
   , Spell
     { spName = "Ice Knife"

@@ -1,8 +1,11 @@
+{-# LANGUAGE MultiParamTypeClasses #-}
 module Utilities where
 
 import DataTypes
 import Data.Text    (pack)
-import Graphics.PDF (PDFFont, PDFFloat, Draw, Complex(..), Circle(..), drawText, text, textWidth, moveto, lineto, strokePath, setWidth, fill)
+import Graphics.PDF
+import Graphics.PDF.Shapes
+import Graphics.PDF.Typesetting 
 
 drawMyText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
 drawMyText fnt x y s = drawText $ text fnt x y (pack s)
@@ -22,6 +25,25 @@ drawMyStrings _   _ _ _  []     = return ()
 drawMyStrings fnt x y dy (s:ss) = do
   drawMyText fnt x y s
   drawMyStrings fnt x (y - dy) dy ss
+
+data MyVertStyles = NormalPara
+data MyParaStyles = Normal AnyFont
+instance ComparableStyle MyParaStyles where
+  isSameStyleAs (Normal fa) (Normal fb) = fa == fb
+instance Style MyParaStyles where
+    textStyle (Normal f) = TextStyle (PDFFont f 9) black black FillText 1.0 1.0 2.0 1.0
+instance ParagraphStyle MyVertStyles MyParaStyles where
+    lineWidth _ w _ = w
+instance ComparableStyle MyVertStyles where
+    isSameStyleAs NormalPara NormalPara = True
+
+drawTxtBox :: AnyFont -> PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> String -> Draw()
+drawTxtBox fnt x y w h s = do
+  let p1 = x :+ y
+  let p2 = (x + w) :+ (y + h)
+  displayFormattedText (Rectangle p1 p2) NormalPara (Normal fnt) $ do
+    setJustification LeftJustification 
+    paragraph $ txt $ pack s
 
 drawMyItems :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> [BagItem] -> Draw()
 drawMyItems _   _  _  _  _ _  []     = return ()

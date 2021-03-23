@@ -9,6 +9,7 @@ import Data.Either(rights)
 import Graphics.PDF(JpegFile, PDF, readJpegFile, pdfByteString, standardDocInfo, PDFRect(..))
 import System.Environment (getArgs)
 import System.Exit (die)
+import System.FilePath ((</>), takeDirectory)
 import qualified Data.ByteString.Lazy as B
 
 parseCharacter :: B.ByteString -> Either String Character
@@ -29,11 +30,12 @@ data Images = Images
   , imgBags :: JpegFile
   , imgBoh :: JpegFile
   , imgHole :: JpegFile
+  , imgAppearance :: Maybe JpegFile
   }
 
 data Pages = Pages
   { page1 :: Character -> JpegFile -> Fonts -> PDF()
-  , page2 :: Character -> JpegFile -> Fonts -> PDF()
+  , page2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
   , pageSpells :: JpegFile -> Fonts -> Spellcasting -> PDF()
   , pageBags :: JpegFile -> Character -> Fonts -> Backpack -> PDF()
   , pageBoh :: JpegFile -> Character -> Fonts -> BagOfHolding -> PDF()
@@ -54,16 +56,17 @@ standardImageFilenames = ["images/page1.jpg", "images/page2.jpg", "images/pageSp
 icewindDaleImageFilenames :: [FilePath]
 icewindDaleImageFilenames = ["images/icewinddalePage1.jpg", "images/icewinddalePage2.jpg", "images/icewinddaleSpells.jpg", "images/pageBag.jpg", "images/bag-of-holding.jpg", "images/portable-hole.jpg"]
 
-loadImages :: Character -> IO Images
-loadImages ch = 
+loadImages :: FilePath -> Character -> IO Images
+loadImages folder ch = 
   case sheetType ch of
-    SheetTypeStandard -> loadImageFiles standardImageFilenames
-    SheetTypeIcewindDale -> loadImageFiles icewindDaleImageFilenames
+    SheetTypeStandard -> loadImageFiles folder (appearance ch) standardImageFilenames
+    SheetTypeIcewindDale -> loadImageFiles folder (appearance ch) icewindDaleImageFilenames
 
-loadImageFiles :: [FilePath] -> IO Images
-loadImageFiles filenames = do
+loadImageFiles :: FilePath -> Maybe FilePath -> [FilePath] -> IO Images
+loadImageFiles folder appfile filenames = do
   efs <- mapM readJpegFile filenames
   let [bg1, bg2, bgSpells, bgBags, bgBOH, bgPH] = rights efs
+  app <- loadAppFile folder appfile
   return Images 
         { imgPage1 = bg1
         , imgPage2 = bg2
@@ -71,7 +74,11 @@ loadImageFiles filenames = do
         , imgBags = bgBags
         , imgBoh = bgBOH
         , imgHole = bgPH
+        , imgAppearance = app
         }
+
+loadAppFile :: FilePath -> Maybe FilePath -> IO (Maybe JpegFile)
+loadAppFile folder mfilename = maybe (return Nothing) (\f -> readJpegFile (folder </> f) >>= \eappj -> return $ either (const Nothing) Just eappj) mfilename
 
 loadPages :: Character -> Pages
 loadPages ch =
@@ -103,7 +110,8 @@ loadIcewindDalePages =
 
 buildSheet :: String -> Character -> IO()
 buildSheet charname ch = do
-  images <- loadImages ch
+  let folder = takeDirectory charname
+  images <- loadImages folder ch
   let pages = loadPages ch
   fonts <- loadFonts
   B.writeFile (charname ++ ".pdf") $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages fonts)
@@ -111,7 +119,7 @@ buildSheet charname ch = do
 doc :: Character -> Images -> Pages -> Fonts -> PDF()
 doc c images pages fonts = do
   page1 pages c (imgPage1 images) fonts
-  page2 pages c (imgPage2 images) fonts
+  page2 pages c (imgPage2 images) (imgAppearance images) fonts
   mapM_ (pageSpells pages (imgSpells images) fonts) (spellcasting c)
   mapM_ (pageBags pages (imgBags images) c fonts) (backpacks c)
   mapM_ (pageBoh pages (imgBoh images) c fonts) (bagsOfHolding c)

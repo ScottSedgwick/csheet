@@ -1,0 +1,321 @@
+{
+  "characterName": "Bean Ironfoundersson",
+  "sheetType": "SheetTypeIcewindDale",
+  "className": "Cleric",
+  "subclass": "Peace Domain",
+  "level": 12,
+  "background": "Outlander (Guide)",
+  "playerName": "Scott",
+  "race": "Dwarf (Hill)",
+  "alignment": "None",
+  "experience": "(Milestone)",
+  "appearance": "",
+
+  "age": 51,
+  "height": "4'8\" (142cm)",
+  "weight": "186lbs (84kg)",
+  "eyeColour": "Green",
+  "skinColour": "Tanned",
+  "hairColour": "Light Brown",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 16,
+  "acBonus": 0,
+  "initiative": 0,
+  "speed": 25,
+  "hitPoints": 111,
+  "hitDice": 8,
+
+  "strength": 16,
+  "dexterity": 12,
+  "constitution": 16,
+  "intelligence": 8,
+  "wisdom": 20,
+  "charisma": 10,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 1,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 1,
+  "skillDeception": 0,
+  "skillHistory": 2,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 1,
+  "skillNature": 0,
+  "skillPerception": 0,
+  "skillPerformance": 0,
+  "skillPersuasion": 1,
+  "skillReligion": 0,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 1,
+
+  "proficiencies": [
+    "Dwarven Combat Training: Battleaxe,",
+    "  Handaxe, Light Hammer, Warhammer",
+    "Smith's tools",
+    "Stonecunning: x2 prof in History (Stonework)",
+    "Cleric: light, medium & shields, simple wpns",
+    "Cleric: Insight, Medicine (IoP) Persuasion",
+    "Outlander: Athletics, Survival, Giant, Drum"
+  ],
+
+  "attacks": [
+    {
+        "weapon": "Battleaxe 2H",
+        "damage": "1d10+8 (S)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Battleaxe",
+        "damage": "1d8+8 (S)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Handaxe",
+        "damage": "1d6+8 (S,20/60)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Light Hammer",
+        "damage": "1d4+8 (B,20/60)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Warhammer 2H",
+        "damage": "1d10+8 (B)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Warhammer",
+        "damage": "1d8+8 (B)",
+        "bonus": "+5"
+    },
+    {
+        "weapon": "Unarmed",
+        "damage": "9",
+        "bonus": "+5"
+    }
+  ],
+  
+  "personalityTraits": [
+    "I'm driven by wanderlust.",
+    "Just because you're in the woods is no",
+    "  reason to behave badly."
+  ],
+  "ideals": [
+    "It is my duty to bring peace, even if I have",
+    "  to fight for it."
+  ],
+  "bonds": [
+    "My clan is the most important thing to me,",
+    "  even though they are far away."
+  ],
+  "flaws": [
+    "I don't believe in abandon, but sometimes",
+    "  my Dwarven blood overwhelms me."
+  ],
+  "features": [
+    "Darkvision 60'",
+    "Dwarven Resilience - advantage on saves vs poison,",
+    "  resistance to poison damage",
+    "Dwarven Toughness: +1 HP / level",
+    "Languages: Common, Dwarvish",
+    "Cleric: Spellcasting, Peace Domain",
+    "  Implement of peace: prof in Persausion",
+    "  Emboldening Bond 2/long, +d4 to rolls 1/turn for",
+    "    10 minutes for ProfBonus people",
+    "  Protective Bond: bonded people can react to",
+    "    teleport 30' to within 5' of one about to",
+    "    take damage and take the hit",
+    "  Blessed strikes: Wis bonus to damage",
+    "Channel Divinity 2/rest:",
+    "  Turn undead, 30'R, Wis save or flee for 1 min",
+    "  Balm of Peace, action, full move w/o provoking",
+    "    attacks, heal 2d6+Wis bonus to people I choose",
+    "    that I pass within 5' of",
+    "  Destroy undead (CR 2)",
+    "  Divine Intervention, 12%",
+    "Wanderer: can find food & water for 5 people, and",
+    "  know where I am and the surrounding layout at all",
+    "  times.",
+    "Telekinetic: Invisible Mage Hand, Bonus action to",
+    "  shove creature 5' (30'R, DC17 Str save)"
+  ],
+  
+  "backstory": [
+    "Bean was training to be a cleric of Moraddin in his",
+    "home mine, but he never really fit in with the",
+    "Dwarven lifestyle of carousing and fighting. When",
+    "researching religious lore he had a vision that he",
+    "claims was from the Dwarven Matriarch, Berronar",
+    "Truesilver. She said that the chaotic ways of",
+    "modern Dwarves was an aberration, and that the",
+    "true nature of Dwarves was to be thoughtful and",
+    "caring.",
+    "Bean changed God immediately, and his clan",
+    "(irritated that he now had a reason to be annoying)",
+    "gave him the job of Guide to Visitors.",
+    "Bean spent many years guiding visitors to the",
+    "Dwarven lands through the wilderness, and it suited",
+    "his demeanor to be a calming voice in the wilds.",
+    "Having grown to an adult, Bean has passed his job",
+    "to another youngster, and is travelling the lands,",
+    "helping, bringing peace, and seeking purpose."
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [
+  ],
+
+  "equipment": [
+    "Breastplate",
+    "Shield w/ 2 Silver Rings (Holy Symbol)",
+    "Battleaxe",
+    "2 Handaxes",
+    "Light Crossbow",
+    "40 Bolts",
+    "Component Pouch"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+            "4 flasks Holy Water",
+            "6 Empty Flasks",
+            "10 Candles",
+            "10 pc Chalk"
+          ],
+          "bagPocket2": [
+            "Tinderbox",
+            "10 days Rations",
+            "2 Waterskins"
+          ],
+          "bagPocket3": [
+            "Climber's Kit",
+            "Crowbar",
+            "Hunting Trap"
+          ],
+          "bagPocket4": [
+            "Healer's Kit",
+            "Spyglass"
+          ],
+          "bagFlapPouch": [
+            "10 sacks"
+          ],
+          "bagMiddlePouch": [
+            "Block & Tackle",
+            "2 Light Hammers",
+            "2 sets Manacles"
+          ],
+          "bagMainPouch": [
+            "Tent",
+            "Smith's Tools"
+          ],
+          "bagTreasure": [],
+          "bagBedroll": "1",
+          "bagRope": "100'",
+          "bagAmmo": "",
+          "bagTorches": "10"
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+      {
+          "spellcastingClass": "Cleric (Prep 17)",
+          "spellcastingAbility": "Wis",
+          "spellSaveDC": 17,
+          "spellAttackBonus": 9,
+          "spellsCantrips": [
+            "Mending",
+            "Spare the Dying",
+            "Toll the Dead",
+            "Light",
+            "Sacred Flame"
+          ],
+          "slotsLevel1":4,
+          "spellsLevel1": [
+            "* Heroism",
+            "* Sanctuary",
+            "Bless",
+            "Command",
+            "Cure Wounds",
+            "Shield of Faith"
+          ],
+          "slotsLevel2": 3,
+          "spellsLevel2": [
+            "* Aid",
+            "* Warding Bond",
+            "Gentle Repose",
+            "Hold Person",
+            "Protection from Poison"
+          ],
+          "slotsLevel3": 3,
+          "spellsLevel3": [
+            "* Beacon of Hope",
+            "* Sending",
+            "Mass Healing Word",
+            "Remove Curse",
+            "Revivify"
+          ],
+          "slotsLevel4": 3,
+          "spellsLevel4": [
+            "* Aura of Purity", 
+            "* Otiluke's Resilient Sphere",
+            "Banishment",
+            "Locate Creature"
+          ],
+          "slotsLevel5": 2,
+          "spellsLevel5": [
+            "* Greater Restoration",
+            "* Rary's Telepathic Bond",
+            "Dawn",
+            "Dispel Evil and Good",
+            "Holy Weapon"
+          ],
+          "slotsLevel6": 1,
+          "spellsLevel6": [
+          ],
+          "slotsLevel7": 0,
+          "spellsLevel7": [
+          ],
+          "slotsLevel8": 0,
+          "spellsLevel8": [
+          ],
+          "slotsLevel9": 0,
+          "spellsLevel9": [
+          ]
+      }
+  ]
+}
