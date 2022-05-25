@@ -1,0 +1,29 @@
+Entry #17
+
+I have always been curious with the level of focus it requires when people attempt to pick locks, this is a sketch of a lockpick however it is automatic, the trick is rotating the cog with enough friction for the tumbler to do all the work. If my idea works, I should be able to integrte it into Talos, perhaps if I place it within one of his fingers? I can maybe fit the cog in as one of his knuckles.
+
+Apart from my hyperfocused attention regarding this idea, I find it problematic that I am simply procrastinating, I am lethargic, and filled with dissatisfaction when my mind is unable to focus, I feel I am failing Hephaestus, I have spent the better part of a year searching for Palaemonius's Lexicon to no avail.
+
+Automatic Lockpick.
+Materials Required: 1 Steel Cog, Refined shard of Iron.
+Creation time: 2 days.
+A tiny device that attempts to automatically pick a nonmagical lock that has a keyhole and uses tumblers. The device makes its own Sleight of Hand check with a bonus of +8.
+
+
+Entry #22
+
+In my studies of spell components, there is a connection between gemstones and magic, I believe they act as a conductor, they attune to what I suspect are invisible waves in the air all around us. I was forging the forearm of Talos, next to some amethysts and sapphires and they strangely began glowing. Picking the sapphire up I discovered that by looking through it I saw myself looking through the sapphire from the perspective of the amethyst. Eureka! This changes things, the ability to transmit communication simply dependent on the locations of gems is outstnding!
+
+In other news, I believe that Mount Hotenow and its eruption is linked back home at Ice Peak and what happened there, these eruptions killed tens of thousands. Why would Hephaestus do this, what could have angered him so?  What has this got to do with Palaemonius?  I will make haste to this volcano to see if I can find the Lexicon.
+
+Talos is starting to get quite heavy, I am going to need to figure out how to transport him.  The sled dogs are getting fatigued.  I have been having dreams of dogs made of gold and silver guarding a palace. Is Hephaestus trying to tell me something?
+
+Spider Automaton.
+Materials Required: 8 tiny gemstones worth 5gp each, 2 medium gemstones worth 20gp each. 1 bar of bronze.
+Creation time: 3 days
+A remotely controlled spider camera made of bronze with tiny gemstones for eyes, it is the size of a golf ball. The remote control is a handheld device connected to a pair of gemstone goggles that let you see through the device through the use of gemstones that attune to waves in the air. The device functions for 1 hour each day.
+
+AC: 12
+HP: 2
+Speed: 30ft
+Spider Climb: Doesn't have to make climb checks.

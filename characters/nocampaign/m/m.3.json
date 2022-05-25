@@ -1,0 +1,254 @@
+{
+  "characterName": "Faelin",
+  "className": "Paladin",
+  "subclass": "Devotion",
+  "level": 3,
+  "background": "Noble",
+  "playerName": "Meagen",
+  "race": "Elf (Wood)",
+  "alignment": "LG",
+  "experience": 1000,
+
+  "age": 103,
+  "height": "5'3\"",
+  "weight": "118 lbs (50kg)",
+  "eyeColour": "Green",
+  "skinColour": "Copper",
+  "hairColour": "Blond",
+  
+  "inspiration": 1,
+  "proficiencyBonus": 0,
+  
+  "acBase": 16,
+  "acBonus": 2,
+  "initiative": 0,
+  "speed": 35,
+  "hitPoints": 38,
+  "hitDice": 10,
+
+  "strength": 18,
+  "dexterity": 18,
+  "constitution": 17,
+  "intelligence": 13,
+  "wisdom": 16,
+  "charisma": 17,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 1,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 0,
+  "skillAnimalHandling": 0,
+  "skillArcana": 0,
+  "skillAthletics": 0,
+  "skillDeception": 0,
+  "skillHistory": 1,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 0,
+  "skillMedicine": 0,
+  "skillNature": 0,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 1,
+  "skillReligion": 1,
+  "skillSleightOfHand": 0,
+  "skillStealth": 0,
+  "skillSurvival": 0,
+
+  "proficiencies": 
+  [
+    "Perception", 
+    "Persuasion", 
+    "Religion", 
+    "History,",
+    "Insight",
+    "",
+    "All Armour", 
+    "Shields", 
+    "Simple & Martial Weapons",
+    "",
+    "One type of gaming set"
+  ],
+
+  "attacks": [
+    {
+      "weapon": "Longsword (V)",
+      "damage": "1d8/1d10 +4 S",
+      "bonus": "6"
+    },
+    {
+      "weapon": "Longbow",
+      "damage": "1d8 (150/600)",
+      "bonus": "6"
+    }
+  ],
+  
+  "personalityTraits": [
+    "My eloquent flattery makes everyone I talk",
+    " to feel like the most wonderful and",
+    " important personin the world",
+    "Despite my noble birth, I do not place",
+    " myself above other folk. We all have the",
+    " same blood."
+  ],
+  "ideals": [
+    "Noble Obligation. It is my duty to protect",
+    " and care for the people beneath me."
+  ],
+  "bonds": [
+    "My loyalty to my Goddess is unwaverable."
+  ],
+  "flaws": [
+    "In fact, the world does revolve around me."
+  ],
+  "features": [
+    "HP Rolls: 10,9,10",
+    "Goddess: Ehlonna our Lady of the Forests",
+    "Champion of Ehlonna",
+    "",
+    "Dex +2, Wis +1",
+    "Darkvision 60'",
+    "Adv vs being Charmed",
+    "Magic cannot put me to sleep",
+    "4 hr Trance instead of sleep for long rest",
+    "Base movement speed 35'",
+    "Mask of the Wild: I can hide even when only lightly",
+    "  obscured by foliage, heavy rain, snow, mist, etc",
+    "",
+    "Languages: Common, Elvish",
+    "",
+    "Channel Divinity (1/long rest):",
+    " - Sacred Weapon: +CHA bonus magic weapon for",
+    "   1 min, glows 20'/20'",
+    " - Turn the Unholy: 30'R, Save vs WIS, 1 min",
+    "Divine Smite: expend a spell slot and do (LVL+1)d8",
+    "  extra damage",
+    "Divine Health: Immune to Disease",
+    "Divine Sense: Detect Celestial, Fiend or Undead",
+    "  60'R. Use (CHA bonus + 1)/long rest.",
+    "Lay on Hands: (Lvl x 5)HP of healing/long rest",
+    "Fighting Style: Defense. 5'R, impose disadvantage",
+    "  on attacks on other people.",
+    "",
+    "Spells: prepare CHA mod + Lvl/2 spells",
+    "Oath spells (always prepared for free): Protection",
+    "  from Evil/Good, Sanctuary",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Position of Privilege: Thanks to your noble birth,",
+    "people are inclined to think the best of you. You",
+    "are welcome in high society, and people assume you",
+    "have the right to be wherever you are. The common",
+    "folk make every effort to accomodate you and avoid",
+    "your displeasure, and other people of high birth treat",
+    "you as a member of the same social sphere. You can",
+    "secure an audience with a local noble if you need to."
+  ],
+  
+  "backstory": [],
+  
+  "moneyPouch": {
+    "copper": 0,
+    "silver": 0,
+    "electrum": 0,
+    "gold": 25,
+    "platinum": 0,
+    "gems": []
+  },
+
+  "allies": [],
+
+  "equipment": [
+    "Longsword",
+    "Shield",
+    "Longbow",
+    "30 Arrows",
+    "Explorers pack",
+    "Chain mail",
+    "Holy Symbol",
+    "Fine clothes",
+    "Signet Ring",
+    "Scroll of Pedigree"
+  ],
+  
+  "backpacks": [
+    { 
+      "bagCash" : {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 0,
+        "gems": []
+      },
+      "bagPocket1": [],
+      "bagPocket2": [],
+      "bagPocket3": [],
+      "bagPocket4": [],
+      "bagFlapPouch": [],
+      "bagMiddlePouch": [],
+      "bagMainPouch": [],
+      "bagTreasure": [],
+      "bagBedroll": "",
+      "bagRope": "",
+      "bagAmmo": "",
+      "bagTorches": ""
+    }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "treasure": [],
+
+  "spellcasting": [
+    {
+      "spellcastingClass": "Paladin",
+      "spellcastingAbility": "CHA",
+      "spellSaveDC": 13,
+      "spellAttackBonus": 5,
+      "spellsCantrips": [
+        "3 Cantrips known:",
+        "Resistance (+1d4 to next save)",
+        "Sacred Flame (1d8 radiant,60'range)",
+        "Spare the Dying (Auto stabilize)"
+      ],
+      "slotsLevel1": 3,
+      "spellsLevel1": [
+        "Protection from Evil/Good",
+        " (disadv to attacks, 10min)",
+        "Sanctuary (WIS save to attack)",
+        "",
+        "Prepare 4 more:",
+        "Compelled Duel (Wis Save)",
+        "Cure Wounds (1d8+5 HP)",
+        "Thunderous Smite (+2d6,10'push,300'boom)",
+        "Shield of Faith (+2AC, C/10min)"
+      ],
+      "slotsLevel2": 0,
+      "spellsLevel2": [],
+      "slotsLevel3": 0,
+      "spellsLevel3": [],
+      "slotsLevel4": 0,
+      "spellsLevel4": [],
+      "slotsLevel5": 0,
+      "spellsLevel5": [],
+      "slotsLevel6": 0,
+      "spellsLevel6": [],
+      "slotsLevel7": 0,
+      "spellsLevel7": [],
+      "slotsLevel8": 0,
+      "spellsLevel8": [],
+      "slotsLevel9": 0,
+      "spellsLevel9": []
+    }
+  ]
+}

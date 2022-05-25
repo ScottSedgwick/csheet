@@ -2,6 +2,7 @@
 module Utilities where
 
 import DataTypes
+import Data.List    (sortOn)
 import Data.Text    (pack)
 import Graphics.PDF
 import Graphics.PDF.Shapes
@@ -26,8 +27,17 @@ drawMyStrings fnt x y dy (s:ss) = do
   drawMyText fnt x y s
   drawMyStrings fnt x (y - dy) dy ss
 
+drawMySpells :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [Spell] -> Draw()
+drawMySpells fnt x y dy ss = dms fnt x y dy (sortOn spellName ss)
+  where
+    dms _   _ _ _  []     = return ()
+    dms fnt x y dy (s:ss) = do
+      if prepared s then drawCircle (x - 15.5) (y + 1.2) 3.1 1 else pure()
+      drawMyText fnt (x - 9) y (spellName s)
+      drawMySpells fnt x (y - dy) dy ss
+
 data MyVertStyles = NormalPara
-data MyParaStyles = Normal AnyFont
+newtype MyParaStyles = Normal AnyFont
 instance ComparableStyle MyParaStyles where
   isSameStyleAs (Normal fa) (Normal fb) = fa == fb
 instance Style MyParaStyles where
@@ -60,7 +70,7 @@ drawMyAttacks fnt x y dy (s:ss) = do
   drawMyAttacks fnt x (y - dy) dy ss
 
 drawMyAttack :: PDFFont -> PDFFloat -> PDFFloat -> Attack -> Draw()
-drawMyAttack fnt x y (Attack w d b) = do
+drawMyAttack fnt x y (Attack w d b _) = do
   drawMyText fnt x y w
   drawMyText fnt (x + 68) y b
   drawMyText fnt (x + 103) y d
@@ -69,7 +79,6 @@ drawGrid :: Draw()
 drawGrid = do
   mapM_ (\x -> drawVLine (x * 10)) [0..59]
   mapM_ (\x -> drawHLine (x * 10)) [0..84]
-  return ()
 
 drawVLine :: PDFFloat -> Draw()
 drawVLine x = do
@@ -107,14 +116,15 @@ saveBonus stat saveB prof = statBonus stat + saveB * prof
 profBonus :: Character -> Integer
 profBonus c = (level c - 1) `div` 4 + 2 + proficiencyBonus c
 
-skillBonus :: Integer -> Integer -> Double -> Integer -> Integer
-skillBonus stat saveB prof profB = round ((fromIntegral $ statBonus stat) + (prof * fromIntegral profB)) -- + (profB * saveB)
+skillBonus :: Integer -> Double -> Integer -> Integer -> Integer
+skillBonus stat skillMultiple profB skillBonus = statBonus stat + round (skillMultiple * fromIntegral profB) + skillBonus
 
 showClass :: Character -> String
-showClass c = if lc == 0 then "" else cc ++ ssc ++ slc
+showClass c = if lc == 0 then "" else cc ++ slc
   where 
     cc = className c
-    sc = subclass c
     lc = level c
-    ssc = if sc == "" then "" else " (" ++ sc ++ ")"
     slc = " [" ++ (show lc) ++ "]"
+
+showSubClass :: Character -> String 
+showSubClass = subclass

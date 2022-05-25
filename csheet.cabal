@@ -13,31 +13,106 @@ build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
 
-executable csheet
+library clib
   hs-source-dirs:      src/csheet
-  main-is:             Main.hs
-  other-modules:       DataTypes
+  exposed-modules:     DataTypes
                      , Fonts
                      , Pages
+                     , Paths_HPDF
                      , Utilities
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , aeson
                      , aeson-better-errors
+                     , base64-bytestring
+                     , binary
                      , bytestring
+                     , containers
+                     , errors
+                     , file-embed
                      , filepath
                      , HPDF
+                     , mtl
+                     , network-uri
+                     , parsec
                      , text
+                     , vector
+                     , zlib
 
-executable spell
-  hs-source-dirs:      src/spell
+executable cexe
+  hs-source-dirs:      app/csheet
   main-is:             Main.hs
-  other-modules:       SpellData
-  --                    , Fonts
-  --                    , Pages
-  --                    , Utilities
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , aeson-better-errors
+                     , base64-bytestring
+                     , binary
+                     , bytestring
+                     , containers
+                     , clib
+                     , errors
+                     , file-embed
+                     , filepath
+                     , HPDF
+                     , mtl
+                     , network-uri
+                     , optparse-applicative
+                     , parsec
+                     , text
+                     , vector
+                     , zlib
+
+library spelldata
+  hs-source-dirs:      src/spelldata
+  exposed-modules:     SpellData
+  other-modules:       Cantrips
+                     , FirstLevel
+                     , SecondLevel
+                     , ThirdLevel
+                     , FourthLevel
+                     , FifthLevel
+                     , SpellTypes
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , containers
+                     , text
+
+-- executable spell
+--   hs-source-dirs:      app/spell
+--   main-is:             Main.hs
+--   default-language:    Haskell2010
+--   build-depends:       base >= 4.7 && < 5
+--                      , containers
+--                      , directory
+--                      , spelldata
+--                      , text
+
+executable spellhb
+  hs-source-dirs:      app/spellhb
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , bytestring
+                     , clib
+                     , containers
                      , directory
+                     , optparse-applicative
+                     , spelldata
+                     , text
+
+executable pdf
+  hs-source-dirs:      app/pdfread
+  main-is:             Main.hs
+  other-modules:       DataMaps
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , bytestring
+                     , containers
+                     , clib
+                     , data-pdf-fieldreader == 0.1.1.0
+                     , optparse-applicative
+                     , spelldata
                      , text

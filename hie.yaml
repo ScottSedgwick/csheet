@@ -1,0 +1,13 @@
+cradle:
+  cabal:
+    - path: "src/csheet"
+      component: "lib:csheet"
+
+    - path: "app/csheet/Main.hs"
+      component: "csheet:exe:csheet"
+
+    - path: "app/spell/Main.hs"
+      component: "csheet:exe:spell"
+
+    - path: "app/spell/SpellData.hs"
+      component: "csheet:exe:spell"

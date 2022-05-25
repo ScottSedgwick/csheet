@@ -1,0 +1,430 @@
+{
+  "characterName": "Raven",
+  "sheetType": "SheetTypeStandard",
+  "className": "Wizard",
+  "subclass": "Evocation",
+  "level": 17,
+  "background": "Urchin",
+  "playerName": "Scott",
+  "race": "Human (Enveloper)",
+  "alignment": "LG",
+  "experience": "0",
+
+  "age": 32,
+  "height": "6'4\" (191cm)",
+  "weight": "210 lbs (95kg)",
+  "eyeColour": "Brown",
+  "skinColour": "Tanned",
+  "hairColour": "Brown",
+  
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+  
+  "acBase": 10,
+  "acBonus": 10,
+  "initiative": 5,
+  "speed": 60,
+  "hitPoints": 1031,
+  "hitDice": 6,
+
+  "strength": 30,
+  "dexterity": 30,
+  "constitution": 30,
+  "intelligence": 30,
+  "wisdom": 30,
+  "charisma": 30,
+
+  "strengthBonus": 1,
+  "dexterityBonus": 1,
+  "constitutionBonus": 1,
+  "intelligenceBonus": 1,
+  "wisdomBonus": 1,
+  "charismaBonus": 1,
+
+  "skillAcrobatics": 1,
+  "skillAnimalHandling": 0,
+  "skillArcana": 1,
+  "skillAthletics": 1,
+  "skillDeception": 1,
+  "skillHistory": 1,
+  "skillInsight": 1,
+  "skillIntimidation": 1,
+  "skillInvestigation": 1,
+  "skillMedicine": 1,
+  "skillNature": 1,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 1,
+  "skillReligion": 1,
+  "skillSleightOfHand": 1,
+  "skillStealth": 1,
+  "skillSurvival": 1,
+
+  "proficiencies": [
+    "Disguise kit, Thieves Tools, Dagger, Dart,",
+    "Sling, Quarterstaff, Light Crossbow, Maul,",
+    "Glaive, Greatsword, Longsword, Shortsword,",
+    "Morningstar, Pike, Whip, Scimitar, Javelin,",
+    "Longbow, Unarmed",
+    "Languages: All, Telepathy 120'",
+    "Swim 60', Fly 160'/60', Burrow 50' (Glide)",
+    "Spider Climb, Teleport 120', Incorporeal,",
+    "Amorphous"
+  ],
+
+  "attacks": [
+      {
+          "weapon": "Maul",
+          "damage": "3d6B+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Glaive",
+          "damage": "2d10S+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Greatsword",
+          "damage": "4d6S+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Longsword",
+          "damage": "2d8S+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Shortsword",
+          "damage": "2d6P+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Morningstar",
+          "damage": "2d8P+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Pike",
+          "damage": "2d10P+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Whip",
+          "damage": "2d4S+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Scimitar",
+          "damage": "2d6S+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Javelin",
+          "damage": "2d6P+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Longbow",
+          "damage": "2d8P+6d8R+10",
+          "bonus": "16"
+      },
+      {
+          "weapon": "Unarmed (2/att)",
+          "damage": "2d6B+3d8Psy+10",
+          "bonus": "16"
+      }
+  ],
+  
+  "personalityTraits": [
+  ],
+  "ideals": [
+  ],
+  "bonds": [
+  ],
+  "flaws": [
+  ],
+  "features": [
+    "Charge: 30', +3d6P",
+    "Brute: Melee weapon does one extra dice",
+    "Flying Sword", 
+    "Fire Aura. 5'R, 3d6 fire damage. Again if touch/hit.",
+    "Corrosive Form: 5'R 1d8 acid on being hit. Weapons",
+    "  get cumulative -1 to damage. -5 = destroyed.",
+    "Reactive: take a reaction on every turn",
+    "Immune to all dmg except Radiant and magic P&B",
+    "Resistant to Radiant and magic P&B",
+    "Immune to all conds except Incapacitated",
+    "Regenerate 10HP/turn if 1HP or more",
+    "Rejuvenate in 1d6 days unless Wish cast to stop",
+    "Immune to Wish, ?, ?",
+    "Immune to all magic 6th level or lower",
+    "Advantage vs magical spells and effects",
+    "Avoidance (full/half -> half/none)",
+    "Undead fortitude",
+    "Legendary resistance 3/day",
+    "Naturally Invisible",
+    "Immune to scrying (Couatl)",
+    "Amphibious",
+    "Divine Awareness (Detect Lies)",
+    "Detect Sentience 300'",
+    "Devil sight 120'",
+    "Truesight 120'",
+    "Sense Magic 120'",
+    "Ethereal Sight 120'",
+    "Tremorsense 60',",
+    "Treasuresense 60'",
+    "Blindsight 60'",
+    "Faultless Tracker",
+    "Advantage on Perception with Sight/Hearing",
+    "Lightning Strike (5-6) 500', 10'R, 12d8, Dex save",
+    "Howl (5-6) 30' 0HP or frightened 1 turn, Con save",
+    "Antimagic Cone 150'",
+    "Negative Energy Cone 150'",
+    "Healing Touch 4/day 8d8+4HP & curse & disease",
+    "  & poison & blindness & deafness",
+    "Cure Disease",
+    "Bolt: 1200' 7d6 (acid/cold/fire/force/lightning/radiant/",
+    "  thunder)",
+    "Life Drain. 10'R, 3 targets. 6d6 necrotic, Con save.",
+    "  Heal self total of damage done",
+    "Wall of Ice (Recharge 6)",
+    "Death Throes. Explode on death. 20d6 Fire, Dex save.",
+    "Etherealness as an action",
+    "Horrifying Visage: 60'R sight, Frightened 1 min, Wis",
+    "  save. Fail by 5 or more, age 1d4*10 years",
+    "Possession (Recharge 6): Cha save or be possessed",
+    "Devour Intellect: 10'R, Int save, 2d10 psychic. On fail,",
+    "  if 3d6>Int, Int=0, stunned until Int > 0",
+    "Body Thief: Int contest with incapacitated humanoid",
+    "  within 5'.  On success, eat brain and steal body.",
+    "Split (reaction): to lightning/slashing. Split into 2 if",
+    "  HP >= 10. Each child: 1/2 HP, 1 size class smaller.",
+    "Can grow (to Large) by eating.",
+    "Reactive: Can take 1 reaction every turn in combat",
+    "Parry (reaction): +5 AC vs melee attack I can see that",
+    "  would otherwise hit."
+  ],
+  
+  "backstory": [
+  ],
+  
+  "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+  },
+
+  "allies": [
+    "Sculpt Spells: Allies automatically succeed on saves vs",
+    "  my spells, and take no damage.",
+    "Potent Cantrip: Characters that save vs my cantrips",
+    "  still take 1/2 damage.",
+    "Empowered Evocation: Add Int bonus to damage to",
+    "  spells.",
+    "Overchannel: Spells 1-5 leve do max damage. For",
+    "  each use after first for a day, take (# uses)d12",
+    "  necrotic damage.",
+    "Alert. +5 to initiative. Cannot be surprised while",
+    "  conscious. Unseen creatures don't get advantage.",
+    "Dungeon Delver. Advantage on rolls to detect secret doors",
+    "  and saves to avoid or resist traps. Resistance to trap damage. Search for traps moving at normal speed.",
+    "Mobile. +10 speed, difficult terrain is simple, if I attack a creature, it cannot make opportunity attacks against me",
+    "  that turn.",
+    "Spell Sniper. Ranged spell attack range is doubled, Ignore 1/2 & 3/4 cover, learn 1 cantrip."
+  ],
+
+  "equipment": [
+    "Heartstone",
+    "Quiver of Ehlonna, 60 arrows, 18 Javelins,",
+    "  Longbow, Maul, Glaive, Greatsword, Pike",
+    "Scabbard of Ehlonna: Longsword,",
+    "  Shortsword, Morningstar, Whip, Scimitar",
+    "Heward's Handy Haversack",
+    "Portable Hole"
+  ],
+
+  "treasure": [
+    "Eye Rays (3/turn, 120'):",
+    "  Charm: Wis, 1 hour.", 
+    "  Paralyze: Con, 1 min. Save each turn.", 
+    "  Fear: Wis, 1 min. Save each turn.", 
+    "  Slow: Dex, 1 min. Speed halved, no reactions. Action or",
+    "    Bonus. Save each turn.", 
+    "  Enervate: Con, 8d8 Necrotic or half.", 
+    "  Telekinesis: Str, Shove 30', restrained.", 
+    "  Sleep: Wis, 1 min.", 
+    "  Petrify: Dex twice or petrified.", 
+    "  Disintegrate: Dex, 10d8 Force.", 
+    "  Death: Dex, 10d10 Necrotic.",
+    "Breath Weapons",
+    "  Acid (5-6) Line 90'x10'. 15d8. Dex save",
+    "  Lightning (5-6) Line 120'x10'. 16d10. Dex save",
+    "  Poison (5-6) Cone 90'. 22d6. Con save",
+    "  Fire (5-6) Cone 90'. 26d6. Dex save",
+    "  Cold (5-6) Cone 90'. 16d6. Con save"
+  ],
+  
+  "backpacks": [
+      { 
+          "bagCash" : {
+          "copper": 0,
+          "silver": 0,
+          "electrum": 0,
+          "gold": 0,
+          "platinum": 0,
+          "gems": []
+          },
+          "bagPocket1": [
+          ],
+          "bagPocket2": [
+          ],
+          "bagPocket3": [
+          ],
+          "bagPocket4": [
+          ],
+          "bagFlapPouch": [
+          ],
+          "bagMiddlePouch": [
+          ],
+          "bagMainPouch": [
+            "Innate spellcasting:",
+            "  At will:",
+            "    Darkness",
+            "    Detect Evil and Good",
+            "    Detect Magic",
+            "    Detect Thoughts",
+            "    Disguise Self",
+            "    Featherfall",
+            "    Greater Restoration",
+            "    Invisibility",
+            "    Levitate",
+            "    Light",
+            "    Mage Hand",
+            "    Magic Missile",
+            "    Minor Illusion",
+            "    Pass Without Trace",
+            "    Thunderwave",
+            "    Water Breathing",
+            "    Water Walk",
+            "",
+            "  3/day:",
+            "    Blade Barrier",
+            "    Bless",
+            "    Charm Person",
+            "    Control Weather",
+            "    Create Food & Water/Wine",
+            "    Cure Wounds",
+            "    Dispel Evil and Good",
+            "    Lesser Restoration",
+            "    Major Image",
+            "    Protection from Poison",
+            "    Resurrection",
+            "    Sanctuary",
+            "    Shield",
+            "    Suggestion",
+            "    Tongues",
+            "    Wind Walk",
+            "",
+            "  2/day:",
+            "    Plane Shift (self only)",
+            "    Ray of Enfeeblement",
+            "    Sleep",
+            "",
+            "  1/day:",
+            "    Commune",
+            "    Cone of Cold",
+            "    Conjure Elemental (Air)",
+            "    Creation",
+            "    Dominate Person",
+            "    Dream",
+            "    Earthquake",
+            "    Fire Storm",
+            "    Fly",
+            "    Gaseous Form",
+            "    Plane Shift",
+            "    Scrying",
+            "    True Seeing"
+          ],
+          "bagTreasure": [
+          ],
+          "bagBedroll": "",
+          "bagRope": "",
+          "bagAmmo": "",
+          "bagTorches": ""
+      }
+  ], 
+  "bagsOfHolding": [],
+  "portableHoles": [],
+
+  "spellcasting": [
+    {
+      "spellcastingClass": "Wizard (27/38)",
+      "spellcastingAbility": "Int",
+      "spellSaveDC": "24",
+      "spellAttackBonus": "16",
+      "spellsCantrips": [ 
+        { "prepared": true, "name": "Acid Splash" },
+        { "prepared": true, "name": "Fire Bolt" },
+        { "prepared": true, "name": "Mending" },
+        { "prepared": true, "name": "Poison Spray" },
+        { "prepared": true, "name": "Prestidigitation" },
+
+        { "prepared": true, "name": "Shape Water" },
+
+        { "prepared": true, "name": "Shocking Grasp" },
+        { "prepared": true, "name": "True Strike" },
+        { "prepared": true, "name": "Ray of Frost" }
+      ],
+      "slotsLevel1": "4",
+      "spellsLevel1": [
+        { "prepared": true, "name": "Mage Armour" },
+        { "prepared": true, "name": "Expeditious Retreat" },
+        { "prepared": true, "name": "Longstrider" },
+        { "prepared": true, "name": "Grease" }
+      ],
+      "slotsLevel2": "3", "spellsLevel2": [
+        { "prepared": true, "name": "Arcane Lock" },
+        { "prepared": true, "name": "Cloud of Daggers" },
+        { "prepared": true, "name": "Mirror Image" },
+        { "prepared": true, "name": "Knock" },
+        { "prepared": true, "name": "Rope Trick" },
+        { "prepared": true, "name": "Shatter" },
+        { "prepared": true, "name": "Web" }
+      ],
+      "slotsLevel3": "3", "spellsLevel3": [
+        { "prepared": true, "name": "Clairvoyance" },
+        { "prepared": true, "name": "Counterspell" },
+        { "prepared": true, "name": "Dispel Magic" },
+        { "prepared": true, "name": "Fireball" },
+        { "prepared": true, "name": "Haste" },
+        { "prepared": true, "name": "Magic Circle" }
+      ],
+      "slotsLevel4": "3", "spellsLevel4": [
+        { "prepared": true, "name": "Arcane Eye" },
+        { "prepared": true, "name": "Conjure Minor Elementals" }
+      ],
+      "slotsLevel5": "2", "spellsLevel5": [
+        { "prepared": true, "name": "Animate Obects" },
+        { "prepared": true, "name": "Wall of Force" },
+        { "prepared": true, "name": "Wall of Stone" }
+      ],
+      "slotsLevel6": "1", "spellsLevel6": [
+      ],
+      "slotsLevel7": "1", "spellsLevel7": [
+        { "prepared": true, "name": "Project Image" },
+        { "prepared": true, "name": "Teleport" }
+      ],
+      "slotsLevel8": "1", "spellsLevel8": [
+        { "prepared": true, "name": "Feeblemind" },
+        { "prepared": true, "name": "Sunburst" }
+      ],
+      "slotsLevel9": "1", "spellsLevel9": [
+        { "prepared": true, "name": "Power Word Kill" },
+        { "prepared": true, "name": "Wish" }
+      ]
+    }
+  ]
+}

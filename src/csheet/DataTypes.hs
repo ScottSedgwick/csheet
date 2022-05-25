@@ -3,8 +3,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module DataTypes where
 
-import Data.Aeson (FromJSON(..), ToJSON)
-import Data.Aeson.BetterErrors (Parse, asIntegral, asRealFloat, asString, eachInArray, fromAesonParser, key, keyOrDefault, keyMay, toAesonParser')
+import Data.Aeson (FromJSON(..), ToJSON(..), (.=), object)
+import Data.Aeson.BetterErrors (Parse, asIntegral, asRealFloat, asString, eachInArray, fromAesonParser, key, keyOrDefault, keyMay, toAesonParser', asBool)
 import GHC.Generics(Generic)
 
 data Alignment = CG | NG | LG | CN | N | LN | CE | NE | LE | None deriving (Eq, Generic)
@@ -28,6 +28,7 @@ data Attack = Attack
   { weapon :: String
   , damage :: String
   , bonus :: String
+  , notes :: String
   } deriving (Eq, Show, Generic)
 instance ToJSON Attack
 asAttack :: Parse e Attack
@@ -35,58 +36,100 @@ asAttack = Attack
          <$> key "weapon" asString
          <*> key "damage" asString
          <*> key "bonus" asString
+         <*> keyOrDefault "notes" "" asString
+
+data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | Unknown deriving (Eq, Show, Generic)
+instance ToJSON SpellLevel
+asSpellLevel :: Parse e SpellLevel
+asSpellLevel = toSpellLevel <$> asString
+
+toSpellLevel :: String -> SpellLevel
+toSpellLevel "Cantrip" = Cantrip
+toSpellLevel "One" = One
+toSpellLevel "Two" = Two
+toSpellLevel "Three" = Three
+toSpellLevel "Four" = Four
+toSpellLevel "Five" = Five
+toSpellLevel "Six" = Six
+toSpellLevel "Seven" = Seven
+toSpellLevel "Eight" = Eight
+toSpellLevel "Nine" = Nine
+toSpellLevel _ = Unknown
+
+data Spell = Spell
+  { prepared :: Bool
+  , spellName :: String
+  , spellLevel :: SpellLevel
+  , spellCastingTime :: String
+  , spellComponents :: String
+  , spellDuration :: String
+  , spellNotes :: String
+  , spellPage :: String
+  , spellRange :: String
+  , spellSave :: String
+  , spellSource :: String
+  } deriving (Eq, Show, Generic)
+instance ToJSON Spell where
+  toJSON (Spell prep name lvl ct c d n p r sv src) =
+    object  [ "prepared" .= prep
+            , "name" .= name
+            , "level" .= lvl
+            , "castingTime" .= ct
+            , "components" .= c
+            , "duration" .= d
+            , "notes" .= n
+            , "page" .= p
+            , "range" .= r
+            , "save" .= sv
+            , "source" .= src
+            ]
+asSpell :: Parse e Spell
+asSpell = Spell
+        <$> key "prepared" asBool 
+        <*> key "name" asString
+        <*> key "level" asSpellLevel
+        <*> keyOrDefault "castingTime" "" asString
+        <*> keyOrDefault "components" "" asString
+        <*> keyOrDefault "duration" "" asString
+        <*> keyOrDefault "notes" "" asString
+        <*> keyOrDefault "page" "" asString
+        <*> keyOrDefault "range" "" asString
+        <*> keyOrDefault "save" "" asString
+        <*> keyOrDefault "source" "" asString
 
 data Spellcasting = Spellcasting
   { spellcastingClass :: String
   , spellcastingAbility :: String
-  , spellSaveDC :: Integer
-  , spellAttackBonus :: Integer
-  , spellsCantrips :: [String]
-  , slotsLevel1 :: Integer
-  , spellsLevel1 :: [String]
-  , slotsLevel2 :: Integer
-  , spellsLevel2 :: [String]
-  , slotsLevel3 :: Integer
-  , spellsLevel3 :: [String]
-  , slotsLevel4 :: Integer
-  , spellsLevel4 :: [String]
-  , slotsLevel5 :: Integer
-  , spellsLevel5 :: [String]
-  , slotsLevel6 :: Integer
-  , spellsLevel6 :: [String]
-  , slotsLevel7 :: Integer
-  , spellsLevel7 :: [String]
-  , slotsLevel8 :: Integer
-  , spellsLevel8 :: [String]
-  , slotsLevel9 :: Integer
-  , spellsLevel9 :: [String]
+  , spellSaveDC :: String
+  , spellAttackBonus :: String
+  , spells :: [Spell]
+  , slotsLevel1 :: String
+  , slotsLevel2 :: String
+  , slotsLevel3 :: String
+  , slotsLevel4 :: String
+  , slotsLevel5 :: String
+  , slotsLevel6 :: String
+  , slotsLevel7 :: String
+  , slotsLevel8 :: String
+  , slotsLevel9 :: String
   } deriving (Eq, Show, Generic)
 instance ToJSON Spellcasting
 asSpellcasting :: Parse e Spellcasting
 asSpellcasting = Spellcasting 
          <$> key "spellcastingClass" asString
          <*> key "spellcastingAbility" asString
-         <*> key "spellSaveDC" asIntegral
-         <*> key "spellAttackBonus" asIntegral
-         <*> keyOrDefault "spellsCantrips" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel1" 0 asIntegral
-         <*> keyOrDefault "spellsLevel1" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel2" 0 asIntegral
-         <*> keyOrDefault "spellsLevel2" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel3" 0 asIntegral
-         <*> keyOrDefault "spellsLevel3" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel4" 0 asIntegral
-         <*> keyOrDefault "spellsLevel4" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel5" 0 asIntegral
-         <*> keyOrDefault "spellsLevel5" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel6" 0 asIntegral
-         <*> keyOrDefault "spellsLevel6" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel7" 0 asIntegral
-         <*> keyOrDefault "spellsLevel7" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel8" 0 asIntegral
-         <*> keyOrDefault "spellsLevel8" [] (eachInArray asString)
-         <*> keyOrDefault "slotsLevel9" 0 asIntegral
-         <*> keyOrDefault "spellsLevel9" [] (eachInArray asString)
+         <*> key "spellSaveDC" asString
+         <*> key "spellAttackBonus" asString
+         <*> keyOrDefault "spells" [] (eachInArray asSpell)
+         <*> keyOrDefault "slotsLevel1" "0" asString
+         <*> keyOrDefault "slotsLevel2" "0" asString
+         <*> keyOrDefault "slotsLevel3" "0" asString
+         <*> keyOrDefault "slotsLevel4" "0" asString
+         <*> keyOrDefault "slotsLevel5" "0" asString
+         <*> keyOrDefault "slotsLevel6" "0" asString
+         <*> keyOrDefault "slotsLevel7" "0" asString
+         <*> keyOrDefault "slotsLevel8" "0" asString
+         <*> keyOrDefault "slotsLevel9" "0" asString
 
 data Cash = Cash {
     copper :: Integer
@@ -160,6 +203,10 @@ instance FromJSON SheetType
 instance ToJSON SheetType
 asSheetType :: Parse e SheetType
 asSheetType = fromAesonParser
+toSheetType :: String -> Maybe SheetType
+toSheetType "SheetTypeStandard"    = Just SheetTypeStandard
+toSheetType "SheetTypeIcewindDale" = Just SheetTypeIcewindDale
+toSheetType _ = Nothing
 
 data Character = Character
   { characterName :: String
@@ -172,7 +219,9 @@ data Character = Character
   , race :: String
   , alignment :: Alignment
   , experience :: String
-  , appearance :: Maybe String
+  , appearance :: String
+  , gender :: String
+  , faith :: String
 
   , strength :: Integer
   , dexterity :: Integer
@@ -209,15 +258,35 @@ data Character = Character
   , skillSleightOfHand :: Double
   , skillStealth :: Double
   , skillSurvival :: Double
+
+  , bonusAcrobatics :: Integer
+  , bonusAnimalHandling :: Integer
+  , bonusArcana :: Integer
+  , bonusAthletics :: Integer
+  , bonusDeception :: Integer
+  , bonusHistory :: Integer
+  , bonusInsight :: Integer
+  , bonusIntimidation :: Integer
+  , bonusInvestigation :: Integer
+  , bonusMedicine :: Integer
+  , bonusNature :: Integer
+  , bonusPerception :: Integer
+  , bonusPerformance :: Integer
+  , bonusPersuasion :: Integer
+  , bonusReligion :: Integer
+  , bonusSleightOfHand :: Integer
+  , bonusStealth :: Integer
+  , bonusSurvival :: Integer
   
   , proficiencies :: [String]
 
   , acBase :: Integer
   , acBonus :: Integer
   , initiative :: Integer
-  , speed :: Integer
+  , speed :: String
   , hitPoints :: Integer
-  , hitDice :: Integer
+  , tempHitPoints :: Integer
+  , hitDice :: String
   
   , attacks :: [Attack]
 
@@ -243,7 +312,7 @@ data Character = Character
   , allies :: [String]
   , treasure :: [String]
   -- Page 3
-  , spellcasting :: [Spellcasting]
+  , spellcasting :: Maybe Spellcasting
   } deriving (Eq, Show, Generic)
 instance ToJSON Character
 asCharacter :: Parse e Character
@@ -258,7 +327,9 @@ asCharacter = Character
          <*> key "race" asString
          <*> key "alignment" asAlignment
          <*> key "experience" asString
-         <*> keyMay "appearance" asString
+         <*> keyOrDefault "appearance" "" asString
+         <*> keyOrDefault "gender" "" asString
+         <*> keyOrDefault "faith" "" asString
 
          <*> key "strength" asIntegral
          <*> key "dexterity" asIntegral
@@ -295,15 +366,35 @@ asCharacter = Character
          <*> key "skillSleightOfHand" asRealFloat
          <*> key "skillStealth" asRealFloat
          <*> key "skillSurvival" asRealFloat
+
+         <*> keyOrDefault "bonusAcrobatics" 0 asIntegral
+         <*> keyOrDefault "bonusAnimalHandling" 0 asIntegral
+         <*> keyOrDefault "bonusArcana" 0 asIntegral
+         <*> keyOrDefault "bonusAthletics" 0 asIntegral
+         <*> keyOrDefault "bonusDeception" 0 asIntegral
+         <*> keyOrDefault "bonusHistory" 0 asIntegral
+         <*> keyOrDefault "bonusInsight" 0 asIntegral
+         <*> keyOrDefault "bonusIntimidation" 0 asIntegral
+         <*> keyOrDefault "bonusInvestigation" 0 asIntegral
+         <*> keyOrDefault "bonusMedicine" 0 asIntegral
+         <*> keyOrDefault "bonusNature" 0 asIntegral
+         <*> keyOrDefault "bonusPerception" 0 asIntegral
+         <*> keyOrDefault "bonusPerformance" 0 asIntegral
+         <*> keyOrDefault "bonusPersuasion" 0 asIntegral
+         <*> keyOrDefault "bonusReligion" 0 asIntegral
+         <*> keyOrDefault "bonusSleightOfHand" 0 asIntegral
+         <*> keyOrDefault "bonusStealth" 0 asIntegral
+         <*> keyOrDefault "bonusSurvival" 0 asIntegral
   
          <*> key "proficiencies" (eachInArray asString)
 
          <*> key "acBase" asIntegral
          <*> key "acBonus" asIntegral
          <*> key "initiative" asIntegral
-         <*> key "speed" asIntegral
+         <*> key "speed" asString
          <*> key "hitPoints" asIntegral
-         <*> key "hitDice" asIntegral
+         <*> key "tempHitPoints" asIntegral
+         <*> key "hitDice" asString
   
          <*> key "attacks" (eachInArray asAttack)
 
@@ -329,6 +420,6 @@ asCharacter = Character
          <*> key "allies" (eachInArray asString)
          <*> key "treasure" (eachInArray asString)
   -- Page 3
-         <*> key "spellcasting" (eachInArray asSpellcasting)
+         <*> keyMay "spellcasting" asSpellcasting
 instance FromJSON Character where
   parseJSON = toAesonParser' asCharacter

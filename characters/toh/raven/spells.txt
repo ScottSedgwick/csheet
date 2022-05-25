@@ -1,0 +1,256 @@
+1st level:
+
+Mage Armour                         +3 AC for 8 hours
+Expeditious Retreat                 Bonus action, take Dash as bonus action for 10 min, concentration
+Longstrider                         +10' to speed for 1 hour.
+Grease                              10' square, Dex save to remain standing
+
+Alarm                               8 hours
+Charm Person                        Wis save, 1 hour
+Chromatic Orb                       180' range attack, 3d8+10 acid/cold/fire/lightning/poison/thunder
+Color Spray                         Blind 6d10hp of creatures
+Fog Cloud                           20'R cloud for 1 hour, concentration.
+Illusory Script                     Interesting
+Magic Missile                       3x1d4+1 force
+Protection From Evil and Good       Abberations, Celestials, Elementals, Fey, Fiends & Undead have disadvantage on attack rolls and can't possess me.
+Ray of Sickness                     Ranged attack, 2d8 poison, Con save or poisoned for 1 turn
+Silent Image                        Concentration, 10 min
+Tasha's Hideous Laughter            30', Wis save or fall prone
+
+
+Burning Hands                       15' Cone, 3d6+10 Fire, Dex save for 1/2
+Comprehend Languages                Useless for me (already speak all languages)
+Detect Magic                        Already have
+Disguise Self                       Already have
+False Life                          +1d4+4 temporary HP (+5/lvl of upcast).  Useless?
+Feather Fall                        Already have
+Find Familiar                       Useless?
+Identify                            Useless?
+Jump                                Jump distance tripled for 1 minute.
+Shield                              Already have (3/day)
+Sleep                               Already have (1/day)
+Tenser's Floating Disk              Useless
+Thunderwave                         Already have
+Unseen Servant                      Useless
+Witch Bolt                          Useless
+
+
+2nd level:
+
+Arcane Lock             Permanently locks door/window/chest/etc, and makes it harder to break or pick.
+Cloud of Daggers        5' cube, 4d4 slashing, 1 min concentration
+Mirror Image            3 duplicates, 1 minute.
+Knock                   Unlock stuff. **
+Rope Trick              Hiding place, 1 hour
+Shatter                 60', Con save, 3d8 thunder or half. Inorganic things have disadvantage.
+Web                     20' cube, Str save or restrained, 1 hour, concentration
+
+Blindness/Deafness      Con save, 1 min
+Blur                    Disadvantage on attacks against me, 1 min concentration
+Continual Flame         Permanent torch
+Enlarge/Reduce          Double or Halve size, 1 min, concentration
+Flaming Sphere          5' diameter sphere, 2d6 fire, 1 min, concentration
+Gentle Repose           Preserve dead for 10 days
+Locate Object           1000'R, 10 min, concentration
+Magic Mouth             Leave a message
+Magic Weapon            Make a weapon +1. 4th level, +2, 6th level +3. 1 hour, concentration.
+Melf's Acid Arrow       4d4+10 + 2d4 acid. 180' ranged attack.
+Nystul's Magic Aura     Make something appear to be something else (to divination)
+Phantasmal force        Int save, 1 target, 1 min concentration.
+Ray of Enfeeblement     120' ranged attack, target does half damage with Str attacks.
+Scorching Ray           240', 3 ranged attacks, 2d6+10 each
+Suggestion              Wis save, 8 hours, concentration
+
+Alter Self              Useless 
+Crown of Madness        Just useless
+Darkness                Already have
+Darkvision              Useless
+Detect Thoughts         Already have
+Gust of Wind            Useless (Telekinesis)
+Hold Person             Useless (Paralysis)
+Invisibility            Already have
+Levitate                Useless
+Misty Step              Useless (teleport)
+See Invisibility        Useless
+Spider Climb            Useless
+
+
+3rd level:
+
+Clairvoyance              1 mile, 10 min concentration, 10 min to cast
+Counterspell              Reaction, Interrupt spell. 4th level+, DC = 10 + spell level.
+Dispel Magic              Cancel spell. 4th level+, DC = 10 + spell level
+Fireball                  150', 20'R, 8d6+10 fire
+Haste                     Speed doubled, +2 AC, advantage on Dex saves, gains an additional action on each turn. 1 min, concentration. Lose 1 turn after spell drops.
+Magic Circle              Trap or repel (celestials|elementals|fey|fiends|undead) for 1 hour.
+
+Animate dead              Create a zombie or skeleton
+Bestow curse              Useful against living enemies.
+Glyph of Warding          Interesting
+Hypnotic Pattern          30'cube, 120', Wis save or incapacitated & speed 0
+Leomund's Tiny Hut        1 min to cast, 8 hour sanctuary
+Lightning Bolt            100'x5' line, 8d6+10 lightning
+Sending                   Send message to someone I know.
+Sleet Storm               40'R heavily obscured difficult terrain, Dex save or prone. Disadvantage on concentration.
+Stinking Cloud            20'R sphere of poison, Con save.
+
+Blink                     Useless (teleport and etherealness)
+Fear                      Useless (Fear eye)
+Feign Death               Just useless
+Fly                       Already have (1/day), useless
+Gaseous Form              Already have (1/day)
+Major Image               Already have (3/day)
+Nondetection              Useless
+Phantom Steed             100' horse for 1 hour. Useless.
+Protection from Energy    Useless
+Remove curse              Useless (healing touch)
+Slow                      Useless (Slow eye)
+Tongues                   Already have (3/day)
+Water Breathing           Already have
+Vampiric Touch            Melee does 3d6 necrotic & heals me 1/2. 1 min, concentration. Useless (Life drain)
+
+
+4th level
+
+Arcane eye                          Floating Eye, 1 hour, concentration
+Conjure Minor elementals            Summon up to 8 1/4CR elementals, 1 hour, concentration
+
+Blight                              30', Con save, 8d8 necrotic or 1/2, plants take max damage.
+Control Water                       Move water around
+Evard's Black Tentacles             20' square, Dex save or 3d6B + restrained.
+Ice Storm                           300', 20'R, Dex save, 2d8B + 4d6 cold or 1/2
+Leomund's secret chest              Hide a chest on the Ethereal plane
+Locate creatures                    1000', 1 hour, concentration
+Mordenkainen's Faithful Hound       Invisible, invulnerable guard dog for 8 hours
+Mordenkainen's Private Sanctum      Make an area secure for 24 hours
+Otiluke's Resilient Sphere          Sphere of Force, 1 min, concentration
+Phantasmal Killer                   Wis save, frightened, 4d10 psychic per turn, 1 min concentration
+Stone Shape                         Shape a stone <5' cube
+
+Banishment                          Useless for this
+Confusion                           Meh
+Dimension door                      Useless (teleport)
+Fabricate                           Make stuff from base materials
+Fire Shield                         Useless (immunities and Fire Aura)
+Greater Invisibility                Useless (invisible)
+Hallucinatory terrain               Meh
+Polymorph                           We know this one. Useless.
+Stoneskin                           Useless
+Wall of Fire                        Useless
+
+
+5th level
+
+Animate Objects             Animate up to 10 objects, 1 min, concentration
+Wall of Force               10 10'x10' panels of force, 10 min, concentration
+Wall of Stone               10 10'x10' panels of stone.
+
+Bigby's Hand                1 min, concentration
+Cloudkill                   20'R, Con, 5d8 poison or half, 10 min, concentration
+Cone of cold                60' cone, Con, 8d8 cold or 1/2
+Geas                        Wis save, charmed for 30 days
+Legend Lore                 Find stuff out.
+Mislead                     Invisible and illusion of self
+Modify Memory               What it says
+Planar Binding              1 hour to cast, bind a celestial, elemental, fey or fiend to service for 24 hours.
+Rary's Telepathic Bond      Infinite range telepathy with up to 8 others, 1 hour.
+Seeming                     Make a group or creatures look different
+Teleportation Circle        Great if you know where you're going
+
+Conjure Elemental           Already have (1/day)
+Contact Other plane         Talk to a God. Risky.
+Creation                    Already have (1/day)
+Dominate Person             Already have (1/day)
+Dream                       Already have (1/day)
+Hold Monster                Wis save, paralyzed. Useless (paralysis eye)
+Passwall                    Walk through walls up to 20' thick, 1 hour. Useless (incorporeal, 60' move, Mobile)
+Scrying                     Already have (1/day)
+Telekinesis                 Useless (teleport)
+
+
+6th level
+
+<none>
+
+Contingency                   Not prepared, but have one cast.  Work it out.
+Dwarmij's Instant Summons     Summon something (10 lbs or less) to hand once.  Can have as many set up as I want.
+
+Arcane Gate                   Linked gates, 10 min, concentration
+Chain Lightning               4 targets, Dex, 10d8 or 1/2
+Circle of Death               150', 60'R, Con, 8d6 necrotic or 1/2
+Create Undead                 Create 3 Ghouls, 24 hours.
+Eyebite                       Interesting. More eye powers.
+Guards and Wards              Dungeons R Us. Lasts 24 hours.
+Mass Suggestion               Suggestion for 12 creatures
+Move Earth                    Earthmoving
+Otiluke's Freezing Sphere     300', 60'R, 10d6 cold, con save for 1/2
+Otto's Irresistable Dance     Suggestion: Dance
+Programmed illusion           Major Image + Contingency
+Sunbeam                       60'x5' line, 6d8 radiant + blinded, Con save for 1/2 and not blinded
+Wall of Ice                   10 10'x10' panels of ice, 10 min, concentration
+
+Disintegrate                  Mostly useless (Disintegrate eye, does a bit less damage)
+Flesh to Stone                Useless (Petrify eye)
+Globe of Invulnerability      Useless (Limited magic invulnerability)
+Magic Jar                     Useless (Possession, Body Thief)
+True Seeing                   Useless (Truesight), Already have (1/day)
+
+
+7th level
+
+Project Image                         Illusory image of self, non-corporeal, can see through its senses.
+Teleport                              Unlimited range, can be risky.
+
+Simulacrum                            Create a copy of a creature (one at a time)
+
+Delayed Blast Fireball                Fireball (12d6 + 1d6/turn held), 1 min, concentration.
+Finger of Death                       60', Con, 7d8+30 necrotic or 1/2. Creature killed by this rises as a zombie permanently under your command.
+Forcecage                             Prison, lasts 1 hour.
+Mirage Arcane                         Change terrain for 10 days.
+Mordenkainen's Magnificent Mansion    Create extradimensional palace for 24 hours.
+Mordenkainen's Sword                  Sword of Force, 3d10 force, 1 min, concentration
+Prismatic Spray                       60' cone, Dex save, random damage.
+Reverse Gravity                       100', 50'R 100' tall, 1 min, concentration
+Sequester                             Suspended animation
+Symbol                                Super Glyph of Warding
+
+Etherealness                          Useless (Etherealness)
+Plane Shift                           Already have (1/day)
+
+
+8th level
+
+Feeblemind              150', 4d6 Psychic, Int save or Int & Cha become 1. Repeat save every 30 days.
+Sunburst                150', 60'R, Con, 12d6 radiant & blinded 1 min, or 1/2 and not blinded.
+
+Clone                   We know this one
+
+Antipathy/Sympathy      Draw or repel creatures for 10 days
+Demiplane               Door to demiplane
+Dominate Monster        Wis save, super charmed, 1 hour, concentration
+Incendiary Cloud        150', 20'R cloud, Dex, 10d8 fire or 1/2, 1 min, concentration
+Maze                    Banish to demiplane. DC 20 Int check to escape. 10 min, concentration.
+Power Word Stun         Stun something with HP <150
+Telepathy               Unlimited range telepathy for 24 hours
+
+Antimagic Field         Useless (Antimagic cone)
+Control Weather         Already have (3/day)
+Mind Blank              Useless (Immune to psychic, scrying & charm)
+
+
+9th level
+
+Power Word Kill         <100HP, dies. No save.
+Wish                    We know this one.
+
+True Polymorph          We know this one. Don't prepare, but used.
+
+Astral Projection       Astral travel for me + 8 others
+Foresight               Cannot be surprised, advantage on attack rolls, ability checks and saving throws. Additionally, other creatures have disadvantage on attack rolls. 8 hours.
+Gate                    Open an extra-dimensional portal, summon something through it.
+Imprisonment            Snow White
+Meteor Swarm            1 mile, 4 x 40'R sphere, Dex save, 20d6 Fire + 20d6B, or 1/2.
+Prismatic Wall          Amazing Wall, 10 min, concentration.
+Shapechange             Useless
+Time Stop               1d4+1 turns. Can't affect others, though.
+Weird                   Super Phantasmal Killer?

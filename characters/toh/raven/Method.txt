@@ -1,0 +1,304 @@
+Enveloper: +1-3HP/HD consumed, add stat bonuses to stats up to 30
+Initial Stats: 10 Str, 10 Dex, 10 Con, 3 Int, 3 Wis, 10 Cha
+
+Absorb the creatures listed in the Creatures section.
+Clone self, then inhabit the clone so that new form is my natural form, and a super-dispel magic won't dispel me.
+
+Creatures:
+  Beholder (+2 Dex, +4 Con, +3 Int, +2 Wis, +3 Cha, Hover 20', 19HD)
+    Immune to Prone, Antimagic Cone 150',
+    Eye Rays: Charm 1hr Wis, Paralyze 1min Con, Fear 1min Wis, Slow 1min Dex, Enervate 8d8 Necrotic Con Save for 1/2, Telekinesis 300lbs Shove 30' Str, Sleep 1min Wis, Petrify Dex, Disintegrate 10d8 Force Dex, Death 10d10 Necrotic Dex.
+    Languages: Deep Speech, Undercommon
+    Saves: Int, Wis, Cha
+    Skills: Perception
+  Death Tyrant (+2 Dex, +2 Con, +4 Int, +2 Wis, +4 Cha, 25HD)
+    Immune to Poison, Charmed, Exhaustion, Paralyzed, Petrified Poisoned, Prone
+    Negative Energy Cone 150'
+    Eye Rays: As Beholder
+    Languages: Deep Speech, Undercommon
+    Skills: Perception
+    Saves: Str, Con, Int, Wis, Cha
+  Couatl (+3 Str, +5 Dex, +3 Con, +4 Int, +5 Wis, +4 Cha, Fly 90', 13HD)
+    Innate Spellcasting.
+    Immune to scrying and any effect that would sense its emotions, read its thoughts, or detect its location.
+    Saves: Con, Wis, Cha
+    Languages: All, Telepathy 120'
+  Ice Devil (+5 Str, +2 Dex, +4 Con, +4 Int, +2 Wis, +4 Cha, 19HD)
+    Devil Sight (see through magical darkness)
+    Magic Resistance (advantage on saves against spells and other magical effects)
+    Immune: Cold, Fire, Poison, Poisoned
+    Blindsight 60', Darkvision 120'
+    Languages: Infernal, Telepathy 120'
+    Wall of Ice (Recharge 6)
+    Saves: Dex, Con, Wis, Cha
+  Doppelganger (+4 Dex, +2 Con, +1 Wis, +2 Cha, 8HD)
+    Shapechanger, Ambusher, Surprise Attack, Read Thoughts
+    Skills: Deception, Insight
+  Ancient Black Dragon (+8 Str, +2 Dex, +7 Con, +3 Int, +2 Wis, +4 Cha, 21HD)
+    Immune to Acid, Amphibious, Acid Breath (Recharge 5-6) 90' line 10' wide 15d8 acid Dex for 1/2
+    Perception, Stealth
+    Languages: Draconic
+  Ancient Blue Dragon (+9 Str, +8 Con, +4 Int, +3 Wis, +5 Cha, 26HD)
+    Immune to Lightning, Burrow 40', Lightning Breath (Recharge 5-6) 120' line 10' wide 16d10 lightning Dex for 1/2
+    Perception, Stealth
+  Ancient Green Dragon (+8 Str, +1 Dex, +7 Con, +5 Int, +3 Wis, +4 Cha, 22HD)
+    Swim 40'
+    Skills: Deception, Insight, Perception, Persuasion, Stealth
+    Saves: Dex, Con, Wis, Cha
+    Immune to Poison, Poisoned
+    Breath Weapon (Recharge 5-6) 90' cone poison gas Con save, 22d6 or half
+  Ancient Red Dragon (+10 Str, +9 Con, +4 Int, +2 Wis, +6 Cha, 28HD)
+    Immune to Fire
+    Breath Weapon (Recharge 5-6) 90' cone of fire, Dex save, 26d6 or half
+  Ancient White Dragon (+8 Str, +8 Con, +1 Wis, +2 Cha, 18HD)
+    Immune to cold
+    Breath Weapon (Recharge 5-6) 90' cone of cold, Con save, 16d8 or half
+  Evil Empyrean (+10 Str, +5 Dex, +10 Con, +5 Int, +6 Wis, +8 Cha, Truesight 120', 19HD)
+    Swim 50'
+    Immune to Bludgeoning, Piercing and Slashing from non-magical attacks
+    Truesight 120' 
+    Innate Spellcasting
+    Proficient with Maul
+    Weapon attacks are magical
+    Bolt: Ranged spell attack, 600' range, 7d6 acid, cold, fire, force, lightning, radiant or thunder (my choice)
+    Legendary Resistance 3/day
+  Invisible Stalker (+3 Str, +4 Dex, +2 Con, +2 Wis, 16HD, Invisible)
+    Naturally invisible (never become visible unless I choose to), Faultless tracker
+  Spirit Naga (+4 Str, +3 Dex, +2 Con, +3 Int, +2 Wis, +3 Cha, 10HD, Rejuvenation)
+    Rejuvenation: Return to life in 1d6 days with full HP unless Wish cast to stop me
+    Innate spellcasting
+  Oni (+4 Str, +3 Con, +2 Int, +1 Wis, +2 Cha, 13HD, Regenerate 10HP/turn)
+    Innate spellcasting
+    Regeneration 10HP per turn if I have 1 HP or more
+    Proficient with Glaive
+  Rakshasa (+2 Str, +3 DEx, +4 Con, +1 Int, +3 Wis, +5 Cha, 13HD, Magic Immunity)
+    Limited Magic Immunity. Can't be affected by 6th level spells or lower unless I choose to be. Advantage vs all other spells and magical effects.
+    Innate spellcasting.
+  Zombie Beholder (-1 Dex, +3 Con, -4 Int, -1 Wis, -3 Cha, 11HD, Undead Fortitude)
+    Undead Fortitude: If reduced to 0 HP, Con save DC (5 + damage taken) unless radiant or critical hit. If successful, at 1hp instead.
+
+  Aboleth (+5 Str, -1 Dex, +2 Con, +4 Int, +2 Wis, +4 Cha, 18HD)
+    Skills: History, Perception
+    Amphibious
+  Solar (+8 Str, +6 Dex, +8 Con, +7 int, +7 Wis, +10 Cha, 18HD)
+    Immune: Necrotic, Poison, Charmed, Exhausted, Frightened, Poisoned
+    Angelic Weapons (+6d8 radiant to weapon attacks), Divine Awareness (knows if it hears a lie), Innate Spellcasting
+    Proficiency with Greatsword, Longbow
+    Greatsword does 4d6 damage, Longbow does 2d8 damage
+    Flying Sword
+    Healing Touch (4/day) 8d8+4HP, freed of any curse, disease, poison, blindness or deafness
+  Needle Blight (+1 Str, +1 Dex, +1 Con, -3 Int, -1 Wis, -4 Cha, 1HD)
+    Immune: Blinded, Deafened
+    Blindsight 60'
+  Bugbear Chief (+3 Str, +2 Dex, +2 Con, +1 Wis, 10HD)
+    Brute: a melee weapon does one extra die of its damage
+    Proficient with Morningstar & Javelin
+  Xorn (+3 Str, +6 Con, 7HD)
+    Tremorsense 60', Treasuresense 60', Earth Glide
+  Centaur (+4 Str, +2 Dex, +2 Con, -1 Int, +1 Wis, 6HD)
+    Charge (run 30' and attack with pike, do +3d6 piercing)
+    Proficient with Pike & Longbow
+  Chuul (+4 Str, +3 Con, -3 Int, -3 Cha, 11HD)
+    Sense Magic (as Detect Magic spell) 120'
+  Demilich (-5 Str, +5 Dex, +5 Int, +3 Wis, +5 Cha, Hover 30', 20HD)
+    Avoidance (if save for half, take no damage on success and half on failure)
+    Legendary Resistance 3/day
+    Howl (Recharge 5-6) 30' Con save or drop to 0 HP. Frightened 1 turn on success.
+    Life Drain. Target 3 creatures within 10'. Con save or each take 6d6 necrotic. Heal sum of damage done.
+  Balor Demon (+8 Str, +2 Dex, +6 Con, +5 Int, +3 Wis, +6 Cha, 21HD)
+    Death Throes. Explode on death. Dex save, 20d6 fire or half.
+    Fire Aura. 5'R, 3d6 fire damage. Again if touched or hit.
+    Proficient with Whip.
+    120' Teleport as action.
+  Djinn (+5 Str, +2 Dex, +6 Con, +2 Int, +3 Wis, +5 Cha, 14HD)
+    Innate spellcating, Proficient with Scimitar
+  Ghost (-2 Str, +1 Dex, +1 Wis, +3 Cha, 10HD)
+    Ethereal Sight 60', Incorporeal movement
+    Etherealness as an action
+    Horrifying Visage: Each non-undead within 60' that can see me, Wis save or frightened for 1 min. Fail by 5 or more, age 1d4*10 years
+    Posession (Recharge 6): Cha save or be possessed
+  Storm Giant (+9 Str, +2 Dex, +5 Con, +3 Int, +4 Wis, +4 Cha, 20HD)
+    Innate spellcasting
+    Lightning Strike (Recharge 5-6): 500', 10'R, Dex save 12d8 or half
+  Githzerai Zerth (+1 Str, +4 Dex, +2 Con, +3 Int, +3 Wis, +1 Cha, 13HD)
+    Innate Spellcasting (Psionics)
+    Psychic Defense: add Wis modifier to AC if wearing no armour and using no shield.
+    Unarmed strikes (2/attack) do 2d6 bludgeoning and 3d8 psychic
+  Helmed Horror (+4 Str, +1 Dex, +3 Con, 8HD)
+    Spell immunity to 3 spells (Wish, ?, ?)
+    Proficient with Longsword
+  Intellect Devourer (-2 Str, +2 Dex, +1 Con, +1 Int, 6HD)
+    Detect Sentience: Int 3+, 300', through barriers.
+    Devour Intellect: 10'R, Int save, 2d10 psychic. On failure, roll 3d6. If it exceeds the targets Int, Int drops to 0 and target is stunned until they regain at least 1 Int.
+    Body Thief: Int contest with incapacitated humanoid within 5'.  On success, eat their brain and steal their body.
+  Black Pudding (+3 Str, -3 Dex, +3 Con, -5 Int, -2 Wis, -5 Cha, 10HD)
+    Immune to slashing damage
+    Amorphous (squeeze through 1 inch gaps)
+    Corrosive Form: Anyone touching or hitting me within 5' takes 1d8 acid damage. Weapons take a permanent and cumulative -1 to damage. On -5, weapon is destroyed.
+    Spider Climb.
+    Split: When subjected to lightning or slashing damage, split into 2 puddings as Reaction if HP >= 10. Each pudding has half HP and are 1 size class smaller.
+    Can grow (to Large) by eating.
+
+  Assassin (+3 Dex, +2 Con, +1 Int, 12HD)
+    Assassinate: During 1st turn, advantage vs any creature that hasn't taken a turn. Any hit is a critical.
+    Evasion: Full or half becomes half or none.
+    Sneak Attack: +4d6 on attack with advantage vs target within 5' of ally.
+  Scout (+2 Dex, +1 Con, +1 Wis, 3HD)
+    Keen hearing and sight (adv on perception)
+    Proficient with Short Sword
+
+  Marilith (+4 Str, +5 Dex, +5 Con, +4 Int, +3 Wis, +5 Cha, 18HD)
+    Reactive: Can take one reaction on every turn in combat
+    Parry (reaction): +5 AC vs one melee attack that would hit me. Must be able to see attacker.
+
+  Night Hag (+4 Str, +2 Dex, +3 Con, +3 Int, +2 Wis, +3 Cha, 15HD)
+    Innate spellcasting
+    Etherealness
+    Nightmare Haunting
+    Heartstone cures disease.
+
+
+
+  
+Final Stats: 30 Str, 30 Dex, 30 Con, 30 Int, 30 Wis, 30 Cha, 1031 HP
+
+Conditions:
+  Blinded         Immune (Needle Blight)
+  Charmed         Immune (Death Tyrant)
+  Deafened        Immune (Needle Blight)
+  Exhaustion      Immune (Death Tyrant)
+  Frightened      Immune (Solar)
+  Grappled        Immune (Invisible Stalker)
+  Incapacitated
+  Invisible
+  Paralyzed       Immune (Death Tyrant)
+  Petrified       Immune (Death Tyrant)
+  Poisoned        Immune (Death Tyrant)
+  Prone           Immune (Beholder)
+  Restrained      Immune (Invisible Stalker)
+  Stunned         Immune (Demilich)
+  Unconscious     Immune (Invisible Stalker)
+
+Damage Types:
+  Acid                      Immune (Black Dragon)
+  Bludgeoning (magic)       Resistant (Demilich)
+  Bludgeoning (non-magic)   Immune (Couatl)
+  Cold                      Immune (Ice Devil)
+  Fire                      Immune (Ice Devil)
+  Force                     Immune (Helmed Horror)
+  Lightning                 Immune (Blue Dragon)
+  Necrotic                  Immune (Solar)
+  Piercing (magic)          Resistant (Demilich)
+  Piercing (non-magic)      Immune (Couatl)
+  Poison                    Immune (Death Tyrant)
+  Psychic                   Immune (Couatl)
+  Radiant                   Resistant (Couatl)
+  Slashing                  Immune (Black Pudding)
+  Thunder                   Immune (Djinn)
+
+Saves:
+  Str   Couatl, et al
+  Dex   Couatl, et al
+  Con   Couatl, et al
+  Int   Couatl, et al
+  Wis   Couatl, et al
+  Cha   Couatl, et al
+
+Skills:
+  Acrobatics          Assassin
+  Animal Handling
+  Arcana              Oni
+  Athletics           Centaur
+  Deception           Doppelganger
+  History             Storm Giant
+  Insight             Doppelganger
+  Intimidation        Bugbear Chief
+  Investigation       Wizard class
+  Medicine            Wizard class
+  Nature              Scout
+  Perception          Beholder
+  Performance
+  Persuasion          Green Dragon
+  Religion            Drow Priestess
+  Sleight of Hand     Urchin background
+  Stealth             Black Dragon
+  Survival            Bugbear Chief
+
+Movement:
+  Land:     50 (Solar)
+  Swim:     50 (Empyrean)
+  Fly:      150 (Solar)
+  Hover:    50 (Invisible Stalker)
+  Burrow:   40 (White Dragon)
+  Teleport: 120 (Marilith)
+  Climb:    40 (Red Dragon)
+  Earth Glide (Xorn)
+
+Innate spellcasting:
+  At will:
+    Darkness
+    Detect Evil and Good
+    Detect Magic
+    Detect Thoughts
+    Disguise Self
+    Featherfall
+    Greater Restoration
+    Invisibility
+    Levitate
+    Light
+    Mage Hand
+    Magic Missile
+    Minor Illusion
+    Pass Without Trace
+    Thunderwave
+    Water Breathing
+    Water Walk
+
+  3/day:
+    Blade Barrier
+    Bless
+    Charm Person
+    Control Weather
+    Create Food & Water/Wine
+    Cure Wounds
+    Dispel Evil and Good
+    Lesser Restoration
+    Major Image
+    Protection from Poison
+    Resurrection
+    Sanctuary
+    Shield
+    Suggestion
+    Tongues
+    Wind Walk
+
+  2/day:
+    Plane Shift (self only)
+    Ray of Enfeeblement
+    Sleep
+
+  1/day:
+    Commune
+    Cone of Cold
+    Conjure Elemental (Air)
+    Creation
+    Dominate Person
+    Dream
+    Earthquake
+    Fire Storm
+    Fly
+    Gaseous Form
+    Plane Shift
+    Scrying
+    True Seeing
+
+
+
+Feats (4):
+  Alert. +5 to initiative. Cannot be surprised while conscious. Unseen creatures don't get advantage against me.
+  Dungeon Delver. Advantage on rolls to detect secret doors and saves to avoid or resist traps. Resistance to damage dealt by traps. Search for traps moving at normal speed.
+  Mobile. +10 speed, difficult terrain is simple, if I attack a creature, it cannot make opportunity attacks against me that turn.
+  Spell Sniper. Ranged spell attack range is doubled, Ignore 1/2 & 3/4 cover, learn 1 cantrip.
+
+  Lucky. Advantage/disadvantage 3/day.
+  War Caster. Advantage on saves to keep concentration, cast spells with hands full of weapons, cast a spell as a reaction opportunity attack
