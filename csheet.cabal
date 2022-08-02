@@ -112,7 +112,7 @@ executable pdf
                      , bytestring
                      , containers
                      , clib
-                     , data-pdf-fieldreader == 0.1.1.0
+                    --  , data-pdf-fieldreader == 0.1.1.0
                      , optparse-applicative
                      , spelldata
                      , text
