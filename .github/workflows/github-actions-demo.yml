@@ -4,10 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      # - run: cabal update
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: pwd
-      - run: ls -l
-      # - run: cabal build cexe
-      # - run: cabal exec cexe -- -j characters/strahd/dennis/dennis.5.json -p output/dennis.5.pdf
+      - run: cabal update
+      - run: cabal build cexe
+      - run: cabal exec cexe -- -j characters/strahd/dennis/dennis.5.json -p output/dennis.5.pdf
