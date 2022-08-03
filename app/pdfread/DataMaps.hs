@@ -180,7 +180,7 @@ dataMaps =
   -- , ("Investigation","+8")
   -- , ("InvestigationMod","INT")
   , ("InvestigationProf", (\c v ->  c {skillInvestigation = if v == "P" then 1.0 else 0.0 }))
-  , ("MaxHP", (\c v -> c { hitPoints = readInt v } ))
+  , ("MaxHP", (\c v -> c { hitPoints = [readInt v] } ))
   -- , ("Medicine","+3")
   -- , ("MedicineMod","WIS")
   , ("MedicineProf", (\c v ->  c {skillMedicine = if v == "P" then 1.0 else 0.0 }))
@@ -337,6 +337,10 @@ emptyCharacter = Character
   , bonusSleightOfHand = 0
   , bonusStealth = 0
   , bonusSurvival = 0
+
+  , bonusPassiveInsight = 0
+  , bonusPassiveInvestigation = 0
+  , bonusPassivePerception = 0
   
   , proficiencies = []
 
@@ -344,7 +348,7 @@ emptyCharacter = Character
   , acBonus = 0
   , initiative = 0
   , speed = ""
-  , hitPoints = 0
+  , hitPoints = []
   , tempHitPoints = 0
   , hitDice = ""
   

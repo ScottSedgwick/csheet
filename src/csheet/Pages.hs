@@ -15,7 +15,8 @@ import DataTypes (Character, Spellcasting, Spell(..), Backpack, BagOfHolding, Po
     slotsLevel1, slotsLevel2, slotsLevel3, slotsLevel4, slotsLevel5, slotsLevel6, slotsLevel7, slotsLevel8, slotsLevel9,
     bagPocket1, bagPocket2, bagPocket3, bagPocket4, bagFlapPouch, bagMiddlePouch, bagMainPouch, bagCash, bagBedroll, bagRope, bagAmmo, bagTorches, bagTreasure,
     bohPGs, bohItems, phItems, bonusAcrobatics, bonusAnimalHandling, bonusArcana, bonusAthletics, bonusDeception, bonusHistory, bonusInsight, bonusIntimidation, 
-    bonusInvestigation, bonusMedicine, bonusNature, bonusPerception, bonusPerformance, bonusPersuasion, bonusReligion, bonusSleightOfHand, bonusStealth, bonusSurvival)
+    bonusInvestigation, bonusMedicine, bonusNature, bonusPerception, bonusPerformance, bonusPersuasion, bonusReligion, bonusSleightOfHand, bonusStealth, bonusSurvival,
+    bonusPassivePerception, bonusPassiveInsight, bonusPassiveInvestigation)
 import Fonts(Fonts(..))
 import Utilities(drawCntText, drawTxtBox, drawMyText, drawCircle, drawMyStrings, drawMySpells, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, showSubClass, statBonus, profBonus, saveBonus, skillBonus)
 
@@ -98,7 +99,7 @@ drawPage1 c bg fs = setupPage bg $ do
   drawMyText (fontLarge fs) 234.5 667 (calculatedArmourClass c)
   drawMyText (fontLarge fs) 293 667 (calculatedInitiative c)
   drawMyText (fontLarge fs) 346 667 (calculatedSpeed c)
-  drawMyText (fontTiny fs)  290 618 (show0 $ hitPoints c)
+  drawMyText (fontTiny fs)  290 618 (show0 $ calcHp c)
   drawMyText (fontTiny fs)  112 610 (show5 $ saveBonus (strength c) (strengthBonus c) (profBonus c))
   drawCircle 102 611 3 (fromIntegral $ strengthBonus c)
   drawMyText (fontTiny fs)  112 595 (show5 $ saveBonus (dexterity c) (dexterityBonus c) (profBonus c))
@@ -195,7 +196,8 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawCntText (fontLarge fs) 297 650 (calculatedInitiative c)
   drawCntText (fontLarge fs) 348 650 (calculatedSpeed c)
   -- HP
-  drawCntText (fontLarge fs) 240 572 (show0 $ hitPoints c)
+  drawCntText (fontLarge fs) 240 572 (show0 $ calcHp c)
+  drawMyText  (fontTiny fs)  267 597 (show $ hitPoints c)
   drawCntText (fontLarge fs) 240 510 (show0 $ tempHitPoints c)
   -- Saving throw bonuses and proficiency circles
   let bonuses = [(charisma, charismaBonus), (wisdom, wisdomBonus), (intelligence, intelligenceBonus), (constitution, constitutionBonus), (dexterity, dexterityBonus), (strength, strengthBonus)]
@@ -230,7 +232,7 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawCntText (fontNormal fs) 242 462 (show0 $ level c)
   drawMyText  (fontNormal fs) 262 462 (hitDice c)
   -- Passive perception
-  drawCntText (fontLarge fs) 82 180 (passives c)
+  drawCntText (fontSmall fs) 85 180 (passives c)
   -- Money 
   let monies = [copper, silver, electrum, gold, platinum]
   mapM_ (\(x,f) -> drawCntText (fontSmall fs) (231 + x * 34) 175 (show0 $ f (moneyPouch c))) (zip [0..] monies)
@@ -250,10 +252,11 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawMyAttacks (fontTiny fs) 222 330 13 (drop 3 $ attacks c)
 
 passives :: Character -> String
-passives c = "P:" <> show passivePerception <> "  I:" <> show passiveInsight
+passives c = "P[" <> show passivePerception <> "] Is[" <> show passiveInsight <> "] Iv[" <> show passiveInvestigation <> "]"
   where
-    passivePerception = 10 + skillBonus (wisdom c) (skillPerception c) (profBonus c) (bonusPerception c)
-    passiveInsight = 10 + skillBonus (wisdom c) (skillInsight c) (profBonus c) (bonusInsight c)
+    passivePerception = 10 + skillBonus (wisdom c) (skillPerception c) (profBonus c) (bonusPassivePerception c)
+    passiveInsight = 10 + skillBonus (wisdom c) (skillInsight c) (profBonus c) (bonusPassiveInsight c)
+    passiveInvestigation = 10 + skillBonus (intelligence c) (skillInvestigation c) (profBonus c) (bonusPassiveInvestigation c)
 
 drawPage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
 drawPage2 c bg mapp fs = do
@@ -290,10 +293,10 @@ drawIcePage2 c bg mapp fs = do
     drawTxtBox (helvetica fs) 35 30 162 395 (unlines $ backstory c)
     drawMyStrings (fontTeeny fs) 225 690 13.2 (take 18 (allies c))
     drawMyStrings (fontTeeny fs) 405 518 13.2 (drop 18 (allies c))
-    drawMyStrings (fontTeeny fs) 225 425 13.2 (take 15 (drop 29 (features c)))
-    drawMyStrings (fontTeeny fs) 405 425 13.2 (drop 44 (features c))
-    drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (treasure c))
-    drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 12 (treasure c))
+    drawMyStrings (fontTeeny fs) 225 425 13.2 (take 16 (drop 29 (features c)))
+    drawMyStrings (fontTeeny fs) 405 425 13.2 (take 16 (drop 45 (features c)))
+    drawMyStrings (fontTeeny fs) 225 183 13.2 (drop 61 (features c))
+    drawMyStrings (fontTeeny fs) 405 183 13.2 (treasure c)
 
 drawSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawSpellPage bg fs c = setupPage bg $ do
@@ -450,4 +453,7 @@ drawSpellbook bg fs c = setupPage bg $ do
 drawSpell :: Fonts -> PDFFloat -> PDFFloat -> Spell -> Draw()
 drawSpell fs x y s = do
   drawMyText (fontTiny fs) x y (spellName s)
+
+calcHp :: Character -> Integer
+calcHp c = sum (map (\d -> d + statBonus (constitution c)) (hitPoints c))
     

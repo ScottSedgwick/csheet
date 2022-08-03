@@ -277,6 +277,10 @@ data Character = Character
   , bonusSleightOfHand :: Integer
   , bonusStealth :: Integer
   , bonusSurvival :: Integer
+
+  , bonusPassiveInsight :: Integer
+  , bonusPassivePerception :: Integer
+  , bonusPassiveInvestigation :: Integer
   
   , proficiencies :: [String]
 
@@ -284,7 +288,7 @@ data Character = Character
   , acBonus :: Integer
   , initiative :: Integer
   , speed :: String
-  , hitPoints :: Integer
+  , hitPoints :: [Integer]
   , tempHitPoints :: Integer
   , hitDice :: String
   
@@ -385,6 +389,10 @@ asCharacter = Character
          <*> keyOrDefault "bonusSleightOfHand" 0 asIntegral
          <*> keyOrDefault "bonusStealth" 0 asIntegral
          <*> keyOrDefault "bonusSurvival" 0 asIntegral
+
+         <*> keyOrDefault "bonusPassiveInsight" 0 asIntegral
+         <*> keyOrDefault "bonusPassivePerception" 0 asIntegral
+         <*> keyOrDefault "bonusPassiveInvestigation" 0 asIntegral
   
          <*> key "proficiencies" (eachInArray asString)
 
@@ -392,7 +400,7 @@ asCharacter = Character
          <*> key "acBonus" asIntegral
          <*> key "initiative" asIntegral
          <*> key "speed" asString
-         <*> key "hitPoints" asIntegral
+         <*> key "hitPoints" (eachInArray asIntegral)
          <*> key "tempHitPoints" asIntegral
          <*> key "hitDice" asString
   
