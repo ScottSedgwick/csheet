@@ -1,5 +1,7 @@
-name:                csheet
+name:                spellhb
 version:             0.1.0.0
+-- synopsis:
+-- description:
 homepage:            https://github.com/ScottSedgwick/csheet#readme
 license:             BSD3
 license-file:        LICENSE
@@ -16,37 +18,52 @@ library clib
   exposed-modules:     DataTypes
                      , Fonts
                      , Pages
+                     , Paths_HPDF
                      , Utilities
   default-language:    Haskell2010
   build-depends:       base 
                      , aeson
+                     , aeson-better-errors
                      , base64-bytestring
                      , binary
                      , bytestring
                      , containers
-                     , errors
-                     , file-embed
-                     , filepath
-                     , HPDF
-                     , network-uri
-                     , text
-
-executable cexe
-  hs-source-dirs:      app/csheet
-  main-is:             Main.hs
-  default-language:    Haskell2010
-  build-depends:       base 
-                     , aeson
-                     , base64-bytestring
-                     , binary
-                     , bytestring
-                     , containers
-                     , clib
                      , errors
                      , file-embed
                      , filepath
                      , HPDF
                      , mtl
                      , network-uri
+                     , parsec
+                     , text
+                     , vector
+                     , zlib
+
+library spelldata
+  hs-source-dirs:      src/spelldata
+  exposed-modules:     SpellData
+  other-modules:       Cantrips
+                     , FirstLevel
+                     , SecondLevel
+                     , ThirdLevel
+                     , FourthLevel
+                     , FifthLevel
+                     , SpellTypes
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , containers
+                     , text
+
+executable spellhb
+  hs-source-dirs:      app/spellhb
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , aeson
+                     , bytestring
+                     , clib
+                     , containers
+                     , directory
                      , optparse-applicative
+                     , spelldata
                      , text

@@ -19,8 +19,8 @@ data Options = Options
 
 options :: Parser Options
 options = Options
-  <$> strOption ( long "json"      <> short 'j' <> metavar "JSON" <> help "JSON file to read values from" <> showDefault <> value "characters/strahd/rusty/rusty.5.json" )
-  <*> strOption ( long "outfile"   <> short 'o' <> metavar "OUT"  <> help "File to write to" <> showDefault <> value "characters/strahd/rusty/rusty.5.hb" )
+  <$> strOption ( long "json"      <> short 'j' <> metavar "JSON" <> help "JSON file to read values from" <> showDefault <> value "characters/xaryxis/spells/spells.json" )
+  <*> strOption ( long "outfile"   <> short 'o' <> metavar "OUT"  <> help "File to write to" <> showDefault <> value "characters/xaryxis/spells/spells.hb" )
 
 main :: IO()
 main = run =<< execParser opts

@@ -1,0 +1,118 @@
+name:                csheet
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/ScottSedgwick/csheet#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Scott Sedgwick
+maintainer:          scott.sedgwick@gmail.com
+copyright:           Copyright (c) 2018 Scott Sedgwick
+category:            Investigative
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library clib
+  hs-source-dirs:      src/csheet
+  exposed-modules:     DataTypes
+                     , Fonts
+                     , Pages
+                     , Paths_HPDF
+                     , Utilities
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , aeson
+                     , aeson-better-errors
+                     , base64-bytestring
+                     , binary
+                     , bytestring
+                     , containers
+                     , errors
+                     , file-embed
+                     , filepath
+                     , HPDF
+                     , mtl
+                     , network-uri
+                     , parsec
+                     , text
+                     , vector
+                     , zlib
+
+executable cexe
+  hs-source-dirs:      app/csheet
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , aeson
+                     , aeson-better-errors
+                     , base64-bytestring
+                     , binary
+                     , bytestring
+                     , containers
+                     , clib
+                     , errors
+                     , file-embed
+                     , filepath
+                     , HPDF
+                     , mtl
+                     , network-uri
+                     , optparse-applicative
+                     , parsec
+                     , text
+                     , vector
+                     , zlib
+
+library spelldata
+  hs-source-dirs:      src/spelldata
+  exposed-modules:     SpellData
+  other-modules:       Cantrips
+                     , FirstLevel
+                     , SecondLevel
+                     , ThirdLevel
+                     , FourthLevel
+                     , FifthLevel
+                     , SpellTypes
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , containers
+                     , text
+
+-- executable spell
+--   hs-source-dirs:      app/spell
+--   main-is:             Main.hs
+--   default-language:    Haskell2010
+--   build-depends:       base 
+--                      , containers
+--                      , directory
+--                      , spelldata
+--                      , text
+
+executable spellhb
+  hs-source-dirs:      app/spellhb
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , aeson
+                     , bytestring
+                     , clib
+                     , containers
+                     , directory
+                     , optparse-applicative
+                     , spelldata
+                     , text
+
+executable pdf
+  hs-source-dirs:      app/pdfread
+  main-is:             Main.hs
+  other-modules:       DataMaps
+  default-language:    Haskell2010
+  build-depends:       base 
+                     , aeson
+                     , bytestring
+                     , containers
+                     , clib
+                     , data-pdf-fieldreader 
+                     , optparse-applicative
+                     , spelldata
+                     , text

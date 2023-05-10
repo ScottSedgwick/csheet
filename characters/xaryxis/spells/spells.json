@@ -1,0 +1,290 @@
+{
+    "characterName": "Rusty",
+    "sheetType": "SheetTypeIcewindDale",
+    "className": "Artificer",
+    "subclass": "Armourer",
+    "level": 5,
+    "background": "Engineer/Bluetspur",
+    "playerName": "Scott",
+    "race": "Flumph",
+    "alignment": "LG",
+    "experience": "",
+    "appearance": "Rusty.jpeg",
+  
+    "age": 0,
+    "height": "4x3' / 7'",
+    "weight": "35lbs / 240lbs",
+    "eyeColour": "Blue",
+    "skinColour": "Translucent/Blue",
+    "hairColour": "None",
+    
+    "inspiration": 0,
+    "proficiencyBonus": 0,
+    
+    "acBase": 18,
+    "acBonus": 4,         "armourComment": "Full plate (18), enhanced armour infusion (+1), Shielded (+1); Robe Mithril Weaved (+1AC); Shield (+2)",
+    "initiative": 7,      "initiativeComment": "INT based (+5), Intermediate Nimble Robe (+2), Bluetspur +1",
+    "speed": "35",
+    "hitPoints": [51],
+    "tempHitPoints": 0,
+    "hitDice": "d8",
+  
+    "strength": 18,       "STRComment": "Roll 17, +1 ASI",
+    "constitution": 16,   "CONComment": "Roll 16",
+    "dexterity": 12,      "DEXComment": "Roll 12",
+    "intelligence": 20,   "INTComment": "Roll 18, +1 Fey Touched, +1 Racial",
+    "wisdom": 16,         "WISComment": "Roll 15, +1 Racial",
+    "charisma": 16,       "CHAComment": "Roll 15, +1 ASI",
+  
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 1,
+    "intelligenceBonus": 1,
+    "wisdomBonus": 0,
+    "charismaBonus": 0,
+  
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 1,
+    "skillAthletics": 0,
+    "skillDeception": 0,
+    "skillHistory": 1,
+    "skillInsight": 0,
+    "skillIntimidation": 0,
+    "skillInvestigation": 2,
+    "skillMedicine": 0,
+    "skillNature": 0,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 1,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 0,
+    "skillSurvival": 1,
+  
+    "proficiencies": [
+      "Artificer: All armour & shields, simple weapons,",
+      "thieves tools, tinkers tools, smiths tools,",
+      "carpenters tools, History, Perception",
+      "Int: Jewelers tools, Leatherworkers tools,",
+      "Survival, Persuasion, Expertise in Investigation",
+      "Engineer: Alchemists tools, Arcana,",
+      "Investigation, Draconic",
+      "Languages: Common, Draconic, Telepathy"
+    ],
+  
+    "attacks": [
+      {
+        "weapon": "LL 1 (90/300)",
+        "damage": "2d6+5 lightning",
+        "bonus": "+8"
+      },
+      {
+        "weapon": "LL 2 (90/300)",
+        "damage": "1d6+5 lightning",
+        "bonus": "+8"
+      },
+      {
+        "weapon": "Mace",
+        "damage": "1d8+5 bludgeon",
+        "bonus": "+8"
+      },
+      {
+        "weapon": "Dagger (20/60)",
+        "damage": "1d4+4 piercing",
+        "bonus": "+7"
+      },
+      {
+        "weapon": "Stench 15'Cone",
+        "damage": "Poisoned DC14",
+        "bonus": "Dex"
+      },
+      {
+        "weapon": "Unarmed",
+        "damage": "1d4+4 bludgeon",
+        "bonus": "+7"
+      },
+      {
+        "weapon": "Tendrils",
+        "damage": "1d4+4B+1d4 acid",
+        "bonus": "+7"
+      }
+    ],
+    
+    "personalityTraits": [
+        "I pepper my speech with the jargon of my",
+        "trade, like reorienting the active plane",
+        "vectors into folded dimensions.",
+        "Ideas are fine, but results are what counts."
+    ],
+    "ideals": [
+        "Science. A rigorous application of logical",
+        "principles and protocols will lead us toward",
+        "progress more surely than any belief",
+        "system."
+    ],
+    "bonds": [
+        "I have dedicated my life to finding a",
+        "solution to a scientific problem -",
+        "trancendence."
+    ],
+    "flaws": [
+        "Nothing is ever simple, and if it seems",
+        "simple, I'll find a way to make it",
+        "complicated."
+    ],
+    "features": [
+      "Extra Attack",
+      "Darkvision 60'",
+      "Telepathy 30'",
+      "Vulnerable to Psychic damage",
+      "Telepathic Shroud",
+      "Fly 30' when not in armour",
+      "Misty Step 1/long rest",
+      "Silvery Barbs 1/long rest",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Artificer abilities:",
+      "Magical Tinkering [A]. Affect up to INT bonus objects.",
+      "Grant one object one power: Sheds light, Relays",
+      "message when tapped, Emits odor or nonverbal",
+      "sound, Static visual effect.",
+      "Ritual casting",
+      "Infuse item: up to 2 items per long rest, Each",
+      "infusion can only be in one item at a time.",
+      "Infusion: Enhanced Defense (+1AC) - Armour",
+      "Infusion: Homonculous Servant",
+      "Infusion: Replicate: Bag of Holding",
+      "Infusion: Enhanced Weapon (+1) - Lightning Launcher",
+      "Specialist: Armourer",
+      "Prepare INT mod + 1/2 Artificer level spells. Know all",
+      "artificer spells.",
+      "Extra Attack",
+      "Fey touched: +1 Int, Misty Step & Silvery Barbs",
+      "ASI: +1 Str, +1 Cha",
+      "Bluetspur: +1 Init, +2 vs fear & illusion",
+      "Background - Izzet Engineer (Ravnica)",
+      "Plate Armour (AC18), Enhanced Defense (+1AC),",
+      "Int Shielded (+1AC), Hardened (negate 1 crit/LR),",
+      "Infiltrator: +5', Adv on Stealth",
+      "Robes: Int Nimble (+2 Initiative), Mithril",
+      "Weaved (+1 AC)",
+      "Shield (AC+2), Defiant (Reaction: negate 1 crit/SR)"
+    ],
+    
+    "backstory": [
+      "ROLLS. Stats: 16,15,15,17,18,12.  Racial: +1 Int, +1 Wis. HP: 5,8,8,7. Rusty was stolen from his parent by the Fey and grew up surviving amongst the Fey in Bluetspur. He met an ex-knight who had lost his memory, and they joined up to make their way to Mordentshire, where they fell in with Van Richten. ",
+      "Rusty's life goal is to find his family, but until then he is forcing back the boundaries of knowledge."
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 5,
+        "platinum": 0,
+        "gems": []
+    },
+  
+    "allies": [
+      "Flumph abilities:",
+      "Darkvision 60'",
+      "Advanced Telepathy. Communicate telepathically",
+      "with any creature within 30'. Perceive the content of",
+      "any telepathic communication used within 30'.",
+      "Cannot be surprised by creatures with any form of",
+      "telepathy.",
+      "Exposed Mind. Vulnerable to Psychic damage.",
+      "Flight: 30', Hover, while not in armour.",
+      "Prone Deficiency. 50% chance of incapacitation",
+      "when knocked prone. DC10 DEX save to fix.",
+      "Stench Spray [A]. 15' cone. Dex save, CR (8 + CON",
+      "bonus + Prof bonus). Poisoned for 1d4 rounds if",
+      "save failed (disadvantage on attacks and ability checks).",
+      "Telepathic Shroud. Immune to any effect that would",
+      "sense emotion or read thoughts, as well as all",
+      "divination spells.",
+      "Tendrils. 1d4 piercing + 1d4 acid damage.",
+      "Languages: Common, Telepathy."
+    ],
+  
+    "equipment": [
+        "Armour (hardened, negate 1 crit/LR)", 
+        "Shield (defiant, reaction negate 1 crit/SR)",
+        "Mace (precise +1, enhanced 1d8)"
+    ],
+  
+    "treasure": [
+    ],
+    
+    "backpacks": [], 
+    "bagsOfHolding": [
+      { "bohPGs": []
+      , "bohItems": 
+        [ { "biQty": 1, "biLbs": 8 , "biName": "Alchemists Tools" }
+        , { "biQty": 1, "biLbs": 8 , "biName": "Smiths Tools" }
+        , { "biQty": 1, "biLbs": 6 , "biName": "Carpenters Tools" }
+        , { "biQty": 1, "biLbs": 10, "biName": "Tinkers Tools" }
+        , { "biQty": 1, "biLbs": 2 , "biName": "Jewelers Tools" }
+        , { "biQty": 1, "biLbs": 5 , "biName": "Leatherworkers Tools" }
+        , { "biQty": 1, "biLbs": 5 , "biName": "Block & Tackle" }
+        , { "biQty": 1, "biLbs": 3 , "biName": "Hammer" }
+        , { "biQty": 1, "biLbs": 1 , "biName": "Tinkered Boombox" }
+        , { "biQty": 1, "biLbs": 1 , "biName": "Tinkered Fartgun" }
+        , { "biQty": 1, "biLbs": 8 , "biName": "Minion (Homonculus Servant)" }
+        , { "biQty": 1, "biLbs": 0 , "biName": "95gp worth of Artificers Resources" }
+        ]
+      }
+    ],
+    "portableHoles": [],
+
+    "spellcasting": 
+    {
+        "spellcastingClass": "Artificer (Prep 7)",
+        "spellcastingAbility": "Int",
+        "spellSaveDC": "16",
+        "spellAttackBonus": "8",
+        "spells": [
+            { "prepared": false, "level": "One",     "name": "Disguise Self",         "comment": "" },
+            { "prepared": false, "level": "One",     "name": "Mage Armor",           "comment": "" },
+            { "prepared": false, "level": "Two",     "name": "Suggestion",            "comment": "" },
+
+            { "prepared": false, "level": "One",     "name": "Arms of Hadar",            "comment": "" },
+            { "prepared": false, "level": "One",     "name": "Detect Magic",            "comment": "" },
+            { "prepared": false, "level": "One",     "name": "Magic Missile",            "comment": "" },
+            { "prepared": false, "level": "One",     "name": "Tenser's Floating Disk",            "comment": "" },
+            { "prepared": false, "level": "Two",     "name": "Darkness",            "comment": "" },
+            { "prepared": false, "level": "Two",     "name": "Hold Person",            "comment": "" },
+            { "prepared": false, "level": "Two",     "name": "Invisibility",            "comment": "" },
+            { "prepared": false, "level": "Two",     "name": "Spider Climb",            "comment": "" }
+        ],
+        "slotsLevel1": "4",
+        "slotsLevel2": "2", 
+        "slotsLevel3": "0",
+        "slotsLevel4": "0",
+        "slotsLevel5": "0",
+        "slotsLevel6": "0",
+        "slotsLevel7": "0",
+        "slotsLevel8": "0",
+        "slotsLevel9": "0"
+    }
+}
