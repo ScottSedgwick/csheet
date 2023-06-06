@@ -6,12 +6,15 @@ import Pages
 
 import Data.Aeson(eitherDecode)
 import Data.Either(rights)
+import qualified Data.Text as T
 import Graphics.PDF(JpegFile, PDF, readJpegFile, pdfByteString, standardDocInfo, PDFRect(..))
 import Options.Applicative
 import System.Environment (getArgs)
 import System.Exit (die)
 import System.FilePath ((</>), takeDirectory)
+import System.FilePath.Posix (replaceExtension)
 import qualified Data.ByteString.Lazy as B
+import Spells (spellMap)
 
 parseCharacter :: B.ByteString -> Either String Character
 parseCharacter = eitherDecode
@@ -39,7 +42,6 @@ data Pages = Pages
   { page1 :: Character -> JpegFile -> Fonts -> PDF()
   , page2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
   , pageSpells :: JpegFile -> Fonts -> Spellcasting -> PDF()
-  , pageSpellbook :: JpegFile -> Fonts -> Spellcasting -> PDF()
   , pageBags :: JpegFile -> Character -> Fonts -> Backpack -> PDF()
   , pageBoh :: JpegFile -> Character -> Fonts -> BagOfHolding -> PDF()
   , pageHole :: JpegFile -> Character -> Fonts -> PortableHole -> PDF() 
@@ -70,7 +72,23 @@ run opts = do
     Just t  -> do
       case parseCharacter chardata of
         Left err -> putStrLn "Error parsing JSON:" >> die err
-        Right ch -> buildSheet (pdf opts) (ch { sheetType = t })
+        Right ch -> do
+          let pdfFile = pdf opts
+          let spellsHtml = replaceExtension pdfFile "spells.html"
+          buildSheet pdfFile (ch { sheetType = t })
+          buildSpells spellsHtml ch
+
+buildSheet :: String -> Character -> IO()
+buildSheet outfilename ch = do
+  let folder = takeDirectory outfilename
+  images <- loadImages folder ch
+  let pages = loadPages ch
+  fonts <- loadFonts
+  B.writeFile outfilename $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages fonts)
+
+buildSpells :: FilePath -> Character -> IO()
+buildSpells outfilename ch = do
+  writeFile outfilename (htmlSpells ch)
 
 standardImageFilenames :: [FilePath]
 standardImageFilenames = ["images/page1.jpg", "images/page2.jpg", "images/pageSpells.jpg", "images/pageBag.jpg", "images/bag-of-holding.jpg", "images/portable-hole.jpg", "images/spellbook.jpg"]
@@ -117,7 +135,6 @@ loadStandardPages =
     { page1 = drawPage1
     , page2 = drawPage2
     , pageSpells = drawSpellPage
-    , pageSpellbook = drawSpellbook
     , pageBags = drawBackpackPage
     , pageBoh = drawBagOfHolding
     , pageHole = drawPortableHole
@@ -129,19 +146,10 @@ loadIcewindDalePages =
     { page1 = drawIcePage1
     , page2 = drawIcePage2
     , pageSpells = drawIceSpellPage
-    , pageSpellbook = drawSpellbook
     , pageBags = drawBackpackPage
     , pageBoh = drawBagOfHolding
     , pageHole = drawPortableHole
     }
-
-buildSheet :: String -> Character -> IO()
-buildSheet outfilename ch = do
-  let folder = takeDirectory outfilename
-  images <- loadImages folder ch
-  let pages = loadPages ch
-  fonts <- loadFonts
-  B.writeFile outfilename $ pdfByteString standardDocInfo (PDFRect 0 0 595 842) (doc ch images pages fonts)
 
 doc :: Character -> Images -> Pages -> Fonts -> PDF()
 doc c images pages fonts = do
@@ -151,5 +159,3 @@ doc c images pages fonts = do
   mapM_ (pageBoh pages (imgBoh images) c fonts) (bagsOfHolding c)
   mapM_ (pageHole pages (imgHole images) c fonts) (portableHoles c)
   mapM_ (pageSpells pages (imgSpells images) fonts) (spellcasting c)
-  -- mapM_ (pageSpellbook pages (imgSpellbook images) fonts) (spellcasting c)
-  -- drawAbilities c (abilities c) fonts

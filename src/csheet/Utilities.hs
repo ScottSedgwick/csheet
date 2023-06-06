@@ -4,9 +4,12 @@ module Utilities where
 import DataTypes
 import Data.List    (sortOn)
 import Data.Text    (pack)
+import qualified Data.Map as M
 import Graphics.PDF
 import Graphics.PDF.Shapes
 import Graphics.PDF.Typesetting 
+
+import Spells (spellMap)
 
 drawMyText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
 drawMyText fnt x y s = drawText $ text fnt x y (pack s)
@@ -27,7 +30,7 @@ drawMyStrings fnt x y dy (s:ss) = do
   drawMyText fnt x y s
   drawMyStrings fnt x (y - dy) dy ss
 
-drawMySpells :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [Spell] -> Draw()
+drawMySpells :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [KnownSpell] -> Draw()
 drawMySpells fnt x y dy ss = dms fnt x y dy (sortOn spellName ss)
   where
     dms _   _ _ _  []     = return ()
@@ -128,3 +131,10 @@ showClass c = if lc == 0 then "" else cc ++ slc
 
 showSubClass :: Character -> String 
 showSubClass = subclass
+
+spellsBy :: (Spell -> Bool) -> [KnownSpell] -> [KnownSpell]
+spellsBy f xs = filter g xs
+  where
+    g k = case M.lookup (spellName k) spellMap of
+            Nothing -> False
+            Just s  -> f s

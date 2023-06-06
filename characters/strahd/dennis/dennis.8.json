@@ -9,8 +9,11 @@
     "race": "Fairy Dhampir",
     "alignment": "None",
     "experience": "",
+    "appearance": "",
+    "gender": "",
+    "faith" : "",
   
-    "age": 15,
+    "age": "15",
     "height": "2'1\" (63.5cm)",
     "weight": "15 lbs (7 kg)",
     "eyeColour": "Red",
@@ -60,12 +63,28 @@
     "skillSleightOfHand": 1,
     "skillStealth": 1,
     "skillSurvival": 0,
-  
-    "bonusPerception": 0,
-    "bonusPassivePerception": 5,
+
+    "bonusAcrobatics": 0,
+    "bonusAnimalHandling": 0,
+    "bonusArcana": 0,
+    "bonusAthletics": 0,
+    "bonusDeception": 0,
+    "bonusHistory": 0,
     "bonusInsight": 0,
-    "bonusPassiveInsight": 5,
+    "bonusIntimidation": 0,
     "bonusInvestigation": 0,
+    "bonusMedicine": 0,
+    "bonusNature": 0,
+    "bonusPerception": 0,
+    "bonusPerformance": 0,
+    "bonusPersuasion": 0,
+    "bonusReligion": 0,
+    "bonusSleightOfHand": 0,
+    "bonusStealth": 0,
+    "bonusSurvival": 0,
+
+    "bonusPassivePerception": 5,
+    "bonusPassiveInsight": 5,
     "bonusPassiveInvestigation": 5,
   
     "proficiencies": [
@@ -80,27 +99,32 @@
       {
         "weapon": "Unarmed (magic)",
         "damage": "1d6+5 bludgeon",
-        "bonus": "+8"
+        "bonus": "+8",
+        "notes": ""
       },
       {
         "weapon": "Vampiric Bite (m)",
         "damage": "1d6+8 piercing",
-        "bonus": "+11"
+        "bonus": "+11",
+        "notes": ""
       },
       {
         "weapon": "Dagger (20/60)",
         "damage": "1d6+5 piercing",
-        "bonus": "+8"
+        "bonus": "+8",
+        "notes": ""
       },
       {
         "weapon": "Missile (20/60)",
         "damage": "1d6+5 piercing",
-        "bonus": "+8"
+        "bonus": "+8",
+        "notes": ""
       },
       {
         "weapon": "Silver Dagger",
         "damage": "1d6+6 piercing",
-        "bonus": "+9"
+        "bonus": "+9",
+        "notes": ""
       }
     ],
     
@@ -308,5 +332,6 @@
         }
     ], 
     "bagsOfHolding": [],
-    "portableHoles": []
+    "portableHoles": [],
+    "spellcasting": []
   }

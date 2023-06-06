@@ -5,6 +5,7 @@ task :pdf, [:campaign, :name, :level] do |t, args|
     # puts cmd
     res = system cmd
     system "open #{filename}.pdf" if res
+    system "open #{filename}.spells.html" if res
 end
 task :pdf => [:build]
 

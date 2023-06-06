@@ -44,6 +44,7 @@ Deathless Nature:
 Background
 ----------
 Adopted (changeling?). Skills: Persuasion, Deception and Stealth
+2 languages (choose)
 
 Class features
 --------------
@@ -71,13 +72,14 @@ War Domain:
 Warlock:
 * Skills: 2 from Arcana, Deception, History, Intimidation, Investigation, Nature and Religion.
 * Saving throws: Wisdom, Charisma
-* 2 Cantrips
-* 4 Spells known
-* 2 2nd level slots
-* 2 Eldritch Invocations
+* 4 Cantrips
+* 15 Spells known
+* 4 5th level slots
+* 8 Eldritch Invocations
 * Pact of the Blade: Get Pact Weapons.
 * ASIs at 4,8,12,16 and 19.
 * Mystic Arcanum. One 6th, 7th, 8th, and 9th level spell known. 1 free cast per long rest.
+* Eldritch Master: Regain all Pact Magic spell slots 1/long rest.
 
 Patron - Great Old One:
 * Expanded spell list
@@ -142,26 +144,39 @@ Magic Items consumed
 - Tome of Leadership and Influence (x5)
 - Tome of Understanding (x5)
 
+Eldritch Invocations (8)
+------------------------
+* Agonizing Blast (Cha bonus to Eldritch Blast damage)
+Armor of Shadows (Mage Armor at will)
+* Eldritch Mind (advantage on Concentration saves)
+Eldritch Smite (expend warlock slot (35 SP), +6d8 force damage and knock target prone if Huge or smaller)
+Eldritch Sight (cast Detect Magic at will)
+* Eldritch Spear (Eldritch Blast range 300')
+* Eyes of the Rune Keeper (read all writing)
+Grasp of Hadar (Eldritch Blast pulls 10')
+Improved Pact Weapon (+1, bows)
+Kiss of Mephistopholes (After hitting with Eldritch Blast, BA to cast Fireball targetted on Eldritch Blast target)
+* Lance of Lethargy (Eldritch Blast reduces speed by 10' until end of my next turn)
+* Lifedrinker (Cha bonus to damage with pact weapon)
+Maddening Hex (BA, Hex target and creatures with 5' take Cha bonus damage)
+Relentless Hex (BA, teleport 30' to hex target)
+* Repelling Blast (Push 10' with Eldritch Blast)
+* Thirsting Blade (Attack twice with Pact Weapon)
+Visions of Distant Realms (Arcane Eye at will)
 
+Method for casting Wish
+-----------------------
 
+Create a simulacrum of myself.
+Simulacrum cannot regain expended spell slots, but it **can** regain sorcery points.
+Each LR retores it to 13 sorcery points.
+Each SR regains 4 sorcery points (So a LR can restore 32 sorcery points)
+The simulacrum can cast *Wish* as a psionic spell, at a cost of 9 sorcery points.
+The simulacrum does all my *Wish* casting for me. 
 
+As each simulacrum is created with at least 20 sorcery points and 1 9th level slot, it can cast 3 Wishes in quick succession, and will then need recycling, which takes 12 hours.
+Therefore we can sustainably cast 6 Wishes per day.
 
-Cleric Skills: 2 from History, Insight, Medicine, Persuasion and Religion
-Warlock Skills: 2 from Arcana, Deception, History, Intimidation, Investigation, Nature and Religion.
-Wizard Skills: 2 from Arcana, History, Insight, Investigation, Medicine and Religion.
-Sorceror Skills: 2 from Arcana, Deception, Insight, Intimidation, Persuasion and Religion.
-
-Drop 2:
-Arcana
-Deception *
-History
-Insight
-Intimidation
-Investigation
-Medicine
-Nature
-Persuasion *
-Religion
-Stealth *
-
-
+Correction: Using Wish to cast Simulacrum does not create stress, and doesn't take 12 hours to cast, only one action. Qitian restores 39 sorcery points per short rest, so can sustainably cast 3 wishes per hour.
+Each of those wishes creates a new Simulacrum, which casts (average) 3 wishes before being recycled. This means 9 wishes for converting 1 spell to psionic per hour, or 216 per day.
+Therefore we can convert all our known spells (~500) in under 3 days.

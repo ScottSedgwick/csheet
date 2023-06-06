@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module DataTypes where
 
-import Data.Aeson (FromJSON(..), ToJSON(..), (.=), object)
+import Data.Aeson (FromJSON(..), ToJSON(..), (.=), (.:), (.:?), (.!=), Value(..), object)
 import GHC.Generics(Generic)
 
 data Alignment = CG | NG | LG | CN | N | LN | CE | NE | LE | None deriving (Eq, Generic)
@@ -29,7 +29,7 @@ data Attack = Attack
 instance ToJSON Attack
 instance FromJSON Attack 
 
-data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | Unknown deriving (Eq, Show, Generic)
+data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | SpellLevelUnknown deriving (Eq, Show, Generic)
 instance ToJSON SpellLevel
 instance FromJSON SpellLevel
 
@@ -44,43 +44,50 @@ toSpellLevel "Six" = Six
 toSpellLevel "Seven" = Seven
 toSpellLevel "Eight" = Eight
 toSpellLevel "Nine" = Nine
-toSpellLevel _ = Unknown
+toSpellLevel _ = SpellLevelUnknown
 
-data Spell = Spell
+data SpellType 
+  = Abjuration
+  | Conjuration
+  | Divination
+  | Enchantment
+  | Evocation
+  | Illusion
+  | Necromancy
+  | Transmutation
+  | SpellTypeUnknown
+  deriving (Show, Eq, Generic)
+instance ToJSON SpellType
+instance FromJSON SpellType
+
+data Spell = Spell 
+  { spName :: String
+  , spLevel :: SpellLevel
+  , spType :: SpellType
+  , spRitual :: Bool
+  , spTime :: String
+  , spRange :: String
+  , spComponents :: String
+  , spDuration :: String
+  , spDescription :: String
+  , spHigher :: Maybe String
+  } deriving (Show, Eq, Generic)
+instance ToJSON Spell
+instance FromJSON Spell
+
+data KnownSpell = KnownSpell
   { prepared :: Bool
   , spellName :: String
-  , spellLevel :: SpellLevel
-  , spellCastingTime :: String
-  , spellComponents :: String
-  , spellDuration :: String
-  , spellNotes :: String
-  , spellPage :: String
-  , spellRange :: String
-  , spellSave :: String
-  , spellSource :: String
   } deriving (Eq, Show, Generic)
-instance ToJSON Spell where
-  toJSON (Spell prep name lvl ct c d n p r sv src) =
-    object  [ "prepared" .= prep
-            , "name" .= name
-            , "level" .= lvl
-            , "castingTime" .= ct
-            , "components" .= c
-            , "duration" .= d
-            , "notes" .= n
-            , "page" .= p
-            , "range" .= r
-            , "save" .= sv
-            , "source" .= src
-            ]
-instance FromJSON Spell 
+instance ToJSON KnownSpell
+instance FromJSON KnownSpell
 
 data Spellcasting = Spellcasting
   { spellcastingClass :: String
   , spellcastingAbility :: String
   , spellSaveDC :: String
   , spellAttackBonus :: String
-  , spells :: [Spell]
+  , knownSpells :: [KnownSpell]
   , slotsLevel1 :: String
   , slotsLevel2 :: String
   , slotsLevel3 :: String
@@ -92,7 +99,7 @@ data Spellcasting = Spellcasting
   , slotsLevel9 :: String
   } deriving (Eq, Show, Generic)
 instance ToJSON Spellcasting
-instance FromJSON Spellcasting 
+instance FromJSON Spellcasting
 
 data Cash = Cash {
     copper :: Integer
@@ -252,7 +259,7 @@ data Character = Character
   , flaws :: [String]
   , features :: [String]
   -- Page 2
-  , age :: Integer
+  , age :: String
   , height :: String
   , weight :: String
   , eyeColour :: String
@@ -262,7 +269,7 @@ data Character = Character
   , allies :: [String]
   , treasure :: [String]
   -- Page 3
-  , spellcasting :: Maybe Spellcasting
+  , spellcasting :: [Spellcasting]
   } deriving (Eq, Show, Generic)
 instance ToJSON Character
 instance FromJSON Character 

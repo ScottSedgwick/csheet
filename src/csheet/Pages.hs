@@ -1,27 +1,15 @@
+{-# LANGUAGE MultiParamTypeClasses, OverloadedStrings #-}
 module Pages where
 
-import DataTypes (Character, Spellcasting, Spell(..), Backpack, BagOfHolding, PortableHole, 
-    characterName, race, background, alignment, playerName, experience, appearance,
-    strength, dexterity, constitution, intelligence, wisdom, charisma,
-    inspiration, acBase, acBonus, initiative, speed, hitPoints, tempHitPoints,
-    strengthBonus, dexterityBonus, constitutionBonus, intelligenceBonus, wisdomBonus, charismaBonus,
-    skillAcrobatics, skillAnimalHandling, skillArcana, skillDeception, skillHistory, skillInsight, 
-    skillIntimidation, skillInvestigation, skillMedicine, skillNature, skillPerception, skillPerformance, 
-    skillPersuasion, skillReligion, skillSleightOfHand, skillStealth, skillSurvival, skillAthletics,
-    level, hitDice, copper, moneyPouch, silver, electrum, gold, platinum, gems, proficiencies, personalityTraits, ideals, bonds, flaws, features, equipment, attacks,
-    age, eyeColour, height, skinColour, weight, hairColour, backstory, allies, treasure,
-    spellcastingClass, spellcastingAbility, spellSaveDC, spellAttackBonus, spells, SpellLevel(..), --spellsCantrips, 
-    -- spellsLevel1, spellsLevel2, spellsLevel3, spellsLevel4, spellsLevel5, spellsLevel6, spellsLevel7, spellsLevel8, spellsLevel9, 
-    slotsLevel1, slotsLevel2, slotsLevel3, slotsLevel4, slotsLevel5, slotsLevel6, slotsLevel7, slotsLevel8, slotsLevel9,
-    bagPocket1, bagPocket2, bagPocket3, bagPocket4, bagFlapPouch, bagMiddlePouch, bagMainPouch, bagCash, bagBedroll, bagRope, bagAmmo, bagTorches, bagTreasure,
-    bohPGs, bohItems, phItems, bonusAcrobatics, bonusAnimalHandling, bonusArcana, bonusAthletics, bonusDeception, bonusHistory, bonusInsight, bonusIntimidation, 
-    bonusInvestigation, bonusMedicine, bonusNature, bonusPerception, bonusPerformance, bonusPersuasion, bonusReligion, bonusSleightOfHand, bonusStealth, bonusSurvival,
-    bonusPassivePerception, bonusPassiveInsight, bonusPassiveInvestigation)
+import DataTypes 
 import Fonts(Fonts(..))
-import Utilities(drawCntText, drawTxtBox, drawMyText, drawCircle, drawMyStrings, drawMySpells, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, showSubClass, statBonus, profBonus, saveBonus, skillBonus)
+import Spells
+import Utilities(drawCntText, drawTxtBox, drawMyText, drawCircle, drawMyStrings, drawMySpells, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, showSubClass, statBonus, profBonus, saveBonus, skillBonus, spellsBy)
 
 import Control.Monad ((>=>), forM_)
-import Data.List (sortOn)
+import Data.List (intercalate, sortOn)
+import Data.Maybe (catMaybes, mapMaybe)
+import qualified Data.Text as T
 import Graphics.PDF
 
 show0 :: Integer -> String
@@ -53,6 +41,11 @@ setupPage bg p = do
   drawWithPage page $ do
     drawBackgroundImage jpg
     p
+
+setupPage' :: Draw() -> PDF()
+setupPage' p = do
+  page <- addPage Nothing
+  drawWithPage page p
 
 drawBackgroundImage :: PDFReference PDFJpeg -> Draw ()
 drawBackgroundImage jpg = 
@@ -263,7 +256,7 @@ drawPage2 c bg mapp fs = do
   app <- mkImage mapp
   setupPage bg $ do
     drawMyText (fontLarge fs)  55 751 (characterName c) 
-    drawMyText (fontSmall fs) 265 767 (show0 $ age c)
+    drawMyText (fontSmall fs) 265 767 (age c)
     drawMyText (fontSmall fs) 265 738 (eyeColour c)
     drawMyText (fontSmall fs) 370 767 (height c)
     drawMyText (fontSmall fs) 370 738 (skinColour c)
@@ -282,7 +275,7 @@ drawIcePage2 c bg mapp fs = do
   app <- mkImage mapp
   setupPage bg $ do
     drawCntText (fontLarge fs) 180 760 (characterName c) 
-    drawMyText  (fontSmall fs) 312 775 (show0 $ age c)
+    drawMyText  (fontSmall fs) 312 775 (age c)
     drawMyText  (fontSmall fs) 312 741 (eyeColour c)
     drawMyText  (fontSmall fs) 406 775 (height c)
     drawMyText  (fontSmall fs) 406 741 (skinColour c)
@@ -295,35 +288,46 @@ drawIcePage2 c bg mapp fs = do
     drawMyStrings (fontTeeny fs) 405 518 13.2 (drop 18 (allies c))
     drawMyStrings (fontTeeny fs) 225 425 13.2 (take 16 (drop 29 (features c)))
     drawMyStrings (fontTeeny fs) 405 425 13.2 (take 16 (drop 45 (features c)))
-    drawMyStrings (fontTeeny fs) 225 183 13.2 (drop 61 (features c))
+    drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (drop 61 (features c)))
+    drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 73 (features c))
     drawMyStrings (fontTeeny fs) 405 183 13.2 (treasure c)
 
 drawSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawSpellPage bg fs c = setupPage bg $ do
+  let spells0 = spellsBy (\s -> spLevel s == Cantrip) (knownSpells c)
+  let spells1 = spellsBy (\s -> spLevel s == One) (knownSpells c)
+  let spells2 = spellsBy (\s -> spLevel s == Two) (knownSpells c)
+  let spells3 = spellsBy (\s -> spLevel s == Three) (knownSpells c)
+  let spells4 = spellsBy (\s -> spLevel s == Four) (knownSpells c)
+  let spells5 = spellsBy (\s -> spLevel s == Five) (knownSpells c)
+  let spells6 = spellsBy (\s -> spLevel s == Six) (knownSpells c)
+  let spells7 = spellsBy (\s -> spLevel s == Seven) (knownSpells c)
+  let spells8 = spellsBy (\s -> spLevel s == Eight) (knownSpells c)
+  let spells9 = spellsBy (\s -> spLevel s == Nine) (knownSpells c)
   drawMyText (fontLarge fs)  70 753 (spellcastingClass c) 
   drawMyText (fontLarge fs) 278 757 (spellcastingAbility c) 
   drawMyText (fontLarge fs) 400 757 (spellSaveDC c) 
   drawMyText (fontLarge fs) 505 757 (spellAttackBonus c) 
-  drawMySpells (fontTiny fs)   50 643 14.7 (take 8 $ filter (\s -> spellLevel s == Cantrip) (spells c))
-  drawMySpells (fontTiny fs)  140 643 14.7 (drop 8 $ filter (\s -> spellLevel s == Cantrip) (spells c))
-  drawMySpells (fontTiny fs)   50 461 14.7 (take 13 $ filter (\s -> spellLevel s == One) (spells c))
-  drawMySpells (fontTiny fs)  140 461 14.7 (drop 13 $ filter (\s -> spellLevel s == One) (spells c))
-  drawMySpells (fontTiny fs)   50 224 14.7 (take 13 $ filter (\s -> spellLevel s == Two) (spells c))
-  drawMySpells (fontTiny fs)  140 224 14.7 (drop 13 $ filter (\s -> spellLevel s == Two) (spells c))
-  drawMySpells (fontTiny fs)  235 642 14.7 (take 13 $ filter (\s -> spellLevel s == Three) (spells c))
-  drawMySpells (fontTiny fs)  325 642 14.7 (drop 13 $ filter (\s -> spellLevel s == Three) (spells c))
-  drawMySpells (fontTiny fs)  235 404 14.7 (take 13 $ filter (\s -> spellLevel s == Four) (spells c))
-  drawMySpells (fontTiny fs)  325 404 14.7 (drop 13 $ filter (\s -> spellLevel s == Four) (spells c))
-  drawMySpells (fontTiny fs)  235 165 14.7 (take 9 $ filter (\s -> spellLevel s == Five) (spells c))
-  drawMySpells (fontTiny fs)  325 165 14.7 (drop 9 $ filter (\s -> spellLevel s == Five) (spells c))
-  drawMySpells (fontTiny fs)  420 642 14.7 (take 9 $ filter (\s -> spellLevel s == Six) (spells c))
-  drawMySpells (fontTiny fs)  510 642 14.7 (drop 9 $ filter (\s -> spellLevel s == Six) (spells c))
-  drawMySpells (fontTiny fs)  420 463 14.7 (take 9 $ filter (\s -> spellLevel s == Seven) (spells c))
-  drawMySpells (fontTiny fs)  510 463 14.7 (drop 9 $ filter (\s -> spellLevel s == Seven) (spells c))
-  drawMySpells (fontTiny fs)  420 284 14.7 (take 7 $ filter (\s -> spellLevel s == Eight) (spells c))
-  drawMySpells (fontTiny fs)  510 284 14.7 (drop 7 $ filter (\s -> spellLevel s == Eight) (spells c))
-  drawMySpells (fontTiny fs)  420 136 14.7 (take 7 $ filter (\s -> spellLevel s == Nine) (spells c))
-  drawMySpells (fontTiny fs)  510 136 14.7 (drop 7 $ filter (\s -> spellLevel s == Nine) (spells c))
+  drawMySpells (fontTiny fs)   50 643 14.7 (take 8 spells0)
+  drawMySpells (fontTiny fs)  140 643 14.7 (drop 8 spells0)
+  drawMySpells (fontTiny fs)   50 461 14.7 (take 13 spells1)
+  drawMySpells (fontTiny fs)  140 461 14.7 (drop 13 spells1)
+  drawMySpells (fontTiny fs)   50 224 14.7 (take 13 spells2)
+  drawMySpells (fontTiny fs)  140 224 14.7 (drop 13 spells2)
+  drawMySpells (fontTiny fs)  235 642 14.7 (take 13 spells3)
+  drawMySpells (fontTiny fs)  325 642 14.7 (drop 13 spells3)
+  drawMySpells (fontTiny fs)  235 404 14.7 (take 13 spells4)
+  drawMySpells (fontTiny fs)  325 404 14.7 (drop 13 spells4)
+  drawMySpells (fontTiny fs)  235 165 14.7 (take 9 spells5)
+  drawMySpells (fontTiny fs)  325 165 14.7 (drop 9 spells5)
+  drawMySpells (fontTiny fs)  420 642 14.7 (take 9 spells6)
+  drawMySpells (fontTiny fs)  510 642 14.7 (drop 9 spells6)
+  drawMySpells (fontTiny fs)  420 463 14.7 (take 9 spells7)
+  drawMySpells (fontTiny fs)  510 463 14.7 (drop 9 spells7)
+  drawMySpells (fontTiny fs)  420 284 14.7 (take 7 spells8)
+  drawMySpells (fontTiny fs)  510 284 14.7 (drop 7 spells8)
+  drawMySpells (fontTiny fs)  420 136 14.7 (take 7 spells9)
+  drawMySpells (fontTiny fs)  510 136 14.7 (drop 7 spells9)
   drawMyText    (fontSmall fs)  65 489    (slotsLevel1 c)
   drawMyText    (fontSmall fs)  65 249    (slotsLevel2 c)
   drawMyText    (fontSmall fs) 250 667    (slotsLevel3 c)
@@ -334,36 +338,43 @@ drawSpellPage bg fs c = setupPage bg $ do
   drawMyText    (fontSmall fs) 435 309    (slotsLevel8 c)
   drawMyText    (fontSmall fs) 435 161    (slotsLevel9 c)
 
-getSpells :: Spellcasting -> SpellLevel -> [Spell]
-getSpells c l = sortOn spellName $ filter (\s -> spellLevel s == l) (spells c)
-
 drawIceSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawIceSpellPage bg fs c = setupPage bg $ do
+  let spells0 = spellsBy (\s -> spLevel s == Cantrip) (knownSpells c)
+  let spells1 = spellsBy (\s -> spLevel s == One) (knownSpells c)
+  let spells2 = spellsBy (\s -> spLevel s == Two) (knownSpells c)
+  let spells3 = spellsBy (\s -> spLevel s == Three) (knownSpells c)
+  let spells4 = spellsBy (\s -> spLevel s == Four) (knownSpells c)
+  let spells5 = spellsBy (\s -> spLevel s == Five) (knownSpells c)
+  let spells6 = spellsBy (\s -> spLevel s == Six) (knownSpells c)
+  let spells7 = spellsBy (\s -> spLevel s == Seven) (knownSpells c)
+  let spells8 = spellsBy (\s -> spLevel s == Eight) (knownSpells c)
+  let spells9 = spellsBy (\s -> spLevel s == Nine) (knownSpells c)
   drawCntText (fontLarge fs) 180 760 (spellcastingClass c) 
   drawCntText (fontLarge fs) 348 760 (spellcastingAbility c) 
   drawCntText (fontLarge fs) 435 760 (spellSaveDC c) 
   drawCntText (fontLarge fs) 520 760 (spellAttackBonus c) 
   drawCntText (fontLarge fs)  43 488 "1"
-  drawMySpells (fontTiny fs)   50 643.0 14.7 (take 8 $ getSpells c Cantrip)
-  drawMySpells (fontTiny fs)  140 643.0 14.7 (drop 8 $ getSpells c Cantrip)
-  drawMySpells (fontTiny fs)   50 446.1 14.7 (take 12 $ getSpells c One)
-  drawMySpells (fontTiny fs)  140 446.1 14.7 (drop 12 $ getSpells c One)
-  drawMySpells (fontTiny fs)   50 220.5 14.7 (take 13 $ getSpells c Two)   
-  drawMySpells (fontTiny fs)  140 220.5 14.7 (drop 13 $ getSpells c Two)   
-  drawMySpells (fontTiny fs)  235 637.8 14.7 (take 13 $ getSpells c Three)
-  drawMySpells (fontTiny fs)  325 637.8 14.7 (drop 13 $ getSpells c Three)
-  drawMySpells (fontTiny fs)  235 402.0 14.7 (take 13 $ getSpells c Four)
-  drawMySpells (fontTiny fs)  325 402.0 14.7 (drop 13 $ getSpells c Four)
-  drawMySpells (fontTiny fs)  235 165.0 14.7 (take 9 $ getSpells c Five)
-  drawMySpells (fontTiny fs)  325 165.0 14.7 (drop 9 $ getSpells c Five)
-  drawMySpells (fontTiny fs)  420 638.0 14.7 (take 9 $ getSpells c Six)   
-  drawMySpells (fontTiny fs)  510 638.0 14.7 (drop 9 $ getSpells c Six)   
-  drawMySpells (fontTiny fs)  420 461.0 14.7 (take 9 $ getSpells c Seven)
-  drawMySpells (fontTiny fs)  510 461.0 14.7 (drop 9 $ getSpells c Seven)
-  drawMySpells (fontTiny fs)  420 282.3 14.7 (take 7 $ getSpells c Eight)
-  drawMySpells (fontTiny fs)  510 282.3 14.7 (drop 7 $ getSpells c Eight)
-  drawMySpells (fontTiny fs)  420 134.5 14.7 (take 7 $ getSpells c Nine)
-  drawMySpells (fontTiny fs)  510 134.5 14.7 (drop 7 $ getSpells c Nine)
+  drawMySpells (fontTiny fs)   50 643.0 14.7 (take 8 spells0)
+  drawMySpells (fontTiny fs)  140 643.0 14.7 (drop 8 spells0)
+  drawMySpells (fontTiny fs)   50 446.1 14.7 (take 12 spells1)
+  drawMySpells (fontTiny fs)  140 446.1 14.7 (drop 12 spells1)
+  drawMySpells (fontTiny fs)   50 220.5 14.7 (take 13 spells2)   
+  drawMySpells (fontTiny fs)  140 220.5 14.7 (drop 13 spells2)   
+  drawMySpells (fontTiny fs)  235 637.8 14.7 (take 13 spells3)
+  drawMySpells (fontTiny fs)  325 637.8 14.7 (drop 13 spells3)
+  drawMySpells (fontTiny fs)  235 402.0 14.7 (take 13 spells4)
+  drawMySpells (fontTiny fs)  325 402.0 14.7 (drop 13 spells4)
+  drawMySpells (fontTiny fs)  235 165.0 14.7 (take 9 spells5)
+  drawMySpells (fontTiny fs)  325 165.0 14.7 (drop 9 spells5)
+  drawMySpells (fontTiny fs)  420 638.0 14.7 (take 9 spells6)   
+  drawMySpells (fontTiny fs)  510 638.0 14.7 (drop 9 spells6)   
+  drawMySpells (fontTiny fs)  420 461.0 14.7 (take 9 spells7)
+  drawMySpells (fontTiny fs)  510 461.0 14.7 (drop 9 spells7)
+  drawMySpells (fontTiny fs)  420 282.3 14.7 (take 7 spells8)
+  drawMySpells (fontTiny fs)  510 282.3 14.7 (drop 7 spells8)
+  drawMySpells (fontTiny fs)  420 134.5 14.7 (take 7 spells9)
+  drawMySpells (fontTiny fs)  510 134.5 14.7 (drop 7 spells9)
   drawCntText    (fontSmall fs)  85 489    (slotsLevel1 c)
   drawCntText    (fontSmall fs)  85 249    (slotsLevel2 c)
   drawCntText    (fontSmall fs) 270 667    (slotsLevel3 c)
@@ -444,16 +455,101 @@ drawPortableHole bg c fs b = setupPage bg $ do
 --     let h = 11.5 * fromIntegral (length (groupAbilities a)) :: PDFFloat
 --     return (i - h - 20)
 
+data MyVertStyles = NormalPara
 
-drawSpellbook :: JpegFile -> Fonts -> Spellcasting -> PDF()
-drawSpellbook bg fs c = setupPage bg $ do
-  drawSpell fs  50 770 (head (filter (\s -> spellLevel s == Cantrip) (spells c)))
-  drawSpell fs 300 770 (head (filter (\s -> spellLevel s == Cantrip) (spells c)))
+instance ComparableStyle MyVertStyles where
+    isSameStyleAs NormalPara NormalPara = True
 
-drawSpell :: Fonts -> PDFFloat -> PDFFloat -> Spell -> Draw()
-drawSpell fs x y s = do
-  drawMyText (fontTiny fs) x y (spellName s)
+instance ParagraphStyle MyVertStyles MyParaStyles  where
+    lineWidth _ w _ = w
+    linePosition _ _ _ = 0.0
+    interline _ = Nothing
+    paragraphChange s _ l = (s,l)
+    paragraphStyle _ = Nothing
+
+data MyParaStyles = Normal AnyFont
+
+instance ComparableStyle MyParaStyles where
+  isSameStyleAs (Normal fa) (Normal fb) = fa == fb
+
+instance Style MyParaStyles where
+    textStyle (Normal f) = TextStyle (PDFFont f 10) black black FillText 1.0 1.0 1.0 1.0
+    wordStyle _ = Nothing
+
+htmlSpells :: Character -> String
+htmlSpells ch =  "<html><style>"
+              <> "body { font-family: Verdana, sans-serif; font-size: 12px; }"
+              <> "h2 { font-family: Copperplate, fantasy; color: Sienna; font-size: 32px; } "
+              <> "div.spellblock { padding-bottom: 0px; } "
+              <> "span.title { font-family: Copperplate, fantasy; color: Sienna; font-size: 18px; } "
+              <> "span.spelltype { font-style: italic; font-size: 10px; }"
+              <> "span.header { font-weight: bold; }"
+              <> "table { font-family: Verdana, sans-serif; font-size: 12px; } "
+              <> "table, th, td { border: 1px solid black; border-collapse: collapse; } "
+              <> "th, td { padding-left: 10px; padding-right: 10px; } "
+              <> "td {text-align: center; }"
+              <> "</style><body>"
+              <> "<h2>Spellbook for " <> characterName ch <> "</h2><hr/>"
+              <> intercalate "<hr/>" (mapMaybe htmlKnownSpell ss)
+              -- <> concat (mapMaybe htmlKnownSpell ss)
+              <> "</body></html>"
+  where
+    cs = spellcasting ch
+    ks = concatMap knownSpells cs
+    ss = sortOn spellName ks
+
+htmlKnownSpell :: KnownSpell -> Maybe String
+htmlKnownSpell ks = 
+  case getSpell (spellName ks) of
+    Nothing -> Nothing
+    (Just s) -> Just $ htmlSpell ks s
+
+htmlSpell :: KnownSpell -> Spell -> String
+htmlSpell k s = "<div class=\"spellblock\"><p>"
+              <> "<span class=\"title\">" <> spName s <> "</span><br/>"
+              <> "<span class=\"spelltype\">" <> spellTypeLine (spType s) (spLevel s) <> "</span><br/>"
+              <> "<span class=\"header\">Casting Time:&nbsp;</span>" <> spTime s <> "<br/>"
+              <> "<span class=\"header\">Range:&nbsp;</span>" <> spRange s <> "<br/>"
+              <> "<span class=\"header\">Components:&nbsp;</span>" <> spComponents s <> "<br/>"
+              <> "<span class=\"header\">Duration:&nbsp;</span>" <> spDuration s <> "<br/>"
+              <> "</p>"
+              <> "<p>" <> spDescription s <> "</p>"
+              <> htmlHigher (spHigher s)
+              <> "</div>"
+
+htmlHigher :: Maybe String -> String
+htmlHigher Nothing = ""
+htmlHigher (Just h) = "<p><b>At Higher Levels:</b> " <> h <> "</p>"
+
+spellTypeLine :: SpellType -> SpellLevel -> String
+spellTypeLine t Cantrip = spellType t <> " Cantrip"
+spellTypeLine t l = spellLevel l <> "-level " <> spellType t
+
+spellType :: SpellType -> String
+spellType Abjuration  = "Abjuration"
+spellType Conjuration = "Conjuration"
+spellType Divination = "Divination"
+spellType Enchantment = "Enchantment"
+spellType Evocation = "Evocation"
+spellType Illusion = "Illusion"
+spellType Necromancy = "Necromancy"
+spellType Transmutation = "Transmutation"
+spellType SpellTypeUnknown = "SpellTypeUnknown"
+
+spellLevel :: SpellLevel -> String
+spellLevel Cantrip = "Cantrip"
+spellLevel One = "1st"
+spellLevel Two = "2nd"
+spellLevel Three = "3rd"
+spellLevel Four = "4th"
+spellLevel Five = "5th"
+spellLevel Six = "6th"
+spellLevel Seven = "7th"
+spellLevel Eight = "8th"
+spellLevel Nine = "9th"
+spellLevel SpellLevelUnknown = "SpellLevelUnknown"
 
 calcHp :: Character -> Integer
 calcHp c = sum (map (\d -> d + statBonus (constitution c)) (hitPoints c))
+
     
