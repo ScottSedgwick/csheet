@@ -1,0 +1,323 @@
+{
+    "characterName": "Louie",
+    "sheetType": "SheetTypeIcewindDale",
+    "className": "Paladin",
+    "subclass": "Oath of the Watchers",
+    "level": 8,
+    "background": "Outlander",
+    "playerName": "Zoe",
+    "race": "Grung",
+    "alignment": "None",
+    "experience": "",
+    "appearance": "",
+    "gender": "Male",
+    "faith" : "",
+  
+    "age": "17",
+    "height": "2' 6\"",
+    "weight": "30 lbs",
+    "eyeColour": "Red/Black",
+    "skinColour": "Red",
+    "hairColour": "None",
+    
+    "inspiration": 0,
+    "proficiencyBonus": 0,
+    
+    "acBase": 19,
+    "acBonus": 0,        "armourComment": "Shield +1, No Dex",
+    "initiative": 3,      "initiativeComment": "Aura of the Sentinel",
+    "speed": "25",
+    "hitPoints": [10,10,6,10,8,8,9,10], "hpComment": 71,
+    "tempHitPoints": 0,
+    "hitDice": "d10",
+  
+    "strength": 18,       "STRComment": "Roll 17, +1 Heavy Armour Master",
+    "constitution": 18,   "CONComment": "Roll 17, Grung +1",
+    "dexterity": 17,      "DEXComment": "Roll 15, Grung +2",
+    "intelligence": 12,   "INTComment": "Roll 12",
+    "wisdom": 13,         "WISComment": "Roll 13",
+    "charisma": 20,       "CHAComment": "Roll 18, +2 ASI",
+  
+    "strengthBonus": 4,
+    "dexterityBonus": 4,
+    "constitutionBonus": 4,
+    "intelligenceBonus": 4,
+    "wisdomBonus": 4,
+    "charismaBonus": 4,
+
+    "strengthProf": 0,
+    "dexterityProf": 0,
+    "constitutionProf": 0,
+    "intelligenceProf": 0,
+    "wisdomProf": 1,
+    "charismaProf": 1,
+  
+    "skillAcrobatics": 0,
+    "skillAnimalHandling": 0,
+    "skillArcana": 0,
+    "skillAthletics": 1,
+    "skillDeception": 0,
+    "skillHistory": 0,
+    "skillInsight": 0,
+    "skillIntimidation": 1,
+    "skillInvestigation": 0,
+    "skillMedicine": 0,
+    "skillNature": 0,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 0,
+    "skillReligion": 0,
+    "skillSleightOfHand": 0,
+    "skillStealth": 1,
+    "skillSurvival": 1,
+
+    "bonusAcrobatics": 0,
+    "bonusAnimalHandling": 0,
+    "bonusArcana": 0,
+    "bonusAthletics": 0,
+    "bonusDeception": 0,
+    "bonusHistory": 0,
+    "bonusInsight": 0,
+    "bonusIntimidation": 0,
+    "bonusInvestigation": 0,
+    "bonusMedicine": 0,
+    "bonusNature": 0,
+    "bonusPerception": 0,
+    "bonusPerformance": 0,
+    "bonusPersuasion": 0,
+    "bonusReligion": 0,
+    "bonusSleightOfHand": 0,
+    "bonusStealth": 0,
+    "bonusSurvival": 0,
+
+    "bonusPassivePerception": 0,
+    "bonusPassiveInsight": 0,
+    "bonusPassiveInvestigation": 0,
+  
+    "proficiencies": [
+      "Simple and Martial Weapons",
+      "All armour and shields",
+      "Glaur (Weird Trumpet, means Mud)",
+      "Speak Common and Grung",
+      "Immune to Disease, Poison, Poisoned"
+    ],
+  
+    "attacks": [
+        {
+            "weapon": "Morningstar",
+            "damage": "1d8+7Pi+1d6Po",
+            "bonus": "+8",
+            "notes": "+1 weapon, +2 Duelling"
+        },
+        {
+            "weapon": "Lance",
+            "damage": "1d12+6 Piercing",
+            "bonus": "+7",
+            "notes": "+2 Duelling"
+        },
+        {
+            "weapon": "Short Bow",
+            "damage": "1d6+3 Piercing",
+            "bonus": "+6",
+            "notes": ""
+        },
+        {
+            "weapon": "Unarmed",
+            "damage": "6 Bludgeoning",
+            "bonus": "+7",
+            "notes": ""
+        }
+    ],
+    
+    "personalityTraits": [
+        "I watch over my friends as if they were a",
+        "litter of newborn pups.",
+        "I'm always picking things up, absently",
+        "fiddling, and sometimes breaking."
+        
+    ],
+    "ideals": [
+        "Change. Life is like the seasons, in",
+        "constant change, and we must change",
+        "with it. (Chaotic)"
+    ],
+    "bonds": [
+        "I suffer awful visions of a coming disaster",
+        "and will do anything to prevent it."
+    ],
+    "flaws": [
+        "I remember every insult I've received and",
+        "nurse a silent resentment toward anyone",
+        "who's ever wronged me."
+    ],
+    "features": [
+      "Divine Sense • PHB 84. 5/LR",
+      "As an action, you can detect good and evil. Until the",
+      "end of your next turn, you can sense anything",
+      "affected by the hallow spell or know the location of",
+      "any celestial, fiend, undead within 60 ft. that is not",
+      "behind total cover. You can use this feature 5 times",
+      "per long rest.",
+      "",
+      "Lay on Hands • PHB 84. 40/LR",
+      "You have a pool of healing power that can restore",
+      "40 HP per long rest. As an action, you can touch a",
+      "creature to restore any number of HP remaining in",
+      "the pool, or 5 HP to either cure a disease or",
+      "neutralize a poison affecting the creature.",
+      "",
+      "Fighting Style - Duelling. +2 to damage when only",
+      "using a weapon in one hand.",
+      "",
+      "Divine Smite • PHB 85 ",
+      "When you hit with a melee weapon attack, you can",
+      "expend one spell slot to deal 2d8 extra radiant",
+      "damage to the target plus 1d8 for each spell level",
+      "higher than 1st (max 5d8) and plus 1d8 against",
+      "undead or fiends (max 6d8 total).",
+      "",
+      "Channel Divinity 1/SR, TCoE 54.",
+      "Watcher's Will. Action: choose up to 5 creatures you",
+      "can see within 30'. For 1 minute, you and the chosen",
+      "creatures have advantage on Intelligence, Wisdom",
+      "and Charisma saving throws.",
+      "Abjure the Extraplanar. Action: each aberration,",
+      "celestial, elemental, fey or fiend within 30' must make",
+      "a WIS save. On failure, it is turned for 1 minute or until",
+      "it takes damage.",
+      "A turned creature must spend its turns trying to move",
+      "as far away from you as it can, and can't willingly end",
+      "its turn within 30' or you. For its action, it can use only",
+      "the Dash action or try to escape from an effect that",
+      "prevents it from moving. If there's nowhere to move, it",
+      "may take the Dodge action.",
+      "",
+      "Aura of the Sentinel. You emit an aura of alertness",
+      "while you aren't incapacitated. When you and any",
+      "creatures of your choice within 10' of you roll initiative,",
+      "you all gain a bonus to initiative equal to your",
+      "proficiency bonus.",
+      "",
+      "Extra Attack. Attack twice per turn.",
+      "",
+      "Aura of Protection • PHB 85",
+      "While you are conscious, you grant all friendly",
+      "creatures (including you) within 10 ft. a +4 bonus to",
+      "all saving throws. ",
+      "",
+      "Grung Traits:",
+      "Amphibious. Walk/swim/climb 25'",
+      "",
+      "Poisonous Skin • OGA 4",
+      "Any creature that grapples you or otherwise comes",
+      "into direct contact with your skin must succeed on a",
+      "DC 16 Constitution saving throw or become poisoned",
+      "for 1 minute.",
+      "You can also apply this poison to any piercing",
+      "weapon as part of an attack with that weapon, though",
+      "when you hit the poison reacts differently. The target",
+      "must succeed on a DC 16 Constitution saving throw or",
+      "take 2d4 poison damage. ",
+      "",
+      "Standing Leap • OGA 4",
+      "Your long jump is up to 25 feet and your high jump is",
+      "up to 15 feet, with or without a running start. ",
+      "",
+      "Water Dependency • OGA 4",
+      "If you fail to immerse yourself in water for at least 1",
+      "hour during a day, you suffer one level of exhaustion",
+      "at the end of that day. You can only recover from this",
+      "exhaustion through magic or by immersing yourself in",
+      "water for at least 1 hour."
+    ],
+    
+    "backstory": [
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 340,
+        "platinum": 0,
+        "gems": []
+    },
+  
+    "allies": [
+        "Raymond the baby collossal frog."
+    ],
+  
+    "equipment": [
+        "Mithral Full Plate +1",
+        "Divine Wrath Morningstar. +1, +1d6 poison.",
+        " 5 poison damage to all enemies in 5' on a 20.",
+        "Portable Hole",
+        "Shield +1. Mizzium (negates criticals). Mithral",
+        " Weaved (+1). Poisoned - attackers take 2d4",
+        " poison damage.",
+        "Lance",
+        "Shortbow",
+        "50 arrows"
+    ],
+  
+    "treasure": [
+    ],
+    
+    "backpacks": [], 
+    "bagsOfHolding": [],
+    "portableHoles": [
+        { "phItems": 
+          [ "50000 lbs of Water"
+          , "50 Lilypads" 
+          , "20 Rocks" 
+          ]
+        }
+    ],
+
+    "spellcasting": [
+      {
+          "spellcastingClass": "Paladin",
+          "spellcastingAbility": "Cha",
+          "spellSaveDC": "16",            "spellSaveDCComment": "8 + Cha Bonus (5) + Prof Bonus (3)",
+          "spellAttackBonus": "8",       "spellAttackBonusComment": "Cha Bonus (5) + Prof Bonus (3)",
+          "knownSpells": [
+              { "prepared": true, "comment": "Paladin", "spellName": "Bless" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Command" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Compelled Duel" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Cure Wounds" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Detect Evil and Good" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Detect Magic" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Detect Poison and Disease" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Divine Favour" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Heroism" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Protection from Evil and Good" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Purify Food and Drink" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Searing Smite" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Shield of Faith" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Thunderous Smite" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Wrathful Smite" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Aid" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Branding Smite" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Find Steed" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Lesser Restoration" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Locate Object" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Magic Weapon" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Protection from Poison" },
+              { "prepared": true, "comment": "Paladin", "spellName": "Zone of Truth" },
+              { "prepared": true, "comment": "Watcher", "spellName": "Alarm" },
+              { "prepared": true, "comment": "Watcher", "spellName": "Silvery Barbs", "comment2": "Replaced (from Detect Magic)" },  
+              { "prepared": true, "comment": "Watcher", "spellName": "Moonbeam" },
+              { "prepared": true, "comment": "Watcher", "spellName": "See Invisibility" }
+          ],
+          "slotsLevel1": "4",
+          "slotsLevel2": "2", 
+          "slotsLevel3": "0",
+          "slotsLevel4": "0",
+          "slotsLevel5": "0",
+          "slotsLevel6": "0",
+          "slotsLevel7": "0",
+          "slotsLevel8": "0",
+          "slotsLevel9": "0"
+      }
+    ]
+}

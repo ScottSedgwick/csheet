@@ -5,22 +5,20 @@ task :pdf, [:campaign, :name, :level] do |t, args|
     # puts cmd
     res = system cmd
     system "open #{filename}.pdf" if res
-    system "open #{filename}.spells.html" if res
+    # system "open #{filename}.spells.html" if res
 end
 task :pdf => [:build]
+
+task :spell, [:campaign, :name, :level] do |t, args|
+    filename = "characters/#{args[:campaign]}/#{args[:name]}/#{args[:name]}.#{args[:level]}"
+    system "open #{filename}.spells.html"
+end
 
 desc "Build generator"
 task :build do
     `cabal build`
 end
 task :default => [:build]
-
-desc "Build spell book"
-task :spell, [:campaign, :name, :level] do |t, args|
-    filename = "characters/#{args[:campaign]}/#{args[:name]}/#{args[:name]}.#{args[:level]}"
-    cmd = "cabal exec spellhb -- -j #{filename}.json -o #{filename}.hb"
-    system cmd
-end
 
 desc "Convert DnD Beyond PDF to custom PDF"
 task :dndb, [:inputpdf, :template, :outputpdf] do |t, args|

@@ -40,10 +40,17 @@
   
     "strengthBonus": 0,
     "dexterityBonus": 0,
-    "constitutionBonus": 1,
-    "intelligenceBonus": 1,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 0,
     "wisdomBonus": 0,
     "charismaBonus": 0,
+
+    "strengthProf": 0,
+    "dexterityProf": 0,
+    "constitutionProf": 1,
+    "intelligenceProf": 1,
+    "wisdomProf": 0,
+    "charismaProf": 0,
   
     "skillAcrobatics": 0,
     "skillAnimalHandling": 0,
@@ -247,7 +254,7 @@
         "copper": 0,
         "silver": 0,
         "electrum": 0,
-        "gold": 5,
+        "gold": 215,
         "platinum": 0,
         "gems": []
     },

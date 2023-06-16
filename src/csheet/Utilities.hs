@@ -113,8 +113,8 @@ statBonus stat = if sb > 10 then 10 else sb
   where
     sb = (stat - 10) `div` 2
 
-saveBonus :: Integer -> Integer -> Integer -> Integer
-saveBonus stat saveB prof = statBonus stat + saveB * prof
+saveBonus :: Integer -> Integer -> Integer -> Integer -> Integer
+saveBonus stat saveP saveB prof = statBonus stat + saveP * prof + saveB
 
 profBonus :: Character -> Integer
 profBonus c = (level c - 1) `div` 4 + 2 + proficiencyBonus c

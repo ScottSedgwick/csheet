@@ -38,12 +38,19 @@
     "wisdom": 20,
     "charisma": 12,
   
-    "strengthBonus": 1,
-    "dexterityBonus": 1,
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
     "constitutionBonus": 0,
     "intelligenceBonus": 0,
-    "wisdomBonus": 1,
+    "wisdomBonus": 0,
     "charismaBonus": 0,
+
+    "strengthProf": 1,
+    "dexterityProf": 1,
+    "constitutionProf": 0,
+    "intelligenceProf": 0,
+    "wisdomProf": 1,
+    "charismaProf": 0,
   
     "skillAcrobatics": 1,
     "skillAnimalHandling": 0,

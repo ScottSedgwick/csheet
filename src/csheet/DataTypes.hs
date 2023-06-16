@@ -29,7 +29,7 @@ data Attack = Attack
 instance ToJSON Attack
 instance FromJSON Attack 
 
-data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | SpellLevelUnknown deriving (Eq, Show, Generic)
+data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | SpellLevelUnknown deriving (Eq, Show, Ord, Generic)
 instance ToJSON SpellLevel
 instance FromJSON SpellLevel
 
@@ -189,6 +189,13 @@ data Character = Character
   , intelligenceBonus :: Integer
   , wisdomBonus :: Integer
   , charismaBonus :: Integer
+
+  , strengthProf :: Integer
+  , dexterityProf :: Integer
+  , constitutionProf :: Integer
+  , intelligenceProf :: Integer
+  , wisdomProf :: Integer
+  , charismaProf :: Integer
 
   , inspiration :: Integer
   , proficiencyBonus :: Integer

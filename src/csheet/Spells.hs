@@ -92,8 +92,8 @@ cantrips =
     , spRange = "60 feet"
     , spComponents = "V,S"
     , spDuration = "1 minute"
-    , spHigher = Just "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
-    , spDescription = "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire’s space for the first time on a turn or ends its turn there.<br/>The bonfire ignites flammable objects in its area that aren’t being worn or carried."
+    , spHigher = Just "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+    , spDescription = "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.<br/>The bonfire ignites flammable objects in its area that aren't being worn or carried."
     }
   , Spell 
     { spName = "Dancing Lights"
@@ -165,7 +165,7 @@ cantrips =
     , spComponents = "V"
     , spDuration = "Instantaneous"
     , spHigher = Nothing
-    , spDescription = "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.<br/>The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spDescription = "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.<br/>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
   , Spell 
     { spName = "Green Flamed Blade (Sword Coast Adventurers Guide)"
@@ -200,7 +200,7 @@ cantrips =
     , spRange = "30 feet"
     , spComponents = "V,S"
     , spDuration = "Instantaneous"
-    , spDescription = "You seize the air and compel it to create one of the following effects at a point you can see within range:\\begin{itemize}\\item One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\\item You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn’t pushed with enough force to cause damage.\\item You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.\\end{itemize}"
+    , spDescription = "You seize the air and compel it to create one of the following effects at a point you can see within range:\\begin{itemize}\\item One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\\item You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.\\item You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.\\end{itemize}"
     , spHigher = Nothing
     }
   , Spell 
@@ -285,7 +285,7 @@ cantrips =
     , spComponents = "V"
     , spDuration = "1 round"
     , spHigher = Nothing
-    , spDescription = "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must make an Intelligence saving throw. Unless the saving throw is successful, the target takes 1d6 psychic damage, and the first time it makes a saving throw before the end of your next turn, it must roll a d4 and subtract the number rolled from the save.<br/>This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spDescription = "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must make an Intelligence saving throw. Unless the saving throw is successful, the target takes 1d6 psychic damage, and the first time it makes a saving throw before the end of your next turn, it must roll a d4 and subtract the number rolled from the save.<br/>This spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
   , Spell 
     { spName = "Minor Illusion"
@@ -309,7 +309,7 @@ cantrips =
     , spComponents = "S"
     , spDuration = "Instantaneous"
     , spHigher = Nothing
-    , spDescription = "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.\\item You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\\item If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+    , spDescription = "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.\\item You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\\item If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
     }
   , Spell 
     { spName = "Poison Spray"
@@ -395,7 +395,7 @@ cantrips =
     , spComponents = "S"
     , spDuration = "Instantaneous"
     , spHigher = Nothing
-    , spDescription = "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause damage.\\item You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\\item You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\\item You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+    , spDescription = "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.\\item You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\\item You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\\item You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
     }
   , Spell 
     { spName = "Shocking Grasp"
@@ -443,7 +443,7 @@ cantrips =
     , spComponents = "S"
     , spDuration = "Concentration, up to 1 round"
     , spDescription = "You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must succeed on a Constitution saving throw or take 1d6 thunder damage."
-    , spHigher = Just "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spHigher = Just "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
   , Spell 
     { spName = "Toll the Dead"
@@ -590,7 +590,7 @@ firstLevel =
     , spRange = "120 feet"
     , spComponents = "V,S"
     , spDuration = "Instantaneous"
-    , spDescription = "You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack’s damage type, as shown below.<br/>" <>
+    , spDescription = "You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.<br/>" <>
       "<table><tr><th> d8  </th><th> Damage Type </th></tr>" <>
       "<tr><td>  1  </td><td> Acid        </td></tr>" <>
       "<tr><td>  2  </td><td> Cold        </td></tr>" <>
@@ -653,6 +653,18 @@ firstLevel =
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
     }
   , Spell
+    { spName = "Compelled Duel"
+    , spLevel = One
+    , spType = Enchantment
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "30 feet"
+    , spComponents = "V"
+    , spDuration = "1 minute"
+    , spDescription = "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn. The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target."
+    , spHigher = Nothing
+    }
+  , Spell
     { spName = "Comprehend Languages"
     , spLevel = One
     , spType = Divination
@@ -690,6 +702,18 @@ firstLevel =
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
     }
   , Spell
+    { spName = "Detect Evil and Good"
+    , spLevel = One
+    , spType = Divination
+    , spRitual = True
+    , spTime = "1 action"
+    , spRange = "Self (30' R)"
+    , spComponents = "V,S"
+    , spDuration = "Concentration, up to 10 minutes"
+    , spDescription = "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+    , spHigher = Nothing
+    }
+  , Spell
     { spName = "Detect Magic"
     , spLevel = One
     , spType = Divination
@@ -699,6 +723,30 @@ firstLevel =
     , spComponents = "V,S"
     , spDuration = "Concentration, up to 10 minutes"
     , spDescription = "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.<br/>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+    , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Detect Poison and Disease"
+    , spLevel = One
+    , spType = Divination
+    , spRitual = True
+    , spTime = "1 action"
+    , spRange = "Self (30'R)"
+    , spComponents = "V,S,M (yew leaf)"
+    , spDuration = "Concentration, up to 10 minutes"
+    , spDescription = "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+    , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Divine Favor"
+    , spLevel = One
+    , spType = Evocation
+    , spRitual = True
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V,S"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
     , spHigher = Nothing
     }
   , Spell
@@ -1127,6 +1175,18 @@ firstLevel =
     , spHigher = Nothing
     }
   , Spell
+    { spName = "Thunderous Smite"
+    , spLevel = One
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "The first time you hit with a melee weapon attack during this spell’s duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone."
+    , spHigher = Nothing
+    }
+  , Spell
     { spName = "Thunderwave"
     , spLevel = One
     , spType = Evocation
@@ -1161,6 +1221,17 @@ firstLevel =
     , spDuration = "Concentration, up to 1 minute"
     , spDescription = "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you."
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st."
+    }
+    { spName = "Wrathful Smite"
+    , spLevel = One
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must succeed on a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+    , spHigher = Nothing
     }
   ]
 
@@ -1266,6 +1337,18 @@ secondLevel =
     , spHigher = Nothing
     }
   , Spell
+    { spName = "Branding Smite"
+    , spLevel = Two
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 Minute"
+    , spDescription = "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends."
+    , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
+    }
+  , Spell
     { spName = "Cloud of Daggers"
     , spLevel = Two
     , spType = Conjuration
@@ -1358,7 +1441,7 @@ secondLevel =
     , spRange = "60 feet"
     , spComponents = "V,S,M (a pinch of dust)"
     , spDuration = "1 minute"
-    , spDescription = "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell’s duration.<br/>Any creature that ends its turn within 5 feet of the dust devil must make a Strength saving throw. On a failed save, the creature takes 1d8 bludgeoning damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn’t pushed.<br/>As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or small gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area."
+    , spDescription = "Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell's duration.<br/>Any creature that ends its turn within 5 feet of the dust devil must make a Strength saving throw. On a failed save, the creature takes 1d8 bludgeoning damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed.<br/>As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or small gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area."
     , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
     }
   , Spell
@@ -1370,7 +1453,7 @@ secondLevel =
     , spRange = "300 feet"
     , spComponents = "V"
     , spDuration = "Concentration, up to 1 minute"
-    , spDescription = "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell’s duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."
+    , spDescription = "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."
     , spHigher = Nothing
     }
   , Spell
@@ -1403,6 +1486,22 @@ secondLevel =
     , spDescription = "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.<br/>If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.<br/>"
       <> "<b>Enlarge.</b> The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category - from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.<br/>"
       <> "<b>Reduce.</b> The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category - from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1)."
+    , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Find Steed"
+    , spLevel = Two
+    , spType = Conjuration
+    , spRitual = False
+    , spTime = "10 minutes"
+    , spRange = "30 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spDescription = "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose: a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.<br/>"
+      <> "Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.<br/>"
+      <> "When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.<br/>"
+      <> "While your steed is within 1 mile of you, you can communicate with each other telepathically.<br/>"
+      <> "You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
     , spHigher = Nothing
     }
   , Spell
@@ -1595,7 +1694,7 @@ secondLevel =
     , spRange = "30 feet"
     , spComponents = "V,S,M (a miniature hand sculpted from clay)"
     , spDuration = "Concentration, up to 1 minute"
-    , spDescription = "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is <i>restrained</i> for the spell’s duration.<br/>As an action, you can cause the hand to crush the <i>restrained</i> target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one.<br/>To break out, the <i>restrained</i> target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer <i>restrained</i> by the hand.<br/>As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a <i>restrained</i> target if you do either."
+    , spDescription = "You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is <i>restrained</i> for the spell's duration.<br/>As an action, you can cause the hand to crush the <i>restrained</i> target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one.<br/>To break out, the <i>restrained</i> target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer <i>restrained</i> by the hand.<br/>As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a <i>restrained</i> target if you do either."
     , spHigher = Nothing
     }
   , Spell
@@ -1631,7 +1730,7 @@ secondLevel =
     , spRange = "90 feet"
     , spComponents = "V"
     , spDuration = "1 round"
-    , spDescription = "You thrust a lance of psychic disruption into the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and it can’t take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell’s other effects."
+    , spDescription = "You thrust a lance of psychic disruption into the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects."
     , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them."
     }
   , Spell
@@ -1660,6 +1759,18 @@ secondLevel =
     , spDuration = "Instantaneous"
     , spDescription = "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
     , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Moonbeam"
+    , spLevel = Two
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "120' (5' cylinder)"
+    , spComponents = "V,S,M (several seeds of any moonseed plant and a piece of opalescent feldspar)"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. On each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction."
+    , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
     }
   , Spell
     { spName = "Nystul's Magic Aura"
@@ -1805,7 +1916,7 @@ secondLevel =
     , spRange = "Sight"
     , spComponents = "V,S"
     , spDuration = "Concentration, up to 1 hour"
-    , spDescription = "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell’s duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early"
+    , spDescription = "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell's duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early"
     , spHigher = Nothing
     }
   , Spell
@@ -1853,7 +1964,7 @@ secondLevel =
     , spRange = "Self"
     , spComponents = "V"
     , spDuration = "Concentration, up to 10 minutes"
-    , spDescription = "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration.<br/>The wind has the following effects: <ul><li>It deafens you and other creatures in its area.</li><li>It extinguishes unprotected flames in its area that are torch-sized or smaller.</li><li>It hedges out vapor, gas, and fog that can be dispersed by strong wind.</li><li>The area is difficult terrain for creatures other than you.</li><li>The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.</li></ul>"
+    , spDescription = "A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell's duration.<br/>The wind has the following effects: <ul><li>It deafens you and other creatures in its area.</li><li>It extinguishes unprotected flames in its area that are torch-sized or smaller.</li><li>It hedges out vapor, gas, and fog that can be dispersed by strong wind.</li><li>The area is difficult terrain for creatures other than you.</li><li>The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.</li></ul>"
     , spHigher = Nothing
     }
   , Spell
@@ -1866,6 +1977,18 @@ secondLevel =
     , spComponents = "V,S,M (a bit of spiderweb)"
     , spDuration = "Concentration, up to 1 hour"
     , spDescription = "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.<br/>If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.<br/>Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is <i>restrained</i> as long as it remains in the webs or until it breaks free.<br/>A creature <i>restrained</i> by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.<br/>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+    , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Zone of Truth"
+    , spLevel = Two
+    , spType = Enchantment
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "60' (15' sphere)"
+    , spComponents = "V,S"
+    , spDuration = "10 minutes"
+    , spDescription = "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.<br/>An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
     , spHigher = Nothing
     }
   ]
@@ -1894,9 +2017,9 @@ thirdLevel =
     , spRange = "120 feet"
     , spComponents = "V,S"
     , spDuration = "Concentration, up to 10 minutes"
-    , spDescription = "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if you can’t see a point in the air where the storm cloud could appear (for example, if you are in a room that can’t accommodate the cloud).<br/>" <>
+    , spDescription = "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see within range directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).<br/>" <>
       "When you cast the spell, choose a point you can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.<br/>" <>
-      "If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10."
+      "If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10."
     , spHigher = Just "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
     }
   , Spell
@@ -1969,7 +2092,7 @@ thirdLevel =
     , spRange = "Touch"
     , spComponents = "V,S"
     , spDuration = "Concentration, up to 1 hour"
-    , spDescription = "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell’s magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver."
+    , spDescription = "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver."
     , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd."
     }
   , Spell
@@ -1996,7 +2119,7 @@ thirdLevel =
     , spDescription = "When you cast this spell, you inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.<br/>"
       <> "The glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found.<br/>"
       <> "You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.<br/>"
-      <> "You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don’t trigger the glyph, such as those who say a certain password.<br/>"
+      <> "You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.<br/>"
       <> "When you inscribe the glyph, choose explosive runes or a spell glyph.<br/>"
       <> "<b><i>Explosive Runes.</i></b> When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.<br/>"
       <> "<b><i>Spell Glyph.</i></b> You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration."
@@ -2265,7 +2388,7 @@ fourthLevel =
     , spDuration = "Instantaneous"
     , spDescription = "You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).<br/>"
       <> "While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.<br/>"
-      <> "After 60 days, there is a cumulative 5 percent chance per day that the spell’s effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
+      <> "After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
     , spHigher = Nothing
     }
   , Spell
@@ -2312,8 +2435,8 @@ fourthLevel =
     , spComponents = "V,S,M (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)"
     , spDuration = "Concentration, up to 1 minute"
     , spDescription = "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.<br/>"
-      <> "Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can’t be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.<br/>"
-      <> "The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere’s walls and thus roll the sphere at up to half the creature’s speed. Similarly, the globe can be picked up and moved by other creatures.<br/>"
+      <> "Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.<br/>"
+      <> "The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.<br/>"
       <> "A disintegrate spell targeting the globe destroys it without harming anything inside it."
     , spHigher = Nothing
     }
@@ -2365,7 +2488,7 @@ fourthLevel =
       <> "<b>Languages:</b> understands the languages you speak<br/>"
       <> "<b>Challenge — Proficiency Bonus</b> equals your bonus<br/>"
       <> "<b><i>Heated Body (Metal Only).</i></b> A creature that touches the construct or hits it with a melee attack while within 5 feet of it takes 1d10 fire damage.<br/>"
-      <> "<b><i>Stony Lethargy (Stone Only).</i></b> When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can’t use reactions and its speed is halved until the start of its next turn.<br/>"
+      <> "<b><i>Stony Lethargy (Stone Only).</i></b> When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn.<br/>"
       <> "<h4>Actions</h4>"
       <> "<b><i>Multiattack.</i></b> The construct makes a number of attacks equal to half this spell's level (rounded down).<br/>"
       <> "<b><i>Slam.</i></b> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + 4 + the spell's level bludgeoning damage.<br/>"

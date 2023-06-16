@@ -93,17 +93,17 @@ drawPage1 c bg fs = setupPage bg $ do
   drawMyText (fontLarge fs) 293 667 (calculatedInitiative c)
   drawMyText (fontLarge fs) 346 667 (calculatedSpeed c)
   drawMyText (fontTiny fs)  290 618 (show0 $ calcHp c)
-  drawMyText (fontTiny fs)  112 610 (show5 $ saveBonus (strength c) (strengthBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 610 (show5 $ saveBonus (strength c) (strengthProf c) (strengthBonus c) (profBonus c))
   drawCircle 102 611 3 (fromIntegral $ strengthBonus c)
-  drawMyText (fontTiny fs)  112 595 (show5 $ saveBonus (dexterity c) (dexterityBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 595 (show5 $ saveBonus (dexterity c) (dexterityProf c) (dexterityBonus c) (profBonus c))
   drawCircle 102 597 3 (fromIntegral $ dexterityBonus c)
-  drawMyText (fontTiny fs)  112 581 (show5 $ saveBonus (constitution c) (constitutionBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 581 (show5 $ saveBonus (constitution c) (constitutionProf c) (constitutionBonus c) (profBonus c))
   drawCircle 102 583 3 (fromIntegral $ constitutionBonus c)
-  drawMyText (fontTiny fs)  112 567 (show5 $ saveBonus (intelligence c) (intelligenceBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 567 (show5 $ saveBonus (intelligence c) (intelligenceProf c) (intelligenceBonus c) (profBonus c))
   drawCircle 102 568.5 3 (fromIntegral $ intelligenceBonus c)
-  drawMyText (fontTiny fs)  112 552 (show5 $ saveBonus (wisdom c) (wisdomBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 552 (show5 $ saveBonus (wisdom c) (wisdomProf c) (wisdomBonus c) (profBonus c))
   drawCircle 102 554 3 (fromIntegral $ wisdomBonus c)
-  drawMyText (fontTiny fs)  112 538 (show5 $ saveBonus (charisma c) (charismaBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 538 (show5 $ saveBonus (charisma c) (charismaProf c) (charismaBonus c) (profBonus c))
   drawCircle 102 540 3 (fromIntegral $ charismaBonus c)
   drawMyText (fontTiny fs)  112 488 (show5 $ skillBonus (dexterity c) (skillAcrobatics c) (profBonus c) (bonusAcrobatics c))
   drawCircle 102 490 3 (skillAcrobatics c)
@@ -193,10 +193,15 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawMyText  (fontTiny fs)  267 597 (show $ hitPoints c)
   drawCntText (fontLarge fs) 240 510 (show0 $ tempHitPoints c)
   -- Saving throw bonuses and proficiency circles
-  let bonuses = [(charisma, charismaBonus), (wisdom, wisdomBonus), (intelligence, intelligenceBonus), (constitution, constitutionBonus), (dexterity, dexterityBonus), (strength, strengthBonus)]
-  forM_ (zip [0..] bonuses) $ \(y, (sf,bf)) -> do
-    drawCntText (fontTiny fs) 120 (521 + y * 14.2) (show5 $ saveBonus (sf c) (bf c) (profBonus c))
-    drawCircle 105 (522 + y * 14.2) 3 (fromIntegral $ bf c)
+  let bonuses = [ (charisma, charismaProf, charismaBonus)
+                , (wisdom, wisdomProf, wisdomBonus)
+                , (intelligence, intelligenceProf, intelligenceBonus)
+                , (constitution, constitutionProf, constitutionBonus)
+                , (dexterity, dexterityProf, dexterityBonus)
+                , (strength, strengthProf, strengthBonus)]
+  forM_ (zip [0..] bonuses) $ \(y, (sf,pf,bf)) -> do
+    drawCntText (fontTiny fs) 120 (521 + y * 14.2) (show5 $ saveBonus (sf c) (pf c) (bf c) (profBonus c))
+    drawCircle 105 (522 + y * 14.2) 3 (fromIntegral $ pf c)
   -- Skill bonuses and skill proficiency circles
   let skills = 
         [ (wisdom, skillSurvival, bonusSurvival)
@@ -490,7 +495,7 @@ htmlSpells ch =  "<html><style>"
               <> "td {text-align: center; }"
               <> "</style><body>"
               <> "<h2>Spellbook for " <> characterName ch <> "</h2><hr/>"
-              <> intercalate "<hr/>" (mapMaybe htmlKnownSpell ss)
+              <> intercalate "<hr/>" (mapMaybe (htmlKnownSpell Two) ss)
               -- <> concat (mapMaybe htmlKnownSpell ss)
               <> "</body></html>"
   where
@@ -498,11 +503,13 @@ htmlSpells ch =  "<html><style>"
     ks = concatMap knownSpells cs
     ss = sortOn spellName ks
 
-htmlKnownSpell :: KnownSpell -> Maybe String
-htmlKnownSpell ks = 
+htmlKnownSpell :: SpellLevel -> KnownSpell -> Maybe String
+htmlKnownSpell lvl ks = 
   case getSpell (spellName ks) of
     Nothing -> Nothing
-    (Just s) -> Just $ htmlSpell ks s
+    (Just s) -> if (spLevel s <= lvl)
+                then Just $ htmlSpell ks s
+                else Nothing
 
 htmlSpell :: KnownSpell -> Spell -> String
 htmlSpell k s = "<div class=\"spellblock\"><p>"
