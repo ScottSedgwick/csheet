@@ -299,22 +299,26 @@ drawIcePage2 c bg mapp fs = do
 
 drawSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawSpellPage bg fs c = setupPage bg $ do
-  let spells0 = spellsBy (\s -> spLevel s == Cantrip) (knownSpells c)
-  let spells1 = spellsBy (\s -> spLevel s == One) (knownSpells c)
-  let spells2 = spellsBy (\s -> spLevel s == Two) (knownSpells c)
-  let spells3 = spellsBy (\s -> spLevel s == Three) (knownSpells c)
-  let spells4 = spellsBy (\s -> spLevel s == Four) (knownSpells c)
-  let spells5 = spellsBy (\s -> spLevel s == Five) (knownSpells c)
-  let spells6 = spellsBy (\s -> spLevel s == Six) (knownSpells c)
-  let spells7 = spellsBy (\s -> spLevel s == Seven) (knownSpells c)
-  let spells8 = spellsBy (\s -> spLevel s == Eight) (knownSpells c)
-  let spells9 = spellsBy (\s -> spLevel s == Nine) (knownSpells c)
+  let spells0 = spellsBy Cantrip (knownSpells c)
+  let spells1 = spellsBy One (knownSpells c)
+  let spells2 = spellsBy Two (knownSpells c)
+  let spells3 = spellsBy Three (knownSpells c)
+  let spells4 = spellsBy Four (knownSpells c)
+  let spells5 = spellsBy Five (knownSpells c)
+  let spells6 = spellsBy Six (knownSpells c)
+  let spells7 = spellsBy Seven (knownSpells c)
+  let spells8 = spellsBy Eight (knownSpells c)
+  let spells9 = spellsBy Nine (knownSpells c)
   drawMyText (fontLarge fs)  70 753 (spellcastingClass c) 
   drawMyText (fontLarge fs) 278 757 (spellcastingAbility c) 
   drawMyText (fontLarge fs) 400 757 (spellSaveDC c) 
   drawMyText (fontLarge fs) 505 757 (spellAttackBonus c) 
   drawMySpells (fontTiny fs)   50 643 14.7 (take 8 spells0)
-  drawMySpells (fontTiny fs)  140 643 14.7 (drop 8 spells0)
+  drawMySpells (fontTiny fs)  140 643 14.7 (take 8 $ drop 8 spells0)
+  drawMySpells (fontTiny fs)  420 284 14.7 (take 7 $ drop 16 spells0)
+  drawMySpells (fontTiny fs)  510 284 14.7 (take 7 $ drop 23 spells0)
+  drawMySpells (fontTiny fs)  420 136 14.7 (take 7 $ drop 30 spells0)
+  drawMySpells (fontTiny fs)  510 136 14.7 (drop 37 spells0)
   drawMySpells (fontTiny fs)   50 461 14.7 (take 13 spells1)
   drawMySpells (fontTiny fs)  140 461 14.7 (drop 13 spells1)
   drawMySpells (fontTiny fs)   50 224 14.7 (take 13 spells2)
@@ -345,23 +349,27 @@ drawSpellPage bg fs c = setupPage bg $ do
 
 drawIceSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
 drawIceSpellPage bg fs c = setupPage bg $ do
-  let spells0 = spellsBy (\s -> spLevel s == Cantrip) (knownSpells c)
-  let spells1 = spellsBy (\s -> spLevel s == One) (knownSpells c)
-  let spells2 = spellsBy (\s -> spLevel s == Two) (knownSpells c)
-  let spells3 = spellsBy (\s -> spLevel s == Three) (knownSpells c)
-  let spells4 = spellsBy (\s -> spLevel s == Four) (knownSpells c)
-  let spells5 = spellsBy (\s -> spLevel s == Five) (knownSpells c)
-  let spells6 = spellsBy (\s -> spLevel s == Six) (knownSpells c)
-  let spells7 = spellsBy (\s -> spLevel s == Seven) (knownSpells c)
-  let spells8 = spellsBy (\s -> spLevel s == Eight) (knownSpells c)
-  let spells9 = spellsBy (\s -> spLevel s == Nine) (knownSpells c)
+  let spells0 = spellsBy Cantrip (knownSpells c)
+  let spells1 = spellsBy One (knownSpells c)
+  let spells2 = spellsBy Two (knownSpells c)
+  let spells3 = spellsBy Three (knownSpells c)
+  let spells4 = spellsBy Four (knownSpells c)
+  let spells5 = spellsBy Five (knownSpells c)
+  let spells6 = spellsBy Six (knownSpells c)
+  let spells7 = spellsBy Seven (knownSpells c)
+  let spells8 = spellsBy Eight (knownSpells c)
+  let spells9 = spellsBy Nine (knownSpells c)
   drawCntText (fontLarge fs) 180 760 (spellcastingClass c) 
   drawCntText (fontLarge fs) 348 760 (spellcastingAbility c) 
   drawCntText (fontLarge fs) 435 760 (spellSaveDC c) 
   drawCntText (fontLarge fs) 520 760 (spellAttackBonus c) 
   drawCntText (fontLarge fs)  43 488 "1"
   drawMySpells (fontTiny fs)   50 643.0 14.7 (take 8 spells0)
-  drawMySpells (fontTiny fs)  140 643.0 14.7 (drop 8 spells0)
+  drawMySpells (fontTiny fs)  140 643.0 14.7 (take 8 $ drop 8 spells0)
+  drawMySpells (fontTiny fs)  420 282.3 14.7 (take 8 $ drop 16 spells0)
+  drawMySpells (fontTiny fs)  510 282.3 14.7 (take 8 $ drop 24 spells0)
+  drawMySpells (fontTiny fs)  420 134.5 14.7 (take 9 $ drop 32 spells0)
+  drawMySpells (fontTiny fs)  510 134.5 14.7 (drop 41 spells0)
   drawMySpells (fontTiny fs)   50 446.1 14.7 (take 12 spells1)
   drawMySpells (fontTiny fs)  140 446.1 14.7 (drop 12 spells1)
   drawMySpells (fontTiny fs)   50 220.5 14.7 (take 13 spells2)   
@@ -482,22 +490,21 @@ instance Style MyParaStyles where
     wordStyle _ = Nothing
 
 htmlSpells :: Character -> String
-htmlSpells ch =  "<html><style>"
-              <> "body { font-family: Verdana, sans-serif; font-size: 12px; }"
-              <> "h2 { font-family: Copperplate, fantasy; color: Sienna; font-size: 32px; } "
-              <> "div.spellblock { padding-bottom: 0px; } "
-              <> "span.title { font-family: Copperplate, fantasy; color: Sienna; font-size: 18px; } "
-              <> "span.spelltype { font-style: italic; font-size: 10px; }"
-              <> "span.header { font-weight: bold; }"
-              <> "table { font-family: Verdana, sans-serif; font-size: 12px; } "
-              <> "table, th, td { border: 1px solid black; border-collapse: collapse; } "
-              <> "th, td { padding-left: 10px; padding-right: 10px; } "
-              <> "td {text-align: center; }"
-              <> "</style><body>"
-              <> "<h2>Spellbook for " <> characterName ch <> "</h2><hr/>"
-              <> intercalate "<hr/>" (mapMaybe (htmlKnownSpell Two) ss)
-              -- <> concat (mapMaybe htmlKnownSpell ss)
-              <> "</body></html>"
+htmlSpells ch =  "<html>\n\t<style>"
+              <> "\n\t\tbody { font-family: Verdana, sans-serif; font-size: 12px; }"
+              <> "\n\t\th2 { font-family: Copperplate, fantasy; color: Sienna; font-size: 32px; } "
+              <> "\n\t\tdiv.spellblock { padding-bottom: 0px; } "
+              <> "\n\t\tspan.title { font-family: Copperplate, fantasy; color: Sienna; font-size: 18px; } "
+              <> "\n\t\tspan.spelltype { font-style: italic; font-size: 10px; }"
+              <> "\n\t\tspan.header { font-weight: bold; }"
+              <> "\n\t\ttable { font-family: Verdana, sans-serif; font-size: 12px; } "
+              <> "\n\t\ttable, th, td { border: 1px solid black; border-collapse: collapse; } "
+              <> "\n\t\tth, td { padding-left: 10px; padding-right: 10px; } "
+              <> "\n\t\ttd {text-align: center; }"
+              <> "\n\t</style>\n<body>"
+              <> "\n\t<h2>Spellbook for " <> characterName ch <> "</h2>\n\t<hr/>"
+              <> intercalate "\n\t<hr/>" (mapMaybe (htmlKnownSpell Nine) ss)
+              <> "\n</body>\n</html>"
   where
     cs = spellcasting ch
     ks = concatMap knownSpells cs

@@ -25,7 +25,11 @@ defaultCharName = "characters/Sharwyn_06"
 getCharName :: IO String
 getCharName = do
   xs <- getArgs
-  return $ if null xs then defaultCharName else head xs
+  return $ headOr defaultCharName xs
+
+headOr :: a -> [a] -> a
+headOr x [] = x
+headOr _ (x:_) = x
 
 data Images = Images 
   { imgPage1 :: JpegFile

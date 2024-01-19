@@ -2,7 +2,8 @@
 module Utilities where
 
 import DataTypes
-import Data.List    (sortOn)
+import Data.Maybe   (mapMaybe)
+import Data.List    (sortBy, sortOn)
 import Data.Text    (pack)
 import qualified Data.Map as M
 import Graphics.PDF
@@ -31,7 +32,7 @@ drawMyStrings fnt x y dy (s:ss) = do
   drawMyStrings fnt x (y - dy) dy ss
 
 drawMySpells :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> [KnownSpell] -> Draw()
-drawMySpells fnt x y dy ss = dms fnt x y dy (sortOn spellName ss)
+drawMySpells fnt x y dy ss = dms fnt x y dy ss
   where
     dms _   _ _ _  []     = return ()
     dms fnt x y dy (s:ss) = do
@@ -132,9 +133,15 @@ showClass c = if lc == 0 then "" else cc ++ slc
 showSubClass :: Character -> String 
 showSubClass = subclass
 
-spellsBy :: (Spell -> Bool) -> [KnownSpell] -> [KnownSpell]
-spellsBy f xs = filter g xs
-  where
-    g k = case M.lookup (spellName k) spellMap of
-            Nothing -> False
-            Just s  -> f s
+spellsBy :: SpellLevel -> [KnownSpell] -> [KnownSpell]
+spellsBy lvl = sortBy spellComparator . filter (matchSpellLevel lvl)
+
+matchSpellLevel :: SpellLevel -> KnownSpell -> Bool
+matchSpellLevel lvl s = (spLevel <$> M.lookup (spellName s) spellMap) == Just lvl
+
+spellComparator :: KnownSpell -> KnownSpell -> Ordering
+spellComparator a b = 
+  case compare (prepared a) (prepared b) of
+    LT -> GT
+    GT -> LT
+    EQ -> compare (spellName a) (spellName b)

@@ -17,7 +17,7 @@ getSpell :: String -> Maybe Spell
 getSpell n = M.lookup n spellMap
 
 spellData :: [Spell]
-spellData = cantrips <> firstLevel <> secondLevel <> thirdLevel <> fourthLevel <> fifthLevel
+spellData = cantrips <> firstLevel <> secondLevel <> thirdLevel <> fourthLevel <> fifthLevel <> seventhLevel
 
 cantrips :: [Spell]
 cantrips =
@@ -47,17 +47,17 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You extend your hand a trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing and slashing damage dealt by weapon attacks."
     }
-  , Spell 
-    { spName = "Booming Blade (Sword Coast Adventurers Guide)"
+  , Spell
+    { spName = "Booming Blade"
     , spLevel = Cantrip
-    , spType = Abjuration
+    , spType = Evocation
     , spRitual = False
-    , spTime = ""
-    , spRange = ""
-    , spComponents = ""
-    , spDuration = ""
-    , spHigher = Nothing
-    , spDescription = ""
+    , spTime = "1 action"
+    , spRange = "Slef (5-foot radius)"
+    , spComponents = "S,M (a melee weapon worth at least 1sp)"
+    , spDuration = "1 round"
+    , spHigher = Just "At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8)."
+    , spDescription = "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends."
     }
   , Spell
     { spName = "Chill Touch"
@@ -107,17 +107,45 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You create up to four torch-sized lights within range, making them appear as torches, lanterns or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.<br/>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range."
     }
-  , Spell 
-    { spName = "Encode Thoughts (Guildmasters Guide to Ravnica)"
+  , Spell
+    { spName = "Decompose"
     , spLevel = Cantrip
-    , spType = Abjuration
+    , spType = Necromancy
     , spRitual = False
-    , spTime = ""
-    , spRange = ""
-    , spComponents = ""
-    , spDuration = ""
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S"
+    , spDuration = "1 minute"
     , spHigher = Nothing
-    , spDescription = ""
+    , spDescription = "You reach out and touch the corpse of a creature. Over the next minute, the corpse begins to rapidly decompose, sprouting fungus and moss as it begins to degrade into compost and mulch. An odd-coloured flower or two may also spring from the corpse in this time. Applicable requirements for resurrection are unaffected by this decomposition."
+    }
+  , Spell
+    { spName = "Druidcraft"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spHigher = Nothing
+    , spDescription = "Whispering to the spirits of nature, you create one of the following effects within range:<ul>" <>
+      "<li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golder orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li>" <>
+      "<li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li>" <>
+      "<li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of a skunk. The effect must fit in a 5-foot cube.</li>" <>
+      "<li>You instantly light or snuff out a candle, torch, or a small campfire.</li></ul>"
+    }
+  , Spell
+    { spName = "Encode Thoughts"
+    , spLevel = Cantrip
+    , spType = Enchantment
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Self"
+    , spComponents = "S"
+    , spDuration = "8 hours"
+    , spHigher = Nothing
+    , spDescription = "You pull a memory, idea, or a message from your mind and transform it into a tangible string of glowing energy called a thought strand, which persists for the duration or until you cast this spell again. The though strand appears in an unoccupied space within 5 feet of you as a Tiny, weightless, semisolid object that can be held and carried like a ribbon. It is otherwise stationary.<br/>If you cast this spell while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as detect thoughts or modify memory), you can transform the thoughts or memories that you read, rather than your own, into a thought strand.<br/>Casting this spell while holding a thought strand allows you to instantly receive whatever memory, idea, or message the thought strand contains (casting detect thoughts on the strand has the same effect)."
     }
   , Spell
     { spName = "Eldritch Blast"
@@ -128,8 +156,8 @@ cantrips =
     , spRange = "120 feet"
     , spComponents = "V,S"
     , spDuration = "Instantaneous"
-    , spDescription = "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.<br/>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
-    , spHigher = Nothing
+    , spDescription = "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage."
+    , spHigher = Just "The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."
     }
   , Spell
     { spName = "Fire Bolt"
@@ -167,17 +195,17 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.<br/>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
-  , Spell 
-    { spName = "Green Flamed Blade (Sword Coast Adventurers Guide)"
+  , Spell
+    { spName = "Green-Flame Blade"
     , spLevel = Cantrip
-    , spType = Abjuration
+    , spType = Evocation
     , spRitual = False
-    , spTime = ""
-    , spRange = ""
-    , spComponents = ""
-    , spDuration = ""
-    , spHigher = Nothing
-    , spDescription = ""
+    , spTime = "1 action"
+    , spRange = "Self (5-foot radius)"
+    , spComponents = "S,M (a melee weapon worth at least 1sp)"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8)."
+    , spDescription = "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier."
     }
   , Spell
     { spName = "Guidance"
@@ -196,12 +224,24 @@ cantrips =
     , spLevel = Cantrip
     , spType = Transmutation
     , spRitual = False
-    , spTime = "e:} 1 action"
+    , spTime = "1 action"
     , spRange = "30 feet"
     , spComponents = "V,S"
     , spDuration = "Instantaneous"
     , spDescription = "You seize the air and compel it to create one of the following effects at a point you can see within range:\\begin{itemize}\\item One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\\item You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.\\item You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.\\end{itemize}"
     , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Hand of Radiance"
+    , spLevel = Cantrip
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "5 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6) and 17th level (4d6)."
+    , spDescription = "You raise your hand, and burning radiance erupts from it. Each creature of your choice that you can see within 5 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage."
     }
   , Spell 
     { spName = "Infestation"
@@ -227,17 +267,17 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You touch one object that is not larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.<br/>If you target an object worn or held by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
     }
-  , Spell 
-    { spName = "Lightning Lure (Sword Coast Adventurers Guide)"
+  , Spell
+    { spName = "Lightning Lure"
     , spLevel = Cantrip
-    , spType = Abjuration
+    , spType = Evocation
     , spRitual = False
-    , spTime = ""
-    , spRange = ""
-    , spComponents = ""
-    , spDuration = ""
-    , spHigher = Nothing
-    , spDescription = ""
+    , spTime = "1 action"
+    , spRange = "Self (15-foot radius)"
+    , spComponents = "V"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+    , spDescription = "You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you."
     }
   , Spell
     { spName = "Mage Hand"
@@ -250,6 +290,18 @@ cantrips =
     , spDuration = "1 minute"
     , spDescription = "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.<br/>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open contrainer, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.<br/>You can't attack, activate magic items, or carry more than 10 pounds."
     , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Magic Stone"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Touch"
+    , spComponents = "V,S"
+    , spDuration = "1 minute"
+    , spHigher = Nothing
+    , spDescription = "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.<br/>If you cast this spell again, the spell ends early on any pebbles still affected by it."
     }
   , Spell 
     { spName = "Mending"
@@ -275,8 +327,8 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.<br/>You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can freely travel around corners or through openings."
     }
-  , Spell 
-    { spName = "Mind Sliver (Unearthed Arcana)"
+  , Spell
+    { spName = "Mind Sliver"
     , spLevel = Cantrip
     , spType = Enchantment
     , spRitual = False
@@ -284,8 +336,8 @@ cantrips =
     , spRange = "60 feet"
     , spComponents = "V"
     , spDuration = "1 round"
-    , spHigher = Nothing
-    , spDescription = "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must make an Intelligence saving throw. Unless the saving throw is successful, the target takes 1d6 psychic damage, and the first time it makes a saving throw before the end of your next turn, it must roll a d4 and subtract the number rolled from the save.<br/>This spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spHigher = Just "This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spDescription = "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn."
     }
   , Spell 
     { spName = "Minor Illusion"
@@ -311,6 +363,18 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.\\item You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\\item If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
     }
+  , Spell
+    { spName = "On/Off"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "60 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spHigher = Nothing
+    , spDescription = "This cantrip allows you to activate or deactivate any electronic device within range, as long as the device has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by On/Off."
+    }
   , Spell 
     { spName = "Poison Spray"
     , spLevel = Cantrip
@@ -334,6 +398,18 @@ cantrips =
     , spDuration = "Up to 1 hour"
     , spHigher = Nothing
     , spDescription = "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following spell effects within range:\\begin{itemize}\\item You create an instantaneous, harmless sensory effect, suck as a shower of sparks, a puff of wind, faint musical notes, or an odd odour.\\item You instantaneously light or snuff out a candle, a torch, or a small campfire.\\item You chill, warm, or flavour up to 1 cubic foot of nonliving material for 1 hour.\\item You make a colour, a small mark, or a symbol appear on an object or a surface for 1 hour.\\item You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\\end{itemize}If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+    }
+  , Spell
+    { spName = "Primal Savagery"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Self"
+    , spComponents = "S"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+    , spDescription = "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal."
     }
   , Spell 
     { spName = "Produce Flame"
@@ -385,6 +461,18 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.<br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     }
+  , Spell
+    { spName = "Sapping Sting"
+    , spLevel = Cantrip
+    , spType = Necromancy
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+    , spDescription = "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d4 necrotic damage and fall prone."
+    }
   , Spell 
     { spName = "Shape Water"
     , spLevel = Cantrip
@@ -396,6 +484,18 @@ cantrips =
     , spDuration = "Instantaneous"
     , spHigher = Nothing
     , spDescription = "You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\\begin{itemize}\\item You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.\\item You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\\item You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\\item You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.\\end{itemize}If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+    }
+  , Spell
+    { spName = "Shillelagh"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (mistletoe, a shamrock leaf, and a club or quarterstaff)"
+    , spDuration = "1 minute"
+    , spHigher = Nothing
+    , spDescription = "The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon."
     }
   , Spell 
     { spName = "Shocking Grasp"
@@ -421,17 +521,48 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs."
     }
-  , Spell 
-    { spName = "Sword Burst (Sword Coast Adventurers Guide)"
+  , Spell
+    { spName = "Sword Burst"
     , spLevel = Cantrip
-    , spType = Abjuration
+    , spType = Conjuration
     , spRitual = False
-    , spTime = ""
-    , spRange = ""
-    , spComponents = ""
-    , spDuration = ""
+    , spTime = "1 action"
+    , spRange = "Self (5-foot radius)"
+    , spComponents = "V"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spDescription = "You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage."
+    }
+  , Spell
+    { spName = "Thaumaturgy"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V"
+    , spDuration = "Up to 1 minute"
     , spHigher = Nothing
-    , spDescription = ""
+    , spDescription = "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:<ul>" <>
+        "<li>Your voice booms up to three times as loud as normal for 1 minute.</li>" <>
+        "<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>" <>
+        "<li>You cause harmless tremors in the ground for 1 minute.</li>" <>
+        "<li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li>" <>
+        "<li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li>" <>
+        "<li>You alter the appearance of your eyes for 1 minute.</li></ul>" <>
+        "If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+    }
+  , Spell
+    { spName = "Thorn Whip"
+    , spLevel = Cantrip
+    , spType = Transmutation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V,S,M (the stem of a plant with thorns)"
+    , spDuration = "Instantaneous"
+    , spHigher = Just "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+    , spDescription = "You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you."
     }
   , Spell
     { spName = "Thunderclap"
@@ -480,6 +611,18 @@ cantrips =
     , spDuration = "Instantaneous"
     , spHigher = Just "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4)."
     , spDescription = "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of it's next turn."
+    }
+  , Spell
+    { spName = "Virtue"
+    , spLevel = Cantrip
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S"
+    , spDuration = "1 round"
+    , spHigher = Nothing
+    , spDescription = "You touch one creature, imbuing it with vitality. If the target has at least 1 hit point, it gains a number of temporary hit points equal to 1d4 + your spellcasting ability modifier. The temporary hit points are lost when the spell ends."
     }
   , Spell 
     { spName = "Word of Radiance"
@@ -2164,6 +2307,32 @@ thirdLevel =
     , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them."
     }
   , Spell
+    { spName = "Leomunds Tiny Hut"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = True
+    , spTime = "1 minute"
+    , spRange = "Self (10-foot radius sphere)"
+    , spComponents = "V,S,M (a small crystal bead)"
+    , spDuration = "8 hours"
+    , spDescription = "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.<br/>" <>
+                      "Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.<br/>" <>
+                      "Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside."
+    , spHigher = Nothing
+    }
+  , Spell
+    { spName = "Lightning Bolt"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Self (100 foot line)"
+    , spComponents = "V,S,M (a bit of fur and a rod of amber, crystal or glass)"
+    , spDuration = "Instantaneous"
+    , spDescription = "A stroke of lightning forming a line of 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.<br/>The lightning ignites flammable objects in the area that aren't being worn or carried."
+    , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    }
+  , Spell
     { spName = "Protection from Energy"
     , spLevel = Three
     , spType = Abjuration
@@ -2415,13 +2584,13 @@ fourthLevel =
     , spComponents = "V,S,M (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)"
     , spDuration = "24 hours"
     , spDescription = "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.<br/>"
-      <> "When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:<br/>"
-      <> "- Sound can't pass through the barrier at the edge of the warded area.\n"
-      <> "- The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.\n"
-      <> "- Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.\n"
-      <> "- Creatures in the area can't be targeted by divination spells.\n"
-      <> "- Nothing can teleport into or out of the warded area.\n"
-      <> "- Planar travel is blocked within the warded area.\n"
+      <> "When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:<ul>"
+      <> "<li>Sound can't pass through the barrier at the edge of the warded area.</li>"
+      <> "<li>The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.</li>"
+      <> "<li>Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.</li>"
+      <> "<li>Creatures in the area can't be targeted by divination spells.</li>"
+      <> "<li>Nothing can teleport into or out of the warded area.</li>"
+      <> "<li>Planar travel is blocked within the warded area.</li></ul>"
       <> "Casting this spell on the same spot every day for a year makes this effect permanent."
     , spHigher = Just "When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level."
     }
@@ -2604,11 +2773,11 @@ fifthLevel =
     , spRange = "Touch"
     , spComponents = "V,S,M (diamond dust worth at least 100 gp, which the spell consumes)"
     , spDuration = "Instantaneous"
-    , spDescription = "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:<br/>"
-      <> "- One effect that charmed or petrified the target\n"
-      <> "- One curse, including the target's attunement to a cursed magic item\n"
-      <> "- Any reduction to one of the target's ability scores\n"
-      <> "- One effect reducing the target's hit point maximum"
+    , spDescription = "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:<br/><ul>"
+      <> "<li>One effect that charmed or petrified the target</li>"
+      <> "<li>One curse, including the target's attunement to a cursed magic item</li>"
+      <> "<li>Any reduction to one of the target's ability scores</li>"
+      <> "<li>One effect reducing the target's hit point maximum</li></ul>"
     , spHigher = Nothing
     }
   , Spell
@@ -2681,6 +2850,36 @@ fifthLevel =
       <> "If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.<br/>"
       <> "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.<br/>"
       <> "If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
+    , spHigher = Nothing
+    }
+  ]
+
+seventhLevel :: [Spell]
+seventhLevel =
+  [ Spell
+    { spName = "Plane Shift"
+    , spLevel = Seven
+    , spType = Conjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (a forked, metal rod worth at least 250gp, attuned to a particular plane of existence)"
+    , spDuration = "Instantaneous"
+    , spDescription = "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plan of Fire or the Palace of Dispater on the second level of the Nine Hells, and you appear in or near your destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.<br/>Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, the spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.<br/>You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails the save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
+    , spHigher = Nothing
+    },
+    Spell
+    { spName = "Mordenkainens Magnificent Mansion"
+    , spLevel = Seven
+    , spType = Conjuration
+    , spRitual = False
+    , spTime = "1 minute"
+    , spRange = "300 feet"
+    , spComponents = "V,S,M (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5gp)"
+    , spDuration = "24 hours"
+    , spDescription = "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.<br/>" <>
+      "Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.<br/>" <>
+      "You can create any floor plan you like, but the space can’t exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can’t attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can’t leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures or objects inside the extradimensional space are expelled into the open spaces nearest to the entrance."
     , spHigher = Nothing
     }
   ]

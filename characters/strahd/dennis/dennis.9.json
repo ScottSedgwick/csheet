@@ -1,0 +1,361 @@
+{
+    "characterName": "Dennis",
+    "sheetType": "SheetTypeIcewindDale",
+    "className": "Monk",
+    "subclass": "Way of Mercy",
+    "level": 9,
+    "background": "Urchin from Bluetspur",
+    "playerName": "Scott",
+    "race": "Fairy Dhampir",
+    "alignment": "None",
+    "experience": "",
+    "appearance": "",
+    "gender": "",
+    "faith" : "",
+  
+    "age": "15",
+    "height": "2'1\" (63.5cm)",
+    "weight": "15 lbs (7 kg)",
+    "eyeColour": "Red",
+    "skinColour": "Pale",
+    "hairColour": "Red",
+    
+    "inspiration": 0,
+    "proficiencyBonus": 0,
+    
+    "acBase": 10,
+    "acBonus": 7,           "acBonusComment": "Wis bonus (+5), Bracers of Defence (+2)",
+    "initiative": 2,
+    "speed": "50",
+    "hitPoints": [8,7,7,7,5,7,8,6,8],        "hpComment": 90,
+    "tempHitPoints": 10,
+    "hitDice": "d8",
+  
+    "strength": 13,
+    "dexterity": 20,
+    "constitution": 16,
+    "intelligence": 15,
+    "wisdom": 20,
+    "charisma": 12,
+  
+    "strengthBonus": 0,
+    "dexterityBonus": 0,
+    "constitutionBonus": 0,
+    "intelligenceBonus": 0,
+    "wisdomBonus": 0,
+    "charismaBonus": 0,
+
+    "strengthProf": 1,
+    "dexterityProf": 1,
+    "constitutionProf": 0,
+    "intelligenceProf": 0,
+    "wisdomProf": 1,
+    "charismaProf": 0,
+  
+    "skillAcrobatics": 1,
+    "skillAnimalHandling": 0,
+    "skillArcana": 1,
+    "skillAthletics": 0,
+    "skillDeception": 0,
+    "skillHistory": 0,
+    "skillInsight": 1,
+    "skillIntimidation": 0,
+    "skillInvestigation": 1,
+    "skillMedicine": 1,
+    "skillNature": 1,
+    "skillPerception": 1,
+    "skillPerformance": 0,
+    "skillPersuasion": 0,
+    "skillReligion": 0,
+    "skillSleightOfHand": 1,
+    "skillStealth": 1,
+    "skillSurvival": 0,
+
+    "bonusAcrobatics": 0,
+    "bonusAnimalHandling": 0,
+    "bonusArcana": 0,
+    "bonusAthletics": 0,
+    "bonusDeception": 0,
+    "bonusHistory": 0,
+    "bonusInsight": 0,
+    "bonusIntimidation": 0,
+    "bonusInvestigation": 0,
+    "bonusMedicine": 0,
+    "bonusNature": 0,
+    "bonusPerception": 0,
+    "bonusPerformance": 0,
+    "bonusPersuasion": 0,
+    "bonusReligion": 0,
+    "bonusSleightOfHand": 0,
+    "bonusStealth": 0,
+    "bonusSurvival": 0,
+
+    "bonusPassivePerception": 5,
+    "bonusPassiveInsight": 5,
+    "bonusPassiveInvestigation": 5,
+  
+    "proficiencies": [
+      "Languages: Common, Thieves Cant",
+      "Disguise Kit, Thieves' Tools",
+      "Simple weapons, short swords",
+      "Poisoners Kit. CON save DC 17 (Dex)",
+      "Carry: 175 lbs. Lift: 390 lbs."
+    ],
+  
+    "attacks": [
+      {
+        "weapon": "Unarmed (magic)",
+        "damage": "1d6+5 bludgeon",
+        "bonus": "+8",
+        "notes": ""
+      },
+      {
+        "weapon": "Vampiric Bite (m)",
+        "damage": "1d6+8 piercing",
+        "bonus": "+11",
+        "notes": ""
+      },
+      {
+        "weapon": "Dagger (20/60)",
+        "damage": "1d6+5 piercing",
+        "bonus": "+8",
+        "notes": ""
+      },
+      {
+        "weapon": "Missile (20/60)",
+        "damage": "1d6+5 piercing",
+        "bonus": "+8",
+        "notes": ""
+      },
+      {
+        "weapon": "Silver Dagger",
+        "damage": "1d6+6 piercing",
+        "bonus": "+9",
+        "notes": ""
+      },
+      {
+        "weapon": "Card (1d4)",
+        "damage": "2d6+5 slashing",
+        "bonus": "+9",
+        "notes": ""
+      },
+      {
+        "weapon": "Spear",
+        "damage": "1d8+6 piercing",
+        "bonus": "+10",
+        "notes": "Poison cache"
+      }
+    ],
+    
+    "personalityTraits": [
+      "I ask a lot of questions.",
+      "I bluntly say what other people are hinting",
+      "at or hiding."
+    ],
+    "ideals": [
+      "The low are lifted up, and the high and",
+      "mighty are brought down. Change is the",
+      "nature of things."
+    ],
+    "bonds": [
+      "No one else should have to endure the",
+      "hardships I've been through."
+    ],
+    "flaws": [
+      "I'd rather kill someone in their sleep than",
+      "fight fair."
+    ],
+    "features": [
+      "Extra Attack [A]",
+      "Unarmed attack [BA]",
+      "Deflect missiles -(1d10+16) [R]",
+      "Ki (DC 19): O O O O O O O O O",
+      "  (1) Extra unarmed attack [BA]",
+      "  (1) Dodge/Disengage/Dash [BA]",
+      "  (1) Throw caught missile back (20'/60') [R]",
+      "  (1) Monk weapon attack [BA]",
+      "  (2) Heal myself 1d6+5 [A]",
+      "  (1) Stunning Strike (CON save)",
+      "  (1) Hand of Heal (1d6+7) (D,B,D,P,P,S) [A]",
+      "  (1) Hand of Harm (1d6+7) (P)",
+      "  (1) Make one attack [BA]",
+      "Slow Fall: -45 damage [R]",
+      "Darkvision 60'",
+      "Spider climb & Fly",
+      "+2 to saves vs fear and illusion",
+      "+5 to Perception and Investigation",
+      "Lip Reading",
+      "Evasion: Dex save 1/2 or None",
+      "Remove charmed/frightened on self [A]",
+      "Shadow Step 60' [BA]",
+      "Invisible at will [A]",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Fairy: Small Fey. Flight at walking speed.",
+      "Dhamphir: Darkvision 60'. Don't need to breathe. Spider",
+      " climb at walking speed.",
+      " Bite. Prof/LR. CON B to hit & dmg. Adv if < 1/2 HP.",
+      "  Heal dmg; or +Dmg to next ability check or attack.",
+      "Monk: Unarmoured Defense (WIS bonus to AC).",
+      " Martial Arts (Die: 1d6). DEX bonus to hit & damage.",
+      " Unarmed attack as bonus action",
+      " Ki (9 pts / short rest)",
+      " - Ki Save 8 + Wis bonus + Prof b + 2 (belt): (19)",
+      " - Flurry of Blows (1): 2 unarmed attacks [BA]",
+      " - Patient Defense (1): Dodge [BA]",
+      " - Step of the Wind (1): Disengage/Dash [BA],",
+      "   jump distance doubled",
+      " Unarmoured Movement: +15ft",
+      " Shadow Step. BA to teleport up to 60' from one area",
+      " of dim light or darkness to another one",
+      " Dedicated Weapon: make 1 wpn a monk wpn",
+      " Deflect Missiles: Reaction to deflect. -(1d10 + Dex",
+      "   + lvl + 2) damage. 0 = catch it. 1 ki: throw back.",
+      " Ki-Fueled Attack: 1 Ki, BA monk wpn attack",
+      " Ability Score Improvement (DEX + 2)",
+      " Slow Fall: Reaction. Fall dmg -(5 * Monk lvl)",
+      " Quickened Healing: 2 ki to heal me (MA + Prof)",
+      " Extra attack",
+      " Stunning Strike (1 Ki): CON save or stunned until",
+      " the end of my next turn",
+      " Focused Aim: On miss, +2 to hit per ki (up to 3 ki)",
+      " Ki-Empowered Strikes: martial strikes are magical",
+      " Evasion: dex saves for 1/2 or none",
+      " Stillness of Mind: [A] to remove charmed/frightened",
+      "Way of Mercy. Implements of Mercy: Proficiency:",
+      " Insight, Medicine, Herbalism Kit. Raven Mask.",
+      " Hand of Healing [A]: 1 ki heal (MA + Wis Mod + 2)",
+      " Hand of Harm (Attack bonus): 1 ki +(MA + Wis mod + 2)",
+      " Physicians Touch: Hand of Healing can end disease,",
+      " or cure blinded, deafened, paralyzed, poisoned or",
+      " stunned. Hand of Harm can subject the creature to",
+      " the poisoned condition until the end of your next turn.",
+      "15 Int: Nature & Vistani language",
+      "Bluetspur: +2 to Init and saves vs fear & illusion",
+      "Observant: +1 Wis, Lip Reading, +5 to Perc & Invst.",
+      "Resilient (WIS): +1 Wis, Prof with Wis Saves",
+      "Eldritch Initiate: Shroud of Ulban"
+    ],
+    
+    "backstory": [
+      "Dennis doesn't remember his childhood. He suspects he was a Monk of some Path, but fell afoul of a vampire. They fought to a draw - Dennis killed the vampire, but he died of the lingering curses. ",
+      "When he woke, his first thought was surprise.  He was pretty sure he had died. Apart from that, the past was a blur.  His Ki powers were warped, too - he's now much more attuned to blood magic, and he consumes Ki. ",
+      "He has given up on finding out who he was.  Now he wanders the world, trying to help as much as he can, and do as little harm as he can manage.  ",
+      "WHAT ACTUALLY HAPPENED: Dennis was a trainee knight in the Court of the Unseelie. He was originally a Monk of the Way of Open Hand. He grew up an orphan, poor and downtrodden, but was never caught by the city guard. ",
+      "His ability to evade them became an embarrassment to the Court, and they sent a knight to capture Dennis. The knight was sufficiently impressed by the boy's skills that instead of punishing him, he sponsored his training.  ",
+      "ROLLS. Stats: 15, 15, 17, 13, 17, 12. Race: +1 CON, DEX & WIS."
+    ],
+    
+    "moneyPouch": {
+        "copper": 0,
+        "silver": 6,
+        "electrum": 0,
+        "gold": 538,
+        "platinum": 0,
+        "gems": []
+    },
+  
+    "allies": [
+    ],
+  
+    "equipment": [
+      "(A) Dragonhide Belt (Rare: +2). +2 DC for",
+      "Ki abilities. 1/day, use action to regain MA",
+      "die (1d6) Ki points.",
+      "(A) Bracers of Defence",
+      "Non-magical +1 silver dagger",
+      "Potion of Superior Healing (8d4+8)",
+      "Teddy Bear",
+      "Deck of throwing cards",
+      "(A) Spear +1 with poison cache"
+    ],
+  
+    "treasure": [
+        "Wishlist:",
+        "  Ring of Protection",
+        "Poisons:",
+        "  Spiders Touch. CON save or 2d4 poison damage",
+        "  Hanged Mans Luck. CON save or paralyzed 2r",
+        "  Dizzy Disease. CON save or total Disadvantage",
+        "  Widows Kiss. 1d6, CON for 1/2. Damage stacks."
+    ],
+    
+    "backpacks": [
+        { 
+            "bagCash" : {
+            "copper": 0,
+            "silver": 0,
+            "electrum": 0,
+            "gold": 0,
+            "platinum": 0,
+            "gems": []
+            },
+            "bagPocket1": [
+              "Medicine skill: Lets you try to stabilize",
+              "a dying companion or diagnose an",
+              "illness. Also, staunch wounds (e.g.",
+              "Sword of wounding, etc.)."
+            ],
+            "bagPocket2": [
+              "Thieves Tools: a file, lock picks, mirror,",
+              "scissors, pliers. Add Proficiency Bonus",
+              "to Disarm traps or open locks."
+            ],
+            "bagPocket3": [
+              "Vial of blood",
+              "Jar of teeth"
+            ],
+            "bagPocket4": [
+            ],
+            "bagFlapPouch": [
+              "Poisoners Kit (DC 15) A poisoners kit",
+              "includes the vials, chemicals, and other",
+              "equipment necessary for the creation of",
+              "poisons. Proficiency with this kit lets you add",
+              "your proficiency bonus to any ability checks",
+              "you make to craft or use poisons."
+            ],
+            "bagMiddlePouch": [
+              "Herbalism Kit. This kit contains a variety of",
+              "instruments such as clippers, mortar and",
+              "pestle, and pouches and vials used by",
+              "herbalists to create remedies and potions.",
+              "Proficiency with this kit lets you add your",
+              "proficiency bonus to any ability checks you",
+              "make to identify or apply herbs. Also,",
+              "proficiency with this kit is required to create",
+              "antitoxin and potions of healing."
+            ],
+            "bagMainPouch": [
+              "Urchin: Small knife; Map of home city",
+              "(untitled - unknown city); Pet mouse;",
+              "Common clothes; Money pouch (10 GP);",
+              "Token of parents.",
+              "",
+              "Monk: Dungeoneer pack; 8 Daggers.",
+              "",
+              "Dungeoneer pack: Backpack; Crowbar;",
+              "Hammer; 10 pitons; 10 torches; Tinderbox;",
+              "10 days rations; Waterskin; 50' Hempen",
+              "Rope."
+            ],
+            "bagTreasure": [
+              "7 daggers coated with Spiders Touch",
+              "7 daggers coated with Hanged Mans Luck",
+              "7 daggers coated with Good Times",
+              "Silver dagger coated with Hanged Mans Luck"
+            ],
+            "bagBedroll": "One",
+            "bagRope": "50'",
+            "bagAmmo": "21 Daggers",
+            "bagTorches": "10"
+        }
+    ], 
+    "bagsOfHolding": [],
+    "portableHoles": [],
+    "spellcasting": []
+  }
