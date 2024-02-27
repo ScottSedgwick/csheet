@@ -3,7 +3,7 @@
   "sheetType": "SheetTypeIcewindDale",
   "className": "Paladin",
   "subclass": "Oath of the Watchers",
-  "level": 8,
+  "level": 9,
   "background": "Outlander",
   "playerName": "Zoe",
   "race": "Grung",
@@ -26,10 +26,10 @@
   "acBase": 19,
   "acBonus": 0,
   "armourComment": "Shield +1, No Dex",
-  "initiative": 3,
-  "initiativeComment": "Aura of the Sentinel",
+  "initiative": 5,
+  "initiativeComment": "Aura of the Sentinel +5",
   "speed": "25",
-  "hitPoints": [10, 10, 6, 10, 8, 8, 9, 10],
+  "hitPoints": [10, 10, 6, 10, 8, 8, 9, 10, 10],
   "hpComment": 71,
   "tempHitPoints": 0,
   "hitDice": "d10",
@@ -40,19 +40,19 @@
   "CONComment": "Roll 17, Grung +1",
   "dexterity": 17,
   "DEXComment": "Roll 15, Grung +2",
-  "intelligence": 12,
-  "INTComment": "Roll 12",
+  "intelligence": 13,
+  "INTComment": "Roll 12, Ethan gave +1 for Scott fixing his laptop",
   "wisdom": 13,
   "WISComment": "Roll 13",
   "charisma": 20,
   "CHAComment": "Roll 18, +2 ASI",
 
-  "strengthBonus": 4,
-  "dexterityBonus": 4,
-  "constitutionBonus": 4,
-  "intelligenceBonus": 4,
-  "wisdomBonus": 4,
-  "charismaBonus": 4,
+  "strengthBonus": 5,
+  "dexterityBonus": 5,
+  "constitutionBonus": 5,
+  "intelligenceBonus": 5,
+  "wisdomBonus": 5,
+  "charismaBonus": 5,
 
   "strengthProf": 0,
   "dexterityProf": 0,
@@ -60,6 +60,8 @@
   "intelligenceProf": 0,
   "wisdomProf": 1,
   "charismaProf": 1,
+  "profAdditionalBonus": 1,
+  "profAdditionalBonusComment": "Ethan said so.  We can't remember why.",
 
   "skillAcrobatics": 0,
   "skillAnimalHandling": 0,
@@ -172,11 +174,7 @@
     "I suffer awful visions of a coming disaster",
     "and will do anything to prevent it."
   ],
-  "flaws": [
-    "I remember every insult I've received and",
-    "nurse a silent resentment toward anyone",
-    "who's ever wronged me."
-  ],
+  "flaws": ["Stage Fright"],
   "features": [
     {
       "action": "NoAction",
@@ -200,15 +198,19 @@
     },
     {
       "action": "NoAction",
-      "infotext": "any celestial, fiend, undead within 60 ft. that is not",
+      "infotext": "any celestial, fiend, abberation or undead within 60 ft.",
       "comment": ""
     },
     {
       "action": "NoAction",
-      "infotext": "behind total cover. You can use this feature 5 times",
+      "infotext": "that is not behind total cover. You can use this",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "per long rest.", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "feature 5 times per long rest.",
+      "comment": ""
+    },
     { "action": "NoAction", "infotext": "", "comment": "" },
     {
       "action": "NoAction",
@@ -395,7 +397,7 @@
     },
     {
       "action": "NoAction",
-      "infotext": "creatures (including you) within 10 ft. a +4 bonus to",
+      "infotext": "creatures (including you) within 10 ft. a +5 bonus to",
       "comment": ""
     },
     { "action": "NoAction", "infotext": "all saving throws. ", "comment": "" },
@@ -502,7 +504,10 @@
     }
   ],
 
-  "backstory": [],
+  "backstory": [
+    "Oxygen doesn't come from trees, it comes from Greg the Oxygen God.",
+    "Declownification in the Space Room is a 5th level spell, Greater Restoration."
+  ],
 
   "moneyPouch": {
     "copper": 0,
@@ -513,7 +518,12 @@
     "gems": []
   },
 
-  "allies": ["Raymond the baby collossal frog."],
+  "allies": [
+    "Raymond the baby collossal frog.",
+    "Ankle stamp from Toymaker",
+    "Impulse when shocked is to Activate Divine Sense."
+  ],
+  "faction": "Team Strongth",
 
   "equipment": [
     "Mithral Full Plate +1",
@@ -523,9 +533,8 @@
     "Shield +1. Mizzium (negates criticals). Mithral",
     " Weaved (+1). Poisoned - attackers take 2d4",
     " poison damage.",
-    "Lance",
-    "Shortbow",
-    "50 arrows"
+    "Magic Eightball",
+    "Superior Health Potion"
   ],
 
   "treasure": [],
@@ -533,118 +542,230 @@
   "backpacks": [],
   "bagsOfHolding": [],
   "portableHoles": [
-    { "phItems": ["50000 lbs of Water", "50 Lilypads", "20 Rocks"] }
+    {
+      "phItems": [
+        "50000 lbs of Water",
+        "50 Lilypads",
+        "20 Rocks",
+        "Big stained glass window (gold, orange and",
+        "  red)",
+        "Ring of Spell Storage (Protection from",
+        "  Energy, Sanctuary, Hex)",
+        "Marble (Hecna'd, shattered)",
+        "Moonstone",
+        "Weird key for boring room",
+        "Eye of Hecna thingamajig",
+        "Cicero loot",
+        "Cicero's jewelled baton (+2, 1d8, melee,",
+        "  Cast Command Performance)",
+        ""
+      ]
+    }
   ],
 
   "spellcasting": [
     {
-      "spellcastingClass": "Paladin",
+      "spellcastingClass": "Paladin (Prep 9)",
       "spellcastingAbility": "Cha",
       "spellSaveDC": "16",
       "spellSaveDCComment": "8 + Cha Bonus (5) + Prof Bonus (3)",
       "spellAttackBonus": "8",
       "spellAttackBonusComment": "Cha Bonus (5) + Prof Bonus (3)",
       "knownSpells": [
-        { "prepared": true, "comment": "Paladin", "spellName": "Bless" },
-        { "prepared": true, "comment": "Paladin", "spellName": "Command" },
+        { "prepared": false, "comment": "Watcher", "spellName": "Alarm" },
+        { "prepared": false, "comment": "Paladin", "spellName": "Bless" },
+        { "prepared": false, "comment": "Paladin", "spellName": "Ceremony" },
+        { "prepared": false, "comment": "Paladin", "spellName": "Command" },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Compelled Duel"
         },
-        { "prepared": true, "comment": "Paladin", "spellName": "Cure Wounds" },
+        { "prepared": false, "comment": "Paladin", "spellName": "Cure Wounds" },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Detect Evil and Good"
         },
-        { "prepared": true, "comment": "Paladin", "spellName": "Detect Magic" },
         {
-          "prepared": true,
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Detect Magic"
+        },
+        {
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Detect Poison and Disease"
         },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
-          "spellName": "Divine Favour"
+          "spellName": "Divine Favor"
         },
-        { "prepared": true, "comment": "Paladin", "spellName": "Heroism" },
+        { "prepared": false, "comment": "Paladin", "spellName": "Heroism" },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Protection from Evil and Good"
         },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Purify Food and Drink"
         },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Searing Smite"
         },
         {
-          "prepared": true,
+          "prepared": false,
           "comment": "Paladin",
           "spellName": "Shield of Faith"
         },
         {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Thunderous Smite"
-        },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Wrathful Smite"
-        },
-        { "prepared": true, "comment": "Paladin", "spellName": "Aid" },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Branding Smite"
-        },
-        { "prepared": true, "comment": "Paladin", "spellName": "Find Steed" },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Lesser Restoration"
-        },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Locate Object"
-        },
-        { "prepared": true, "comment": "Paladin", "spellName": "Magic Weapon" },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Protection from Poison"
-        },
-        {
-          "prepared": true,
-          "comment": "Paladin",
-          "spellName": "Zone of Truth"
-        },
-        { "prepared": true, "comment": "Watcher", "spellName": "Alarm" },
-        {
-          "prepared": true,
+          "prepared": false,
           "comment": "Watcher",
           "spellName": "Silvery Barbs",
           "comment2": "Replaced (from Detect Magic)"
         },
-        { "prepared": true, "comment": "Watcher", "spellName": "Moonbeam" },
         {
-          "prepared": true,
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Thunderous Smite"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Wrathful Smite"
+        },
+        { "prepared": false, "comment": "Paladin", "spellName": "Aid" },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Branding Smite"
+        },
+        { "prepared": false, "comment": "Paladin", "spellName": "Find Steed" },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Find Vehicle"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Gentle Repose"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Lesser Restoration"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Locate Object"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Magic Weapon"
+        },
+        { "prepared": false, "comment": "Watcher", "spellName": "Moonbeam" },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Prayer of Healing"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Protection from Poison"
+        },
+        {
+          "prepared": false,
           "comment": "Watcher",
           "spellName": "See Invisibility"
+        },
+        {
+          "prepared": false,
+          "comment": "Watcher",
+          "spellName": "Warding Bond"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Zone of Truth"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Aura of Vitality"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Beacon of Hope"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Blinding Smite"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Create Food and Water"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Crusader's Mantle"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Daylight"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Dispel Magic"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Elemental Weapon"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Magic Circle"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Nondetection"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Remove Curse"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Revivify"
+        },
+        {
+          "prepared": false,
+          "comment": "Paladin",
+          "spellName": "Spirit Shroud"
         }
       ],
       "slotsLevel1": "4",
-      "slotsLevel2": "2",
-      "slotsLevel3": "0",
+      "slotsLevel2": "3",
+      "slotsLevel3": "2",
       "slotsLevel4": "0",
       "slotsLevel5": "0",
       "slotsLevel6": "0",

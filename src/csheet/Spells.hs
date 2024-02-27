@@ -1,6 +1,6 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
-module Spells 
+module Spells
   ( getSpell
   , spellMap
   ) where
@@ -23,7 +23,7 @@ cantrips :: [Spell]
 cantrips =
   [
   -- Cantrips
-    Spell 
+    Spell
     { spName = "Acid Splash"
     , spLevel = Cantrip
     , spType = Conjuration
@@ -35,7 +35,7 @@ cantrips =
     , spDescription = "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage."
     , spHigher = Just "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
-  , Spell 
+  , Spell
     { spName = "Blade Ward"
     , spLevel = Cantrip
     , spType = Abjuration
@@ -71,7 +71,7 @@ cantrips =
     , spDescription = "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target."
     , spHigher = Just "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     }
-  , Spell 
+  , Spell
     { spName = "Control Flames"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -83,7 +83,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:<ul><li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li><li>You instantaneously extinguish the flames within the cube.</li><li>You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</li><li>You cause simple shapes - such as the vague form of a creature, an inanimate object, or a location - to appear within the flames and animate as you like. The shapes last for 1 hour.</li></ul>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
     }
-  , Spell 
+  , Spell
     { spName = "Create Bonfire"
     , spLevel = Cantrip
     , spType = Conjuration
@@ -95,7 +95,7 @@ cantrips =
     , spHigher = Just "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     , spDescription = "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.<br/>The bonfire ignites flammable objects in its area that aren't being worn or carried."
     }
-  , Spell 
+  , Spell
     { spName = "Dancing Lights"
     , spLevel = Cantrip
     , spType = Evocation
@@ -171,7 +171,7 @@ cantrips =
     , spDescription = "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
     , spHigher = Just "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
     }
-  , Spell 
+  , Spell
     { spName = "Friends"
     , spLevel = Cantrip
     , spType = Enchantment
@@ -183,7 +183,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
     }
-  , Spell 
+  , Spell
     { spName = "Frostbite"
     , spLevel = Cantrip
     , spType = Evocation
@@ -243,7 +243,7 @@ cantrips =
     , spHigher = Just "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6) and 17th level (4d6)."
     , spDescription = "You raise your hand, and burning radiance erupts from it. Each creature of your choice that you can see within 5 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage."
     }
-  , Spell 
+  , Spell
     { spName = "Infestation"
     , spLevel = Cantrip
     , spType = Conjuration
@@ -255,7 +255,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction: 1, north; 2: south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.<br/>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6) and 17th level (4d6)."
     }
-  , Spell 
+  , Spell
     { spName = "Light"
     , spLevel = Cantrip
     , spType = Evocation
@@ -303,7 +303,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.<br/>If you cast this spell again, the spell ends early on any pebbles still affected by it."
     }
-  , Spell 
+  , Spell
     { spName = "Mending"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -315,7 +315,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of former damage.<br/>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object."
     }
-  , Spell 
+  , Spell
     { spName = "Message"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -339,7 +339,7 @@ cantrips =
     , spHigher = Just "This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     , spDescription = "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn."
     }
-  , Spell 
+  , Spell
     { spName = "Minor Illusion"
     , spLevel = Cantrip
     , spType = Illusion
@@ -351,7 +351,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You create a sound or image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.<br/>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.<br/>If you create an image of an object - such as a chair, muddy footprints or a small chest - it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.<br/>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a create discerns the illusion for what it is, the illusion becomes faint to the creature."
     }
-  , Spell 
+  , Spell
     { spName = "Mold Earth"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -375,7 +375,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "This cantrip allows you to activate or deactivate any electronic device within range, as long as the device has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by On/Off."
     }
-  , Spell 
+  , Spell
     { spName = "Poison Spray"
     , spLevel = Cantrip
     , spType = Evocation
@@ -387,7 +387,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You extend your hand toward a creature you can see within range and prject a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.<br/>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
     }
-  , Spell 
+  , Spell
     { spName = "Prestidigitation"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -411,7 +411,7 @@ cantrips =
     , spHigher = Just "The spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
     , spDescription = "You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal."
     }
-  , Spell 
+  , Spell
     { spName = "Produce Flame"
     , spLevel = Cantrip
     , spType = Conjuration
@@ -425,7 +425,7 @@ cantrips =
       <> "You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.<br/>"
       <> "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     }
-  , Spell 
+  , Spell
     { spName = "Ray of Frost"
     , spLevel = Cantrip
     , spType = Evocation
@@ -437,7 +437,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.<br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8) and 17th level (4d8)."
     }
-  , Spell 
+  , Spell
     { spName = "Resistance"
     , spLevel = Cantrip
     , spType = Abjuration
@@ -449,7 +449,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
     }
-  , Spell 
+  , Spell
     { spName = "Sacred Flame"
     , spLevel = Cantrip
     , spType = Evocation
@@ -473,7 +473,7 @@ cantrips =
     , spHigher = Just "This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
     , spDescription = "You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d4 necrotic damage and fall prone."
     }
-  , Spell 
+  , Spell
     { spName = "Shape Water"
     , spLevel = Cantrip
     , spType = Transmutation
@@ -497,7 +497,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon."
     }
-  , Spell 
+  , Spell
     { spName = "Shocking Grasp"
     , spLevel = Cantrip
     , spType = Evocation
@@ -509,7 +509,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armour made of metal. On a hit, the target takes 1d8 lightning damage, and can't take reactions until the start of its next turn.<br/>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
     }
-  , Spell 
+  , Spell
     { spName = "Spare the Dying"
     , spLevel = Cantrip
     , spType = Necromancy
@@ -576,7 +576,7 @@ cantrips =
     , spDescription = "You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must succeed on a Constitution saving throw or take 1d6 thunder damage."
     , spHigher = Just "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
     }
-  , Spell 
+  , Spell
     { spName = "Toll the Dead"
     , spLevel = Cantrip
     , spType = Necromancy
@@ -588,7 +588,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.<br/>The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12) and 17th level (4d8 or 4d12)."
     }
-  , Spell 
+  , Spell
     { spName = "True Strike"
     , spLevel = Cantrip
     , spType = Divination
@@ -600,7 +600,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided this spell hasn't ended."
     }
-  , Spell 
+  , Spell
     { spName = "Vicious Mockery"
     , spLevel = Cantrip
     , spType = Enchantment
@@ -624,7 +624,7 @@ cantrips =
     , spHigher = Nothing
     , spDescription = "You touch one creature, imbuing it with vitality. If the target has at least 1 hit point, it gains a number of temporary hit points equal to 1d4 + your spellcasting ability modifier. The temporary hit points are lost when the spell ends."
     }
-  , Spell 
+  , Spell
     { spName = "Word of Radiance"
     , spLevel = Cantrip
     , spType = Evocation
@@ -653,7 +653,7 @@ firstLevel =
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."
     }
   , Spell
-    { spName = "Acid Stream} \normalsize\textit{(Unearthed Arcana)"
+    { spName = "Acid Stream"
     , spLevel = One
     , spType = Evocation
     , spRitual = False
@@ -687,6 +687,18 @@ firstLevel =
     , spDuration = "Instantaneous"
     , spDescription = "You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a filaed save, a target takes 2d6 necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+    }
+    , Spell
+    { spName = "Bless"
+    , spLevel = One
+    , spType = Enchantment
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V,S,M (a sprinkling of holy water)"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw."
+    , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
     }
   , Spell
     { spName = "Burning Hands"
@@ -722,6 +734,25 @@ firstLevel =
     , spComponents = "V"
     , spDuration = "Concentration, up to 1 minute"
     , spDescription = "You awaken the sense of mortality in one creature you can see within range. A construct or undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+    }
+    , Spell
+    { spName = "Ceremony"
+    , spLevel = One
+    , spType = Evocation
+    , spRitual = True
+    , spTime = "1 hour"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (25gp worth of powdered silver, which the spell consumes)"
+    , spDuration = "Instantaneous (see below)"
+    , spDescription = "You perform one of several religious ceremonies. When you cast the spell, choose one of the following ceremonies, the target of which must be within 10 feet of you throughout the casting.<br/>" <>
+      "<b>Atonement</b> You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.<br/>" <>
+      "<b>Bless Water</b> You touch one vial of water and cause it to become holy water.<br/>" <>
+      "<b>Coming of Age</b> You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.<br/>" <>
+      "<b>Dedication</b> You touch one humanoid who wishes to be dedicated to your god’s service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once.<br/>" <>
+      "<b>Funeral Rite</b> You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a Wish spell.<br/>" <>
+      "<b>Investiture (UA)</b> You touch one willing humanoid. Choose one 1st-level spell you have prepared and expend a spell slot and any material components as if you were casting that spell. The spell has no effect. Instead, the target can cast this spell once without having to expend a spell slot or use material components. If the target doesn’t cast the spell within 1 hour, the invested spell is lost.<br/>" <>
+      "<b>Wedding</b> You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
     }
   , Spell
@@ -828,7 +859,7 @@ firstLevel =
     , spRange = "30 feet"
     , spComponents = "V,S,M (a drop of water if creating water or a few grains of sand if destroying it)"
     , spDuration = "Instantaneous"
-    , spDescription = "<b>Create Water.</b> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.<br/>" 
+    , spDescription = "<b>Create Water.</b> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.<br/>"
       <> "<b>Destroy Water.</b> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
     , spHigher = Just "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
     }
@@ -1647,6 +1678,21 @@ secondLevel =
       <> "You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear."
     , spHigher = Nothing
     }
+    , Spell
+    { spName = "Find Vehicle"
+    , spLevel = Two
+    , spType = Conjuration
+    , spRitual = False
+    , spTime = "10 minutes"
+    , spRange = "30 feet"
+    , spComponents = "V,S"
+    , spDuration = "8 hours"
+    , spDescription = "You summon a spirit that assumes the form of a nonmilitary land vehicle of your choice, appearing in an unoccupied space within range. The vehicle has the statistics of a normal vehicle of its sort, though it is celestial, fey, or fiendish (your choice in origin). The physical characteristics of the vehicle reflect its origin to some degree. For example, a fiendish SUV might be jet black in color, with tinted windows and a sinister-looking front grille.<br/>" <>
+    "You have a supernatural bond with the conjured vehicle that allows you to drive beyond your normal ability. While driving the conjured vehicle, you are considered proficient with vehicles of its type, and you add double your proficiency bonus to ability checks related to driving the vehicle. While driving the vehicle, you can make any spell you cast that targets only you also target the vehicle.<br/>" <>
+    "If the vehicle drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss the vehicle at any time as an action, causing it to disappear.<br/>" <>
+    "You can't have more than one vehicle bonded by this spell at a time. As an action, you can release the vehicle from its bond at any time, causing it to disappear."
+    , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, you can conjure a nonmilitary water vehicle large enough to carry six Medium creatures. When you cast this spell using a spell slot of 5th level or higher, you can conjure a nonmilitary air vehicle large enough to carry ten Medium creatures. When you cast this spell using a spell slot of 7th level or higher, you can conjure any type of vehicle, subject to the DM's approval."
+    }
   , Spell
     { spName = "Flaming Sphere"
     , spLevel = Two
@@ -1939,6 +1985,18 @@ secondLevel =
     , spDescription = "You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. The spell has no effect on undead or constructs.<br/>The phantasm includes sound, temperature and other stimuli, also evident only to the creature.<br/>The target can use its action to examine the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps on to the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall - it was pushed, it slipped, or a strong wind might have knocked it off.<br/>An affected target is so convinced of the phantasm's reality that it can even take damage from the illusion. A phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasm's area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion."
     , spHigher = Nothing
     }
+    , Spell
+    { spName = "Prayer of Healing"
+    , spLevel = Two
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "10 minutes"
+    , spRange = "30 feet"
+    , spComponents = "V"
+    , spDuration = "Instantaneous"
+    , spDescription = "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+    , spHigher = Just "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
+    }
   , Spell
     { spName = "Protection from Poison"
     , spLevel = Two
@@ -2098,6 +2156,20 @@ secondLevel =
     , spDescription = "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be <i>charmed</i> are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.<br/>The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.<br/>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.<br/>If you or any of your companions damage the target, the spell ends."
     , spHigher = Nothing
     }
+    , Spell
+    { spName = "Warding Bond"
+    , spLevel = Two
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (a pair of platinum rings worth at least 50gp each, which you and the target must wear for the duration)"
+    , spDuration = "1 hour"
+    , spDescription = "This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends.<br/>" <>
+    "While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.<br/>" <>
+    "The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action."
+    , spHigher = Nothing
+    }
   , Spell
     { spName = "Warding Wind"
     , spLevel = Two
@@ -2139,6 +2211,43 @@ secondLevel =
 thirdLevel :: [Spell]
 thirdLevel =
   [ Spell
+    { spName = "Aura of Vitality"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Self (30-foot radius)"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points."
+    , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Beacon of Hope"
+    , spLevel = Three
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "30 feet"
+    , spComponents = "V,S"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
+    , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Blinding Smite"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "The next time you hit a creature with a melee weapon attack during this spell’s duration, you weapon flares with a bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.<br/>" <>
+      "A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."
+    , spHigher = Nothing
+    }
+    , Spell
     { spName = "Blink"
     , spLevel = Three
     , spType = Transmutation
@@ -2187,6 +2296,32 @@ thirdLevel =
     , spComponents = "V,S"
     , spDuration = "Instantaneous"
     , spDescription = "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
+    , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Crusader's Mantle"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Self"
+    , spComponents = "V"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each non-hostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack."
+    , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Daylight"
+    , spLevel = Three
+    , spType = Evocation
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "60 feet"
+    , spComponents = "V,S"
+    , spDuration = "1 hour"
+    , spDescription = "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.<br/>" <>
+    "If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object with and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.<br/>" <>
+    "If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled."
     , spHigher = Nothing
     }
   , Spell
@@ -2332,6 +2467,35 @@ thirdLevel =
     , spDescription = "A stroke of lightning forming a line of 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.<br/>The lightning ignites flammable objects in the area that aren't being worn or carried."
     , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
     }
+    , Spell
+    { spName = "Magic Circle"
+    , spLevel = Three
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 minute"
+    , spRange = "10 feet"
+    , spComponents = "V,S,M (holy water or powdered silver and iron worth at least 100gp, which the spell consumes)"
+    , spDuration = "1 hour"
+    , spDescription = "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.<br/>" <>
+    "Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:<ul>" <>
+    "<li>The creature can’t willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.</li>" <>
+    "<li>The creature has disadvantage on attack rolls against targets within the cylinder.</li>" <>
+    "<li>Targets within the cylinder can’t be charmed, frightened, or possessed by the creature.</li></ul>" <>
+    "When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it."
+    , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
+    }
+    , Spell
+    { spName = "Nondetection"
+    , spLevel = Three
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S,M (a pinch of diamond dust worth 25gp sprinkled over the target, which the spell consumes)"
+    , spDuration = "8 hours"
+    , spDescription = "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can’t be targeted by any divination magic or perceived through magical scrying sensors."
+    , spHigher = Nothing
+    }
   , Spell
     { spName = "Protection from Energy"
     , spLevel = Three
@@ -2342,6 +2506,18 @@ thirdLevel =
     , spComponents = "V,S"
     , spDuration = "Concentration, up to 1 hour"
     , spDescription = "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
+    , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Remove Curse"
+    , spLevel = Three
+    , spType = Abjuration
+    , spRitual = False
+    , spTime = "1 action"
+    , spRange = "Touch"
+    , spComponents = "V,S"
+    , spDuration = "Instantaneous"
+    , spDescription = "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s attunement to the object so it can be removed or discarded."
     , spHigher = Nothing
     }
   , Spell
@@ -2370,6 +2546,20 @@ thirdLevel =
       <> "If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.<br/>"
       <> "A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
     , spHigher = Nothing
+    }
+    , Spell
+    { spName = "Spirit Shroud"
+    , spLevel = Three
+    , spType = Necromancy
+    , spRitual = False
+    , spTime = "1 bonus action"
+    , spRange = "Self"
+    , spComponents = "V,S"
+    , spDuration = "Concentration, up to 1 minute"
+    , spDescription = "You call forth spirits of the dead, which flit around you for the spell’s duration. The spirits are intangible and invulnerable.<br/>" <>
+    "Until the spell ends, any attack you make deals 1d8 extra damage when you hit a creature within 10 feet of you. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can’t regain hit points until the start of your next turn.<br/>" <>
+    "In addition, any creature of your choice that you can see that starts its turn within 10 feet of you has its speed reduced by 10 feet until the start of your next turn."
+    , spHigher = Just "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd."
     }
   , Spell
     { spName = "Tiny Servant"

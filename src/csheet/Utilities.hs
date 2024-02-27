@@ -8,7 +8,7 @@ import Data.Text    (pack)
 import qualified Data.Map as M
 import Graphics.PDF
 import Graphics.PDF.Shapes
-import Graphics.PDF.Typesetting 
+import Graphics.PDF.Typesetting
 
 import Spells (spellMap)
 
@@ -56,7 +56,7 @@ drawTxtBox fnt x y w h s = do
   let p1 = x :+ y
   let p2 = (x + w) :+ (y + h)
   displayFormattedText (Rectangle p1 p2) NormalPara (Normal fnt) $ do
-    setJustification LeftJustification 
+    setJustification LeftJustification
     paragraph $ txt $ pack s
 
 drawMyItems :: PDFFont -> PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> [BagItem] -> Draw()
@@ -88,7 +88,7 @@ drawVLine :: PDFFloat -> Draw()
 drawVLine x = do
   moveto (x :+ 0)
   lineto (x :+ 842)
-  strokePath 
+  strokePath
 
 drawHLine :: PDFFloat -> Draw()
 drawHLine y = do
@@ -114,8 +114,8 @@ statBonus stat = if sb > 10 then 10 else sb
   where
     sb = (stat - 10) `div` 2
 
-saveBonus :: Integer -> Integer -> Integer -> Integer -> Integer
-saveBonus stat saveP saveB prof = statBonus stat + saveP * prof + saveB
+saveBonus :: Integer -> Integer -> Integer -> Integer -> Integer -> Integer
+saveBonus stat saveP saveB prof additional = statBonus stat + saveP * (prof + additional) + saveB
 
 profBonus :: Character -> Integer
 profBonus c = (level c - 1) `div` 4 + 2 + proficiencyBonus c
@@ -125,12 +125,12 @@ skillBonus stat skillMultiple profB skillBonus = statBonus stat + round (skillMu
 
 showClass :: Character -> String
 showClass c = if lc == 0 then "" else cc ++ slc
-  where 
+  where
     cc = className c
     lc = level c
     slc = " [" ++ (show lc) ++ "]"
 
-showSubClass :: Character -> String 
+showSubClass :: Character -> String
 showSubClass = subclass
 
 spellsBy :: SpellLevel -> [KnownSpell] -> [KnownSpell]
@@ -140,7 +140,7 @@ matchSpellLevel :: SpellLevel -> KnownSpell -> Bool
 matchSpellLevel lvl s = (spLevel <$> M.lookup (spellName s) spellMap) == Just lvl
 
 spellComparator :: KnownSpell -> KnownSpell -> Ordering
-spellComparator a b = 
+spellComparator a b =
   case compare (prepared a) (prepared b) of
     LT -> GT
     GT -> LT

@@ -1,7 +1,7 @@
 {-# LANGUAGE MultiParamTypeClasses, OverloadedStrings #-}
 module Pages where
 
-import DataTypes 
+import DataTypes
 import Fonts(Fonts(..))
 import Spells
 import Utilities(drawCntText, drawTxtBox, drawMyText, drawCircle, drawMyStrings, drawMySpells, drawMyAttacks, drawMyItems, drawHLine, drawRaText, showClass, showSubClass, statBonus, profBonus, saveBonus, skillBonus, spellsBy)
@@ -30,7 +30,7 @@ show5 (-5) = ""
 -- show5 (-3) = ""
 show5 i = show i
 
-show6 :: Integer -> String 
+show6 :: Integer -> String
 show6 6 = ""
 show6 x = show x
 
@@ -48,7 +48,7 @@ setupPage' p = do
   drawWithPage page p
 
 drawBackgroundImage :: PDFReference PDFJpeg -> Draw ()
-drawBackgroundImage jpg = 
+drawBackgroundImage jpg =
   withNewContext $ do
     applyMatrix $ translate (0 :+ 0)
     applyMatrix $ scale 0.47 0.505
@@ -68,7 +68,7 @@ mkImage = maybe (pure Nothing) (createPDFJpeg >=> \ref -> pure (Just ref))
 
 drawPage1 :: Character -> JpegFile -> Fonts -> PDF()
 drawPage1 c bg fs = setupPage bg $ do
-  drawMyText (fontLarge fs)  55 753 (characterName c) 
+  drawMyText (fontLarge fs)  55 753 (characterName c)
   drawMyText (fontSmall fs) 265 770 (showClass c)
   drawMyText (fontSmall fs) 265 741 (race c)
   drawMyText (fontSmall fs) 375 770 (background c)
@@ -88,29 +88,32 @@ drawPage1 c bg fs = setupPage bg $ do
   drawMyText (fontLarge fs)  48 275 (show0 $ charisma c)
   drawMyText (fontSmall fs)  53 251.5 (show5 $ statBonus $ charisma c)
   drawMyText (fontLarge fs) 101 681 (show0 $ inspiration c)
-  drawMyText (fontLarge fs) 102 642 (show1 $ profBonus c)
+  drawMyText (fontLarge fs) 102 642 (show1 $ profBonus c + profAdditionalBonus c)
   drawMyText (fontLarge fs) 234.5 667 (calculatedArmourClass c)
   drawMyText (fontLarge fs) 293 667 (calculatedInitiative c)
   drawMyText (fontLarge fs) 346 667 (calculatedSpeed c)
   drawMyText (fontTiny fs)  290 618 (show0 $ calcHp c)
-  drawMyText (fontTiny fs)  112 610 (show5 $ saveBonus (strength c) (strengthProf c) (strengthBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 610 (show5 $ saveBonus (strength c) (strengthProf c) (strengthBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 611 3 (fromIntegral $ strengthBonus c)
-  drawMyText (fontTiny fs)  112 595 (show5 $ saveBonus (dexterity c) (dexterityProf c) (dexterityBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 595 (show5 $ saveBonus (dexterity c) (dexterityProf c) (dexterityBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 597 3 (fromIntegral $ dexterityBonus c)
-  drawMyText (fontTiny fs)  112 581 (show5 $ saveBonus (constitution c) (constitutionProf c) (constitutionBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 581 (show5 $ saveBonus (constitution c) (constitutionProf c) (constitutionBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 583 3 (fromIntegral $ constitutionBonus c)
-  drawMyText (fontTiny fs)  112 567 (show5 $ saveBonus (intelligence c) (intelligenceProf c) (intelligenceBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 567 (show5 $ saveBonus (intelligence c) (intelligenceProf c) (intelligenceBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 568.5 3 (fromIntegral $ intelligenceBonus c)
-  drawMyText (fontTiny fs)  112 552 (show5 $ saveBonus (wisdom c) (wisdomProf c) (wisdomBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 552 (show5 $ saveBonus (wisdom c) (wisdomProf c) (wisdomBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 554 3 (fromIntegral $ wisdomBonus c)
-  drawMyText (fontTiny fs)  112 538 (show5 $ saveBonus (charisma c) (charismaProf c) (charismaBonus c) (profBonus c))
+  drawMyText (fontTiny fs)  112 538 (show5 $ saveBonus (charisma c) (charismaProf c) (charismaBonus c) (profBonus c) (profAdditionalBonus c))
   drawCircle 102 540 3 (fromIntegral $ charismaBonus c)
   drawMyText (fontTiny fs)  112 488 (show5 $ skillBonus (dexterity c) (skillAcrobatics c) (profBonus c) (bonusAcrobatics c))
   drawCircle 102 490 3 (skillAcrobatics c)
+  drawCircle 106 490 2 (advantageAcrobatics c)
   drawMyText (fontTiny fs)  112 473 (show5 $ skillBonus (wisdom c) (skillAnimalHandling c) (profBonus c) (bonusAnimalHandling c))
   drawCircle 102 475 3 (skillAnimalHandling c)
+  drawCircle 106 490 2 (advantageAnimalHandling c)
   drawMyText (fontTiny fs)  112 459 (show5 $ skillBonus (intelligence c) (skillArcana c) (profBonus c) (bonusArcana c))
   drawCircle 102 461 3 (skillArcana c)
+  drawCircle 106 490 2 (advantageArcana c)
   drawMyText (fontTiny fs)  112 445 (show5 $ skillBonus (strength c) (skillAthletics c) (profBonus c) (bonusAthletics c))
   drawCircle 102 447 3 (skillAthletics c)
   drawMyText (fontTiny fs)  112 431 (show5 $ skillBonus (charisma c) (skillDeception c) (profBonus c) (bonusDeception c))
@@ -154,7 +157,7 @@ drawPage1 c bg fs = setupPage bg $ do
   drawMyStrings (fontTiny fs)  410 602 10 (ideals c)
   drawMyStrings (fontTiny fs)  410 543 10 (bonds c)
   drawMyStrings (fontTiny fs)  410 485 10 (flaws c)
-  drawMyStrings (fontTeeny fs) 405 416 10 (take 38 (features c))
+  drawMyStrings (fontTeeny fs) 405 416 10 (take 38 (map show $ features c))
   drawMyStrings (fontTiny fs) 265 200 10 (equipment c)
   drawMyAttacks (fontTiny fs) 222 410 21 (attacks c)
 
@@ -169,7 +172,7 @@ calculatedSpeed = speed
 
 drawIcePage1 :: Character -> JpegFile -> Fonts -> PDF()
 drawIcePage1 c bg fs = setupPage bg $ do
-  drawCntText (fontLarge fs) 300 720 (characterName c) 
+  drawCntText (fontLarge fs) 300 720 (characterName c)
   drawMyText  (fontSmall fs)  32 795 (showClass c)
   drawMyText  (fontSmall fs)  32 784 (showSubClass c)
   drawMyText  (fontSmall fs)  32 718 (race c)
@@ -184,7 +187,7 @@ drawIcePage1 c bg fs = setupPage bg $ do
     drawCntText (fontSmall fs) 54 (224 + y * 77) (show5 $ statBonus $ f c)
   -- Inspiration, Prof Bonus, AC, Initiative Bonus, Speed
   drawCntText (fontLarge fs) 120 650 (show0 $ inspiration c)
-  drawCntText (fontLarge fs) 175 650 (show1 $ profBonus c)
+  drawCntText (fontLarge fs) 175 650 (show1 $ profBonus c + profAdditionalBonus c)
   drawCntText (fontLarge fs) 250 650 (calculatedArmourClass c)
   drawCntText (fontLarge fs) 297 650 (calculatedInitiative c)
   drawCntText (fontLarge fs) 348 650 (calculatedSpeed c)
@@ -200,38 +203,39 @@ drawIcePage1 c bg fs = setupPage bg $ do
                 , (dexterity, dexterityProf, dexterityBonus)
                 , (strength, strengthProf, strengthBonus)]
   forM_ (zip [0..] bonuses) $ \(y, (sf,pf,bf)) -> do
-    drawCntText (fontTiny fs) 120 (521 + y * 14.2) (show5 $ saveBonus (sf c) (pf c) (bf c) (profBonus c))
+    drawCntText (fontTiny fs) 120 (521 + y * 14.2) (show5 $ saveBonus (sf c) (pf c) (bf c) (profBonus c) (profAdditionalBonus c))
     drawCircle 105 (522 + y * 14.2) 3 (fromIntegral $ pf c)
   -- Skill bonuses and skill proficiency circles
-  let skills = 
-        [ (wisdom, skillSurvival, bonusSurvival)
-        , (dexterity, skillStealth, bonusStealth)
-        , (dexterity, skillSleightOfHand, bonusSleightOfHand)
-        , (intelligence, skillReligion, bonusReligion)
-        , (charisma, skillPersuasion, bonusPersuasion)
-        , (charisma, skillPerformance, bonusPerformance)
-        , (wisdom, skillPerception, bonusPerception)
-        , (intelligence, skillNature, bonusNature)
-        , (wisdom, skillMedicine, bonusMedicine)
-        , (intelligence, skillInvestigation, bonusInvestigation)
-        , (charisma, skillIntimidation, bonusIntimidation)
-        , (wisdom, skillInsight, bonusInsight)
-        , (intelligence, skillHistory, bonusHistory)
-        , (charisma, skillDeception, bonusDeception)
-        , (strength, skillAthletics, bonusAthletics)
-        , (intelligence, skillArcana, bonusArcana)
-        , (wisdom, skillAnimalHandling, bonusAnimalHandling)
-        , (dexterity, skillAcrobatics, bonusAcrobatics)
+  let skills =
+        [ (wisdom, skillSurvival, bonusSurvival, advantageSurvival)
+        , (dexterity, skillStealth, bonusStealth, advantageStealth)
+        , (dexterity, skillSleightOfHand, bonusSleightOfHand, advantageSleightOfHand)
+        , (intelligence, skillReligion, bonusReligion, advantageReligion)
+        , (charisma, skillPersuasion, bonusPersuasion, advantagePersuasion)
+        , (charisma, skillPerformance, bonusPerformance, advantagePerformance)
+        , (wisdom, skillPerception, bonusPerception, advantagePerception)
+        , (intelligence, skillNature, bonusNature, advantageNature)
+        , (wisdom, skillMedicine, bonusMedicine, advantageMedicine)
+        , (intelligence, skillInvestigation, bonusInvestigation, advantageInvestigation)
+        , (charisma, skillIntimidation, bonusIntimidation, advantageIntimidation)
+        , (wisdom, skillInsight, bonusInsight, advantageInsight)
+        , (intelligence, skillHistory, bonusHistory, advantageHistory)
+        , (charisma, skillDeception, bonusDeception, advantageDeception)
+        , (strength, skillAthletics, bonusAthletics, advantageAthletics)
+        , (intelligence, skillArcana, bonusArcana, advantageArcana)
+        , (wisdom, skillAnimalHandling, bonusAnimalHandling, advantageAnimalHandling)
+        , (dexterity, skillAcrobatics, bonusAcrobatics, advantageAcrobatics)
         ]
-  forM_ (zip [0..] skills) $ \(y,(statBonus, skillMultiple, skillB)) -> do
+  forM_ (zip [0..] skills) $ \(y,(statBonus, skillMultiple, skillB, advantage)) -> do
     drawCntText (fontTiny fs) 120 (230 + y * 14.75) (show5 $ skillBonus (statBonus c) (skillMultiple c) (profBonus c) (skillB c))
     drawCircle 104.8 (231.4 + y * 14.75) 3 (skillMultiple c)
+    drawCircle 111.0 (231.1 + y * 14.75) 2 (advantage c)
   -- Hit dice
   drawCntText (fontNormal fs) 242 462 (show0 $ level c)
   drawMyText  (fontNormal fs) 262 462 (hitDice c)
   -- Passive perception
   drawCntText (fontSmall fs) 85 180 (passives c)
-  -- Money 
+  -- Money
   let monies = [copper, silver, electrum, gold, platinum]
   mapM_ (\(x,f) -> drawCntText (fontSmall fs) (231 + x * 34) 175 (show0 $ f (moneyPouch c))) (zip [0..] monies)
   -- Proficiencies and Languges
@@ -242,7 +246,7 @@ drawIcePage1 c bg fs = setupPage bg $ do
   drawMyStrings (fontTiny fs)  410 547 13.6 (bonds c)
   drawMyStrings (fontTiny fs)  410 487 13.6 (flaws c)
   -- Features and Traits
-  drawMyStrings (fontTeeny fs) 405 408 13.3 (take 29 (features c))
+  drawMyStrings (fontTeeny fs) 405 408 13.3 (take 29 (map show $ features c))
   -- Equipment
   drawMyStrings (fontTiny fs) 222 144.8 13.6 (equipment c)
   -- Attacks
@@ -260,7 +264,7 @@ drawPage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
 drawPage2 c bg mapp fs = do
   app <- mkImage mapp
   setupPage bg $ do
-    drawMyText (fontLarge fs)  55 751 (characterName c) 
+    drawMyText (fontLarge fs)  55 751 (characterName c)
     drawMyText (fontSmall fs) 265 767 (age c)
     drawMyText (fontSmall fs) 265 738 (eyeColour c)
     drawMyText (fontSmall fs) 370 767 (height c)
@@ -270,8 +274,9 @@ drawPage2 c bg mapp fs = do
     drawImage 35 490 app
     drawMyStrings (fontTeeny fs)  35 423 11.5 (backstory c)
     drawMyStrings (fontTeeny fs) 225 687 11.5 (allies c)
-    drawMyStrings (fontTeeny fs) 225 433 11.5 (take 19 (drop 38 (features c)))
-    drawMyStrings (fontTeeny fs) 405 433 11.5 (drop 57 (features c))
+    drawMyText    (fontSmall fs) 400 687      (faction c)
+    drawMyStrings (fontTeeny fs) 225 433 11.5 (take 19 (drop 38 (map show $ features c)))
+    drawMyStrings (fontTeeny fs) 405 433 11.5 (drop 57 (map show $ features c))
     drawMyStrings (fontTeeny fs) 225 190 11.5 (take 14 (treasure c))
     drawMyStrings (fontTeeny fs) 405 190 11.5 (drop 14 (treasure c))
 
@@ -279,7 +284,7 @@ drawIcePage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
 drawIcePage2 c bg mapp fs = do
   app <- mkImage mapp
   setupPage bg $ do
-    drawCntText (fontLarge fs) 180 760 (characterName c) 
+    drawCntText (fontLarge fs) 180 760 (characterName c)
     drawMyText  (fontSmall fs) 312 775 (age c)
     drawMyText  (fontSmall fs) 312 741 (eyeColour c)
     drawMyText  (fontSmall fs) 406 775 (height c)
@@ -291,10 +296,11 @@ drawIcePage2 c bg mapp fs = do
     drawTxtBox (helvetica fs) 35 30 162 395 (unlines $ backstory c)
     drawMyStrings (fontTeeny fs) 225 690 13.2 (take 18 (allies c))
     drawMyStrings (fontTeeny fs) 405 518 13.2 (drop 18 (allies c))
-    drawMyStrings (fontTeeny fs) 225 425 13.2 (take 16 (drop 29 (features c)))
-    drawMyStrings (fontTeeny fs) 405 425 13.2 (take 16 (drop 45 (features c)))
-    drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (drop 61 (features c)))
-    drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 73 (features c))
+    drawMyText    (fontLarge fs) 420 687      (faction c)
+    drawMyStrings (fontTeeny fs) 225 425 13.2 (take 16 (drop 29 (map show $ features c)))
+    drawMyStrings (fontTeeny fs) 405 425 13.2 (take 16 (drop 45 (map show $ features c)))
+    drawMyStrings (fontTeeny fs) 225 183 13.2 (take 12 (drop 61 (map show $ features c)))
+    drawMyStrings (fontTeeny fs) 405 183 13.2 (drop 73 (map show $ features c))
     drawMyStrings (fontTeeny fs) 405 183 13.2 (treasure c)
 
 drawSpellPage :: JpegFile -> Fonts -> Spellcasting -> PDF()
@@ -309,10 +315,10 @@ drawSpellPage bg fs c = setupPage bg $ do
   let spells7 = spellsBy Seven (knownSpells c)
   let spells8 = spellsBy Eight (knownSpells c)
   let spells9 = spellsBy Nine (knownSpells c)
-  drawMyText (fontLarge fs)  70 753 (spellcastingClass c) 
-  drawMyText (fontLarge fs) 278 757 (spellcastingAbility c) 
-  drawMyText (fontLarge fs) 400 757 (spellSaveDC c) 
-  drawMyText (fontLarge fs) 505 757 (spellAttackBonus c) 
+  drawMyText (fontLarge fs)  70 753 (spellcastingClass c)
+  drawMyText (fontLarge fs) 278 757 (spellcastingAbility c)
+  drawMyText (fontLarge fs) 400 757 (spellSaveDC c)
+  drawMyText (fontLarge fs) 505 757 (spellAttackBonus c)
   drawMySpells (fontTiny fs)   50 643 14.7 (take 8 spells0)
   drawMySpells (fontTiny fs)  140 643 14.7 (take 8 $ drop 8 spells0)
   drawMySpells (fontTiny fs)  420 284 14.7 (take 7 $ drop 16 spells0)
@@ -359,10 +365,10 @@ drawIceSpellPage bg fs c = setupPage bg $ do
   let spells7 = spellsBy Seven (knownSpells c)
   let spells8 = spellsBy Eight (knownSpells c)
   let spells9 = spellsBy Nine (knownSpells c)
-  drawCntText (fontLarge fs) 180 760 (spellcastingClass c) 
-  drawCntText (fontLarge fs) 348 760 (spellcastingAbility c) 
-  drawCntText (fontLarge fs) 435 760 (spellSaveDC c) 
-  drawCntText (fontLarge fs) 520 760 (spellAttackBonus c) 
+  drawCntText (fontLarge fs) 180 760 (spellcastingClass c)
+  drawCntText (fontLarge fs) 348 760 (spellcastingAbility c)
+  drawCntText (fontLarge fs) 435 760 (spellSaveDC c)
+  drawCntText (fontLarge fs) 520 760 (spellAttackBonus c)
   drawCntText (fontLarge fs)  43 488 "1"
   drawMySpells (fontTiny fs)   50 643.0 14.7 (take 8 spells0)
   drawMySpells (fontTiny fs)  140 643.0 14.7 (take 8 $ drop 8 spells0)
@@ -372,16 +378,16 @@ drawIceSpellPage bg fs c = setupPage bg $ do
   drawMySpells (fontTiny fs)  510 134.5 14.7 (drop 41 spells0)
   drawMySpells (fontTiny fs)   50 446.1 14.7 (take 12 spells1)
   drawMySpells (fontTiny fs)  140 446.1 14.7 (drop 12 spells1)
-  drawMySpells (fontTiny fs)   50 220.5 14.7 (take 13 spells2)   
-  drawMySpells (fontTiny fs)  140 220.5 14.7 (drop 13 spells2)   
+  drawMySpells (fontTiny fs)   50 220.5 14.7 (take 13 spells2)
+  drawMySpells (fontTiny fs)  140 220.5 14.7 (drop 13 spells2)
   drawMySpells (fontTiny fs)  235 637.8 14.7 (take 13 spells3)
   drawMySpells (fontTiny fs)  325 637.8 14.7 (drop 13 spells3)
   drawMySpells (fontTiny fs)  235 402.0 14.7 (take 13 spells4)
   drawMySpells (fontTiny fs)  325 402.0 14.7 (drop 13 spells4)
   drawMySpells (fontTiny fs)  235 165.0 14.7 (take 9 spells5)
   drawMySpells (fontTiny fs)  325 165.0 14.7 (drop 9 spells5)
-  drawMySpells (fontTiny fs)  420 638.0 14.7 (take 9 spells6)   
-  drawMySpells (fontTiny fs)  510 638.0 14.7 (drop 9 spells6)   
+  drawMySpells (fontTiny fs)  420 638.0 14.7 (take 9 spells6)
+  drawMySpells (fontTiny fs)  510 638.0 14.7 (drop 9 spells6)
   drawMySpells (fontTiny fs)  420 461.0 14.7 (take 9 spells7)
   drawMySpells (fontTiny fs)  510 461.0 14.7 (drop 9 spells7)
   drawMySpells (fontTiny fs)  420 282.3 14.7 (take 7 spells8)
@@ -429,11 +435,11 @@ drawBagOfHolding bg c fs b = setupPage bg $ do
   drawMyItems (fontTiny fs)  35 130 150 500 rowHeight (bohPGs b)
   drawMyItems (fontTiny fs) 190 338 358 674.5 rowHeight (take 48 $ bohItems b)
   drawMyItems (fontTiny fs) 383 532 553 674.5 rowHeight (drop 48 $ bohItems b)
-      
+
 drawPortableHole :: JpegFile -> Character -> Fonts -> PortableHole -> PDF()
 drawPortableHole bg c fs b = setupPage bg $ do
   let lineSpacing = 11.6
-  drawMyText (fontLarge fs)  55 750 (characterName c) 
+  drawMyText (fontLarge fs)  55 750 (characterName c)
   drawMyStrings (fontTiny fs)  45.3 694 lineSpacing (take 50 $ phItems b)
   drawMyStrings (fontTiny fs) 230 508 lineSpacing (take 34 $ drop 50 $ phItems b)
   drawMyStrings (fontTiny fs) 405 694 lineSpacing (drop 84 $ phItems b)
@@ -511,7 +517,7 @@ htmlSpells ch =  "<html>\n\t<style>"
     ss = sortOn spellName ks
 
 htmlKnownSpell :: SpellLevel -> KnownSpell -> Maybe String
-htmlKnownSpell lvl ks = 
+htmlKnownSpell lvl ks =
   case getSpell (spellName ks) of
     Nothing -> Nothing
     (Just s) -> if (spLevel s <= lvl)
@@ -565,5 +571,3 @@ spellLevel SpellLevelUnknown = "SpellLevelUnknown"
 
 calcHp :: Character -> Integer
 calcHp c = sum (map (\d -> d + statBonus (constitution c)) (hitPoints c))
-
-    

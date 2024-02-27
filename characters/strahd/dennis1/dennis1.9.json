@@ -1,0 +1,615 @@
+{
+  "characterName": "Dennis",
+  "sheetType": "SheetTypeIcewindDale",
+  "className": "Monk (One D&D)",
+  "subclass": "Way of Mercy",
+  "level": 9,
+  "background": "Urchin from Bluetspur",
+  "playerName": "Scott",
+  "race": "Fairy Dhampir",
+  "alignment": "None",
+  "experience": "",
+  "appearance": "",
+  "gender": "",
+  "faith": "",
+
+  "age": "15",
+  "height": "2'1\" (63.5cm)",
+  "weight": "15 lbs (7 kg)",
+  "eyeColour": "Red",
+  "skinColour": "Pale",
+  "hairColour": "Red",
+
+  "inspiration": 0,
+  "proficiencyBonus": 0,
+
+  "acBase": 10,
+  "acBonus": 7,
+  "acBonusComment": "Wis bonus (+5), Bracers of Defence (+2)",
+  "initiative": 2,
+  "initiativeComment": "Bluetspur background (+2)",
+  "speed": "50",
+  "speedComment": "Dhamphir (35'), Monk (+15)",
+  "hitPoints": [8, 7, 7, 7, 5, 7, 8, 6, 8],
+  "hpComment": 90,
+  "tempHitPoints": 0,
+  "hitDice": "d8",
+
+  "strength": 13,
+  "dexterity": 20,
+  "constitution": 16,
+  "intelligence": 16,
+  "intComment": "+1 from Ethan for fixing his laptop",
+  "wisdom": 20,
+  "charisma": 12,
+
+  "strengthBonus": 0,
+  "dexterityBonus": 0,
+  "constitutionBonus": 0,
+  "intelligenceBonus": 0,
+  "wisdomBonus": 0,
+  "charismaBonus": 0,
+
+  "strengthProf": 1,
+  "strProfComment": "Monk class",
+  "dexterityProf": 1,
+  "dexProfComment": "Monk class",
+  "constitutionProf": 0,
+  "intelligenceProf": 0,
+  "wisdomProf": 1,
+  "wisProfComment": "Resistant feat",
+  "charismaProf": 0,
+  "profAdditionalBonus": 0,
+
+  "skillAcrobatics": 1,
+  "skillAnimalHandling": 0,
+  "skillArcana": 1,
+  "skillAthletics": 0,
+  "skillDeception": 0,
+  "skillHistory": 0,
+  "skillInsight": 1,
+  "skillIntimidation": 0,
+  "skillInvestigation": 1,
+  "skillMedicine": 1,
+  "skillNature": 1,
+  "skillPerception": 1,
+  "skillPerformance": 0,
+  "skillPersuasion": 0,
+  "skillReligion": 0,
+  "skillSleightOfHand": 1,
+  "skillStealth": 1,
+  "skillSurvival": 0,
+
+  "advantageAcrobatics": 0,
+  "advantageAnimalHandling": 0,
+  "advantageArcana": 1,
+  "advantageArcanaComment": "From tools: Alchemist, Herbalism",
+  "advantageAthletics": 0,
+  "advantageDeception": 0,
+  "advantageHistory": 0,
+  "advantageInsight": 0,
+  "advantageIntimidation": 0,
+  "advantageInvestigation": 1,
+  "advantageInvestigationComment": "From tools: Alchemist, Herbalism, Poisoner, Thief",
+  "advantageMedicine": 1,
+  "advantageMedicineComment": "From tools: Herbalism, Poisoner",
+  "advantageNature": 1,
+  "advantageNatureComment": "From tools: Herbalism, Poisoner",
+  "advantagePerception": 1,
+  "advantagePerceptionComment": "From tools: Herbalism, Poisoner, Thief",
+  "advantagePerformance": 0,
+  "advantagePersuasion": 0,
+  "advantageReligion": 0,
+  "advantageSleightOfHand": 0,
+  "advantageStealth": 0,
+  "advantageSurvival": 0,
+
+  "bonusAcrobatics": 0,
+  "bonusAnimalHandling": 0,
+  "bonusArcana": 0,
+  "bonusAthletics": 0,
+  "bonusDeception": 0,
+  "bonusHistory": 0,
+  "bonusInsight": 0,
+  "bonusIntimidation": 0,
+  "bonusInvestigation": 0,
+  "bonusMedicine": 0,
+  "bonusNature": 0,
+  "bonusPerception": 0,
+  "bonusPerformance": 0,
+  "bonusPersuasion": 0,
+  "bonusReligion": 0,
+  "bonusSleightOfHand": 0,
+  "bonusStealth": 0,
+  "bonusSurvival": 0,
+
+  "bonusPassivePerception": 5,
+  "bonusPassivePerceptionComment": "Observant feat",
+  "bonusPassiveInsight": 5,
+  "bonusPassiveInsightComment": "Observant feat",
+  "bonusPassiveInvestigation": 5,
+  "bonusPassiveInvestigationComment": "Observant feat",
+
+  "proficiencies": [
+    "Languages: Common, Thieves Cant",
+    "Alchemists Supplies, Disguise Kit",
+    "Herbalism Kit, Thieves Tools",
+    "Poisoners Kit. CON save DC 17 (Dex)",
+    "Simple weapons, Light Martial weapons",
+    " (Scimitar, Shortsword)",
+    "Carry: 175 lbs. Lift: 390 lbs."
+  ],
+
+  "attacks": [
+    {
+      "weapon": "Unarmed",
+      "damage": "1d8+5 force",
+      "bonus": "+9",
+      "bonusComment": "DEX bonus + Proficiency bonus",
+      "notes": "MA die (1d8)"
+    },
+    {
+      "weapon": "Vampiric Bite",
+      "damage": "1d8+8 force",
+      "bonus": "+12",
+      "bonusComment": "DEX bonus + Proficiency bonus + CON bonus",
+      "notes": "Add CON bonus to hit and damage, advantage to hit if less than 50% HP. MA die (1d8)"
+    },
+    {
+      "weapon": "Dagger (20/60)",
+      "damage": "1d8+5 force",
+      "bonus": "+9",
+      "notes": "MA die (1d8)"
+    },
+    {
+      "weapon": "Silver Dagger (+1)",
+      "damage": "1d8+6 force",
+      "bonus": "+10",
+      "notes": "MA die (1d8)"
+    },
+    {
+      "weapon": "Card (1d4)",
+      "damage": "2d6+5 slashing",
+      "bonus": "+9",
+      "notes": ""
+    },
+    {
+      "weapon": "Spear (+1)",
+      "damage": "1d8+6 force",
+      "bonus": "+10",
+      "notes": "Poison cache. MA die (1d8)"
+    }
+  ],
+
+  "personalityTraits": [
+    "I ask a lot of questions.",
+    "I bluntly say what other people are hinting",
+    "at or hiding."
+  ],
+  "ideals": [
+    "The low are lifted up, and the high and",
+    "mighty are brought down. Change is the",
+    "nature of things."
+  ],
+  "bonds": [
+    "No one else should have to endure the",
+    "hardships I've been through."
+  ],
+  "flaws": ["I'd rather kill someone in their sleep than", "fight fair."],
+  "features": [
+    {
+      "action": "Action",
+      "infotext": "Extra Attack",
+      "comment": "Monk Level 5"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Unarmed attack",
+      "comment": "Monk Level 1"
+    },
+    {
+      "action": "Reaction",
+      "infotext": "Deflect attack -(1d10+16)",
+      "comment": "Monk Level 3"
+    },
+    { "action": "Bonus", "infotext": "Disengage", "comment": "Monk Level 1" },
+    { "action": "Bonus", "infotext": "Dash", "comment": "Monk Level 1" },
+    {
+      "action": "NoAction",
+      "infotext": "Ki (DC 19): O O O O O O O O O",
+      "comment": ""
+    },
+    {
+      "action": "Bonus",
+      "infotext": "  (1) Flurry of Blows: 2 unarmed attacks",
+      "comment": "Monk Level 1"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "  (1) Disengage + Dodge",
+      "comment": "Monk Level 1"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "  (1) Disengage + Dash + 2 * Jump",
+      "comment": "Monk Level 1"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "  (1) Redirect attack (60') DEX save, 2d8+5",
+      "comment": "Monk Level 3"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "  (1) Stunning Strike (CON save) 1d8+7",
+      "comment": "Monk Level 5"
+    },
+    {
+      "action": "Action",
+      "infotext": "  (1) Hand of Heal (1d8+7) (D,B,D,P,P,S)",
+      "comment": "Way of Mercy Level 3 & 6"
+    },
+    {
+      "action": "Action",
+      "infotext": "  (1) Hand of Harm (1d8+7) (P)",
+      "comment": "Way of Mercy Level 3 & 6"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Uncanny Metabolism: Ki + 1d8+9 HP on init roll, 1/LR",
+      "comment": "Monk Level 2"
+    },
+    {
+      "action": "Reaction",
+      "infotext": "Slow Fall: -45 damage",
+      "comment": "Monk Level 4"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Darkvision 60'",
+      "comment": "Dhampir"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Spider climb & Fly",
+      "comment": "Dhampir/Fairy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "+2 to saves vs fear and illusion",
+      "comment": "Bluetspur background"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "+5 to Perception and Investigation",
+      "comment": "Observant feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Lip Reading",
+      "comment": "Observant feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Evasion: Dex save 1/2 or None",
+      "comment": "Monk Level 7"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Shadow Step 60'",
+      "comment": "Way of Shadow Level 6"
+    },
+    {
+      "action": "Action",
+      "infotext": "Invisible at will",
+      "comment": "Shroud of Ulban"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Bite: advantage to hit if < 50% HP",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Bite can regain HP equal to damage 4/LR",
+      "comment": "Dhampir"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Bite can give bonus to next ability check or attack",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": " roll equal to damage 4/LR",
+      "comment": ""
+    },
+    { "action": "NoAction", "infotext": "", "comment": "" },
+    { "action": "NoAction", "infotext": "", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Fairy: Small Fey. Flight at walking speed.",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Darkvision 60'. Don't breathe. Spider climb.",
+      "comment": "Dhampir"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Bite: Adv < 50% HP. Heal or Bonus, PB/LR",
+      "comment": "Dhampir"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Martial Arts (Die: 1d8). DEX bonus to hit & damage.",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Ki Save 8 + Wis bonus + Prof b + 2 (belt): (19)",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Flurry of Blows (1): 2 unarmed attacks",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Patient Defense: Disengage",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Patient Defense (1): Disengage + Dodge",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Step of the Wind: Dash",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Step of the Wind (1): Disengage + Dash + Jump",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Unarmoured Movement: +15ft",
+      "comment": "Monk"
+    },
+    {
+      "action": "Bonus",
+      "infotext": "Shadow Step. Teleport up to 60' from shadow",
+      "comment": "Shadow Monk Level 6 - I got at Level 9."
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Ability Score Improvement (DEX + 2)",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Slow Fall: Reaction. Fall dmg -(5 * Monk lvl)",
+      "comment": "Monk"
+    },
+    { "action": "NoAction", "infotext": "Extra attack", "comment": "Monk" },
+    {
+      "action": "NoAction",
+      "infotext": "Stunning Strike (1): CON or stunned until the start",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": " of my next turn. 1d8+WIS force damage on fail",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Empowered Strikes: martial strikes do force damage",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Evasion: DEX saves for 1/2 or none",
+      "comment": "Monk"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Way of Mercy. Implements of Mercy: Proficiency:",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Insight, Medicine, Herbalism Kit. Raven Mask.",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "Action",
+      "infotext": "Hand of Healing (1): heal (MA + Wis Mod + 2)",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Hand of Harm (1): +(MA + Wis mod + 2), poisoned",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "Action",
+      "infotext": " until end of my next turn",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Physicians Touch: Hand of Healing ends disease,",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": " blinded, deafened, paralyzed, poisoned, stunned",
+      "comment": "Monk - Way of Mercy"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "15 Int: Nature & Vistani language",
+      "comment": "Int bonus skills (Ethan's rules)"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Bluetspur: +2 to Init and saves vs fear & illusion",
+      "comment": "Bluetspur Background"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Eldritch Initiate: Shroud of Ulban. Turn invisible for",
+      "comment": "Eldritch Initiate feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": " 1 minute. If you attack, deal damage,or force a",
+      "comment": "Eldritch Initiate feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": " creature to make a saving throw, you become visible",
+      "comment": "Eldritch Initiate feat"
+    },
+    {
+      "action": "Action",
+      "infotext": " at the end of the current turn",
+      "comment": "Eldritch Initiate feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Observant: +1 Wis, Lip Reading, +5 to Perc & Invst.",
+      "comment": "Observant feat"
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Resilient (WIS): +1 Wis, Prof with Wis Saves",
+      "comment": "Resilient feat"
+    }
+  ],
+
+  "backstory": [
+    "Dennis doesn't remember his childhood. He suspects he was a Monk of some Path, but fell afoul of a vampire. They fought to a draw - Dennis killed the vampire, but he died of the lingering curses. ",
+    "When he woke, his first thought was surprise.  He was pretty sure he had died. Apart from that, the past was a blur.  His Ki powers were warped, too - he's now much more attuned to blood magic, and he consumes Ki. ",
+    "He has given up on finding out who he was.  Now he wanders the world, trying to help as much as he can, and do as little harm as he can manage.  ",
+    "WHAT ACTUALLY HAPPENED: Dennis was a trainee knight in the Court of the Unseelie. He was originally a Monk of the Way of Open Hand. He grew up an orphan, poor and downtrodden, but was never caught by the city guard. ",
+    "His ability to evade them became an embarrassment to the Court, and they sent a knight to capture Dennis. The knight was sufficiently impressed by the boy's skills that instead of punishing him, he sponsored his training.  ",
+    "ROLLS. Stats: 15, 15, 17, 13, 17, 12. Race: +1 CON, DEX & WIS."
+  ],
+
+  "moneyPouch": {
+    "copper": 0,
+    "silver": 6,
+    "electrum": 0,
+    "gold": 538,
+    "platinum": 0,
+    "gems": []
+  },
+
+  "allies": [],
+  "faction": "Team Strongth",
+
+  "equipment": [
+    "(A) Dragonhide Belt (Rare: +2). +2 DC for",
+    "Ki abilities. 1/day, use action to regain MA",
+    "die (1d8) Ki points.",
+    "(A) Bracers of Defence",
+    "Non-magical +1 silver dagger",
+    "Potion of Superior Healing (8d4+8)",
+    "Deck of throwing cards",
+    "(A) Spear +1 with poison cache"
+  ],
+
+  "treasure": [
+    "Wishlist:",
+    "  Ring of Protection",
+    "Poisons:",
+    "  Hanged Mans Luck. Paralyzed 2 rounds. Repeat",
+    "    CON save at end of their turn.",
+    "  Dizzy Disease. Disadvantage on any d20 roll for",
+    "     1 min. Repeat CON save at the end of their turn",
+    "  Demons Screech. 2d10 poison & 2d10 fire damage.",
+    "    CON save for 1/2. WIS save or frightened 1 min.",
+    "    Repeat save at end of next turn."
+  ],
+
+  "backpacks": [
+    {
+      "bagCash": {
+        "copper": 0,
+        "silver": 0,
+        "electrum": 0,
+        "gold": 0,
+        "platinum": 0,
+        "gems": []
+      },
+      "bagPocket1": [
+        "Medicine skill: Lets you try to stabilize",
+        "a dying companion or diagnose an",
+        "illness. Also, staunch wounds (e.g.",
+        "Sword of wounding, etc.)."
+      ],
+      "bagPocket2": [
+        "Thieves Tools: a file, lock picks, mirror,",
+        "scissors, pliers. Add Proficiency Bonus",
+        "to Disarm traps or open locks."
+      ],
+      "bagPocket3": ["Vial of blood", "Jar of teeth"],
+      "bagPocket4": [],
+      "bagFlapPouch": [
+        "Poisoners Kit (DC 15) A poisoners kit",
+        "includes the vials, chemicals, and other",
+        "equipment necessary for the creation of",
+        "poisons. Proficiency with this kit lets you add",
+        "your proficiency bonus to any ability checks",
+        "you make to craft or use poisons."
+      ],
+      "bagMiddlePouch": [
+        "Herbalism Kit. This kit contains a variety of",
+        "instruments such as clippers, mortar and",
+        "pestle, and pouches and vials used by",
+        "herbalists to create remedies and potions.",
+        "Proficiency with this kit lets you add your",
+        "proficiency bonus to any ability checks you",
+        "make to identify or apply herbs. Also,",
+        "proficiency with this kit is required to create",
+        "antitoxin and potions of healing."
+      ],
+      "bagMainPouch": [
+        "Urchin: Small knife; Map of home city",
+        "(untitled - unknown city); Pet mouse;",
+        "Common clothes; Money pouch (10 GP);",
+        "Token of parents.",
+        "",
+        "Monk: Dungeoneer pack; 8 Daggers.",
+        "",
+        "Dungeoneer pack: Backpack; Crowbar;",
+        "Hammer; 10 pitons; 10 torches; Tinderbox;",
+        "10 days rations; Waterskin; 50' Hempen",
+        "Rope.",
+        "",
+        "Teddy Bear"
+      ],
+      "bagTreasure": [
+        "7 daggers coated with Dizzy Disease",
+        "7 daggers coated with Hanged Mans Luck",
+        "7 daggers coated with Demon's Screech",
+        "Silver dagger coated with Hanged Mans Luck",
+        "Spear loaded with Demon's Screech, Hanged Man's Luck and Dizzy Disease"
+      ],
+      "bagBedroll": "One",
+      "bagRope": "50'",
+      "bagAmmo": "21 Daggers",
+      "bagTorches": "10"
+    }
+  ],
+  "bagsOfHolding": [],
+  "portableHoles": [],
+  "spellcasting": []
+}

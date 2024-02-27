@@ -27,7 +27,7 @@ data Attack = Attack
   , notes :: String
   } deriving (Eq, Show, Generic)
 instance ToJSON Attack
-instance FromJSON Attack 
+instance FromJSON Attack
 
 data SpellLevel = Cantrip | One | Two | Three | Four | Five | Six | Seven | Eight | Nine | SpellLevelUnknown deriving (Eq, Show, Ord, Generic)
 instance ToJSON SpellLevel
@@ -46,7 +46,7 @@ toSpellLevel "Eight" = Eight
 toSpellLevel "Nine" = Nine
 toSpellLevel _ = SpellLevelUnknown
 
-data SpellType 
+data SpellType
   = Abjuration
   | Conjuration
   | Divination
@@ -60,7 +60,7 @@ data SpellType
 instance ToJSON SpellType
 instance FromJSON SpellType
 
-data Spell = Spell 
+data Spell = Spell
   { spName :: String
   , spLevel :: SpellLevel
   , spType :: SpellType
@@ -110,7 +110,7 @@ data Cash = Cash {
   , gems :: [String]
 } deriving (Eq, Show, Generic)
 instance ToJSON Cash
-instance FromJSON Cash 
+instance FromJSON Cash
 
 data Backpack = Backpack {
     bagPocket1 :: [String]
@@ -121,7 +121,7 @@ data Backpack = Backpack {
   , bagMiddlePouch :: [String]
   , bagMainPouch :: [String]
   , bagCash :: Cash
-  , bagTreasure :: [String] 
+  , bagTreasure :: [String]
   , bagBedroll :: String
   , bagRope :: String
   , bagAmmo :: String
@@ -161,6 +161,29 @@ toSheetType "SheetTypeStandard"    = Just SheetTypeStandard
 toSheetType "SheetTypeIcewindDale" = Just SheetTypeIcewindDale
 toSheetType _ = Nothing
 
+data ActionType = Action
+                | Bonus
+                | Reaction
+                | NoAction
+                deriving (Eq, Generic)
+instance ToJSON ActionType
+instance FromJSON ActionType
+instance Show ActionType where
+  show Action   = " [A]"
+  show Bonus    = " [B]"
+  show Reaction = " [R]"
+  show NoAction = ""
+
+data Feature = Feature
+  { action :: ActionType
+  , infotext :: String
+  , comment :: String
+  } deriving (Eq, Generic)
+instance ToJSON Feature
+instance FromJSON Feature
+instance Show Feature where
+  show f = (infotext f) <> show (action f)
+
 data Character = Character
   { characterName :: String
   , sheetType :: SheetType
@@ -196,6 +219,7 @@ data Character = Character
   , intelligenceProf :: Integer
   , wisdomProf :: Integer
   , charismaProf :: Integer
+  , profAdditionalBonus :: Integer
 
   , inspiration :: Integer
   , proficiencyBonus :: Integer
@@ -219,6 +243,25 @@ data Character = Character
   , skillStealth :: Double
   , skillSurvival :: Double
 
+  , advantageAcrobatics :: Double
+  , advantageAnimalHandling :: Double
+  , advantageArcana :: Double
+  , advantageAthletics :: Double
+  , advantageDeception :: Double
+  , advantageHistory :: Double
+  , advantageInsight :: Double
+  , advantageIntimidation :: Double
+  , advantageInvestigation :: Double
+  , advantageMedicine :: Double
+  , advantageNature :: Double
+  , advantagePerception :: Double
+  , advantagePerformance :: Double
+  , advantagePersuasion :: Double
+  , advantageReligion :: Double
+  , advantageSleightOfHand :: Double
+  , advantageStealth :: Double
+  , advantageSurvival :: Double
+
   , bonusAcrobatics :: Integer
   , bonusAnimalHandling :: Integer
   , bonusArcana :: Integer
@@ -241,7 +284,7 @@ data Character = Character
   , bonusPassiveInsight :: Integer
   , bonusPassivePerception :: Integer
   , bonusPassiveInvestigation :: Integer
-  
+
   , proficiencies :: [String]
 
   , acBase :: Integer
@@ -251,7 +294,7 @@ data Character = Character
   , hitPoints :: [Integer]
   , tempHitPoints :: Integer
   , hitDice :: String
-  
+
   , attacks :: [Attack]
 
   , moneyPouch :: Cash
@@ -264,7 +307,7 @@ data Character = Character
   , ideals :: [String]
   , bonds :: [String]
   , flaws :: [String]
-  , features :: [String]
+  , features :: [Feature]
   -- Page 2
   , age :: String
   , height :: String
@@ -274,9 +317,10 @@ data Character = Character
   , hairColour :: String
   , backstory :: [String]
   , allies :: [String]
+  , faction :: String
   , treasure :: [String]
   -- Page 3
   , spellcasting :: [Spellcasting]
   } deriving (Eq, Show, Generic)
 instance ToJSON Character
-instance FromJSON Character 
+instance FromJSON Character
