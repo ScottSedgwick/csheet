@@ -184,6 +184,66 @@ instance FromJSON Feature
 instance Show Feature where
   show f = (infotext f) <> show (action f)
 
+data Traits = Traits
+  { personality :: [String]
+  , ideals :: [String]
+  , bonds :: [String]
+  , flaws :: [String]
+  } deriving (Eq, Show, Generic)
+instance ToJSON Traits
+instance FromJSON Traits
+
+data Skill = Skill
+  { proficiency :: Double
+  , skBonus :: Integer
+  , advantage :: Integer
+  , skComment :: String
+  } deriving (Eq, Show, Generic)
+instance ToJSON Skill
+instance FromJSON Skill
+
+data Skills = Skills
+  { acrobatics :: Skill
+  , animalHandling :: Skill
+  , arcana :: Skill
+  , athletics :: Skill
+  , deception :: Skill
+  , history :: Skill
+  , insight :: Skill
+  , intimidation :: Skill
+  , investigation :: Skill
+  , medicine :: Skill
+  , nature :: Skill
+  , perception :: Skill
+  , performance :: Skill
+  , persuasion :: Skill
+  , religion :: Skill
+  , sleightOfHand :: Skill
+  , stealth :: Skill
+  , survival :: Skill
+  } deriving (Eq, Show, Generic)
+instance ToJSON Skills
+instance FromJSON Skills
+
+data Stat = Stat
+  { statValue :: Integer
+  , valueBonus :: Integer
+  , saveProficiency :: Integer
+  } deriving (Eq, Show, Generic)
+instance ToJSON Stat
+instance FromJSON Stat
+
+data Stats = Stats
+  { strength :: Stat
+  , dexterity :: Stat
+  , constitution :: Stat
+  , wisdom :: Stat
+  , intelligence :: Stat
+  , charisma :: Stat
+  } deriving (Eq, Show, Generic)
+instance ToJSON Stats
+instance FromJSON Stats
+
 data Character = Character
   { characterName :: String
   , sheetType :: SheetType
@@ -199,87 +259,12 @@ data Character = Character
   , gender :: String
   , faith :: String
 
-  , strength :: Integer
-  , dexterity :: Integer
-  , constitution :: Integer
-  , intelligence :: Integer
-  , wisdom :: Integer
-  , charisma :: Integer
-
-  , strengthBonus :: Integer
-  , dexterityBonus :: Integer
-  , constitutionBonus :: Integer
-  , intelligenceBonus :: Integer
-  , wisdomBonus :: Integer
-  , charismaBonus :: Integer
-
-  , strengthProf :: Integer
-  , dexterityProf :: Integer
-  , constitutionProf :: Integer
-  , intelligenceProf :: Integer
-  , wisdomProf :: Integer
-  , charismaProf :: Integer
-  , profAdditionalBonus :: Integer
+  , stats :: Stats
 
   , inspiration :: Integer
   , proficiencyBonus :: Integer
 
-  , skillAcrobatics :: Double
-  , skillAnimalHandling :: Double
-  , skillArcana :: Double
-  , skillAthletics :: Double
-  , skillDeception :: Double
-  , skillHistory :: Double
-  , skillInsight :: Double
-  , skillIntimidation :: Double
-  , skillInvestigation :: Double
-  , skillMedicine :: Double
-  , skillNature :: Double
-  , skillPerception :: Double
-  , skillPerformance :: Double
-  , skillPersuasion :: Double
-  , skillReligion :: Double
-  , skillSleightOfHand :: Double
-  , skillStealth :: Double
-  , skillSurvival :: Double
-
-  , advantageAcrobatics :: Double
-  , advantageAnimalHandling :: Double
-  , advantageArcana :: Double
-  , advantageAthletics :: Double
-  , advantageDeception :: Double
-  , advantageHistory :: Double
-  , advantageInsight :: Double
-  , advantageIntimidation :: Double
-  , advantageInvestigation :: Double
-  , advantageMedicine :: Double
-  , advantageNature :: Double
-  , advantagePerception :: Double
-  , advantagePerformance :: Double
-  , advantagePersuasion :: Double
-  , advantageReligion :: Double
-  , advantageSleightOfHand :: Double
-  , advantageStealth :: Double
-  , advantageSurvival :: Double
-
-  , bonusAcrobatics :: Integer
-  , bonusAnimalHandling :: Integer
-  , bonusArcana :: Integer
-  , bonusAthletics :: Integer
-  , bonusDeception :: Integer
-  , bonusHistory :: Integer
-  , bonusInsight :: Integer
-  , bonusIntimidation :: Integer
-  , bonusInvestigation :: Integer
-  , bonusMedicine :: Integer
-  , bonusNature :: Integer
-  , bonusPerception :: Integer
-  , bonusPerformance :: Integer
-  , bonusPersuasion :: Integer
-  , bonusReligion :: Integer
-  , bonusSleightOfHand :: Integer
-  , bonusStealth :: Integer
-  , bonusSurvival :: Integer
+  , skills :: Skills
 
   , bonusPassiveInsight :: Integer
   , bonusPassivePerception :: Integer
@@ -303,10 +288,8 @@ data Character = Character
   , portableHoles :: [PortableHole]
   , equipment :: [String]
 
-  , personalityTraits :: [String]
-  , ideals :: [String]
-  , bonds :: [String]
-  , flaws :: [String]
+  , traits :: Traits
+
   , features :: [Feature]
   -- Page 2
   , age :: String

@@ -10,6 +10,7 @@ import Graphics.PDF
 import Graphics.PDF.Shapes
 import Graphics.PDF.Typesetting
 
+import Fonts(Fonts(..))
 import Spells (spellMap)
 
 drawMyText :: PDFFont -> PDFFloat -> PDFFloat -> String -> Draw()
@@ -108,6 +109,28 @@ drawCircle x y r m =
       setWidth 3
       fill (Circle x y (r - 2 + (m * 2)))
 
+drawHollowCircle :: PDFFloat -> PDFFloat -> PDFFloat -> PDFFloat -> Draw()
+drawHollowCircle x y r w = do
+  setWidth w
+  stroke $ Circle x y r
+
+drawPlus :: PDFFloat -> PDFFloat -> PDFFloat -> Draw()
+drawPlus x y l = do
+  setWidth 0.5
+  stroke $ Line (x - l) y (x + l) y
+  stroke $ Line x (y - l) x (y + l)
+
+drawAdvantage :: Fonts -> PDFFloat -> PDFFloat -> PDFFloat -> Double -> Double -> Draw()
+drawAdvantage fs x y r ad sk =
+  if (ad == 0) then pure()
+  else if (ad == 1)
+  then if (sk > 0)
+       then do
+         drawPlus x y r
+         drawHollowCircle x y r 0.5
+       else drawPlus x y (r - 0.2)
+  else do
+    drawMyText (fontTeeny fs) (x + 11) (y - 1) ("+d" <> show (fromIntegral $ truncate ad))
 
 statBonus :: Integer -> Integer
 statBonus stat = if sb > 10 then 10 else sb

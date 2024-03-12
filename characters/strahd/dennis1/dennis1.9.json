@@ -35,93 +35,156 @@
   "tempHitPoints": 0,
   "hitDice": "d8",
 
-  "strength": 13,
-  "dexterity": 20,
-  "constitution": 16,
-  "intelligence": 16,
-  "intComment": "+1 from Ethan for fixing his laptop",
-  "wisdom": 20,
-  "charisma": 12,
+  "stats": {
+    "strength": {
+      "statValue": 13,
+      "valueBonus": 0,
+      "saveProficiency": 1,
+      "saveProficiencyComment": "Monk Class"
+    },
+    "dexterity": {
+      "statValue": 20,
+      "valueBonus": 0,
+      "saveProficiency": 1,
+      "saveProficiencyComment": "Monk Class"
+    },
+    "constitution": {
+      "statValue": 16,
+      "valueBonus": 0,
+      "saveProficiency": 0,
+      "saveProficiencyComment": ""
+    },
+    "intelligence": {
+      "statValue": 16,
+      "statValueComment": "+1 from Ethan for fixing his laptop",
+      "valueBonus": 0,
+      "saveProficiency": 0,
+      "saveProficiencyComment": "Monk Class"
+    },
+    "wisdom": {
+      "statValue": 20,
+      "valueBonus": 0,
+      "saveProficiency": 1,
+      "saveProficiencyComment": "Resistant feat"
+    },
+    "charisma": {
+      "statValue": 12,
+      "valueBonus": 0,
+      "saveProficiency": 0,
+      "saveProficiencyComment": ""
+    }
+  },
 
-  "strengthBonus": 0,
-  "dexterityBonus": 0,
-  "constitutionBonus": 0,
-  "intelligenceBonus": 0,
-  "wisdomBonus": 0,
-  "charismaBonus": 0,
-
-  "strengthProf": 1,
-  "strProfComment": "Monk class",
-  "dexterityProf": 1,
-  "dexProfComment": "Monk class",
-  "constitutionProf": 0,
-  "intelligenceProf": 0,
-  "wisdomProf": 1,
-  "wisProfComment": "Resistant feat",
-  "charismaProf": 0,
-  "profAdditionalBonus": 0,
-
-  "skillAcrobatics": 1,
-  "skillAnimalHandling": 0,
-  "skillArcana": 1,
-  "skillAthletics": 0,
-  "skillDeception": 0,
-  "skillHistory": 0,
-  "skillInsight": 1,
-  "skillIntimidation": 0,
-  "skillInvestigation": 1,
-  "skillMedicine": 1,
-  "skillNature": 1,
-  "skillPerception": 1,
-  "skillPerformance": 0,
-  "skillPersuasion": 0,
-  "skillReligion": 0,
-  "skillSleightOfHand": 1,
-  "skillStealth": 1,
-  "skillSurvival": 0,
-
-  "advantageAcrobatics": 0,
-  "advantageAnimalHandling": 0,
-  "advantageArcana": 1,
-  "advantageArcanaComment": "From tools: Alchemist, Herbalism",
-  "advantageAthletics": 0,
-  "advantageDeception": 0,
-  "advantageHistory": 0,
-  "advantageInsight": 0,
-  "advantageIntimidation": 0,
-  "advantageInvestigation": 1,
-  "advantageInvestigationComment": "From tools: Alchemist, Herbalism, Poisoner, Thief",
-  "advantageMedicine": 1,
-  "advantageMedicineComment": "From tools: Herbalism, Poisoner",
-  "advantageNature": 1,
-  "advantageNatureComment": "From tools: Herbalism, Poisoner",
-  "advantagePerception": 1,
-  "advantagePerceptionComment": "From tools: Herbalism, Poisoner, Thief",
-  "advantagePerformance": 0,
-  "advantagePersuasion": 0,
-  "advantageReligion": 0,
-  "advantageSleightOfHand": 0,
-  "advantageStealth": 0,
-  "advantageSurvival": 0,
-
-  "bonusAcrobatics": 0,
-  "bonusAnimalHandling": 0,
-  "bonusArcana": 0,
-  "bonusAthletics": 0,
-  "bonusDeception": 0,
-  "bonusHistory": 0,
-  "bonusInsight": 0,
-  "bonusIntimidation": 0,
-  "bonusInvestigation": 0,
-  "bonusMedicine": 0,
-  "bonusNature": 0,
-  "bonusPerception": 0,
-  "bonusPerformance": 0,
-  "bonusPersuasion": 0,
-  "bonusReligion": 0,
-  "bonusSleightOfHand": 0,
-  "bonusStealth": 0,
-  "bonusSurvival": 0,
+  "skills": {
+    "acrobatics": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "animalHandling": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "arcana": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Alchemist, Herbalism"
+    },
+    "athletics": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "deception": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Disguise kit"
+    },
+    "history": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Poisoner, Thief"
+    },
+    "insight": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "intimidation": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Disguise kit"
+    },
+    "investigation": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Alchemist, Herbalism, Poisoner, Thief"
+    },
+    "medicine": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Herbalism, Poisoner"
+    },
+    "nature": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Herbalism, Poisoner"
+    },
+    "perception": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Herbalism, Poisoner, Thief"
+    },
+    "performance": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Disguise kit"
+    },
+    "persuasion": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From tools: Disguise kit"
+    },
+    "religion": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "sleightOfHand": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "stealth": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "survival": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    }
+  },
 
   "bonusPassivePerception": 5,
   "bonusPassivePerceptionComment": "Observant feat",
@@ -131,7 +194,7 @@
   "bonusPassiveInvestigationComment": "Observant feat",
 
   "proficiencies": [
-    "Languages: Common, Thieves Cant",
+    "Languages: Common, Thieves Cant, Vistani",
     "Alchemists Supplies, Disguise Kit",
     "Herbalism Kit, Thieves Tools",
     "Poisoners Kit. CON save DC 17 (Dex)",
@@ -181,21 +244,24 @@
     }
   ],
 
-  "personalityTraits": [
-    "I ask a lot of questions.",
-    "I bluntly say what other people are hinting",
-    "at or hiding."
-  ],
-  "ideals": [
-    "The low are lifted up, and the high and",
-    "mighty are brought down. Change is the",
-    "nature of things."
-  ],
-  "bonds": [
-    "No one else should have to endure the",
-    "hardships I've been through."
-  ],
-  "flaws": ["I'd rather kill someone in their sleep than", "fight fair."],
+  "traits": {
+    "personality": [
+      "I ask a lot of questions.",
+      "I bluntly say what other people are hinting",
+      "at or hiding."
+    ],
+    "ideals": [
+      "The low are lifted up, and the high and",
+      "mighty are brought down. Change is the",
+      "nature of things."
+    ],
+    "bonds": [
+      "No one else should have to endure the",
+      "hardships I've been through."
+    ],
+    "flaws": ["I'd rather kill someone in their sleep than", "fight fair."]
+  },
+
   "features": [
     {
       "action": "Action",
@@ -300,9 +366,9 @@
       "comment": "Way of Shadow Level 6"
     },
     {
-      "action": "Action",
-      "infotext": "Invisible at will",
-      "comment": "Shroud of Ulban"
+      "action": "Bonus",
+      "infotext": "Change Stance",
+      "comment": "Stance Mastery feat"
     },
     {
       "action": "NoAction",
@@ -382,8 +448,13 @@
       "comment": "Monk"
     },
     {
+      "action": "NoAction",
+      "infotext": "Shadow Step. Teleport 60' between shadows. Advantage",
+      "comment": "Shadow Monk Level 6 - I got at Level 9."
+    },
+    {
       "action": "Bonus",
-      "infotext": "Shadow Step. Teleport up to 60' from shadow",
+      "infotext": "on next attack before the end of the turn.",
       "comment": "Shadow Monk Level 6 - I got at Level 9."
     },
     {
@@ -454,33 +525,13 @@
     },
     {
       "action": "NoAction",
-      "infotext": "15 Int: Nature & Vistani language",
+      "infotext": "16 Int: Nature, Vistani, Alchemists tools",
       "comment": "Int bonus skills (Ethan's rules)"
     },
     {
       "action": "NoAction",
       "infotext": "Bluetspur: +2 to Init and saves vs fear & illusion",
       "comment": "Bluetspur Background"
-    },
-    {
-      "action": "NoAction",
-      "infotext": "Eldritch Initiate: Shroud of Ulban. Turn invisible for",
-      "comment": "Eldritch Initiate feat"
-    },
-    {
-      "action": "NoAction",
-      "infotext": " 1 minute. If you attack, deal damage,or force a",
-      "comment": "Eldritch Initiate feat"
-    },
-    {
-      "action": "NoAction",
-      "infotext": " creature to make a saving throw, you become visible",
-      "comment": "Eldritch Initiate feat"
-    },
-    {
-      "action": "Action",
-      "infotext": " at the end of the current turn",
-      "comment": "Eldritch Initiate feat"
     },
     {
       "action": "NoAction",
@@ -512,7 +563,15 @@
     "gems": []
   },
 
-  "allies": [],
+  "allies": [
+    "Stance Mastery",
+    "- Defensive Stance: +1 AC",
+    "- Offensive Stance: +1d4 damage",
+    "- Mobile Stance: +10' movement",
+    "- Precision Stance: +WIS mod to hit",
+    "- Counter Stance: Opportunity attacks against me have",
+    "    disadvantage"
+  ],
   "faction": "Team Strongth",
 
   "equipment": [
@@ -601,7 +660,8 @@
         "7 daggers coated with Hanged Mans Luck",
         "7 daggers coated with Demon's Screech",
         "Silver dagger coated with Hanged Mans Luck",
-        "Spear loaded with Demon's Screech, Hanged Man's Luck and Dizzy Disease"
+        "Spear loaded with Demon's Screech, Hanged",
+        "  Man's Luck and Dizzy Disease"
       ],
       "bagBedroll": "One",
       "bagRope": "50'",

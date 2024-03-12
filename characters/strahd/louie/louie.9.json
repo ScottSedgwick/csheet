@@ -21,7 +21,8 @@
   "hairColour": "None",
 
   "inspiration": 0,
-  "proficiencyBonus": 0,
+  "proficiencyBonus": 1,
+  "proficiencyBonusComment": "Ethan said so.  We can't remember why.",
 
   "acBase": 19,
   "acBonus": 0,
@@ -34,91 +35,160 @@
   "tempHitPoints": 0,
   "hitDice": "d10",
 
-  "strength": 18,
-  "STRComment": "Roll 17, +1 Heavy Armour Master",
-  "constitution": 18,
-  "CONComment": "Roll 17, Grung +1",
-  "dexterity": 17,
-  "DEXComment": "Roll 15, Grung +2",
-  "intelligence": 13,
-  "INTComment": "Roll 12, Ethan gave +1 for Scott fixing his laptop",
-  "wisdom": 13,
-  "WISComment": "Roll 13",
-  "charisma": 20,
-  "CHAComment": "Roll 18, +2 ASI",
+  "stats": {
+    "strength": {
+      "statValue": 18,
+      "STRComment": "Roll 17, +1 Heavy Armour Master",
+      "valueBonus": 5,
+      "saveProficiency": 0
+    },
 
-  "strengthBonus": 5,
-  "dexterityBonus": 5,
-  "constitutionBonus": 5,
-  "intelligenceBonus": 5,
-  "wisdomBonus": 5,
-  "charismaBonus": 5,
+    "dexterity": {
+      "statValue": 17,
+      "DEXComment": "Roll 15, Grung +2",
+      "valueBonus": 5,
+      "saveProficiency": 0
+    },
 
-  "strengthProf": 0,
-  "dexterityProf": 0,
-  "constitutionProf": 0,
-  "intelligenceProf": 0,
-  "wisdomProf": 1,
-  "charismaProf": 1,
-  "profAdditionalBonus": 1,
-  "profAdditionalBonusComment": "Ethan said so.  We can't remember why.",
+    "constitution": {
+      "statValue": 18,
+      "CONComment": "Roll 17, Grung +1",
+      "valueBonus": 5,
+      "saveProficiency": 0
+    },
 
-  "skillAcrobatics": 0,
-  "skillAnimalHandling": 0,
-  "skillArcana": 0,
-  "skillAthletics": 1,
-  "skillDeception": 0,
-  "skillHistory": 0,
-  "skillInsight": 0,
-  "skillIntimidation": 1,
-  "skillInvestigation": 0,
-  "skillMedicine": 0,
-  "skillNature": 0,
-  "skillPerception": 1,
-  "skillPerformance": 0,
-  "skillPersuasion": 0,
-  "skillReligion": 0,
-  "skillSleightOfHand": 0,
-  "skillStealth": 1,
-  "skillSurvival": 1,
+    "intelligence": {
+      "statValue": 13,
+      "INTComment": "Roll 12, Ethan gave +1 for Scott fixing his laptop",
+      "valueBonus": 5,
+      "saveProficiency": 0
+    },
 
-  "advantageAcrobatics": 0,
-  "advantageAnimalHandling": 0,
-  "advantageArcana": 0,
-  "advantageAthletics": 0,
-  "advantageDeception": 0,
-  "advantageHistory": 0,
-  "advantageInsight": 0,
-  "advantageIntimidation": 0,
-  "advantageInvestigation": 0,
-  "advantageMedicine": 0,
-  "advantageNature": 0,
-  "advantagePerception": 0,
-  "advantagePerformance": 0,
-  "advantagePersuasion": 0,
-  "advantageReligion": 0,
-  "advantageSleightOfHand": 0,
-  "advantageStealth": 0,
-  "advantageSurvival": 0,
+    "wisdom": {
+      "statValue": 13,
+      "WISComment": "Roll 13",
+      "valueBonus": 5,
+      "saveProficiency": 1
+    },
 
-  "bonusAcrobatics": 0,
-  "bonusAnimalHandling": 0,
-  "bonusArcana": 0,
-  "bonusAthletics": 0,
-  "bonusDeception": 0,
-  "bonusHistory": 0,
-  "bonusInsight": 0,
-  "bonusIntimidation": 0,
-  "bonusInvestigation": 0,
-  "bonusMedicine": 0,
-  "bonusNature": 0,
-  "bonusPerception": 0,
-  "bonusPerformance": 0,
-  "bonusPersuasion": 0,
-  "bonusReligion": 0,
-  "bonusSleightOfHand": 0,
-  "bonusStealth": 0,
-  "bonusSurvival": 0,
+    "charisma": {
+      "statValue": 20,
+      "CHAComment": "Roll 18, +2 ASI",
+      "valueBonus": 5,
+      "saveProficiency": 1
+    }
+  },
+
+  "skills": {
+    "acrobatics": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "animalHandling": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "arcana": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "athletics": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "deception": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "history": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Musical Instrument"
+    },
+    "insight": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "intimidation": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "investigation": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "medicine": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "nature": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "perception": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "performance": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Musical Instrument"
+    },
+    "persuasion": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "religion": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "sleightOfHand": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "stealth": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "survival": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    }
+  },
 
   "bonusPassivePerception": 0,
   "bonusPassiveInsight": 0,
@@ -159,22 +229,25 @@
     }
   ],
 
-  "personalityTraits": [
-    "I watch over my friends as if they were a",
-    "litter of newborn pups.",
-    "I'm always picking things up, absently",
-    "fiddling, and sometimes breaking."
-  ],
-  "ideals": [
-    "Change. Life is like the seasons, in",
-    "constant change, and we must change",
-    "with it. (Chaotic)"
-  ],
-  "bonds": [
-    "I suffer awful visions of a coming disaster",
-    "and will do anything to prevent it."
-  ],
-  "flaws": ["Stage Fright"],
+  "traits": {
+    "personality": [
+      "I watch over my friends as if they were a",
+      "litter of newborn pups.",
+      "I'm always picking things up, absently",
+      "fiddling, and sometimes breaking."
+    ],
+    "ideals": [
+      "Change. Life is like the seasons, in",
+      "constant change, and we must change",
+      "with it. (Chaotic)"
+    ],
+    "bonds": [
+      "I suffer awful visions of a coming disaster",
+      "and will do anything to prevent it."
+    ],
+    "flaws": ["Stage Fright"]
+  },
+
   "features": [
     {
       "action": "NoAction",

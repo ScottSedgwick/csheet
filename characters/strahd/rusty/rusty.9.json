@@ -12,122 +12,183 @@
   "appearance": "Rusty.jpeg",
   "gender": "",
   "faith": "",
-
   "age": "0",
   "height": "4x3' / 7'",
   "weight": "35lbs / 240lbs",
   "eyeColour": "Blue",
   "skinColour": "Translucent/Blue",
   "hairColour": "None",
-
   "inspiration": 0,
   "proficiencyBonus": 0,
-
   "acBase": 18,
   "acBaseComment": "Full Plate AC 18",
   "acBonus": 5,
   "acBonusComment": "Enhanced Defence infusion (+1), Shielded (+1); Robe Mithril Weaved (+1AC); Shield (+2)",
-  "initiative": 7,
-  "initiativeComment": "INT based (+5), Intermediate Nimble Robe (+2), Bluetspur +1",
+  "initiative": 8,
+  "initiativeComment": "INT based (+5), Intermediate Nimble Robe (+2), Bluetspur (+2)",
   "speed": "35",
   "hitPoints": [8, 5, 8, 8, 7, 7, 8, 8, 8],
   "hpComment": 94,
   "tempHitPoints": 10,
   "hitDice": "d8",
 
-  "strength": 18,
-  "STRComment": "Roll 17, +1 ASI",
-  "dexterity": 12,
-  "DEXComment": "Roll 12",
-  "constitution": 16,
-  "CONComment": "Roll 16",
-  "intelligence": 21,
-  "INTComment": "Roll 18, +1 Fey Touched, +1 Racial, +1 for fixing Ethan's laptop(increases cap)",
-  "wisdom": 16,
-  "WISComment": "Roll 15, +1 Racial",
-  "charisma": 17,
-  "CHAComment": "Roll 15, +1 ASI, +1 Dragonmark (Hospitality)",
+  "stats": {
+    "strength": {
+      "statValue": 18,
+      "STRComment": "Roll 17, +1 ASI",
+      "valueBonus": 0,
+      "saveProficiency": 0
+    },
 
-  "strengthBonus": 0,
-  "dexterityBonus": 0,
-  "constitutionBonus": 0,
-  "intelligenceBonus": 0,
-  "wisdomBonus": 0,
-  "charismaBonus": 0,
+    "dexterity": {
+      "statValue": 12,
+      "DEXComment": "Roll 12",
+      "valueBonus": 0,
+      "saveProficiency": 0
+    },
 
-  "strengthProf": 0,
-  "dexterityProf": 0,
-  "constitutionProf": 1,
-  "intelligenceProf": 1,
-  "wisdomProf": 0,
-  "charismaProf": 0,
-  "profAdditionalBonus": 0,
+    "constitution": {
+      "statValue": 16,
+      "CONComment": "Roll 16",
+      "valueBonus": 0,
+      "saveProficiency": 1
+    },
 
-  "skillAcrobatics": 0,
-  "skillAnimalHandling": 0,
-  "skillArcana": 1,
-  "skillAthletics": 0,
-  "skillDeception": 0,
-  "skillHistory": 1,
-  "skillInsight": 0,
-  "skillIntimidation": 0,
-  "skillInvestigation": 2,
-  "skillMedicine": 0,
-  "skillNature": 0,
-  "skillPerception": 1,
-  "skillPerformance": 0,
-  "skillPersuasion": 1,
-  "skillReligion": 0,
-  "skillSleightOfHand": 0,
-  "skillStealth": 0,
-  "skillSurvival": 1,
+    "intelligence": {
+      "statValue": 21,
+      "INTComment": "Roll 18, +1 Fey Touched, +1 Racial, +1 for fixing Ethan's laptop(increases cap)",
+      "valueBonus": 0,
+      "saveProficiency": 1
+    },
 
-  "advantageAcrobatics": 0,
-  "advantageAnimalHandling": 0,
-  "advantageArcana": 1,
-  "commentArcana": "From Tools: Alchemist, Smith, Jeweller, Leatherworker",
-  "advantageAthletics": 0,
-  "advantageDeception": 0,
-  "advantageHistory": 1,
-  "commentHistory": "From Tools: Thieves, Tinkers, Smiths, Carpenters",
-  "advantageInsight": 0,
-  "advantageIntimidation": 0,
-  "advantageInvestigation": 1,
-  "commentInvestigation": "From Tools: Alchemist, Thieves, Tinkers, Smiths, Carpenters, Jeweller, Leatherworker",
-  "advantageMedicine": 0,
-  "advantageNature": 0,
-  "advantagePerception": 1,
-  "commentPerception": "From Tools: Thieves, Carpenters",
-  "advantagePerformance": 0,
-  "advantagePersuasion": 0,
-  "advantageReligion": 0,
-  "advantageSleightOfHand": 0,
-  "advantageStealth": 0,
-  "advantageSurvival": 0,
+    "wisdom": {
+      "statValue": 16,
+      "WISComment": "Roll 15, +1 Racial",
+      "valueBonus": 0,
+      "saveProficiency": 0
+    },
 
-  "bonusAcrobatics": 0,
-  "bonusAnimalHandling": 0,
-  "bonusArcana": 0,
-  "bonusAthletics": 0,
-  "bonusDeception": 0,
-  "bonusHistory": 0,
-  "bonusInsight": 0,
-  "bonusIntimidation": 0,
-  "bonusInvestigation": 0,
-  "bonusMedicine": 0,
-  "bonusNature": 0,
-  "bonusPerception": 0,
-  "bonusPerformance": 0,
-  "bonusPersuasion": 0,
-  "bonusReligion": 0,
-  "bonusSleightOfHand": 0,
-  "bonusStealth": 0,
-  "bonusSurvival": 0,
+    "charisma": {
+      "statValue": 17,
+      "CHAComment": "Roll 15, +1 ASI, +1 Dragonmark (Hospitality)",
+      "valueBonus": 0,
+      "saveProficiency": 0
+    }
+  },
 
+  "skills": {
+    "acrobatics": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "animalHandling": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "arcana": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Alchemist, Smith, Jeweller, Leatherworker"
+    },
+    "athletics": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "deception": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "history": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Thieves, Tinkers, Smiths, Carpenters"
+    },
+    "insight": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "intimidation": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "investigation": {
+      "proficiency": 2,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Alchemist, Thieves, Tinkers, Smiths, Carpenters, Jeweller, Leatherworker"
+    },
+    "medicine": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "nature": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "perception": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Thieves, Carpenters"
+    },
+    "performance": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "persuasion": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 8,
+      "skComment": "From Greater Dragonmark: Hospitality"
+    },
+    "religion": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "sleightOfHand": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    },
+    "stealth": {
+      "proficiency": 0,
+      "skBonus": 0,
+      "advantage": 1,
+      "skComment": "From Tools: Carpenters"
+    },
+    "survival": {
+      "proficiency": 1,
+      "skBonus": 0,
+      "advantage": 0,
+      "skComment": ""
+    }
+  },
   "bonusPassivePerception": 0,
   "bonusPassiveInsight": 0,
   "bonusPassiveInvestigation": 0,
-
   "proficiencies": [
     "Artificer: All armour & shields, simple weapons,",
     "thieves tools, tinkers tools, smiths tools,",
@@ -138,7 +199,6 @@
     "Investigation, Draconic",
     "Languages: Common, Draconic, Telepathy"
   ],
-
   "attacks": [
     {
       "weapon": "LL 1* (300)",
@@ -183,31 +243,37 @@
       "notes": "Str(4)+Prof(4)"
     }
   ],
+  "traits": {
+    "personality": [
+      "I pepper my speech with the jargon of my",
+      "trade, like reorienting the active plane",
+      "vectors into folded dimensions.",
+      "Ideas are fine, but results are what counts."
+    ],
+    "ideals": [
+      "Science. A rigorous application of logical",
+      "principles and protocols will lead us toward",
+      "progress more surely than any belief",
+      "system."
+    ],
+    "bonds": [
+      "I have dedicated my life to finding a",
+      "solution to a scientific problem -",
+      "trancendence."
+    ],
+    "flaws": [
+      "Nothing is ever simple, and if it seems",
+      "simple, I'll find a way to make it",
+      "complicated."
+    ]
+  },
 
-  "personalityTraits": [
-    "I pepper my speech with the jargon of my",
-    "trade, like reorienting the active plane",
-    "vectors into folded dimensions.",
-    "Ideas are fine, but results are what counts."
-  ],
-  "ideals": [
-    "Science. A rigorous application of logical",
-    "principles and protocols will lead us toward",
-    "progress more surely than any belief",
-    "system."
-  ],
-  "bonds": [
-    "I have dedicated my life to finding a",
-    "solution to a scientific problem -",
-    "trancendence."
-  ],
-  "flaws": [
-    "Nothing is ever simple, and if it seems",
-    "simple, I'll find a way to make it",
-    "complicated."
-  ],
   "features": [
-    { "action": "NoAction", "infotext": "[A] Extra Attack", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "[A] Extra Attack",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "[B] Misty Step 1/long rest",
@@ -218,7 +284,11 @@
       "infotext": "[R] Silvery Barbs 1/long rest",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "[R] Repulsion 15'", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "[R] Repulsion 15'",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "[R] Defiant - negate one crit/SR",
@@ -229,14 +299,26 @@
       "infotext": "[-] Hardened - negate one crit/LR",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Darkvision 60'", "comment": "" },
-    { "action": "NoAction", "infotext": "Telepathy 30'", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Darkvision 60'",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Telepathy 30'",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Vuln/Res to Psychic damage",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Telepathic Shroud", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Telepathic Shroud",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Fly 30' when not in armour",
@@ -277,14 +359,26 @@
       "infotext": "Advantage on Stealth rolls",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Unseen Servant 1/LR", "comment": "" },
-    { "action": "NoAction", "infotext": "Rope Trick 1/LR", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Unseen Servant 1/LR",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Rope Trick 1/LR",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Leomunds Tiny Hut 1/LR",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Sanctuary 1/LR", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Sanctuary 1/LR",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Mordenkainens Magnificent Mansion 1/LR",
@@ -292,15 +386,39 @@
     },
     {
       "action": "NoAction",
-      "infotext": "Hospitality skills checks +1d8",
+      "infotext": "Persuasion & Hospitality skills checks +1d8",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "", "comment": "" },
-    { "action": "NoAction", "infotext": "", "comment": "" },
-    { "action": "NoAction", "infotext": "", "comment": "" },
-    { "action": "NoAction", "infotext": "", "comment": "" },
-    { "action": "NoAction", "infotext": "", "comment": "" },
-    { "action": "NoAction", "infotext": "Artificer abilities:", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Artificer abilities:",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Magical Tinkering [A]. Affect up to INT bonus objects.",
@@ -321,7 +439,11 @@
       "infotext": "  sound, Static visual effect.",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Ritual casting", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Ritual casting",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Infuse item: up to 5 items per long rest, Each",
@@ -342,7 +464,11 @@
       "infotext": "Infusion: Repulsion Shield (+1 AC, 4 ch, R: push",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "  attacker back 15')", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "  attacker back 15')",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Infusion: Homonculous Servant",
@@ -373,14 +499,26 @@
       "infotext": "Infusion*: Enhanced Arcane Focus",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Specialist: Armourer", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Specialist: Armourer",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Prepare INT mod + 1/2 Artificer level spells. Know all",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "  artificer spells.", "comment": "" },
-    { "action": "NoAction", "infotext": "Extra Attack", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "  artificer spells.",
+      "comment": ""
+    },
+    {
+      "action": "NoAction",
+      "infotext": "Extra Attack",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Tool Expertise: ProfB doubled for tool ability checks",
@@ -406,7 +544,11 @@
       "infotext": "  3/4 cover, can take -5 to hit for +10 damage",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "ASI: +1 Str, +1 Cha", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "ASI: +1 Str, +1 Cha",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": "Bluetspur: +1 Init, +2 vs fear & illusion",
@@ -427,7 +569,11 @@
       "infotext": "  Infiltrator: +5', Adv on Stealth",
       "comment": ""
     },
-    { "action": "NoAction", "infotext": "Modifications:", "comment": "" },
+    {
+      "action": "NoAction",
+      "infotext": "Modifications:",
+      "comment": ""
+    },
     {
       "action": "NoAction",
       "infotext": " Plate: Shielded (+1AC), Hardened (negate 1 crit/LR)",
@@ -459,12 +605,10 @@
       "comment": ""
     }
   ],
-
   "backstory": [
     "ROLLS. Stats: 16,15,15,17,18,12.  Racial: +1 Int, +1 Wis. Rusty was stolen from his parent by the Fey and grew up surviving amongst the Fey in Bluetspur. He met an ex-knight who had lost his memory, and they joined up to make their way to Mordentshire, where they fell in with Van Richten. ",
     "Rusty's life goal is to find his family, but until then he is forcing back the boundaries of knowledge."
   ],
-
   "moneyPouch": {
     "copper": 0,
     "silver": 0,
@@ -473,7 +617,6 @@
     "platinum": 0,
     "gems": []
   },
-
   "allies": [
     "Flumph abilities:",
     "Darkvision 60'",
@@ -496,7 +639,6 @@
     "Languages: Common, Telepathy."
   ],
   "faction": "Team Strongth",
-
   "equipment": [
     "Armour (hardened, negate 1 crit/LR)",
     "Shield (defiant, reaction negate 1 crit/SR)",
@@ -506,29 +648,71 @@
     "Scroll of Mass Heal (700HP, 60'R)",
     "3 Potions of Superior Healing (8d4+8)"
   ],
-
   "treasure": [
     "Wishlist: ",
     "  Mizzium, or Mizzium Plate armour",
     "  Ring of Protection"
   ],
-
   "backpacks": [],
   "bagsOfHolding": [
     {
       "bohPGs": [],
       "bohItems": [
-        { "biQty": 1, "biLbs": 8, "biName": "Alchemists Tools" },
-        { "biQty": 1, "biLbs": 8, "biName": "Smiths Tools" },
-        { "biQty": 1, "biLbs": 6, "biName": "Carpenters Tools" },
-        { "biQty": 1, "biLbs": 10, "biName": "Tinkers Tools" },
-        { "biQty": 1, "biLbs": 2, "biName": "Jewelers Tools" },
-        { "biQty": 1, "biLbs": 5, "biName": "Leatherworkers Tools" },
-        { "biQty": 1, "biLbs": 5, "biName": "Block & Tackle" },
-        { "biQty": 1, "biLbs": 3, "biName": "Hammer" },
-        { "biQty": 1, "biLbs": 1, "biName": "Tinkered Boombox" },
-        { "biQty": 1, "biLbs": 1, "biName": "Tinkered Fartgun" },
-        { "biQty": 1, "biLbs": 8, "biName": "Minion (Homonculus Servant)" },
+        {
+          "biQty": 1,
+          "biLbs": 8,
+          "biName": "Alchemists Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 8,
+          "biName": "Smiths Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 6,
+          "biName": "Carpenters Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 10,
+          "biName": "Tinkers Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 2,
+          "biName": "Jewelers Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 5,
+          "biName": "Leatherworkers Tools"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 5,
+          "biName": "Block & Tackle"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 3,
+          "biName": "Hammer"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 1,
+          "biName": "Tinkered Boombox"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 1,
+          "biName": "Tinkered Fartgun"
+        },
+        {
+          "biQty": 1,
+          "biLbs": 8,
+          "biName": "Minion (Homonculus Servant)"
+        },
         {
           "biQty": 1,
           "biLbs": 0,
@@ -538,7 +722,6 @@
     }
   ],
   "portableHoles": [],
-
   "spellcasting": [
     {
       "spellcastingClass": "Artificer (Prep 8)",
@@ -548,7 +731,11 @@
       "spellAttackBonus": "12",
       "spellAttackBonusComment": "Int Bonus (5) + Prof Bonus (4) + All purpose tool (2) + Enhanced arcane focus (1)",
       "knownSpells": [
-        { "prepared": true, "spellName": "Fire Bolt", "comment": "Artificer" },
+        {
+          "prepared": true,
+          "spellName": "Fire Bolt",
+          "comment": "Artificer"
+        },
         {
           "prepared": true,
           "spellName": "Ray of Frost",
@@ -794,14 +981,21 @@
           "spellName": "Word of Radiance",
           "comment": "All purpose tool"
         },
-
         {
           "prepared": false,
           "spellName": "Absorb Elements",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Alarm", "comment": "Artificer" },
-        { "prepared": false, "spellName": "Catapult", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Alarm",
+          "comment": "Artificer"
+        },
+        {
+          "prepared": false,
+          "spellName": "Catapult",
+          "comment": "Artificer"
+        },
         {
           "prepared": true,
           "spellName": "Cure Wounds",
@@ -837,9 +1031,21 @@
           "spellName": "Feather Fall",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Grease", "comment": "Artificer" },
-        { "prepared": false, "spellName": "Identify", "comment": "Artificer" },
-        { "prepared": false, "spellName": "Jump", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Grease",
+          "comment": "Artificer"
+        },
+        {
+          "prepared": false,
+          "spellName": "Identify",
+          "comment": "Artificer"
+        },
+        {
+          "prepared": false,
+          "spellName": "Jump",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Longstrider",
@@ -855,7 +1061,11 @@
           "spellName": "Sanctuary",
           "comment": "Artificer, Dragonmark (Hospitality)"
         },
-        { "prepared": true, "spellName": "Snare", "comment": "Artificer" },
+        {
+          "prepared": true,
+          "spellName": "Snare",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Tashas Caustic Brew",
@@ -866,8 +1076,16 @@
           "spellName": "Magic Missile",
           "comment": "Armourer"
         },
-        { "prepared": true, "spellName": "Thunderwave", "comment": "Armourer" },
-        { "prepared": true, "spellName": "Chaos Bolt", "comment": "Engineer" },
+        {
+          "prepared": true,
+          "spellName": "Thunderwave",
+          "comment": "Armourer"
+        },
+        {
+          "prepared": true,
+          "spellName": "Chaos Bolt",
+          "comment": "Engineer"
+        },
         {
           "prepared": true,
           "spellName": "Create/Destroy Water",
@@ -883,8 +1101,11 @@
           "spellName": "Silvery Barbs",
           "comment": "Fey Touched"
         },
-
-        { "prepared": false, "spellName": "Aid", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Aid",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Alter Self",
@@ -895,7 +1116,11 @@
           "spellName": "Arcane Lock",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Blur", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Blur",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Continual Flame",
@@ -916,7 +1141,11 @@
           "spellName": "Enlarge/Reduce",
           "comment": "Artificer"
         },
-        { "prepared": true, "spellName": "Heat Metal", "comment": "Artificer" },
+        {
+          "prepared": true,
+          "spellName": "Heat Metal",
+          "comment": "Artificer"
+        },
         {
           "prepared": true,
           "spellName": "Invisibility",
@@ -927,7 +1156,11 @@
           "spellName": "Lesser Restoration",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Levitate", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Levitate",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Magic Mouth",
@@ -958,33 +1191,56 @@
           "spellName": "See Invisibility",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Skywrite", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Skywrite",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Spider Climb",
           "comment": "Artificer"
         },
-        { "prepared": true, "spellName": "Web", "comment": "Artificer" },
+        {
+          "prepared": true,
+          "spellName": "Web",
+          "comment": "Artificer"
+        },
         {
           "prepared": true,
           "spellName": "Mirror Image",
           "comment": "Armourer"
         },
-        { "prepared": true, "spellName": "Shatter", "comment": "Armourer" },
+        {
+          "prepared": true,
+          "spellName": "Shatter",
+          "comment": "Armourer"
+        },
         {
           "prepared": true,
           "spellName": "Gentle Repose",
           "comment": "Engineer"
         },
-        { "prepared": true, "spellName": "Silence", "comment": "Engineer" },
+        {
+          "prepared": true,
+          "spellName": "Silence",
+          "comment": "Engineer"
+        },
         {
           "prepared": true,
           "spellName": "Misty Step",
           "comment": "Fey Touched"
         },
-
-        { "prepared": false, "spellName": "Blink", "comment": "Artificer" },
-        { "prepared": false, "spellName": "Catnap", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Blink",
+          "comment": "Artificer"
+        },
+        {
+          "prepared": false,
+          "spellName": "Catnap",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Create Food and Water",
@@ -1005,13 +1261,21 @@
           "spellName": "Flame Arrows",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Fly", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Fly",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Glyph of Warding",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Haste", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Haste",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Intellect Fortress",
@@ -1022,7 +1286,11 @@
           "spellName": "Protection from Energy",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Revivify", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Revivify",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Tiny Servant",
@@ -1053,14 +1321,21 @@
           "spellName": "Call Lightning",
           "comment": "Engineer"
         },
-        { "prepared": true, "spellName": "Fireball", "comment": "Engineer" },
-        { "prepared": true, "spellName": "Slow", "comment": "Engineer" },
+        {
+          "prepared": true,
+          "spellName": "Fireball",
+          "comment": "Engineer"
+        },
+        {
+          "prepared": true,
+          "spellName": "Slow",
+          "comment": "Engineer"
+        },
         {
           "prepared": true,
           "spellName": "Leomunds Tiny Hut",
           "comment": "Dragonmark (Hospitality)"
         },
-
         {
           "prepared": false,
           "spellName": "Arcane Eye",
@@ -1071,7 +1346,11 @@
           "spellName": "Elemental Bane",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Fabricate", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Fabricate",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Freedom of Movement",
@@ -1102,13 +1381,21 @@
           "spellName": "Stone Shape",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Stoneskin", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Stoneskin",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Summon Construct",
           "comment": "Artificer"
         },
-        { "prepared": true, "spellName": "Fire Shield", "comment": "Armourer" },
+        {
+          "prepared": true,
+          "spellName": "Fire Shield",
+          "comment": "Armourer"
+        },
         {
           "prepared": true,
           "spellName": "Greater Invisibility",
@@ -1119,13 +1406,16 @@
           "spellName": "Conj. Minor Elementals",
           "comment": "Engineer"
         },
-        { "prepared": true, "spellName": "Divination", "comment": "Engineer" },
+        {
+          "prepared": true,
+          "spellName": "Divination",
+          "comment": "Engineer"
+        },
         {
           "prepared": true,
           "spellName": "Find Greater Steed",
           "comment": "Engineer"
         },
-
         {
           "prepared": false,
           "spellName": "Animate Objects",
@@ -1136,7 +1426,11 @@
           "spellName": "Bigbys Hand",
           "comment": "Artificer"
         },
-        { "prepared": false, "spellName": "Creation", "comment": "Artificer" },
+        {
+          "prepared": false,
+          "spellName": "Creation",
+          "comment": "Artificer"
+        },
         {
           "prepared": false,
           "spellName": "Greater Restoration",
@@ -1157,7 +1451,11 @@
           "spellName": "Wall of Stone",
           "comment": "Artificer"
         },
-        { "prepared": true, "spellName": "Passwall", "comment": "Armourer" },
+        {
+          "prepared": true,
+          "spellName": "Passwall",
+          "comment": "Armourer"
+        },
         {
           "prepared": true,
           "spellName": "Wall of Force",
@@ -1173,7 +1471,6 @@
           "spellName": "Conjure Elemental",
           "comment": "Engineer"
         },
-
         {
           "prepared": true,
           "spellName": "Plane Shift",
