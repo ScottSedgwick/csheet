@@ -29,7 +29,9 @@
   "speed": "35",
   "hitPoints": [8, 5, 8, 8, 7, 7, 8, 8, 8],
   "hpComment": 94,
-  "tempHitPoints": 10,
+  "bonusHitPoints": 0,
+  "bonusHpComment": "",
+  "tempHitPoints": 0,
   "hitDice": "d8",
 
   "stats": {
@@ -606,7 +608,7 @@
     }
   ],
   "backstory": [
-    "ROLLS. Stats: 16,15,15,17,18,12.  Racial: +1 Int, +1 Wis. Rusty was stolen from his parent by the Fey and grew up surviving amongst the Fey in Bluetspur. He met an ex-knight who had lost his memory, and they joined up to make their way to Mordentshire, where they fell in with Van Richten. ",
+    "Rusty was stolen from his parent by the Fey and grew up surviving amongst the Fey in Bluetspur. He met an ex-knight who had lost his memory, and they joined up to make their way to Mordentshire, where they fell in with Van Richten. ",
     "Rusty's life goal is to find his family, but until then he is forcing back the boundaries of knowledge."
   ],
   "moneyPouch": {

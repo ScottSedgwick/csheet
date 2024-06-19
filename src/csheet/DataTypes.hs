@@ -277,6 +277,7 @@ data Character = Character
   , initiative :: Integer
   , speed :: String
   , hitPoints :: [Integer]
+  , bonusHitPoints :: Integer
   , tempHitPoints :: Integer
   , hitDice :: String
 

@@ -32,6 +32,8 @@
   "speedComment": "Dhamphir (35'), Monk (+15)",
   "hitPoints": [8, 7, 7, 7, 5, 7, 8, 6, 8],
   "hpComment": 90,
+  "bonusHitPoints": 5,
+  "bonusHpComment": "+1d8 for something awesome",
   "tempHitPoints": 0,
   "hitDice": "d8",
 
@@ -40,38 +42,37 @@
       "statValue": 13,
       "valueBonus": 0,
       "saveProficiency": 1,
-      "saveProficiencyComment": "Monk Class"
+      "comment": "Roll 13. Monk Class proficiency"
     },
     "dexterity": {
       "statValue": 20,
       "valueBonus": 0,
       "saveProficiency": 1,
-      "saveProficiencyComment": "Monk Class"
+      "comment": "Roll 17, +1 Racial, +2 ?. Monk Class proficiency"
     },
     "constitution": {
       "statValue": 16,
       "valueBonus": 0,
       "saveProficiency": 0,
-      "saveProficiencyComment": ""
+      "comment": "Roll 15, +1 Racial."
     },
     "intelligence": {
       "statValue": 16,
-      "statValueComment": "+1 from Ethan for fixing his laptop",
       "valueBonus": 0,
       "saveProficiency": 0,
-      "saveProficiencyComment": "Monk Class"
+      "comment": "Roll 15, +1 from Ethan for fixing his laptop"
     },
     "wisdom": {
-      "statValue": 20,
+      "statValue": 21,
       "valueBonus": 0,
       "saveProficiency": 1,
-      "saveProficiencyComment": "Resistant feat"
+      "comment": "Roll 17, +1 Racial +1 Resistant, +1 ASI, +1 from Ethan for something he stuffed up. Resistant feat proficiency"
     },
     "charisma": {
       "statValue": 12,
       "valueBonus": 0,
       "saveProficiency": 0,
-      "saveProficiencyComment": ""
+      "comment": "Roll 12."
     }
   },
 
@@ -362,7 +363,7 @@
     },
     {
       "action": "Bonus",
-      "infotext": "Shadow Step 60'",
+      "infotext": "Shadow Step 60' + Adv to hit",
       "comment": "Way of Shadow Level 6"
     },
     {
@@ -550,8 +551,7 @@
     "When he woke, his first thought was surprise.  He was pretty sure he had died. Apart from that, the past was a blur.  His Ki powers were warped, too - he's now much more attuned to blood magic, and he consumes Ki. ",
     "He has given up on finding out who he was.  Now he wanders the world, trying to help as much as he can, and do as little harm as he can manage.  ",
     "WHAT ACTUALLY HAPPENED: Dennis was a trainee knight in the Court of the Unseelie. He was originally a Monk of the Way of Open Hand. He grew up an orphan, poor and downtrodden, but was never caught by the city guard. ",
-    "His ability to evade them became an embarrassment to the Court, and they sent a knight to capture Dennis. The knight was sufficiently impressed by the boy's skills that instead of punishing him, he sponsored his training.  ",
-    "ROLLS. Stats: 15, 15, 17, 13, 17, 12. Race: +1 CON, DEX & WIS."
+    "His ability to evade them became an embarrassment to the Court, and they sent a knight to capture Dennis. The knight was sufficiently impressed by the boy's skills that instead of punishing him, he sponsored his training.  "
   ],
 
   "moneyPouch": {
@@ -575,19 +575,17 @@
   "faction": "Team Strongth",
 
   "equipment": [
-    "(A) Dragonhide Belt (Rare: +2). +2 DC for",
-    "Ki abilities. 1/day, use action to regain MA",
+    "(A) Dragonhide Belt (Very Rare: +3). +3 DC",
+    "to Ki abilities. 1/day, use action to regain MA",
     "die (1d8) Ki points.",
     "(A) Bracers of Defence",
     "Non-magical +1 silver dagger",
-    "Potion of Superior Healing (8d4+8)",
     "Deck of throwing cards",
-    "(A) Spear +1 with poison cache"
+    "Spear +1 with poison cache",
+    "Scroll of Mass Heal"
   ],
 
   "treasure": [
-    "Wishlist:",
-    "  Ring of Protection",
     "Poisons:",
     "  Hanged Mans Luck. Paralyzed 2 rounds. Repeat",
     "    CON save at end of their turn.",
@@ -653,7 +651,9 @@
         "10 days rations; Waterskin; 50' Hempen",
         "Rope.",
         "",
-        "Teddy Bear"
+        "Teddy Bear",
+        "",
+        "12 silver seat brackets"
       ],
       "bagTreasure": [
         "7 daggers coated with Dizzy Disease",

@@ -557,4 +557,4 @@ spellLevel Nine = "9th"
 spellLevel SpellLevelUnknown = "SpellLevelUnknown"
 
 calcHp :: Character -> Integer
-calcHp c = sum (map (\d -> d + statBonus (statValue $ constitution $ stats c)) (hitPoints c))
+calcHp c = bonusHitPoints c + sum (map (\d -> d + statBonus (statValue $ constitution $ stats c)) (hitPoints c))
