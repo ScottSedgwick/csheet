@@ -144,7 +144,7 @@ profBonus :: Character -> Integer
 profBonus c = (level c - 1) `div` 4 + 2 + proficiencyBonus c
 
 skillBonus :: Integer -> Double -> Integer -> Integer -> Integer
-skillBonus stat skillMultiple profB skillBonus = statBonus stat + round (skillMultiple * fromIntegral profB) + skillBonus
+skillBonus stat skillMultiple profB skillAdvantage = statBonus stat + round (skillMultiple * fromIntegral profB) + (skillAdvantage * 5)
 
 showClass :: Character -> String
 showClass c = if lc == 0 then "" else cc ++ slc

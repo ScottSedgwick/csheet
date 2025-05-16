@@ -4,9 +4,10 @@ import DataTypes
 import Fonts (Fonts, loadFonts)
 import Pages
 
-import Data.Aeson(eitherDecode)
+-- import Data.Aeson(eitherDecode)
 import Data.Either(rights)
 import qualified Data.Text as T
+import qualified Data.Yaml as Y
 import Graphics.PDF(JpegFile, PDF, readJpegFile, pdfByteString, standardDocInfo, PDFRect(..))
 import Options.Applicative
 import System.Environment (getArgs)
@@ -16,8 +17,12 @@ import System.FilePath.Posix (replaceExtension)
 import qualified Data.ByteString.Lazy as B
 import Spells (spellMap)
 
-parseCharacter :: B.ByteString -> Either String Character
-parseCharacter = eitherDecode
+parseCharacter :: String -> IO (Either String Character)
+parseCharacter x = do
+  res <- Y.decodeFileEither x
+  case res of
+    Left err -> pure $ Left (show err)
+    Right ch -> pure $ Right ch
 
 defaultCharName :: String
 defaultCharName = "characters/Sharwyn_06"
@@ -70,11 +75,11 @@ main = run =<< execParser opts
 
 run :: Options -> IO()
 run opts = do
-  chardata <- B.readFile (json opts)
   case (toSheetType $ "SheetType" <> template opts) of
     Nothing -> putStrLn ("Sheet type invalid: " <> template opts)
     Just t  -> do
-      case parseCharacter chardata of
+      res <- parseCharacter (json opts) 
+      case res of
         Left err -> putStrLn "Error parsing JSON:" >> die err
         Right ch -> do
           let pdfFile = pdf opts

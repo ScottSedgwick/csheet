@@ -1,7 +1,7 @@
 desc "Generate character"
 task :pdf, [:campaign, :name, :level] do |t, args|
     filename = "characters/#{args[:campaign]}/#{args[:name]}/#{args[:name]}.#{args[:level]}"
-    cmd = "cabal exec cexe -- -j #{filename}.json -p #{filename}.pdf"
+    cmd = "cabal exec cexe -- -j #{filename}.yml -p #{filename}.pdf"
     # puts cmd
     res = system cmd
     system "open #{filename}.pdf" if res

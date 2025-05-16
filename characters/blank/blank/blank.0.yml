@@ -1,0 +1,206 @@
+---
+characterName: ''
+sheetType: SheetTypeIcewindDale
+className: ''
+subclass: ''
+level: 0
+background: ''
+playerName: ''
+race: ''
+alignment: None
+experience: ''
+appearance: ''
+gender: ''
+faith: ''
+age: ''
+height: "'"
+weight: ''
+eyeColour: ''
+skinColour: ''
+hairColour: ''
+inspiration: 0
+proficiencyBonus: 0
+acBase: 10
+acBaseComment: ''
+acBonus: 0
+acBonusComment: ''
+initiative: 0
+initiativeComment: ''
+speed: ''
+hitPoints: []
+hpComment: 0
+bonusHitPoints: 0
+bonusHpComment: ''
+tempHitPoints: 0
+hitDice: ''
+stats:
+  strength:
+    statValue: 0
+    STRComment: ''
+    valueBonus: 0
+    saveProficiency: 0
+  dexterity:
+    statValue: 0
+    DEXComment: ''
+    valueBonus: 0
+    saveProficiency: 0
+  constitution:
+    statValue: 0
+    CONComment: ''
+    valueBonus: 0
+    saveProficiency: 0
+  intelligence:
+    statValue: 0
+    INTComment: '0'
+    valueBonus: 0
+    saveProficiency: 0
+  wisdom:
+    statValue: 0
+    WISComment: ''
+    valueBonus: 0
+    saveProficiency: 0
+  charisma:
+    statValue: 0
+    CHAComment: ''
+    valueBonus: 0
+    saveProficiency: 0
+skills:
+  acrobatics:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  animalHandling:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  arcana:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  athletics:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  deception:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  history:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  insight:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  intimidation:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  investigation:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  medicine:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  nature:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  perception:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  performance:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  persuasion:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  religion:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  sleightOfHand:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  stealth:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+  survival:
+    proficiency: 0
+    skBonus: 0
+    advantage: 0
+    skComment: ''
+bonusPassivePerception: 0
+bonusPassiveInsight: 0
+bonusPassiveInvestigation: 0
+proficiencies: []
+attacks:
+- weapon: ''
+  damage: ''
+  bonus: ''
+  notes: ''
+traits:
+  personality: []
+  ideals: []
+  bonds: []
+  flaws: []
+features: []
+backstory: []
+moneyPouch:
+  copper: 0
+  silver: 0
+  electrum: 0
+  gold: 0
+  platinum: 0
+  gems: []
+allies: []
+faction: ''
+equipment: []
+treasure: []
+backpacks: []
+bagsOfHolding:
+- bohPGs: []
+  bohItems: []
+portableHoles: []
+spellcasting:
+- spellcastingClass: ''
+  spellcastingAbility: ''
+  spellSaveDC: ''
+  spellSaveDCComment: ''
+  spellAttackBonus: ''
+  spellAttackBonusComment: ''
+  knownSpells: []
+  slotsLevel1: ''
+  slotsLevel2: ''
+  slotsLevel3: ''
+  slotsLevel4: ''
+  slotsLevel5: ''
+  slotsLevel6: ''
+  slotsLevel7: ''
+  slotsLevel8: ''
+  slotsLevel9: ''

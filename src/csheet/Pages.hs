@@ -243,9 +243,9 @@ drawIcePage1 c bg fs = setupPage bg $ do
 passives :: Character -> String
 passives c = "P[" <> show passivePerception <> "] Is[" <> show passiveInsight <> "] Iv[" <> show passiveInvestigation <> "]"
   where
-    passivePerception = 10 + skillBonus (statValue $ wisdom $ stats c) (proficiency (perception (skills c))) (profBonus c) (bonusPassivePerception c)
-    passiveInsight = 10 + skillBonus (statValue $ wisdom $ stats c) (proficiency (insight (skills c))) (profBonus c) (bonusPassiveInsight c)
-    passiveInvestigation = 10 + skillBonus (statValue $ intelligence $ stats c) (proficiency (investigation (skills c))) (profBonus c) (bonusPassiveInvestigation c)
+    passivePerception = 10 + skillBonus (statValue $ wisdom $ stats c) (proficiency (perception (skills c))) (profBonus c) (advantage (perception (skills c))) + (bonusPassivePerception c)
+    passiveInsight = 10 + skillBonus (statValue $ wisdom $ stats c) (proficiency (insight (skills c))) (profBonus c) (advantage (insight (skills c))) + (bonusPassiveInsight c)
+    passiveInvestigation = 10 + skillBonus (statValue $ intelligence $ stats c) (proficiency (investigation (skills c))) (profBonus c) (advantage (investigation (skills c))) + (bonusPassiveInvestigation c)
 
 drawPage2 :: Character -> JpegFile -> Maybe JpegFile -> Fonts -> PDF()
 drawPage2 c bg mapp fs = do
