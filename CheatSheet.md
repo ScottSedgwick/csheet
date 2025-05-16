@@ -84,9 +84,6 @@ Hold breath for (1 + CON mod) minutes (min 30 sec).
 
 When out of breath or choking, people can survive (CON mod) rounds (min 1 round). At the start of their next turn, they drop to 0 HP and are dying, and can't regain HP or be stabilized until they can breath again.
 
-
-\page
-<div class="wide">
 ### Poisons
 | Name             | Effect                          | Duration  | Re-save           |
 | :--------------- | :------------------------------ | :-------- | :---------------- |
@@ -95,6 +92,7 @@ When out of breath or choking, people can survive (CON mod) rounds (min 1 round)
 | Starry Nights    | If HP &lt; 5d6, Sleep           | 10 min    | Awaken on damage  |
 | Dizzy Disease    | Disadvantage                    | 1 min     | End of their turn |
 | Good Times       | Foes invisible, allies monsters | 10 min    | Upon damage       |
+| Witches Tongue   | 1d6 poison damage, stack to 5.  | Instant   | N/A               |
 	
 ### Travel speed (8 hours)
 | Pace   | Per Min | Per Hour | Per Day  | Effect                   |
@@ -102,13 +100,13 @@ When out of breath or choking, people can survive (CON mod) rounds (min 1 round)
 | Fast   | 400'    | 4 miles  | 30 miles | -5 to Passive Perception |
 | Normal | 300'    | 3 miles  | 24 miles | N/A                      |
 | Slow   | 200'    | 2 miles  | 18 miles | Able to use Stealth      |
-</div>
+
 ### Mounts
 For short spans of time (up to an hour), many animals move much faster than humanoids. A mounted character can ride at a gallop for about an hour, covering twice the usual distance for a fast pace. If fresh mounts are available every 8 to 10 miles, characters can cover larger distances at this pace, but this is very rare except in densely populated areas.
 
 ### Underwater Combat
-If character has no swimming speed, then melee attacks have disadvantage unless the weapon is a dagger, javelin, shortsword, spear, or trident.
+If character has no swimming speed, then melee attacks have disadvantage unless the weapon is a dagger, javelin, short sword, spear, or trident.
 
-Ranged weapon attacks automatically miss beyond their normal range. Ranged weapon attacks are made with disadvantage unless the weapon is a crossbow, a net, or a wepon that is thrown like a javelin (including spear, trident or dart).
+Ranged weapon attacks automatically miss beyond their normal range. Ranged weapon attacks are made with disadvantage unless the weapon is a crossbow, a net, or a weapon that is thrown like a javelin (including spear, trident or dart).
 
 Creatures and objects that are fully immersed in water have resistance to fire damage.

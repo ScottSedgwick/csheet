@@ -1,5 +1,6 @@
 {
     "characterName": "",
+    "sheetType": "SheetTypeIcewindDale",
     "className": "",
     "subclass": "",
     "level": 0,
@@ -7,168 +8,247 @@
     "playerName": "",
     "race": "",
     "alignment": "None",
-    "experience": 0,
-  
-    "age": 0,
-    "height": "",
+    "experience": "",
+    "appearance": "",
+    "gender": "",
+    "faith": "",
+    "age": "",
+    "height": "'",
     "weight": "",
     "eyeColour": "",
     "skinColour": "",
     "hairColour": "",
-    
     "inspiration": 0,
     "proficiencyBonus": 0,
-    
-    "acBase": 0,
+    "acBase": 10,
+    "acBaseComment": "",
     "acBonus": 0,
+    "acBonusComment": "",
     "initiative": 0,
-    "speed": 0,
-    "hitPoints": 0,
-    "hitDice": 0,
+    "initiativeComment": "",
+    "speed": "",
+    "hitPoints": [],
+    "hpComment": 0,
+    "bonusHitPoints": 0,
+    "bonusHpComment": "",
+    "tempHitPoints": 0,
+    "hitDice": "",
   
-    "strength": 0,
-    "dexterity": 0,
-    "constitution": 0,
-    "intelligence": 0,
-    "wisdom": 0,
-    "charisma": 0,
+    "stats": {
+      "strength": {
+        "statValue": 0,
+        "STRComment": "",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      },
   
-    "strengthBonus": 0,
-    "dexterityBonus": 0,
-    "constitutionBonus": 0,
-    "intelligenceBonus": 0,
-    "wisdomBonus": 0,
-    "charismaBonus": 0,
+      "dexterity": {
+        "statValue": 0,
+        "DEXComment": "",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      },
   
-    "skillAcrobatics": 0,
-    "skillAnimalHandling": 0,
-    "skillArcana": 0,
-    "skillAthletics": 0,
-    "skillDeception": 0,
-    "skillHistory": 0,
-    "skillInsight": 0,
-    "skillIntimidation": 0,
-    "skillInvestigation": 0,
-    "skillMedicine": 0,
-    "skillNature": 0,
-    "skillPerception": 0,
-    "skillPerformance": 0,
-    "skillPersuasion": 0,
-    "skillReligion": 0,
-    "skillSleightOfHand": 0,
-    "skillStealth": 0,
-    "skillSurvival": 0,
+      "constitution": {
+        "statValue": 0,
+        "CONComment": "",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      },
   
-    "proficiencies": [
-    ],
+      "intelligence": {
+        "statValue": 0,
+        "INTComment": "0",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      },
   
-    "attacks": [
-        {
-            "weapon": "",
-            "damage": "",
-            "bonus": ""
-        }
-    ],
-    
-    "personalityTraits": [
-    ],
-    "ideals": [
-    ],
-    "bonds": [
-    ],
-    "flaws": [
-    ],
-    "features": [
-    ],
-    
-    "backstory": [
-    ],
-    
-    "moneyPouch": {
-        "copper": 0,
-        "silver": 0,
-        "electrum": 0,
-        "gold": 0,
-        "platinum": 0,
-        "gems": []
+      "wisdom": {
+        "statValue": 0,
+        "WISComment": "",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      },
+  
+      "charisma": {
+        "statValue": 0,
+        "CHAComment": "",
+        "valueBonus": 0,
+        "saveProficiency": 0
+      }
     },
   
-    "allies": [],
-  
-    "equipment": [
+    "skills": {
+      "acrobatics": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "animalHandling": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "arcana": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "athletics": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "deception": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "history": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "insight": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "intimidation": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "investigation": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "medicine": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "nature": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "perception": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "performance": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "persuasion": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "religion": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "sleightOfHand": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "stealth": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      },
+      "survival": {
+        "proficiency": 0,
+        "skBonus": 0,
+        "advantage": 0,
+        "skComment": ""
+      }
+    },
+    "bonusPassivePerception": 0,
+    "bonusPassiveInsight": 0,
+    "bonusPassiveInvestigation": 0,
+    "proficiencies": [],
+    "attacks": [
+      {
+        "weapon": "",
+        "damage": "",
+        "bonus": "",
+        "notes": ""
+      }
     ],
-    
-    "backpacks": [
-        { 
-            "bagCash" : {
-            "copper": 0,
-            "silver": 0,
-            "electrum": 0,
-            "gold": 0,
-            "platinum": 0,
-            "gems": []
-            },
-            "bagPocket1": [
-            ],
-            "bagPocket2": [
-            ],
-            "bagPocket3": [
-            ],
-            "bagPocket4": [
-            ],
-            "bagFlapPouch": [
-            ],
-            "bagMiddlePouch": [
-            ],
-            "bagMainPouch": [
-            ],
-            "bagTreasure": [],
-            "bagBedroll": "",
-            "bagRope": "",
-            "bagAmmo": "",
-            "bagTorches": ""
-        }
-    ], 
-    "bagsOfHolding": [],
+    "traits": {
+      "personality": [],
+      "ideals": [],
+      "bonds": [],
+      "flaws": []
+    },
+  
+    "features": [],
+    "backstory": [],
+    "moneyPouch": {
+      "copper": 0,
+      "silver": 0,
+      "electrum": 0,
+      "gold": 0,
+      "platinum": 0,
+      "gems": []
+    },
+    "allies": [],
+    "faction": "",
+    "equipment": [],
+    "treasure": [
+    ],
+    "backpacks": [],
+    "bagsOfHolding": [
+      {
+        "bohPGs": [],
+        "bohItems": []
+      }
+    ],
     "portableHoles": [],
-  
-    "treasure": [],
-  
     "spellcasting": [
-        {
-            "spellcastingClass": "",
-            "spellcastingAbility": "",
-            "spellSaveDC": 0,
-            "spellAttackBonus": 0,
-            "spellsCantrips": [
-            ],
-            "slotsLevel1":0,
-            "spellsLevel1": [
-            ],
-            "slotsLevel2": 0,
-            "spellsLevel2": [
-            ],
-            "slotsLevel3": 0,
-            "spellsLevel3": [
-            ],
-            "slotsLevel4": 0,
-            "spellsLevel4": [
-            ],
-            "slotsLevel5": 0,
-            "spellsLevel5": [
-            ],
-            "slotsLevel6": 0,
-            "spellsLevel6": [
-            ],
-            "slotsLevel7": 0,
-            "spellsLevel7": [
-            ],
-            "slotsLevel8": 0,
-            "spellsLevel8": [
-            ],
-            "slotsLevel9": 0,
-            "spellsLevel9": [
-            ]
-        }
+      {
+        "spellcastingClass": "",
+        "spellcastingAbility": "",
+        "spellSaveDC": "",
+        "spellSaveDCComment": "",
+        "spellAttackBonus": "",
+        "spellAttackBonusComment": "",
+        "knownSpells": [],
+        "slotsLevel1": "",
+        "slotsLevel2": "",
+        "slotsLevel3": "",
+        "slotsLevel4": "",
+        "slotsLevel5": "",
+        "slotsLevel6": "",
+        "slotsLevel7": "",
+        "slotsLevel8": "",
+        "slotsLevel9": ""
+      }
     ]
   }
+  

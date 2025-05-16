@@ -97,3 +97,15 @@ Exhaustion
 | 4 | HP max halved |
 | 5 | Speed 0 |
 | 6 | Death |
+
+Combat Actions
+--------------
+| Attack        | Attack                                              |
+| Cast a Spell  | Cast a Spell                                        |
+| Dash          | Move again                                          |
+| Disengage     | Avoid opportunity attacks                           |
+| Dodge         | Attacks have disadvantage, DEX saves have advantage |
+| Help          | Provide advantage to another                        |
+| Hide          | Hide                                                |
+| Ready Action  | Hold action and use as reaction                     |
+| Use an object | Use an object                                       |
